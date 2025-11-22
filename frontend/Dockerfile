@@ -9,4 +9,5 @@ ENV NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL
 RUN npm run build
 ENV PORT=3000
 EXPOSE 3000
-CMD ["sh", "-c", "next start -p ${PORT:-3000}"]
+# Use npx to find next binary and pass PORT from environment
+CMD ["sh", "-c", "npx next start -p ${PORT:-3000}"]
