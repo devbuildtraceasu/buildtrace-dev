@@ -1,0 +1,46 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_DB: buildtrace_db
+      POSTGRES_USER: buildtrace_user
+      POSTGRES_PASSWORD: buildtrace_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./backend
+    environment:
+      USE_DATABASE: 'true'
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: buildtrace_user
+      DB_PASS: buildtrace_pass
+      DB_NAME: buildtrace_db
+      USE_GCS: 'false'
+      USE_PUBSUB: 'false'
+      USE_DATABASE_SSL: 'false'
+      HOST: 0.0.0.0
+      PORT: 5001
+    depends_on:
+      - db
+    ports:
+      - "5001:5001"
+
+  frontend:
+    build:
+      context: ./frontend
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:5001
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+
+volumes:
+  pgdata:
