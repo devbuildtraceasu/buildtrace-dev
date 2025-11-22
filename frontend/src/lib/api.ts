@@ -1,5 +1,6 @@
-import axios, { AxiosInstance, AxiosResponse, AxiosError } from 'axios'
+import axios, { AxiosInstance, AxiosResponse, AxiosError, InternalAxiosRequestConfig } from 'axios'
 import { ApiResponse, ApiError, Job, JobStage, DrawingVersion } from '@/types'
+import { useAuthStore } from '@/store/authStore'
 
 export interface User {
   user_id: string
@@ -19,11 +20,26 @@ class ApiClient {
     this.client = axios.create({
       baseURL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001',
       timeout: 60000,
-      withCredentials: true,  // Required for session cookies to be sent
+      withCredentials: true,  // Required for session cookies to be sent (fallback)
       headers: {
         'Content-Type': 'application/json',
       },
     })
+
+    // Request interceptor - add JWT token to Authorization header
+    this.client.interceptors.request.use(
+      (config: InternalAxiosRequestConfig) => {
+        // Get token from auth store
+        const token = useAuthStore.getState().token
+        if (token && config.headers) {
+          config.headers.Authorization = `Bearer ${token}`
+        }
+        return config
+      },
+      (error) => {
+        return Promise.reject(error)
+      }
+    )
 
     // Response interceptor
     this.client.interceptors.response.use(
@@ -44,6 +60,11 @@ class ApiClient {
           apiError.message = 'Network error - please check your connection'
         } else {
           apiError.message = error.message
+        }
+
+        // If 401, clear auth state (token expired or invalid)
+        if (error.response?.status === 401) {
+          useAuthStore.getState().clearUser()
         }
 
         return Promise.reject(apiError)

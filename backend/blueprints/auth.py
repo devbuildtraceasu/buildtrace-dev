@@ -15,6 +15,8 @@ import requests
 from config import config
 from gcp.database import get_db_session
 from gcp.database.models import User, Organization
+from utils.jwt_utils import generate_token, get_user_from_token
+from utils.auth_helpers import get_current_user_id
 
 logger = logging.getLogger(__name__)
 
@@ -158,16 +160,32 @@ def google_callback():
             
             db.commit()
             
-            # Store user in session
+            # Store user in session (for backend requests)
             session['user_id'] = user.id
             session['user_email'] = user.email
             session['user_name'] = user.name
             session.permanent = True
             
+            # Generate JWT token for cross-domain authentication
+            jwt_token = generate_token(
+                user_id=user.id,
+                email=user.email,
+                name=user.name or '',
+                organization_id=user.organization_id
+            )
+            
             logger.info(f"User logged in via Google OAuth", extra={'user_id': user.id, 'email': email})
             
-            # Redirect to frontend with success
-            return redirect(f"{config.FRONTEND_URL}/?auth=success&user_id={user.id}")
+            # Redirect to frontend with success, user info, and JWT token
+            import urllib.parse
+            user_params = urllib.parse.urlencode({
+                'auth': 'success',
+                'user_id': user.id,
+                'email': user.email,
+                'name': user.name or '',
+                'token': jwt_token  # JWT token for API authentication
+            })
+            return redirect(f"{config.FRONTEND_URL}/?{user_params}")
             
     except Exception as e:
         logger.error(f"Google callback error: {e}", exc_info=True)
@@ -176,15 +194,16 @@ def google_callback():
 
 @auth_bp.route('/me', methods=['GET'])
 def get_current_user():
-    """Get current authenticated user"""
+    """Get current authenticated user - supports both session cookies and JWT tokens"""
     try:
-        user_id = session.get('user_id')
+        user_id = get_current_user_id()
         if not user_id:
             return jsonify({'error': 'Not authenticated'}), 401
         
         with get_db_session() as db:
             user = db.query(User).filter_by(id=user_id).first()
             if not user:
+                # Clear session if it was session-based
                 session.clear()
                 return jsonify({'error': 'User not found'}), 404
             

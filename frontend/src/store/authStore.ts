@@ -13,15 +13,18 @@ export interface User {
 
 interface AuthState {
   user: User | null
+  token: string | null
   isAuthenticated: boolean
   isLoading: boolean
   setUser: (user: User | null) => void
+  setToken: (token: string | null) => void
   clearUser: () => void
   setLoading: (loading: boolean) => void
 }
 
 export const useAuthStore = create<AuthState>((set) => ({
   user: null,
+  token: null,
   isAuthenticated: false,
   isLoading: false,
   setUser: (user) => {
@@ -33,16 +36,27 @@ export const useAuthStore = create<AuthState>((set) => ({
       localStorage.removeItem('buildtrace-user')
     }
   },
+  setToken: (token) => {
+    set({ token })
+    // Persist token to localStorage
+    if (token) {
+      localStorage.setItem('buildtrace-token', token)
+    } else {
+      localStorage.removeItem('buildtrace-token')
+    }
+  },
   clearUser: () => {
-    set({ user: null, isAuthenticated: false })
+    set({ user: null, token: null, isAuthenticated: false })
     localStorage.removeItem('buildtrace-user')
+    localStorage.removeItem('buildtrace-token')
   },
   setLoading: (isLoading) => set({ isLoading }),
 }))
 
-// Load user from localStorage on init
+// Load user and token from localStorage on init
 if (typeof window !== 'undefined') {
   const stored = localStorage.getItem('buildtrace-user')
+  const storedToken = localStorage.getItem('buildtrace-token')
   if (stored) {
     try {
       const user = JSON.parse(stored)
@@ -50,6 +64,9 @@ if (typeof window !== 'undefined') {
     } catch (e) {
       localStorage.removeItem('buildtrace-user')
     }
+  }
+  if (storedToken) {
+    useAuthStore.getState().setToken(storedToken)
   }
 }
 

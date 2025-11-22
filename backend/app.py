@@ -49,9 +49,21 @@ app.config['MAX_CONTENT_LENGTH'] = config.MAX_CONTENT_LENGTH
 # Session configuration for OAuth
 app.config['SESSION_COOKIE_HTTPONLY'] = True
 app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'  # Allows cookies in cross-origin redirects
-app.config['SESSION_COOKIE_SECURE'] = False  # Set to True in production with HTTPS
+# In production (HTTPS), Secure must be True. In development (HTTP), it should be False
+app.config['SESSION_COOKIE_SECURE'] = config.IS_PRODUCTION  # True in production (HTTPS), False in dev
+app.config['SESSION_COOKIE_DOMAIN'] = None  # Don't set domain to allow cross-subdomain cookies
 
-ALLOWED_ORIGINS = ["http://localhost:3000", "http://localhost:3001"]
+# Get allowed origins from config or environment
+FRONTEND_URL = config.FRONTEND_URL or os.getenv('FRONTEND_URL', 'http://localhost:3000')
+ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    FRONTEND_URL,
+    "https://buildtrace-frontend-otllaxbiza-wl.a.run.app",
+    "https://buildtrace-frontend-136394139608.us-west2.run.app"
+]
+# Remove duplicates while preserving order
+ALLOWED_ORIGINS = list(dict.fromkeys(ALLOWED_ORIGINS))
 
 # Enable CORS for frontend - Flask-CORS handles OPTIONS automatically
 CORS(

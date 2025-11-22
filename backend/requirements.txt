@@ -25,3 +25,4 @@ google-auth-httplib2==0.1.1
 alembic==1.12.1
 psutil
 pytest
+PyJWT==2.8.0

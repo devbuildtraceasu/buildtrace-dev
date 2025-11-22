@@ -7,7 +7,7 @@ import { useAuthStore } from '@/store/authStore'
 import { apiClient } from '@/lib/api'
 
 export default function Header() {
-  const { user, isAuthenticated, setUser, setLoading } = useAuthStore()
+  const { user, isAuthenticated, setUser, setToken, setLoading } = useAuthStore()
 
   useEffect(() => {
     // Only check auth if not already authenticated
@@ -50,36 +50,51 @@ export default function Header() {
     const urlParams = new URLSearchParams(window.location.search)
     const authStatus = urlParams.get('auth')
     const userId = urlParams.get('user_id')
+    const userEmail = urlParams.get('email')
+    const userName = urlParams.get('name')
+    const token = urlParams.get('token')
     const error = urlParams.get('error')
 
-    if (authStatus === 'success' && userId) {
-      // Fetch user info after successful login
-      apiClient.getCurrentUser()
-        .then((userData: any) => {
-          // API client interceptor returns response.data directly
-          // So userData IS the user object: { user_id, email, name, ... }
-          if (userData && userData.user_id) {
-            setUser(userData)
-            // Clean up URL first
-            window.history.replaceState({}, '', window.location.pathname)
-            // Then refresh to show upload page
-            window.location.reload()
-          } else {
-            console.error('Invalid user data received:', userData)
-            window.history.replaceState({}, '', window.location.pathname)
-          }
-        })
-        .catch(err => {
-          console.error('Failed to fetch user:', err)
-          // Clean up URL even on error
-          window.history.replaceState({}, '', window.location.pathname)
-        })
+    if (authStatus === 'success' && userId && token) {
+      // Store JWT token first
+      setToken(token)
+      
+      // Use user info from URL params (session cookies don't work cross-domain in Cloud Run)
+      const userData = {
+        user_id: userId,
+        email: userEmail || '',
+        name: userName || '',
+        email_verified: true,
+        is_active: true
+      }
+      
+      if (userData.user_id) {
+        setUser(userData)
+        // Clean up URL immediately
+        window.history.replaceState({}, '', window.location.pathname)
+        
+        // Verify with backend using JWT token (now that token is set)
+        apiClient.getCurrentUser()
+          .then((backendUser: any) => {
+            // If backend returns user, use that (more complete with all fields)
+            if (backendUser && backendUser.user_id) {
+              setUser(backendUser)
+            }
+          })
+          .catch(err => {
+            // Backend call failed - log but user is already set from URL params
+            console.warn('Backend verification failed:', err.message)
+          })
+      } else {
+        console.error('Invalid user data in URL params')
+        window.history.replaceState({}, '', window.location.pathname)
+      }
     } else if (error) {
       console.error('Authentication error:', error)
       // Clean up URL
       window.history.replaceState({}, '', window.location.pathname)
     }
-  }, []) // Only run once on mount
+  }, [setUser, setToken]) // Include dependencies
 
   return (
     <header className="bg-white border-b border-gray-200">

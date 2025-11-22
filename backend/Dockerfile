@@ -5,5 +5,10 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
-EXPOSE 5001
-CMD ["gunicorn", "-b", "0.0.0.0:5001", "app:app"]
+# Make start script executable
+RUN chmod +x start.sh
+# Cloud Run sets PORT env var automatically
+ENV PORT=8080
+EXPOSE 8080
+# Use start script to handle PORT variable
+CMD ["./start.sh"]
