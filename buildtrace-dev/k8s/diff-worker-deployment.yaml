@@ -1,0 +1,80 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: diff-worker
+  namespace: prod-app
+  labels:
+    app: diff-worker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: diff-worker
+  template:
+    metadata:
+      labels:
+        app: diff-worker
+    spec:
+      serviceAccountName: buildtrace-app-sa
+      containers:
+      - name: cloud-sql-proxy
+        image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.8.0
+        args:
+        - "--structured-logs"
+        - "--unix-socket=/cloudsql"
+        - "buildtrace-dev:us-west2:buildtrace-dev-db"
+        ports:
+        - containerPort: 5432
+        volumeMounts:
+        - name: cloudsql
+          mountPath: /cloudsql
+        resources:
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+          limits:
+            cpu: "200m"
+            memory: "256Mi"
+      - name: diff-worker
+        image: us-west2-docker.pkg.dev/buildtrace-dev/buildtrace-repo/buildtrace-backend:latest
+        command: ["python", "workers/diff_worker_entry.py"]
+        workingDir: /app
+        envFrom:
+        - configMapRef:
+            name: buildtrace-worker-config
+        - secretRef:
+            name: buildtrace-app-env
+        env:
+        - name: USE_PUBSUB
+          value: "true"
+        volumeMounts:
+        - name: cloudsql
+          mountPath: /cloudsql
+        resources:
+          requests:
+            memory: "16Gi"
+            cpu: "2000m"
+          limits:
+            memory: "28Gi"
+            cpu: "4000m"
+        livenessProbe:
+          exec:
+            command:
+            - python
+            - -c
+            - "import sys; sys.exit(0)"
+          initialDelaySeconds: 120
+          periodSeconds: 60
+          timeoutSeconds: 30
+          failureThreshold: 10
+        readinessProbe:
+          exec:
+            command:
+            - python
+            - -c
+            - "import sys; sys.exit(0)"
+          initialDelaySeconds: 30
+          periodSeconds: 10
+      volumes:
+      - name: cloudsql
+        emptyDir: {}

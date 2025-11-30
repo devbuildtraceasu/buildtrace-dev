@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Upload Test</title>
+</head>
+<body>
+    <h2>Direct Upload Test</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <p>Old File: <input type="file" name="old_file" accept=".pdf,.dwg,.dxf,.png,.jpg,.jpeg"></p>
+        <p>New File: <input type="file" name="new_file" accept=".pdf,.dwg,.dxf,.png,.jpg,.jpeg"></p>
+        <p><button type="submit">Upload</button></p>
+    </form>
+
+    <h2>JavaScript Test</h2>
+    <p>Test File: <input type="file" id="test-file" accept=".pdf,.dwg,.dxf,.png,.jpg,.jpeg"></p>
+    <p><button onclick="testFile()">Test File Validation</button></p>
+    <div id="result"></div>
+
+    <script type="module">
+        import Utils from '/static/js/shared/Utils.js';
+        window.Utils = Utils;
+    </script>
+
+    <script>
+        function testFile() {
+            const fileInput = document.getElementById('test-file');
+            const result = document.getElementById('result');
+
+            if (fileInput.files.length === 0) {
+                result.innerHTML = 'Please select a file first';
+                return;
+            }
+
+            const file = fileInput.files[0];
+            console.log('File object:', file);
+            console.log('File name:', file.name);
+            console.log('File type:', file.type);
+            console.log('File size:', file.size);
+
+            const isValid = Utils.isValidFileType(file);
+            result.innerHTML = `
+                <p><strong>File:</strong> ${file.name}</p>
+                <p><strong>Type:</strong> ${file.type}</p>
+                <p><strong>Size:</strong> ${file.size} bytes</p>
+                <p><strong>Valid:</strong> ${isValid ? 'Yes' : 'No'}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

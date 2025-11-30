@@ -1,0 +1,476 @@
+You are building the BuildTrace AI web app frontend. Match the UX and flow shown in my screenshots exactly. Keep the code modular, decoupled, typed, testable, and easy to run both in Replit and locally via Cursor.
+
+Objectives
+
+Pixel-match the following screens and flows:
+
+Home / Drawing Comparison
+
+Hero: “BuildTrace AI” with subheader “Intelligently detect and analyze changes between construction drawing versions”.
+
+Card titled “Drawing Comparison”.
+
+Stepper with four steps: Upload Old, Upload New, Process, Results.
+
+Two dropzones: Baseline Drawing (Old) and Revised Drawing (New).
+
+File types: PDF, DWG, DXF, PNG, JPG. Max file size 50 MB per file.
+
+Primary button: “Compare Drawings”.
+
+Section “Recent Comparisons” with searchable table. Columns: Date, Drawing Number (badge style like “Page-9”), Baseline, Revised, Changes (“N changes”), Actions (“View”, trash icon).
+
+Comparison Results
+
+Header: “Comparison Results” with file names “{baseline} vs {revised}”.
+
+Chip: “Drawing Number: Page-9” with green “Auto-detected from drawing”.
+
+Toolbar: “Hide Comparison”, “Export Report”, search input “Search drawing num…”, “Debug Info”, zoom controls 100%/150% etc, “View Mode” with a gear icon.
+
+Toggle pills: Side by Side, Overlay, Baseline Only, Revised Only.
+
+Two canvases when Side by Side is active, one per version, zoomable and pannable. Overlay mode stacks layers with slider.
+
+Summary
+
+KPI tiles: Added, Modified, Removed.
+
+By Category list: MEP, Drywall, Electrical, Architectural, Structural, Concrete, Site Work with counts.
+
+Changes List: left column list of drawings and one-line summaries, each with “N details”.
+
+Selected Change Details: right column with Summary, bullet points under Description, and thumbnails “Baseline”, “Revised”, “Overlay”.
+
+Ask About Changes
+
+Prompt area with buttons “Cost Impact”, “Schedule Impact” and a question input “Ask a question about the changes…”.
+
+Flow:
+
+Upload two files, press “Compare Drawings”, show a processing state, then route to Comparison Results with mock detections. From there, “Export Report” generates a downloadable PDF using the visible data. “View” in Recent Comparisons navigates to the corresponding results view.
+
+Codebase must be highly modular with clear boundaries between UI, state, domain models, and data services. No tight coupling between the viewer and parsing logic. Provide seam points for future real backends.
+
+Professional dev workflow:
+
+Every change documented in CHANGELOG.md.
+
+Clear commit messages.
+
+When requirements are unclear, open a docs/QUESTIONS.md and place blocking questions there. Do not guess silently.
+
+Tech Stack
+
+React + TypeScript + Vite
+
+Tailwind CSS for styling. Use a small design-token layer via CSS variables for spacing, radii, font sizes, shadows.
+
+shadcn/ui for Cards, Buttons, Inputs, Badges, Tabs, Dialogs.
+
+Zustand for local app state.
+
+React Router v6 for routing.
+
+ESLint + Prettier with strict TS config.
+
+Vitest + @testing-library/react for unit tests. Playwright for one end-to-end flow.
+
+PDF.js for PDF rendering. Use a light wrapper interface so the viewer can be swapped later.
+
+html2pdf.js or jsPDF + html2canvas for the “Export Report” PDF.
+
+Mock Service Worker (MSW) for API mocks in dev.
+
+Optional utility: immer for immutable state updates.
+
+Project Structure
+buildtrace/
+  apps/web/
+    src/
+      app/
+        routes/
+          comparison/
+            index.tsx               // Comparison Results page
+            components/
+              ComparisonToolbar.tsx
+              ViewModeToggle.tsx
+              ZoomControls.tsx
+              OverlayToggle.tsx
+              ExportReportButton.tsx
+          home/
+            index.tsx               // Home / Drawing Comparison
+            components/
+              Stepper.tsx
+              UploadDropzone.tsx
+              RecentComparisonsTable.tsx
+              CompareButton.tsx
+        providers/
+          ThemeProvider.tsx
+          QueryProvider.tsx
+          StoreProvider.tsx
+        layout/
+          AppLayout.tsx             // Top nav with Home, Projects
+      components/
+        ui/                         // shadcn generated components
+        common/
+          Badge.tsx
+          KpiTile.tsx
+          CategoryList.tsx
+          ChangesList.tsx
+          ChangeDetailsPanel.tsx
+          AskPanel.tsx
+      features/
+        comparison/
+          state/useComparisonStore.ts
+          services/comparisonService.ts
+          services/reportService.ts
+          models.ts                 // domain types
+          mocks/fixtures.ts         // static fixtures for demo
+          utils/overlay.ts
+          utils/zoom.ts
+        uploads/
+          services/validation.ts
+          models.ts
+        recent/
+          state/useRecentStore.ts
+          services/recentService.ts
+        search/
+          state/useSearchStore.ts
+      libs/
+        pdf/
+          PdfViewer.tsx
+          PdfService.ts             // adapter over pdfjs
+        images/
+          ImageViewer.tsx
+        files/
+          FileDrop.tsx
+          fileTypes.ts
+          fileUtils.ts
+      styles/
+        globals.css
+        tokens.css                  // CSS variables
+        tailwind.css
+      hooks/
+        useKeyboardShortcuts.ts
+        useDebounce.ts
+      pages/
+        NotFound.tsx
+      index.css
+      main.tsx
+      router.tsx
+    public/
+    vite.config.ts
+    tailwind.config.js
+    tsconfig.json
+    package.json
+    .eslintrc.cjs
+    .prettierrc
+    .replit
+    replit.nix                      // if using Nix
+    README.md
+    CHANGELOG.md
+    docs/
+      ARCHITECTURE.md
+      QUESTIONS.md
+      DECISIONS.md                 // ADRs
+      CONTRIBUTING.md
+      TESTING.md
+
+Routing
+
+/ → Home / Drawing Comparison
+
+/compare/:id → Comparison Results for a given record
+
+Unknown → NotFound
+
+Domain Models (TypeScript)
+
+Create these in features/**/models.ts.
+
+export type FileRef = {
+  id: string;
+  name: string;
+  size: number;
+  type: "pdf" | "dwg" | "dxf" | "png" | "jpg";
+  url?: string;        // object URL for previews
+};
+
+export type ComparisonInput = {
+  baseline: FileRef;
+  revised: FileRef;
+};
+
+export type ChangeAction = "added" | "modified" | "removed";
+
+export type Category =
+  | "MEP"
+  | "Drywall"
+  | "Electrical"
+  | "Architectural"
+  | "Structural"
+  | "Concrete"
+  | "Site Work";
+
+export type ChangeDetail = {
+  id: string;
+  drawingCode: string;         // e.g. "A-101"
+  summary: string;             // one-liner
+  description: string[];       // bullets
+  action: ChangeAction;
+  categories: Category[];
+  thumbnails?: { baseline: string; revised: string; overlay: string };
+  detailCount: number;
+};
+
+export type ComparisonResult = {
+  id: string;
+  drawingNumber?: string;      // e.g. "Page-9"
+  autoDetectedDrawingNumber: boolean;
+  kpis: { added: number; modified: number; removed: number };
+  byCategory: Record<Category, number>;
+  changes: ChangeDetail[];
+};
+
+export type RecentItem = {
+  id: string;
+  date: string;                 // ISO
+  drawingNumber?: string;
+  baselineName: string;
+  revisedName: string;
+  changesCount: number;
+};
+
+State Management
+
+features/comparison/state/useComparisonStore.ts
+
+Holds input: ComparisonInput | null, result: ComparisonResult | null, viewMode: "side-by-side" | "overlay" | "baseline" | "revised", zoom: number, selectedChangeId: string | null, loading: boolean, error?: string.
+
+Actions: setInput, compare(), setViewMode, setZoom, selectChange, reset.
+
+features/recent/state/useRecentStore.ts
+
+Stores items: RecentItem[], query: string, filter, remove(id), load().
+
+Services
+
+comparisonService.ts
+
+compare(input: ComparisonInput): Promise<ComparisonResult>
+For now use fixtures under mocks/fixtures.ts. Simulate processing latency with a short timeout. Provide both success and error paths.
+
+reportService.ts
+
+exportPdf(result: ComparisonResult, input: ComparisonInput): Promise<Blob>.
+
+recentService.ts
+
+CRUD around RecentItem[] using localStorage for demo.
+
+PdfService.ts
+
+Wrapper over PDF.js. Public API:
+
+load(file: FileRef): Promise<PdfDocumentHandle>
+
+renderPage(container: HTMLElement, page: number, scale: number): Promise<void>
+
+dispose(handle): void
+
+All services should be written against interfaces to allow replacement with real APIs later.
+
+Components and Behaviors
+
+UploadDropzone
+
+Drag and drop with click to browse.
+
+Validate type and size via uploads/services/validation.ts.
+
+Show file name and remove button when selected.
+
+Stepper
+
+Four steps with numbers and labels. Step active state reflects progress.
+
+RecentComparisonsTable
+
+Search input filters by drawing number.
+
+“View” navigates to /compare/:id.
+
+Trash removes entry with a confirm dialog.
+
+ComparisonToolbar
+
+Buttons: Hide Comparison, Export Report, Debug Info.
+
+Search input “Search drawing numl”.
+
+Zoom controls 50% to 300%.
+
+ViewModeToggle pills: Side by Side, Overlay, Baseline Only, Revised Only.
+
+Viewers
+
+PdfViewer renders PDFs with zoom and pan.
+
+ImageViewer renders images with the same zoom API so the container does not care about the media type.
+
+Overlay mode stacks baseline and revised canvases with an opacity slider.
+
+Summary Section
+
+KPI tiles with counts. Use green for Added, blue for Modified, red for Removed.
+
+Category list with right-aligned counts.
+
+ChangesList on the left with selection state.
+
+ChangeDetailsPanel on the right shows summary, bullet items, and three thumbnails.
+
+AskPanel
+
+Buttons for Cost Impact and Schedule Impact.
+
+Disabled in demo. Wire to a simple mock that returns a canned response so the UI is complete.
+
+Empty States and Errors
+
+Nice empty state on first load.
+
+Toasts for errors and success.
+
+Accessibility
+
+Keyboard navigation for all interactive controls.
+
+Labels on inputs and buttons with aria- attributes.
+
+Sufficient color contrast. Focus rings visible.
+
+Styling
+
+Tailwind with a small token file styles/tokens.css:
+
+--radius-xl: 1rem;
+
+--shadow-soft: 0 8px 24px rgba(0,0,0,0.08);
+
+Font sizes for headings and body.
+
+Cards and buttons use 2xl rounded corners and soft shadows.
+
+Respect responsive design for 1280px and smaller.
+
+Testing
+
+Vitest unit tests for:
+
+Validation service.
+
+comparisonService mock flow.
+
+Zustand stores reducers.
+
+React Testing Library for:
+
+Upload flow renders Compare button enabled after two files.
+
+Recent table search filters rows.
+
+Playwright e2e:
+
+Upload two fixtures, click Compare, wait for results, change view modes, export report.
+
+Build and Run
+Replit
+
+Add .replit:
+
+run = "npm run dev"
+
+
+Add replit.nix if needed with Node 20 and Playwright dependencies.
+
+Local (Cursor)
+
+Scripts in package.json:
+
+dev, build, preview, test, test:e2e, lint, format, typecheck, generate:ui (for shadcn).
+
+Document both flows in README.md.
+
+Professional Dev Behavior
+
+Maintain CHANGELOG.md with Keep a Changelog format.
+
+Use Conventional Commits.
+
+Add docs/DECISIONS.md for ADRs.
+
+When any requirement is ambiguous, write the question into docs/QUESTIONS.md and block that part with a TODO(clarify) comment that references the question number.
+
+Keep components small. Avoid prop drilling by using feature stores and context providers at boundaries.
+
+No magic constants. Use enums and config objects.
+
+Fixtures
+
+Create realistic fixtures in features/comparison/mocks/fixtures.ts that match the screenshots:
+
+Example result with drawingNumber: "Page-9", autoDetectedDrawingNumber: true, kpis: { added: 21, modified: 6, removed: 0 }, byCategory fills numbers for MEP 8, Drywall 4, Electrical 5, Architectural 3, Structural 6, Concrete 3, Site Work 2.
+
+Populate changes with entries like:
+
+A-101: Removed future studio; updated keynotes and building area summary.
+
+Each has detailCount and a description array with the exact bullets visible in the screenshot.
+
+Acceptance Criteria
+
+Visual layout matches screenshots for spacing, typography, and component hierarchy.
+
+Uploading two files enables Compare.
+
+Clicking Compare shows a processing spinner then navigates to /compare/:id with mocked data.
+
+Side by Side and Overlay modes function with zoom controls.
+
+Summary section shows KPI tiles and category counts that match the fixture.
+
+Changes list selects a row and displays details on the right.
+
+Recent comparisons table supports search and delete. Clicking View opens the proper result.
+
+Export Report downloads a PDF with header, KPIs, categories, and the selected change detail.
+
+Code passes npm run lint, npm run typecheck, and tests.
+
+Deliverables
+
+Complete Vite React + TS app with structure above.
+
+README.md with:
+
+Install, run, test, build, and deploy steps for Replit and local.
+
+How to add new routes, components, services.
+
+CHANGELOG.md with an initial release entry.
+
+docs/ARCHITECTURE.md explaining boundaries and extension points.
+
+At least 5 meaningful unit tests and 1 Playwright e2e.
+
+Clarifications to request before deviating
+
+If you cannot meet the exact UI from the screenshots using shadcn and Tailwind, ask which elements can be relaxed.
+
+If DWG or DXF rendering is not feasible for MVP, treat them as upload-only with PDF rendering, but keep the file type validation and proper extension hooks.
+
+Confirm whether the “Debug Info” button should expose raw JSON for the current result.
+
+Now, generate the project scaffold and first working implementation that satisfies all criteria above. Use clean, modular code and explain key design choices in docs/ARCHITECTURE.md. When anything is uncertain, write it into docs/QUESTIONS.md and pause that part with a clear TODO reference.

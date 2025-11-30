@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildTrace AI - Comparison Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=5">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="logo">BuildTrace AI</h1>
+            <p class="tagline">Comparison Results</p>
+            <button class="new-comparison-btn" onclick="window.location.href='/'">
+                New Comparison
+            </button>
+        </header>
+
+        <!-- Results Overview -->
+        <div class="results-overview">
+            <div class="result-stats">
+                <div class="stat">
+                    <span class="stat-number">{{ results.get('summary', {}).get('overlays_created', 0) }}</span>
+                    <span class="stat-label">Overlays Created</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">{{ results.get('summary', {}).get('analyses_completed', 0) }}</span>
+                    <span class="stat-label">AI Analyses</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">{{ "%.1f"|format(results.get('summary', {}).get('total_time', 0)) }}s</span>
+                    <span class="stat-label">Processing Time</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="added-drawings-count">{{ results.get('summary', {}).get('added_drawings', 0) }}</span>
+                    <span class="stat-label">Added Drawings</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="modified-drawings-count">{{ results.get('summary', {}).get('overlays_created', 0) }}</span>
+                    <span class="stat-label">Modified Drawings</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drawing Comparison Viewer -->
+        <div class="comparison-viewer">
+            <div class="viewer-header">
+                <h3>Drawing Comparison</h3>
+                <div class="viewer-controls">
+                    <select id="drawing-selector" class="drawing-select">
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                    <div class="view-mode-toggle">
+                        <button class="view-btn active" data-view="overlay">Overlay</button>
+                        <button class="view-btn" data-view="side-by-side">Side by Side</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="viewer-content" id="viewer-content">
+                <!-- Overlay View (default) -->
+                <div class="view-mode active" id="overlay-view">
+                    <div class="image-container" id="overlay-container">
+                        <div class="image-wrapper" id="overlay-wrapper">
+                            <img id="overlay-image" src="" alt="Overlay comparison" style="display: none;">
+                        </div>
+                        <div class="no-image-placeholder" style="display: none;">
+                            <div class="placeholder-icon">🖼️</div>
+                            <p>Loading overlay comparison...</p>
+                        </div>
+                        <div class="zoom-hint">Scroll or pinch to zoom • Drag to pan</div>
+                    </div>
+                </div>
+
+                <!-- Side by Side View -->
+                <div class="view-mode" id="side-by-side-view">
+                    <div class="comparison-grid">
+                        <div class="comparison-panel">
+                            <h4>Old Drawing</h4>
+                            <div class="image-container" id="old-container">
+                                <div class="image-wrapper" id="old-wrapper">
+                                    <img id="old-image" src="" alt="Old drawing">
+                                </div>
+                                <div class="zoom-hint">Scroll or pinch to zoom • Drag to pan</div>
+                            </div>
+                        </div>
+                        <div class="comparison-panel">
+                            <h4>New Drawing</h4>
+                            <div class="image-container" id="new-container">
+                                <div class="image-wrapper" id="new-wrapper">
+                                    <img id="new-image" src="" alt="New drawing">
+                                </div>
+                                <div class="zoom-hint">Scroll or pinch to zoom • Drag to pan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="viewer-footer">
+                <div class="zoom-controls">
+                    <button id="zoom-in" class="zoom-btn">➕</button>
+                    <span id="zoom-level">100%</span>
+                    <button id="zoom-out" class="zoom-btn">➖</button>
+                    <button id="zoom-reset" class="zoom-btn">Reset</button>
+                </div>
+                <div class="image-info">
+                    <span id="current-drawing-name"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Results Layout -->
+        <div class="results-layout">
+            <!-- Changes List Panel -->
+            <div class="changes-panel">
+                <h3>Detected Changes</h3>
+                <div class="changes-list" id="changes-list">
+                    <!-- Changes will be loaded via JavaScript -->
+                </div>
+            </div>
+
+            <!-- Details Panel -->
+            <div class="details-panel">
+                <div class="panel-tabs">
+                    <button class="tab-btn active" data-tab="details">Details</button>
+                </div>
+
+                <!-- Details Tab -->
+                <div class="tab-content active" id="details-tab">
+                    <div class="details-header">
+                        <h3 id="details-title">Select a change to view details</h3>
+                    </div>
+                    <div class="details-content" id="details-content">
+                        <div class="placeholder">
+                            <div class="placeholder-icon">📋</div>
+                            <p>Select a change from the list to view detailed analysis, recommendations, and related drawings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Assistant Section -->
+        <div class="ai-assistant-section">
+            <div class="ai-assistant-header">
+                <h3>🤖 BuildTrace AI Assistant</h3>
+                <p>Ask questions about costs, scheduling, permits, and construction planning</p>
+            </div>
+
+            <div class="ai-assistant-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="assistant-message">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>Hello! I'm your BuildTrace AI Assistant. I can help you with:</p>
+                            <ul>
+                                <li>Cost estimation for your detected changes</li>
+                                <li>Project scheduling and timeline planning</li>
+                                <li>Permit and regulatory requirements</li>
+                                <li>Material specifications and procurement</li>
+                                <li>Construction best practices and safety</li>
+                            </ul>
+                            <p>What would you like to know about your project?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="suggested-questions" id="suggested-questions">
+                    <!-- Suggested questions will be loaded here -->
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="chat-input-wrapper">
+                        <input type="text" id="chat-input" placeholder="Ask about costs, timeline, permits, materials..." />
+                        <button id="send-chat" disabled>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22,2 15,22 11,13 2,9"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        window.sessionId = '{{ session_id }}';
+        window.processingStatus = '{{ results.get("status", "unknown") }}';
+    </script>
+
+    <!-- Use original results.js (more reliable) -->
+    <script src="{{ url_for('static', filename='js/results-original.js') }}?v=4"></script>
+</body>
+</html>

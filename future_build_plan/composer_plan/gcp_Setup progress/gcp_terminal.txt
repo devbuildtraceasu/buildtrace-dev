@@ -1,0 +1,1793 @@
+./scripts/quick-start/enable-apis.sh
+==========================================
+Enabling GCP APIs for BuildTrace
+Project: buildtrace-dev
+==========================================
+WARNING: Your active project does not match the quota project in your local Application Default Credentials file. This might result in unexpected quota issues.
+
+To update your Application Default Credentials quota project, use the `gcloud auth application-default set-quota-project` command.
+INFORMATION: Project 'buildtrace-dev' has no 'environment' tag set. Use either 'Production', 'Development', 'Test', or 'Staging'. Add an 'environment' tag using `gcloud resource-manager tags bindings create`.
+Updated property [core/project].
+Enabling core services...
+Operation "operations/acf.p2-136394139608-50b6874a-209b-4f96-a55a-faaeb6c2a713" finished successfully.
+Enabling messaging services...
+Operation "operations/acf.p2-136394139608-520442f0-a085-4ac0-9c08-03af4a2b580f" finished successfully.
+Enabling storage and database services...
+Operation "operations/acat.p2-136394139608-f1b3b64a-d3de-49f3-ac0f-80cdb12ba328" finished successfully.
+Enabling monitoring and logging...
+Operation "operations/acat.p2-136394139608-c767a1df-96c9-4fbe-b49d-a7fcfe9f29b8" finished successfully.
+Enabling networking services...
+Operation "operations/acat.p2-136394139608-a36f0b34-0b00-4e4f-992d-65fab3a2f72d" finished successfully.
+Enabling security services...
+Operation "operations/acat.p2-136394139608-8494b252-f3bf-4fa4-b30f-e14b0a7a412e" finished successfully.
+
+==========================================
+Verifying enabled APIs...
+==========================================
+NAME                                                    STATE
+projects/136394139608/services/pubsub.googleapis.com    ENABLED
+projects/136394139608/services/run.googleapis.com       ENABLED
+projects/136394139608/services/sqladmin.googleapis.com  ENABLED
+
+✅ API enablement complete!
+
+Note: Some APIs may take 1-2 minutes to fully activate.
+If you encounter errors, wait a moment and retry.
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % gcloud services list --enabled --format="table(name,state)" | grep -E "(run|container|cloudbuild|artifact|pubsub|storage|sql|bigquery|logging|monitoring|error|compute|resource|secret|iam)"
+projects/136394139608/services/artifactregistry.googleapis.com      ENABLED
+projects/136394139608/services/bigquery.googleapis.com              ENABLED
+projects/136394139608/services/bigqueryconnection.googleapis.com    ENABLED
+projects/136394139608/services/bigquerydatapolicy.googleapis.com    ENABLED
+projects/136394139608/services/bigquerydatatransfer.googleapis.com  ENABLED
+projects/136394139608/services/bigquerymigration.googleapis.com     ENABLED
+projects/136394139608/services/bigqueryreservation.googleapis.com   ENABLED
+projects/136394139608/services/bigquerystorage.googleapis.com       ENABLED
+projects/136394139608/services/cloudbuild.googleapis.com            ENABLED
+projects/136394139608/services/clouderrorreporting.googleapis.com   ENABLED
+projects/136394139608/services/cloudresourcemanager.googleapis.com  ENABLED
+projects/136394139608/services/compute.googleapis.com               ENABLED
+projects/136394139608/services/container.googleapis.com             ENABLED
+projects/136394139608/services/containerfilesystem.googleapis.com   ENABLED
+projects/136394139608/services/containerregistry.googleapis.com     ENABLED
+projects/136394139608/services/iam.googleapis.com                   ENABLED
+projects/136394139608/services/iamcredentials.googleapis.com        ENABLED
+projects/136394139608/services/logging.googleapis.com               ENABLED
+projects/136394139608/services/monitoring.googleapis.com            ENABLED
+projects/136394139608/services/pubsub.googleapis.com                ENABLED
+projects/136394139608/services/run.googleapis.com                   ENABLED
+projects/136394139608/services/secretmanager.googleapis.com         ENABLED
+projects/136394139608/services/sql-component.googleapis.com         ENABLED
+projects/136394139608/services/sqladmin.googleapis.com              ENABLED
+projects/136394139608/services/storage-api.googleapis.com           ENABLED
+projects/136394139608/services/storage-component.googleapis.com     ENABLED
+projects/136394139608/services/storage.googleapis.com               ENABLED
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % 
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % 
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % gcloud config set compute/region us-west2
+Updated property [compute/region].
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % export REGION="us-west2"
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % export REGION="us-west2-a"
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % export REGION="us-west2"  
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % export ZONE="us-west2-a"
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./scripts/quick-start/create-storage.sh
+==========================================
+Creating Cloud Storage Buckets
+Project: buildtrace-dev
+Region: us-west2
+==========================================
+WARNING: Your active project does not match the quota project in your local Application Default Credentials file. This might result in unexpected quota issues.
+
+To update your Application Default Credentials quota project, use the `gcloud auth application-default set-quota-project` command.
+INFORMATION: Project 'buildtrace-dev' has no 'environment' tag set. Use either 'Production', 'Development', 'Test', or 'Staging'. Add an 'environment' tag using `gcloud resource-manager tags bindings create`.
+Updated property [core/project].
+Creating input bucket...
+Creating gs://buildtrace-dev-input-buildtrace-dev/...
+Creating processed bucket...
+Creating gs://buildtrace-dev-processed-buildtrace-dev/...
+Creating artifacts bucket...
+Creating gs://buildtrace-dev-artifacts-buildtrace-dev/...
+Creating logs bucket...
+Creating gs://buildtrace-dev-logs-buildtrace-dev/...
+
+Creating folder structure...
+  Input bucket folders...
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-input-buildtrace-dev/raw/" is not valid.
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-input-buildtrace-dev/uploaded/" is not valid.
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-input-buildtrace-dev/failed/" is not valid.
+  Processed bucket folders...
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-processed-buildtrace-dev/ocr/" is not valid.
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-processed-buildtrace-dev/diffs/" is not valid.
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-processed-buildtrace-dev/rasterized/" is not valid.
+  Artifacts bucket folders...
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-artifacts-buildtrace-dev/overlays/" is not valid.
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-artifacts-buildtrace-dev/overlays/machine/" is not valid.
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-artifacts-buildtrace-dev/overlays/manual/" is not valid.
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-artifacts-buildtrace-dev/summaries/" is not valid.
+CommandException: The mb command requires a URL that specifies a bucket.
+"gs://buildtrace-dev-artifacts-buildtrace-dev/exports/" is not valid.
+
+Removing public access...
+No changes made to gs://buildtrace-dev-input-buildtrace-dev/
+No changes made to gs://buildtrace-dev-processed-buildtrace-dev/
+No changes made to gs://buildtrace-dev-artifacts-buildtrace-dev/
+
+Creating lifecycle policies...
+Setting lifecycle configuration on gs://buildtrace-dev-input-buildtrace-dev/...
+Setting lifecycle configuration on gs://buildtrace-dev-processed-buildtrace-dev/...
+
+✅ Storage buckets created successfully!
+
+Buckets created:
+  - gs://buildtrace-dev-input-buildtrace-dev
+  - gs://buildtrace-dev-processed-buildtrace-dev
+  - gs://buildtrace-dev-artifacts-buildtrace-dev
+  - gs://buildtrace-dev-logs-buildtrace-dev
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./scripts/quick-start/create-pubsub.sh
+==========================================
+Creating Pub/Sub Topics and Subscriptions
+Project: buildtrace-dev
+==========================================
+WARNING: Your active project does not match the quota project in your local Application Default Credentials file. This might result in unexpected quota issues.
+
+To update your Application Default Credentials quota project, use the `gcloud auth application-default set-quota-project` command.
+INFORMATION: Project 'buildtrace-dev' has no 'environment' tag set. Use either 'Production', 'Development', 'Test', or 'Staging'. Add an 'environment' tag using `gcloud resource-manager tags bindings create`.
+Updated property [core/project].
+Creating main topics...
+Created topic [projects/buildtrace-dev/topics/buildtrace-dev-ocr-queue].
+Created topic [projects/buildtrace-dev/topics/buildtrace-dev-diff-queue].
+Created topic [projects/buildtrace-dev/topics/buildtrace-dev-summary-queue].
+Created topic [projects/buildtrace-dev/topics/buildtrace-dev-orchestrator-queue].
+Creating dead-letter topics...
+Created topic [projects/buildtrace-dev/topics/buildtrace-dev-ocr-dlq].
+Created topic [projects/buildtrace-dev/topics/buildtrace-dev-diff-dlq].
+Created topic [projects/buildtrace-dev/topics/buildtrace-dev-summary-dlq].
+
+Creating worker subscriptions...
+Created subscription [projects/buildtrace-dev/subscriptions/buildtrace-dev-ocr-worker-sub].
+Created subscription [projects/buildtrace-dev/subscriptions/buildtrace-dev-diff-worker-sub].
+Created subscription [projects/buildtrace-dev/subscriptions/buildtrace-dev-summary-worker-sub].
+
+Creating dead-letter subscriptions...
+Created subscription [projects/buildtrace-dev/subscriptions/buildtrace-dev-ocr-dlq-sub].
+Created subscription [projects/buildtrace-dev/subscriptions/buildtrace-dev-diff-dlq-sub].
+Created subscription [projects/buildtrace-dev/subscriptions/buildtrace-dev-summary-dlq-sub].
+
+✅ Pub/Sub topics and subscriptions created!
+
+Topics created:
+  - buildtrace-dev-ocr-queue
+  - buildtrace-dev-diff-queue
+  - buildtrace-dev-summary-queue
+  - buildtrace-dev-orchestrator-queue
+
+Subscriptions created:
+  - buildtrace-dev-ocr-worker-sub
+  - buildtrace-dev-diff-worker-sub
+  - buildtrace-dev-summary-worker-sub
+
+Note: Subscriptions are currently pull-based.
+Update to push subscriptions after deploying workers.
+
+
+
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial %  ./scripts/quick-start/create-service-accounts.sh
+
+
+
+
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAe5LJM=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAfQSC4=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAfoXmk=
+version: 1
+
+Granting IAM roles to Cloud Build service account...
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAgA1TE=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAga43U=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAgyM-M=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/container.developer
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAhKQpE=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/container.developer
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountUser
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAhiSAQ=
+version: 1
+
+Granting IAM roles to GKE workload service account...
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/container.developer
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountUser
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAh8cmE=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/container.developer
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountUser
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAiS09A=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/container.developer
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountUser
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAiqNy4=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/container.developer
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountUser
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAjDvmk=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/container.developer
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountUser
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAjcaDk=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/container.developer
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountUser
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAj1Zo0=
+version: 1
+Updated IAM policy for project [buildtrace-dev].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudbuild.builds.editor
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/cloudsql.client
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-cloudtasks.iam.gserviceaccount.com
+  role: roles/cloudtasks.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/container.developer
+- members:
+  - serviceAccount:service-136394139608@container-engine-robot.iam.gserviceaccount.com
+  role: roles/container.serviceAgent
+- members:
+  - serviceAccount:service-136394139608@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - serviceAccount:136394139608@cloudservices.gserviceaccount.com
+  role: roles/editor
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountUser
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/logging.logWriter
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/monitoring.metricWriter
+- members:
+  - user:dev@buildtraceai.com
+  role: roles/owner
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.publisher
+- members:
+  - serviceAccount:service-136394139608@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/pubsub.subscriber
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/run.invoker
+- members:
+  - serviceAccount:service-136394139608@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/storage.objectAdmin
+etag: BwZECAkLh6c=
+version: 1
+
+✅ Service accounts created and roles granted!
+
+Service accounts:
+  - buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  - buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  - buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+
+Note: Generate service account keys for local development if needed:
+  gcloud iam service-accounts keys create buildtrace-key.json \
+    --iam-account=buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % 
+
+
+
+
+
+
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./scripts/quick-start/create-artifact-registry.sh
+==========================================
+Creating Artifact Registry Repositories
+Project: buildtrace-dev
+Region: us-west2
+==========================================
+WARNING: Your active project does not match the quota project in your local Application Default Credentials file. This might result in unexpected quota issues.
+
+To update your Application Default Credentials quota project, use the `gcloud auth application-default set-quota-project` command.
+INFORMATION: Project 'buildtrace-dev' has no 'environment' tag set. Use either 'Production', 'Development', 'Test', or 'Staging'. Add an 'environment' tag using `gcloud resource-manager tags bindings create`.
+Updated property [core/project].
+Creating main Docker repository...
+Create request issued for: [buildtrace-repo]
+Waiting for operation [projects/buildtrace-dev/locations/us-west2/operations/13a370e8-fd3b-4e3c-b9a7-a22153621091]
+ to complete...done.                                                                                              
+Created repository [buildtrace-repo].
+Creating base images repository...
+Create request issued for: [buildtrace-base-images]
+Waiting for operation [projects/buildtrace-dev/locations/us-west2/operations/7207ff33-918a-4d6f-9f36-b8f588ece352]
+ to complete...done.                                                                                              
+Created repository [buildtrace-base-images].
+
+Configuring Docker authentication...
+WARNING: Your config file at [/Users/ashishrajshekhar/.docker/config.json] contains these credential helper entries:
+
+{
+  "credHelpers": {
+    "us-west2-docker.pkg.dev": "gcloud"
+  }
+}
+Adding credentials for: us-west2-docker.pkg.dev
+gcloud credential helpers already registered correctly.
+
+Granting Cloud Build permissions...
+Updated IAM policy for repository [buildtrace-repo].
+bindings:
+- members:
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+etag: BwZECBizKLQ=
+version: 1
+Updated IAM policy for repository [buildtrace-repo].
+bindings:
+- members:
+  - serviceAccount:136394139608@cloudbuild.gserviceaccount.com
+  - serviceAccount:buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/artifactregistry.writer
+etag: BwZECBjHBsY=
+version: 1
+
+✅ Artifact Registry repositories created!
+
+Repositories:
+  - us-west2-docker.pkg.dev/buildtrace-dev/buildtrace-repo
+  - us-west2-docker.pkg.dev/buildtrace-dev/buildtrace-base-images
+
+Docker authentication configured.
+You can now push images using:
+  docker push us-west2-docker.pkg.dev/buildtrace-dev/buildtrace-repo/image-name:tag
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % 
+
+
+
+
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./scripts/quick-start/create-secrets.sh
+==========================================
+Creating Secrets in Secret Manager
+Project: buildtrace-dev
+==========================================
+
+⚠️  WARNING: This script creates secrets with placeholder values.
+You MUST update them with real values after creation!
+
+Continue? (y/n) Y
+WARNING: Your active project does not match the quota project in your local Application Default Credentials file. This might result in unexpected quota issues.
+
+To update your Application Default Credentials quota project, use the `gcloud auth application-default set-quota-project` command.
+INFORMATION: Project 'buildtrace-dev' has no 'environment' tag set. Use either 'Production', 'Development', 'Test', or 'Staging'. Add an 'environment' tag using `gcloud resource-manager tags bindings create`.
+Updated property [core/project].
+Creating secrets...
+Created version [1] of the secret [db-root-password].
+Created version [1] of the secret [db-user-password].
+Created version [1] of the secret [openai-api-key].
+Created version [1] of the secret [auth-provider-secret].
+Created version [1] of the secret [jwt-signing-key].
+
+Granting service account access to secrets...
+Updated IAM policy for secret [db-user-password].
+bindings:
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+etag: BwZECDSC4ZY=
+version: 1
+Updated IAM policy for secret [db-user-password].
+bindings:
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+etag: BwZECDSZyHM=
+version: 1
+Updated IAM policy for secret [openai-api-key].
+bindings:
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+etag: BwZECDSthik=
+version: 1
+Updated IAM policy for secret [openai-api-key].
+bindings:
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+etag: BwZECDS_1Aw=
+version: 1
+Updated IAM policy for secret [auth-provider-secret].
+bindings:
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+etag: BwZECDTSWK0=
+version: 1
+Updated IAM policy for secret [auth-provider-secret].
+bindings:
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+etag: BwZECDTnhOY=
+version: 1
+Updated IAM policy for secret [jwt-signing-key].
+bindings:
+- members:
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+etag: BwZECDT70R0=
+version: 1
+Updated IAM policy for secret [jwt-signing-key].
+bindings:
+- members:
+  - serviceAccount:buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+  - serviceAccount:buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  role: roles/secretmanager.secretAccessor
+etag: BwZECDUPU4A=
+version: 1
+
+✅ Secrets created!
+
+⚠️  IMPORTANT: Update these secrets with real values:
+  - openai-api-key: Set your OpenAI API key
+  - auth-provider-secret: Set your auth provider secret
+
+To update a secret:
+  echo -n 'YOUR_VALUE' | gcloud secrets versions add SECRET_NAME --data-file=-
+
+Generated passwords saved to secrets:
+  - db-root-password: Generated (update after Cloud SQL creation)
+  - db-user-password: Generated (update after Cloud SQL creation)
+  - jwt-signing-key: Generated
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % 
+
+
+
+Now on cloud console:
+
+CLoud sql:
+
+Postgresql.
+buildtrace-dev-db
+buildtrace db passord: Db54321buildtrace!
+us-west2
+root user is : postgres 
+""""""
+1. Root/Admin user (created with instance)
+User: postgres (default root user)
+Password: The one you set when creating the Cloud SQL instance
+Purpose: Admin access (for setup, migrations, maintenance)
+Used for: Creating databases, managing users, admin tasks
+Secret: db-root-password
+""""""
+
+
+
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % gcloud sql databases create buildtrace_db --instance=buildtrace-dev-db
+Creating Cloud SQL database...done.                                                       
+Created database [buildtrace_db].
+instance: buildtrace-dev-db
+name: buildtrace_db
+project: buildtrace-dev
+
+gcloud sql users create buildtrace_user --instance=buildtrace-dev-db --password=user98765tracebuild!  
+Creating Cloud SQL user...done.                                                                       
+Created user [buildtrace_user].
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % echo -n 'Db54321buildtrace!' | gcloud secrets versions add db-root-password --data-file=-
+Created version [2] of the secret [db-root-password].
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % echo -n 'user98765tracebuild!' | gcloud secrets versions add db-user-password --data-file=-
+Created version [2] of the secret [db-user-password].
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % 
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % export PROJECT_ID=$(gcloud config get-value project)
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % export REGION="us-west2"
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % cloud_sql_proxy -instances=$PROJECT_ID:$REGION:buildtrace-dev-db=tcp:5432
+zsh: command not found: cloud_sql_proxy
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % cloud_sql_proxy -instances=$PROJECT_ID:$REGION:buildtrace-dev-db=tcp:5432
+zsh: command not found: cloud_sql_proxy
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % wget https://dl.google.com/cloudsql/cloud_sql_proxy.darwin.amd64 -O cloud_sql_proxy
+
+--2025-11-20 09:02:54--  https://dl.google.com/cloudsql/cloud_sql_proxy.darwin.amd64
+Resolving dl.google.com (dl.google.com)... 142.251.181.190, 142.251.181.136, 142.251.181.93, ...
+Connecting to dl.google.com (dl.google.com)|142.251.181.190|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25007632 (24M) [application/octet-stream]
+Saving to: ‘cloud_sql_proxy’
+
+cloud_sql_proxy        100%[===========================>]  23.85M  12.2MB/s    in 2.0s    
+
+2025-11-20 09:02:57 (12.2 MB/s) - ‘cloud_sql_proxy’ saved [25007632/25007632]
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % chmod +x cloud_sql_proxy
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % 
+
+
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./cloud_sql_proxy -instances=$PROJECT_ID:$REGION:buildtrace-dev-db=tcp:5432
+
+2025/11/20 09:08:32 This is the Cloud SQL Proxy v1. It is no longer receiving active feature development. For the latest features and improvements, migrate to the v2 version of the Cloud SQL Proxy. For details, see: https://github.com/GoogleCloudPlatform/cloud-sql-proxy/blob/main/migration-guide.md
+2025/11/20 09:08:32 current FDs rlimit set to 61440, wanted limit is 8500. Nothing to do here.
+2025/11/20 09:08:34 Listening on 127.0.0.1:5432 for buildtrace-dev:us-west2:buildtrace-dev-db
+2025/11/20 09:08:34 Ready for new connections
+2025/11/20 09:08:34 Generated RSA key in 64.205833ms
+
+for simpler password :
+# Reset password (no special chars)
+gcloud sql users set-password buildtrace_user \
+  --instance=buildtrace-dev-db \
+  --password='user98765tracebuild'
+
+# Then update your env var
+export DB_PASSWORD='user98765tracebuild'
+
+
+
+(venv) ashishrajshekhar@Ashishs-MacBook-Pro migrations % python3 run_migration.py
+Warning: Could not import config. Using environment variables.
+============================================================
+BuildTrace Database Migration Runner
+============================================================
+
+Found 5 migration file(s):
+  - 001_create_job_tables.sql
+  - 002_enhance_drawing_versions.sql
+  - 003_migrate_existing_data.sql
+  - 004_create_indexes.sql
+  - 005_add_foreign_keys.sql
+
+⚠️  WARNING: This will modify your database!
+Make sure you have:
+  1. Backed up your database
+  2. Tested on development/staging first
+  3. Reviewed all migration scripts
+
+Continue? (yes/no): yes
+
+Connecting to database...
+✅ Connected to database
+
+Running migrations...
+------------------------------------------------------------
+Running 001_create_job_tables.sql...
+  ✅ Successfully ran 001_create_job_tables.sql
+Running 002_enhance_drawing_versions.sql...
+  ✅ Successfully ran 002_enhance_drawing_versions.sql
+Running 003_migrate_existing_data.sql...
+  ✅ Successfully ran 003_migrate_existing_data.sql
+Running 004_create_indexes.sql...
+  ✅ Successfully ran 004_create_indexes.sql
+Running 005_add_foreign_keys.sql...
+  ✅ Successfully ran 005_add_foreign_keys.sql
+
+============================================================
+Migration Summary
+============================================================
+✅ 001_create_job_tables.sql
+✅ 002_enhance_drawing_versions.sql
+✅ 003_migrate_existing_data.sql
+✅ 004_create_indexes.sql
+✅ 005_add_foreign_keys.sql
+
+Successful: 5
+Failed: 0
+
+✅ All migrations completed successfully!
+(venv) ashishrajshekhar@Ashishs-MacBook-Pro migrations % 
+
+
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./scripts/verification/verify-setup.sh
+==========================================
+BuildTrace Infrastructure Verification
+Project: buildtrace-dev
+Region: us-west2
+==========================================
+
+Checking APIs...
+----------------
+✅ API enabled: run.googleapis.com
+✅ API enabled: container.googleapis.com
+✅ API enabled: cloudbuild.googleapis.com
+✅ API enabled: artifactregistry.googleapis.com
+✅ API enabled: pubsub.googleapis.com
+✅ API enabled: storage-component.googleapis.com
+✅ API enabled: sqladmin.googleapis.com
+✅ API enabled: logging.googleapis.com
+✅ API enabled: monitoring.googleapis.com
+✅ API enabled: secretmanager.googleapis.com
+
+Checking Storage Buckets...
+---------------------------
+✅ Bucket exists: buildtrace-dev-input-buildtrace-dev
+✅ Bucket exists: buildtrace-dev-processed-buildtrace-dev
+✅ Bucket exists: buildtrace-dev-artifacts-buildtrace-dev
+
+Checking Pub/Sub Topics...
+--------------------------
+✅ Topic exists: buildtrace-dev-ocr-queue
+✅ Topic exists: buildtrace-dev-diff-queue
+✅ Topic exists: buildtrace-dev-summary-queue
+✅ Topic exists: buildtrace-dev-orchestrator-queue
+✅ Topic exists: buildtrace-dev-ocr-dlq
+✅ Topic exists: buildtrace-dev-diff-dlq
+✅ Topic exists: buildtrace-dev-summary-dlq
+
+Checking Pub/Sub Subscriptions...
+----------------------------------
+✅ Subscription exists: buildtrace-dev-ocr-worker-sub
+✅ Subscription exists: buildtrace-dev-diff-worker-sub
+✅ Subscription exists: buildtrace-dev-summary-worker-sub
+✅ Subscription exists: buildtrace-dev-ocr-dlq-sub
+✅ Subscription exists: buildtrace-dev-diff-dlq-sub
+✅ Subscription exists: buildtrace-dev-summary-dlq-sub
+
+Checking Service Accounts...
+----------------------------
+✅ Service account exists: buildtrace-service-account
+✅ Service account exists: buildtrace-cloudbuild
+✅ Service account exists: buildtrace-gke-workload
+
+Checking Artifact Registry...
+-----------------------------
+✅ Repository exists: buildtrace-repo
+✅ Repository exists: buildtrace-base-images
+
+Checking Secrets...
+-------------------
+✅ Secret exists: db-root-password
+✅ Secret exists: db-user-password
+✅ Secret exists: openai-api-key
+✅ Secret exists: auth-provider-secret
+✅ Secret exists: jwt-signing-key
+
+Checking Cloud SQL (optional)...
+---------------------------------
+✅ Cloud SQL instance exists: buildtrace-dev-db
+
+==========================================
+Verification Summary
+==========================================
+Passed: 37
+Failed: 0
+Warnings: 0
+
+✅ All checks passed!
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % 
+
+
+
+
+gcloud container clusters create buildtrace-dev \
+    --region us-west2 \
+    --project buildtrace-dev \
+    --machine-type e2-standard-2 \
+    --disk-type pd-standard \
+    --disk-size 50 \
+    --num-nodes 2 \
+    --enable-autoscaling --min-nodes 1 --max-nodes 4 \
+    --release-channel regular
+Note: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s).
+
+
+ gcloud container clusters create buildtrace-dev \
+    --region us-west2 \
+    --project buildtrace-dev \
+    --machine-type e2-standard-2 \
+    --disk-type pd-standard \
+    --disk-size 50 \
+    --num-nodes 2 \
+    --enable-autoscaling --min-nodes 1 --max-nodes 4 \
+    --release-channel regular
+Note: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s).
+Creating cluster buildtrace-dev in us-west2... Cluster is being health-checked (Kubernetes Control Plane is healthy)...done.                              
+Created [https://container.googleapis.com/v1/projects/buildtrace-dev/zones/us-west2/clusters/buildtrace-dev].
+To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/us-west2/buildtrace-dev?project=buildtrace-dev
+CRITICAL: ACTION REQUIRED: gke-gcloud-auth-plugin, which is needed for continued use of kubectl, was not found or is not executable. Install gke-gcloud-auth-plugin for use with kubectl by following https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl#install_plugin
+kubeconfig entry generated for buildtrace-dev.
+NAME            LOCATION  MASTER_VERSION      MASTER_IP      MACHINE_TYPE   NODE_VERSION        NUM_NODES  STATUS   STACK_TYPE
+buildtrace-dev  us-west2  1.33.5-gke.1201000  35.236.28.166  e2-standard-2  1.33.5-gke.1201000  6          RUNNING  IPV4
+
+
+ gcloud components install gke-gcloud-auth-plugin
+     export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
+
+Your current Google Cloud CLI version is: 546.0.0
+Installing components from version: 546.0.0
+
+┌────────────────────────────────────────────────────────────────┐
+│              These components will be installed.               │
+├────────────────────────────────────────────┬─────────┬─────────┤
+│                    Name                    │ Version │   Size  │
+├────────────────────────────────────────────┼─────────┼─────────┤
+│ gke-gcloud-auth-plugin (Platform Specific) │  0.5.10 │ 3.3 MiB │
+└────────────────────────────────────────────┴─────────┴─────────┘
+
+For the latest full release notes, please visit:
+  https://cloud.google.com/sdk/release_notes
+
+Once started, canceling this operation may leave your SDK installation in an inconsistent state.
+
+Do you want to continue (Y/n)?  y
+
+Performing in place update...
+
+╔════════════════════════════════════════════════════════════╗
+╠═ Downloading: gke-gcloud-auth-plugin                      ═╣
+╠════════════════════════════════════════════════════════════╣
+╠═ Downloading: gke-gcloud-auth-plugin (Platform Specific)  ═╣
+╠════════════════════════════════════════════════════════════╣
+╠═ Installing: gke-gcloud-auth-plugin                       ═╣
+╠════════════════════════════════════════════════════════════╣
+╠═ Installing: gke-gcloud-auth-plugin (Platform Specific)   ═╣
+╚════════════════════════════════════════════════════════════╝
+
+Performing post processing steps...done.                                                                                                                  
+
+Google Cloud CLI works best with Python 3.13 and certain modules.
+
+(Recommended) Python 3.13 installation detected in /opt/homebrew/bin/python3.13, install required modules (Y/n)? (Y/n)?  y
+
+Setting up virtual environment
+Updating modules...
+Modules updated.
+Virtual env enabled.
+
+Update done!
+
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % gcloud container clusters get-credentials buildtrace-dev \
+       --region us-west2 --project buildtrace-dev
+     kubectl get nodes
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for buildtrace-dev.
+NAME                                            STATUS   ROLES    AGE     VERSION
+gke-buildtrace-dev-default-pool-4f525af7-53z9   Ready    <none>   10m     v1.33.5-gke.1201000
+gke-buildtrace-dev-default-pool-4f525af7-wc2x   Ready    <none>   10m     v1.33.5-gke.1201000
+gke-buildtrace-dev-default-pool-c8bd2439-5zpg   Ready    <none>   10m     v1.33.5-gke.1201000
+gke-buildtrace-dev-default-pool-c8bd2439-vlds   Ready    <none>   9m58s   v1.33.5-gke.1201000
+gke-buildtrace-dev-default-pool-e504ade5-2k0q   Ready    <none>   9m59s   v1.33.5-gke.1201000
+gke-buildtrace-dev-default-pool-e504ade5-x9dr   Ready    <none>   9m58s   v1.33.5-gke.1201000
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % 
+
+
+   ./scripts/deploy-workers-gke.sh
+🚀 Deploying BuildTrace Workers to GKE
+========================================
+Project: buildtrace-dev
+Cluster: buildtrace-dev
+Region: us-west2
+
+📦 Step 1: Building Docker image...
+[+] Building 44.1s (12/12) FINISHED                          docker:desktop-linux
+ => [internal] load build definition from Dockerfile                         0.0s
+ => => transferring dockerfile: 478B                                         0.0s
+ => [internal] load metadata for docker.io/library/python:3.11-slim          1.1s
+ => [auth] library/python:pull token for registry-1.docker.io                0.0s
+ => [internal] load .dockerignore                                            0.0s
+ => => transferring context: 114B                                            0.0s
+ => [1/6] FROM docker.io/library/python:3.11-slim@sha256:193fdd0bbcb3d2ae61  0.0s
+ => [internal] load build context                                            0.1s
+ => => transferring context: 237.24kB                                        0.0s
+ => CACHED [2/6] WORKDIR /app                                                0.0s
+ => [3/6] COPY requirements.txt ./                                           0.0s
+ => [4/6] RUN pip install --no-cache-dir -r requirements.txt                39.7s
+ => [5/6] COPY . .                                                           0.5s 
+ => [6/6] RUN chmod +x entrypoint.py start.sh                                0.2s 
+ => exporting to image                                                       2.4s
+ => => exporting layers                                                      2.4s
+ => => writing image sha256:84aa76877ac6936125d3353c15c63864e51d01d3bf2bf11  0.0s
+ => => naming to gcr.io/buildtrace-dev/buildtrace-backend:latest             0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/hjtvbml0xbac5e1lwalu1nsj4
+
+What's next:
+    View a summary of image vulnerabilities and recommendations → docker scout quickview 
+The push refers to repository [gcr.io/buildtrace-dev/buildtrace-backend]
+b3a6e059a593: Pushed 
+0732700f8510: Pushed 
+7342e2ee85be: Pushed 
+8f48a52d3d95: Pushed 
+d2df7f1e8a30: Pushed 
+591779db3273: Layer already exists 
+7a4b2171e46d: Layer already exists 
+c24001014542: Layer already exists 
+f1b30ab99183: Layer already exists 
+latest: digest: sha256:c18761c140ba9194ee952ce50644ee2827d52c8a820fa991df083c97766334e9 size: 2205
+✅ Image pushed: gcr.io/buildtrace-dev/buildtrace-backend:latest
+
+🔧 Step 2: Setting kubectl context...
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for buildtrace-dev.
+
+📁 Step 3: Creating namespace...
+namespace/prod-app created
+
+🔐 Step 4: Creating secrets...
+secret/buildtrace-app-env created
+✅ Secrets created from .env file
+
+⚙️  Step 5: Creating ConfigMap and ServiceAccount...
+serviceaccount/buildtrace-app-sa created
+configmap/buildtrace-worker-config created
+
+🔗 Step 6: Verifying Workload Identity...
+ERROR: Policy modification failed. For a binding with condition, run "gcloud alpha iam policies lint-condition" to identify issues in condition.
+ERROR: (gcloud.iam.service-accounts.add-iam-policy-binding) INVALID_ARGUMENT: Identity Pool does not exist (buildtrace-dev.svc.id.goog). Please check that you specified a valid resource name as returned in the `name` attribute in the configuration API.
+
+🚀 Step 7: Deploying workers...
+deployment.apps/ocr-worker created
+deployment.apps/diff-worker created
+deployment.apps/summary-worker created
+
+⏳ Step 8: Waiting for deployments to be ready...
+timed out waiting for the condition on deployments/ocr-worker
+timed out waiting for the condition on deployments/diff-worker
+timed out waiting for the condition on deployments/summary-worker
+⚠️  Some deployments may still be starting...
+
+✅ Deployment complete!
+
+📊 Worker Status:
+NAME                              READY   STATUS             RESTARTS   AGE
+diff-worker-676df6bdd4-9shx4      0/1     ImagePullBackOff   0          5m
+diff-worker-676df6bdd4-sktvw      0/1     ImagePullBackOff   0          5m
+ocr-worker-5f6c78976c-98qtb       0/1     ImagePullBackOff   0          5m1s
+ocr-worker-5f6c78976c-nbz5p       0/1     ImagePullBackOff   0          5m1s
+summary-worker-859865bfd4-6d8rb   0/1     ImagePullBackOff   0          5m
+summary-worker-859865bfd4-mjgql   0/1     ImagePullBackOff   0          5m
+
+📝 View logs:
+  OCR Worker:    kubectl logs -f deployment/ocr-worker -n prod-app
+  Diff Worker:    kubectl logs -f deployment/diff-worker -n prod-app
+  Summary Worker: kubectl logs -f deployment/summary-worker -n prod-app
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % 

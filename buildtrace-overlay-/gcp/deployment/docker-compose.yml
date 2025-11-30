@@ -1,0 +1,89 @@
+version: '3.8'
+
+services:
+  # Production service (default)
+  buildtrace:
+    build: .
+    container_name: buildtrace-overlay
+    ports:
+      - "8080:8080"
+    environment:
+      - FLASK_ENV=production
+      - FLASK_APP=app.py
+    env_file:
+      - config.env
+    volumes:
+      # Mount uploads and results directories for persistence
+      - ./uploads:/app/uploads
+      - ./results:/app/results
+      - ./drawings:/app/drawings
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Development service with hot reload (default for local development)
+  buildtrace-dev:
+    build:
+      context: .
+    container_name: buildtrace-overlay-dev
+    ports:
+      - "8080:8080"
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+      - FLASK_DEBUG=1
+      - PYTHONPATH=/app
+    env_file:
+      - config.env
+    volumes:
+      # Mount ALL source code for hot reload
+      - ./app.py:/app/app.py
+      - ./chatbot_service.py:/app/chatbot_service.py
+      - ./complete_drawing_pipeline.py:/app/complete_drawing_pipeline.py
+      - ./drawing_comparison.py:/app/drawing_comparison.py
+      - ./openai_change_analyzer.py:/app/openai_change_analyzer.py
+      - ./pdf_parser.py:/app/pdf_parser.py
+      - ./pdf_to_png.py:/app/pdf_to_png.py
+      - ./align_drawings.py:/app/align_drawings.py
+      - ./estimate_affine.py:/app/estimate_affine.py
+      - ./extract_drawing.py:/app/extract_drawing.py
+      - ./image_utils.py:/app/image_utils.py
+      - ./visualization_utils.py:/app/visualization_utils.py
+      - ./templates:/app/templates
+      - ./static:/app/static
+      # Mount uploads and results directories for persistence
+      - ./uploads:/app/uploads
+      - ./results:/app/results
+      - ./drawings:/app/drawings
+    command: python -m flask run --host=0.0.0.0 --port=8080 --debug --reload
+    restart: unless-stopped
+    profiles:
+      - dev
+
+  # Quick development service (mounts entire directory - use with caution)
+  buildtrace-dev-quick:
+    build: .
+    container_name: buildtrace-overlay-dev-quick
+    ports:
+      - "8080:8080"
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+      - FLASK_DEBUG=1
+      - PYTHONPATH=/app
+    env_file:
+      - config.env
+    volumes:
+      # Mount entire project directory (excluding node_modules, .git, etc.)
+      - .:/app
+      - /app/.git
+      - /app/node_modules
+      - /app/__pycache__
+    command: python -m flask run --host=0.0.0.0 --port=8080 --debug --reload
+    restart: unless-stopped
+    profiles:
+      - quick

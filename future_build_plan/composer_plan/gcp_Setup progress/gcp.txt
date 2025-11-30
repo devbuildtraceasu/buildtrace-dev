@@ -1,0 +1,255 @@
+to enable all api's:
+ ./scripts/quick-start/enable-apis.sh
+
+to check enabled  api's:
+gcloud services list --enabled --format="table(name,state)" | grep -E "(run|container|cloudbuild|artifact|pubsub|storage|sql|bigquery|logging|monitoring|error|compute|resource|secret|iam)"
+
+to update region to us west:
+gcloud config set compute/region us-west2
+
+
+to create buckets :
+export REGION="us-west2"  
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % export ZONE="us-west2-a"
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./scripts/quick-start/create-storage.sh
+ran successfully , created buckets, skipped folders because they are objects
+so when uploading later use prefixes
+
+
+to create service accouts :
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial %  ./scripts/quick-start/create-service-accounts.sh
+
+✅ Service accounts created and roles granted!
+
+Service accounts:
+  - buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+  - buildtrace-cloudbuild@buildtrace-dev.iam.gserviceaccount.com
+  - buildtrace-gke-workload@buildtrace-dev.iam.gserviceaccount.com
+
+Note: Generate service account keys for local development if needed:
+  gcloud iam service-accounts keys create buildtrace-key.json \
+    --iam-account=buildtrace-service-account@buildtrace-dev.iam.gserviceaccount.com
+
+
+
+to create docker repository:
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./scripts/quick-start/create-artifact-registry.sh
+
+to create secrets :
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./scripts/quick-start/create-secrets.sh
+
+
+Summary
+Total secrets: 5
+Auto-generated (ready to use): 1 (jwt-signing-key)
+Auto-generated (update after Cloud SQL): 2 (db-root-password, db-user-password)
+Placeholders (must update): 2 (openai-api-key, auth-provider-secret)
+
+
+
+Now on cloud console:
+Postgresql.
+buildtrace-dev-db
+buildtrace db passord: Db54321buildtrace!
+""""""
+1. Root/Admin user (created with instance)
+User: postgres (default root user)
+Password: The one you set when creating the Cloud SQL instance
+Purpose: Admin access (for setup, migrations, maintenance)
+Used for: Creating databases, managing users, admin tasks
+Secret: db-root-password
+""""""
+
+After this now we have to 
+. Application user (you're creating now)
+User: buildtrace_user (new user you're creating)
+Password: Choose a new, different password
+Purpose: Application database access (limited permissions)
+Used for: Your application to connect and read/write data
+Secret: db-user-password
+
+Next to create database :
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % gcloud sql databases create buildtrace_db --instance=buildtrace-dev-db
+
+
+To creeate app user :
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % gcloud sql users create buildtrace_user --instance=buildtrace-dev-db --password=user98765tracebuild!
+
+to add passwords to secrets now:
+ echo -n 'Db54321buildtrace!' | gcloud secrets versions add db-root-password --data-file=-
+Created version [2] of the secret [db-root-password].
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % echo -n 'user98765tracebuild!' | gcloud secrets versions add db-user-password --data-file=-
+Created version [2] of the secret [db-user-password].
+
+
+Now we do db migration that is creating the tables ind database
+
+For secure tls  data in transit protection
+# Download Cloud SQL Proxy for macOS
+wget https://dl.google.com/cloudsql/cloud_sql_proxy.darwin.amd64 -O cloud_sql_proxy
+
+# Make it executable
+chmod +x cloud_sql_proxy
+
+# Move to a location in your PATH (so you can run it from anywhere)
+sudo mv cloud_sql_proxy /usr/local/bin/
+
+# Verify installation
+cloud_sql_proxy --version
+
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./cloud_sql_proxy -instances=$PROJECT_ID:$REGION:buildtrace-dev-db=tcp:5432
+
+2025/11/20 09:08:32 This is the Cloud SQL Proxy v1. It is no longer receiving active feature development. For the latest features and improvements, migrate to the v2 version of the Cloud SQL Proxy. For details, see: https://github.com/GoogleCloudPlatform/cloud-sql-proxy/blob/main/migration-guide.md
+2025/11/20 09:08:32 current FDs rlimit set to 61440, wanted limit is 8500. Nothing to do here.
+2025/11/20 09:08:34 Listening on 127.0.0.1:5432 for buildtrace-dev:us-west2:buildtrace-dev-db
+2025/11/20 09:08:34 Ready for new connections
+2025/11/20 09:08:34 Generated RSA key in 64.205833ms
+
+
+
+(venv) ashishrajshekhar@Ashishs-MacBook-Pro migrations % python3 run_migration.py
+Warning: Could not import config. Using environment variables.
+============================================================
+BuildTrace Database Migration Runner
+============================================================
+
+Found 5 migration file(s):
+  - 001_create_job_tables.sql
+  - 002_enhance_drawing_versions.sql
+  - 003_migrate_existing_data.sql
+  - 004_create_indexes.sql
+  - 005_add_foreign_keys.sql
+
+⚠️  WARNING: This will modify your database!
+Make sure you have:
+  1. Backed up your database
+  2. Tested on development/staging first
+  3. Reviewed all migration scripts
+
+Continue? (yes/no): yes
+
+Connecting to database...
+✅ Connected to database
+
+Running migrations...
+------------------------------------------------------------
+Running 001_create_job_tables.sql...
+  ✅ Successfully ran 001_create_job_tables.sql
+Running 002_enhance_drawing_versions.sql...
+  ✅ Successfully ran 002_enhance_drawing_versions.sql
+Running 003_migrate_existing_data.sql...
+  ✅ Successfully ran 003_migrate_existing_data.sql
+Running 004_create_indexes.sql...
+  ✅ Successfully ran 004_create_indexes.sql
+Running 005_add_foreign_keys.sql...
+  ✅ Successfully ran 005_add_foreign_keys.sql
+
+============================================================
+Migration Summary
+============================================================
+✅ 001_create_job_tables.sql
+✅ 002_enhance_drawing_versions.sql
+✅ 003_migrate_existing_data.sql
+✅ 004_create_indexes.sql
+✅ 005_add_foreign_keys.sql
+
+Successful: 5
+Failed: 0
+
+✅ All migrations completed successfully!
+(venv) ashishrajshekhar@Ashishs-MacBook-Pro migrations % 
+
+
+
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % ./scripts/verification/verify-setup.sh
+==========================================
+BuildTrace Infrastructure Verification
+Project: buildtrace-dev
+Region: us-west2
+==========================================
+
+Checking APIs...
+----------------
+✅ API enabled: run.googleapis.com
+✅ API enabled: container.googleapis.com
+✅ API enabled: cloudbuild.googleapis.com
+✅ API enabled: artifactregistry.googleapis.com
+✅ API enabled: pubsub.googleapis.com
+✅ API enabled: storage-component.googleapis.com
+✅ API enabled: sqladmin.googleapis.com
+✅ API enabled: logging.googleapis.com
+✅ API enabled: monitoring.googleapis.com
+✅ API enabled: secretmanager.googleapis.com
+
+Checking Storage Buckets...
+---------------------------
+✅ Bucket exists: buildtrace-dev-input-buildtrace-dev
+✅ Bucket exists: buildtrace-dev-processed-buildtrace-dev
+✅ Bucket exists: buildtrace-dev-artifacts-buildtrace-dev
+
+Checking Pub/Sub Topics...
+--------------------------
+✅ Topic exists: buildtrace-dev-ocr-queue
+✅ Topic exists: buildtrace-dev-diff-queue
+✅ Topic exists: buildtrace-dev-summary-queue
+✅ Topic exists: buildtrace-dev-orchestrator-queue
+✅ Topic exists: buildtrace-dev-ocr-dlq
+✅ Topic exists: buildtrace-dev-diff-dlq
+✅ Topic exists: buildtrace-dev-summary-dlq
+
+Checking Pub/Sub Subscriptions...
+----------------------------------
+✅ Subscription exists: buildtrace-dev-ocr-worker-sub
+✅ Subscription exists: buildtrace-dev-diff-worker-sub
+✅ Subscription exists: buildtrace-dev-summary-worker-sub
+✅ Subscription exists: buildtrace-dev-ocr-dlq-sub
+✅ Subscription exists: buildtrace-dev-diff-dlq-sub
+✅ Subscription exists: buildtrace-dev-summary-dlq-sub
+
+Checking Service Accounts...
+----------------------------
+✅ Service account exists: buildtrace-service-account
+✅ Service account exists: buildtrace-cloudbuild
+✅ Service account exists: buildtrace-gke-workload
+
+Checking Artifact Registry...
+-----------------------------
+✅ Repository exists: buildtrace-repo
+✅ Repository exists: buildtrace-base-images
+
+Checking Secrets...
+-------------------
+✅ Secret exists: db-root-password
+✅ Secret exists: db-user-password
+✅ Secret exists: openai-api-key
+✅ Secret exists: auth-provider-secret
+✅ Secret exists: jwt-signing-key
+
+Checking Cloud SQL (optional)...
+---------------------------------
+✅ Cloud SQL instance exists: buildtrace-dev-db
+
+==========================================
+Verification Summary
+==========================================
+Passed: 37
+Failed: 0
+Warnings: 0
+
+✅ All checks passed!
+ashishrajshekhar@Ashishs-MacBook-Pro Job_trial % 
+
+
+gcloud container clusters create buildtrace-dev \
+    --region us-west2 \
+    --project buildtrace-dev \
+    --machine-type e2-standard-2 \
+    --disk-type pd-standard \
+    --disk-size 50 \
+    --num-nodes 2 \
+    --enable-autoscaling --min-nodes 1 --max-nodes 4 \
+    --release-channel regular
+Note: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s).

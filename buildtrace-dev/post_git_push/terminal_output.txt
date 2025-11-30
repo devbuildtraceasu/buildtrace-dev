@@ -1,0 +1,269 @@
+echo -n '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' | gcloud secrets versions add openai-api-key --data-file=-
+Created version [2] of the secret [openai-api-key].
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % echo -n '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' | gcloud secrets versions add auth-provider-secret --data-file=-
+Created version [2] of the secret [auth-provider-secret].
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % export IMAGE_REGISTRY="$REGION-docker.pkg.dev/$PROJECT_ID/buildtrace-repo"
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % cd /Users/ashishrajshekhar/Desktop/Job_interview_tasks/Job_trial/buildtrace-dev/backend
+
+ashishrajshekhar@Ashishs-MacBook-Pro backend % export REGION="us-west2"
+
+ashishrajshekhar@Ashishs-MacBook-Pro backend % export PROJECT_ID="buildtrace-dev"
+
+ashishrajshekhar@Ashishs-MacBook-Pro backend % export IMAGE_REGISTRY="$REGION-docker.pkg.dev/$PROJECT_ID/buildtrace-repo"
+
+ashishrajshekhar@Ashishs-MacBook-Pro backend % export IMAGE_REGISTRY="$REGION-docker.pkg.dev/$PROJECT_ID/buildtrace-repo"
+
+ashishrajshekhar@Ashishs-MacBook-Pro backend % docker build --platform linux/amd64 -t $IMAGE_REGISTRY/backend:latest .
+
+[+] Building 57.9s (11/11) FINISHED                                             docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                            0.0s
+ => => transferring dockerfile: 321B                                                            0.0s
+ => [internal] load metadata for docker.io/library/python:3.11-slim                             4.6s
+ => [auth] library/python:pull token for registry-1.docker.io                                   0.0s
+ => [internal] load .dockerignore                                                               0.0s
+ => => transferring context: 114B                                                               0.0s
+ => [1/5] FROM docker.io/library/python:3.11-slim@sha256:193fdd0bbcb3d2ae612bd6cc3548d2f7c78d6  3.8s
+ => => resolve docker.io/library/python:3.11-slim@sha256:193fdd0bbcb3d2ae612bd6cc3548d2f7c78d6  0.0s
+ => => sha256:c4116d4d7ea9320db352f6516001262753529edf1e20b2c6609a6b9a49cc6be4 1.75kB / 1.75kB  0.0s
+ => => sha256:040af88f5bce9e9239b7e739e86304d26964d1d55ada56b9297a3d891e91634d 5.48kB / 5.48kB  0.0s
+ => => sha256:193fdd0bbcb3d2ae612bd6cc3548d2f7c78d65b549fcaa8af75624c4747444 10.37kB / 10.37kB  0.0s
+ => => sha256:0e4bc2bd6656e6e004e3c749af70e5650bac2258243eb0949dea51cb8b7863 29.78MB / 29.78MB  1.4s
+ => => sha256:22b63e76fde1e200371ed9f3cee91161d192063bcff65c9ab6bf63819810a974 1.29MB / 1.29MB  0.6s
+ => => sha256:b3dd773c329649f22e467ae63d1c612a039a0559dec99ffb9ada904ab5c60c 14.36MB / 14.36MB  1.2s
+ => => sha256:1771569cc1299abc9cc762fc4419523e721b11a3927ef968ae63ba0a4a88f2da 251B / 251B      1.0s
+ => => extracting sha256:0e4bc2bd6656e6e004e3c749af70e5650bac2258243eb0949dea51cb8b7863db       1.2s
+ => => extracting sha256:22b63e76fde1e200371ed9f3cee91161d192063bcff65c9ab6bf63819810a974       0.1s
+ => => extracting sha256:b3dd773c329649f22e467ae63d1c612a039a0559dec99ffb9ada904ab5c60c55       0.8s
+ => => extracting sha256:1771569cc1299abc9cc762fc4419523e721b11a3927ef968ae63ba0a4a88f2da       0.0s
+ => [internal] load build context                                                               1.0s
+ => => transferring context: 360.43kB                                                           0.8s
+ => [2/5] WORKDIR /app                                                                          0.1s
+ => [3/5] COPY requirements.txt ./                                                              0.0s
+ => [4/5] RUN pip install --no-cache-dir -r requirements.txt                                   47.1s
+ => [5/5] COPY . .                                                                              0.0s 
+ => exporting to image                                                                          2.1s 
+ => => exporting layers                                                                         2.1s 
+ => => writing image sha256:c5be5af100886e663a1f7b5a961746a54ac6a594b7f17776324a81a8c8e741f3    0.0s 
+ => => naming to us-west2-docker.pkg.dev/buildtrace-dev/buildtrace-repo/backend:latest          0.0s 
+                                                                                                     
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/vm8kmdrpen0t6xg0m8wtsiur3
+
+What's next:
+    View a summary of image vulnerabilities and recommendations → docker scout quickview 
+ashishrajshekhar@Ashishs-MacBook-Pro backend % docker push $IMAGE_REGISTRY/backend:latest
+The push refers to repository [us-west2-docker.pkg.dev/buildtrace-dev/buildtrace-repo/backend]
+3bf9a7879f83: Pushed 
+d4d4448146bf: Pushed 
+b0b7e4c11b4f: Pushed 
+0aae079fee22: Pushed 
+720ee7aae3ad: Pushed 
+655ff69eb9c8: Pushed 
+5c988eaa8862: Pushed 
+70a290c5e58b: Pushed 
+latest: digest: sha256:b9cce11639d588f55da5496bb385ba4da42598108a34a84678b8880fa0cde3f7 size: 1994
+ashishrajshekhar@Ashishs-MacBook-Pro backend % cd ../frontend
+ashishrajshekhar@Ashishs-MacBook-Pro frontend % docker build --platform linux/amd64 -t $IMAGE_REGISTRY/frontend:latest .
+[+] Building 81.6s (12/12) FINISHED                                             docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                            0.0s
+ => => transferring dockerfile: 214B                                                            0.0s
+ => [internal] load metadata for docker.io/library/node:18-alpine                               1.5s
+ => [auth] library/node:pull token for registry-1.docker.io                                     0.0s
+ => [internal] load .dockerignore                                                               0.0s
+ => => transferring context: 102B                                                               0.0s
+ => [1/6] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d1189  3.1s
+ => => resolve docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d1189  0.0s
+ => => sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e 7.67kB / 7.67kB  0.0s
+ => => sha256:929b04d7c782f04f615cf785488fed452b6569f87c73ff666ad553a7554f0006 1.72kB / 1.72kB  0.0s
+ => => sha256:ee77c6cd7c1886ecc802ad6cedef3a8ec1ea27d1fb96162bf03dd3710839b8da 6.18kB / 6.18kB  0.0s
+ => => sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870 3.64MB / 3.64MB  0.4s
+ => => sha256:dd71dde834b5c203d162902e6b8994cb2309ae049a0eabc4efea161b2b5a3d 40.01MB / 40.01MB  1.5s
+ => => sha256:1e5a4c89cee5c0826c540ab06d4b6b491c96eda01837f430bd47f0d26702d6e3 1.26MB / 1.26MB  0.7s
+ => => extracting sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870       0.2s
+ => => sha256:25ff2da83641908f65c3a74d80409d6b1b62ccfaab220b9ea70b80df5a2e0549 446B / 446B      0.7s
+ => => extracting sha256:dd71dde834b5c203d162902e6b8994cb2309ae049a0eabc4efea161b2b5a3d0e       1.4s
+ => => extracting sha256:1e5a4c89cee5c0826c540ab06d4b6b491c96eda01837f430bd47f0d26702d6e3       0.0s
+ => => extracting sha256:25ff2da83641908f65c3a74d80409d6b1b62ccfaab220b9ea70b80df5a2e0549       0.0s
+ => [internal] load build context                                                               0.1s
+ => => transferring context: 142.37kB                                                           0.1s
+ => [2/6] WORKDIR /app                                                                          0.1s
+ => [3/6] COPY package*.json ./                                                                 0.0s
+ => [4/6] RUN npm install                                                                      15.5s
+ => [5/6] COPY . .                                                                              0.0s 
+ => [6/6] RUN npm run build                                                                    59.0s
+ => exporting to image                                                                          2.4s 
+ => => exporting layers                                                                         2.3s 
+ => => writing image sha256:5f129a3166654cf7e20f610f7306bb4cf177ac0a6f84eb51758d52833099c830    0.0s 
+ => => naming to us-west2-docker.pkg.dev/buildtrace-dev/buildtrace-repo/frontend:latest         0.0s 
+                                                                                                     
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/noq2vdvdq0lk0j8ulkp3mv3rn
+
+What's next:
+    View a summary of image vulnerabilities and recommendations → docker scout quickview 
+ashishrajshekhar@Ashishs-MacBook-Pro frontend % cd ..         
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % INSTANCE_CONNECTION_NAME="buildtrace-dev:us-west2:buildtrace-dev-db"
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % gcloud run deploy buildtrace-backend \
+  --image=$IMAGE_REGISTRY/backend:latest \
+  --platform=managed \
+  --region=$REGION \
+  --service-account=buildtrace-service-account@$PROJECT_ID.iam.gserviceaccount.com \
+  --add-cloudsql-instances=$INSTANCE_CONNECTION_NAME \
+  --set-env-vars="ENVIRONMENT=production,USE_DATABASE=true,USE_GCS=true,USE_PUBSUB=true,GCP_PROJECT_ID=$PROJECT_ID,INSTANCE_CONNECTION_NAME=$INSTANCE_CONNECTION_NAME,DB_USER=buildtrace_user,DB_NAME=buildtrace_db,GCS_BUCKET_NAME=buildtrace-dev-input-buildtrace-dev,GCS_UPLOAD_BUCKET=buildtrace-dev-input-buildtrace-dev,GCS_PROCESSED_BUCKET=buildtrace-dev-processed-buildtrace-dev,PUBSUB_OCR_TOPIC=buildtrace-dev-ocr-queue,PUBSUB_DIFF_TOPIC=buildtrace-dev-diff-queue,PUBSUB_SUMMARY_TOPIC=buildtrace-dev-summary-queue" \
+  --set-secrets="DB_PASS=db-user-password:latest,OPENAI_API_KEY=openai-api-key:latest,SECRET_KEY=jwt-signing-key:latest" \
+  --memory=2Gi --cpu=2 --timeout=3600 --max-instances=10 --min-instances=1 \
+  --allow-unauthenticated --project=$PROJECT_ID
+Deploying container to Cloud Run service [buildtrace-backend] in project [buildtrace-dev] region [us-west2]
+⠏ Deploying new service...                                                                          
+  ⠏ Creating Revision...                                                                            
+  . Routing traffic...                                                                              
+  ✓ Setting IAM Policy...                                                                           
+6bb385ba4da42598108a34a84678b8880fa0cde3f7 size: 1994
+ashishrajshekhar@Ashishs-MacBook-Pro backend % cd ../frontend
+ashishrajshekhar@Ashishs-MacBook-Pro frontend % docker build --platform linux/amd64 -t $IMAGE_REGISTRY/frontend:latest .
+[+] Building 81.6s (12/12) FINISHED                                             docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                            0.0s
+ => => transferring dockerfile: 214B                                                            0.0s
+ => [internal] load metadata for docker.io/library/node:18-alpine                               1.5s
+ => [auth] library/node:pull token for registry-1.docker.io                                     0.0s
+ => [internal] load .dockerignore                                                               0.0s
+ => => transferring context: 102B                                                               0.0s
+ => [1/6] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d1189  3.1s
+ => => resolve docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d1189  0.0s
+ => => sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e 7.67kB / 7.67kB  0.0s
+ => => sha256:929b04d7c782f04f615cf785488fed452b6569f87c73ff666ad553a7554f0006 1.72kB / 1.72kB  0.0s
+ => => sha256:ee77c6cd7c1886ecc802ad6cedef3a8ec1ea27d1fb96162bf03dd3710839b8da 6.18kB / 6.18kB  0.0s
+ => => sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870 3.64MB / 3.64MB  0.4s
+ => => sha256:dd71dde834b5c203d162902e6b8994cb2309ae049a0eabc4efea161b2b5a3d 40.01MB / 40.01MB  1.5s
+ => => sha256:1e5a4c89cee5c0826c540ab06d4b6b491c96eda01837f430bd47f0d26702d6e3 1.26MB / 1.26MB  0.7s
+ => => extracting sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870       0.2s
+ => => sha256:25ff2da83641908f65c3a74d80409d6b1b62ccfaab220b9ea70b80df5a2e0549 446B / 446B      0.7s
+ => => extracting sha256:dd71dde834b5c203d162902e6b8994cb2309ae049a0eabc4efea161b2b5a3d0e       1.4s
+ => => extracting sha256:1e5a4c89cee5c0826c540ab06d4b6b491c96eda01837f430bd47f0d26702d6e3       0.0s
+ => => extracting sha256:25ff2da83641908f65c3a74d80409d6b1b62ccfaab220b9ea70b80df5a2e0549       0.0s
+ => [internal] load build context                                                               0.1s
+ => => transferring context: 142.37kB                                                           0.1s
+ => [2/6] WORKDIR /app                                                                          0.1s
+ => [3/6] COPY package*.json ./                                                                 0.0s
+ => [4/6] RUN npm install                                                                      15.5s
+ => [5/6] COPY . .                                                                              0.0s 
+ => [6/6] RUN npm run build                                                                    59.0s
+ => exporting to image                                                                          2.4s 
+ => => exporting layers                                                                         2.3s 
+ => => writing image sha256:5f129a3166654cf7e20f610f7306bb4cf177ac0a6f84eb51758d52833099c830    0.0s 
+ => => naming to us-west2-docker.pkg.dev/buildtrace-dev/buildtrace-repo/frontend:latest         0.0s 
+                                                                                                     
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/noq2vdvdq0lk0j8ulkp3mv3rn
+
+What's next:
+    View a summary of image vulnerabilities and recommendations → docker scout quickview 
+ashishrajshekhar@Ashishs-MacBook-Pro frontend % cd ..         
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % INSTANCE_CONNECTION_NAME="buildtrace-dev:us-west2:buildtrace-dev-db"
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % gcloud run deploy buildtrace-backend \
+  --image=$IMAGE_REGISTRY/backend:latest \
+  --platform=managed \
+  --region=$REGION \
+  --service-account=buildtrace-service-account@$PROJECT_ID.iam.gserviceaccount.com \
+  --add-cloudsql-instances=$INSTANCE_CONNECTION_NAME \
+  --set-env-vars="ENVIRONMENT=production,USE_DATABASE=true,USE_GCS=true,USE_PUBSUB=true,GCP_PROJECT_ID=$PROJECT_ID,INSTANCE_CONNECTION_NAME=$INSTANCE_CONNECTION_NAME,DB_USER=buildtrace_user,DB_NAME=buildtrace_db,GCS_BUCKET_NAME=buildtrace-dev-input-buildtrace-dev,GCS_UPLOAD_BUCKET=buildtrace-dev-input-buildtrace-dev,GCS_PROCESSED_BUCKET=buildtrace-dev-processed-buildtrace-dev,PUBSUB_OCR_TOPIC=buildtrace-dev-ocr-queue,PUBSUB_DIFF_TOPIC=buildtrace-dev-diff-queue,PUBSUB_SUMMARY_TOPIC=buildtrace-dev-summary-queue" \
+  --set-secrets="DB_PASS=db-user-password:latest,OPENAI_API_KEY=openai-api-key:latest,SECRET_KEY=jwt-signing-key:latest" \
+  --memory=2Gi --cpu=2 --timeout=3600 --max-instances=10 --min-instances=1 \
+  --allow-unauthenticated --project=$PROJECT_ID
+Deploying container to Cloud Run service [buildtrace-backend] in project [buildtrace-dev] region [us-west2]
+X Deploying new service...                                                                          
+  - Creating Revision...                                                                            
+  . Routing traffic...                                                                              
+  ✓ Setting IAM Policy...                                                                           
+Aborted by user.                                                                                    
+ERROR: (gcloud.run.deploy) Aborted by user.
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % gcloud run deploy buildtrace-backend \
+  --image=$IMAGE_REGISTRY/backend:latest \
+  --platform=managed \
+  --region=$REGION \
+  --service-account=buildtrace-service-account@$PROJECT_ID.iam.gserviceaccount.com \
+  --add-cloudsql-instances=$INSTANCE_CONNECTION_NAME \
+  --set-env-vars="ENVIRONMENT=production,USE_DATABASE=true,USE_GCS=true,USE_PUBSUB=true,GCP_PROJECT_ID=$PROJECT_ID,INSTANCE_CONNECTION_NAME=$INSTANCE_CONNECTION_NAME,DB_USER=buildtrace_user,DB_NAME=buildtrace_db,GCS_BUCKET_NAME=buildtrace-dev-input-buildtrace-dev,GCS_UPLOAD_BUCKET=buildtrace-dev-input-buildtrace-dev,GCS_PROCESSED_BUCKET=buildtrace-dev-processed-buildtrace-dev,PUBSUB_OCR_TOPIC=buildtrace-dev-ocr-queue,PUBSUB_DIFF_TOPIC=buildtrace-dev-diff-queue,PUBSUB_SUMMARY_TOPIC=buildtrace-dev-summary-queue" \
+  --set-secrets="DB_PASS=db-user-password:latest,OPENAI_API_KEY=openai-api-key:latest,SECRET_KEY=jwt-signing-key:latest" \
+  --memory=2Gi --cpu=2 --timeout=3600 --max-instances=10 --min-instances=1 \
+  --allow-unauthenticated --project=$PROJECT_ID
+Deploying container to Cloud Run service [buildtrace-backend] in project [buildtrace-dev] region [us-west2]
+✓ Deploying... Done.                                                                                
+  ✓ Creating Revision...                                                                            
+  - Routing traffic... Provisioning revision instances to receive traffic.                          
+  ✓ Setting IAM Policy...                                                                           
+Done.                                                                                               
+Service [buildtrace-backend] revision [None] has been deployed and is serving 0 percent of traffic.
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % gcloud run deploy buildtrace-frontend \
+  --image=$IMAGE_REGISTRY/frontend:latest \
+  --platform=managed \
+  --region=$REGION \
+  --set-env-vars="NEXT_PUBLIC_API_URL=$BACKEND_URL" \
+  --memory=1Gi --cpu=1 --timeout=300 --max-instances=5 \
+  --allow-unauthenticated --project=$PROJECT_ID'
+quote> 
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % gcloud run deploy buildtrace-frontend \
+  --image=$IMAGE_REGISTRY/frontend:latest \
+  --platform=managed \
+  --region=$REGION \
+  --set-env-vars="NEXT_PUBLIC_API_URL=$BACKEND_URL" \
+  --memory=1Gi --cpu=1 --timeout=300 --max-instances=5 \
+  --allow-unauthenticated --project=$PROJECT_ID
+Deploying container to Cloud Run service [buildtrace-frontend] in project [buildtrace-dev] region [us-west2]
+X Deploying new service...                                                                          
+  - Creating Revision...                                                                            
+  . Routing traffic...                                                                              
+  ✓ Setting IAM Policy...                                                                           
+Deployment failed                                                                                   
+ERROR: (gcloud.run.deploy) Image 'us-west2-docker.pkg.dev/buildtrace-dev/buildtrace-repo/frontend:latest' not found.
+ashishrajshekhar@Ashishs-MacBook-Pro buildtrace-dev % cd frontend 
+ashishrajshekhar@Ashishs-MacBook-Pro frontend % docker push $IMAGE_REGISTRY/frontend:latest
+The push refers to repository [us-west2-docker.pkg.dev/buildtrace-dev/buildtrace-repo/frontend]
+12ff7f9395da: Pushed 
+6c79ec8440bf: Pushed 
+3f0dbdea6314: Pushed 
+fe00bf3b51e3: Pushed 
+7af0d16919c0: Pushed 
+82140d9a70a7: Pushed 
+f3b40b0cdb1c: Pushed 
+0b1f26057bd0: Pushed 
+08000c18d16d: Pushed 
+latest: digest: sha256:5bd94d07a9377c9927001d8fda4dddfe284ed3573c2a16795b3306531009927c size: 2206
+ashishrajshekhar@Ashishs-MacBook-Pro frontend % gcloud run deploy buildtrace-frontend \
+  --image=$IMAGE_REGISTRY/frontend:latest \
+  --platform=managed \
+  --region=$REGION \
+  --set-env-vars="NEXT_PUBLIC_API_URL=$BACKEND_URL" \
+  --memory=1Gi --cpu=1 --timeout=300 --max-instances=5 \
+  --allow-unauthenticated --project=$PROJECT_ID
+Deploying container to Cloud Run service [buildtrace-frontend] in project [buildtrace-dev] region [us-west2]
+✓ Deploying... Done.                                                                                
+  ✓ Creating Revision...                                                                            
+  ✓ Routing traffic...                                                                              
+  ✓ Setting IAM Policy...                                                                           
+Done.                                                                                               
+Service [buildtrace-frontend] revision [buildtrace-frontend-00002-p9d] has been deployed and is serving 100 percent of traffic.
+Service URL: https://buildtrace-frontend-136394139608.us-west2.run.app
+ashishrajshekhar@Ashishs-MacBook-Pro frontend % gcloud run deploy buildtrace-backend \     
+  --image=$IMAGE_REGISTRY/backend:latest \ 
+  --platform=managed \
+  --region=$REGION \
+  --service-account=buildtrace-service-account@$PROJECT_ID.iam.gserviceaccount.com \
+  --add-cloudsql-instances=$INSTANCE_CONNECTION_NAME \  
+  --set-env-vars="ENVIRONMENT=production,USE_DATABASE=true,USE_GCS=true,USE_PUBSUB=true,GCP_PROJECT_ID=$PROJECT_ID,INSTANCE_CONNECTION_NAME=$INSTANCE_CONNECTION_NAME,DB_USER=buildtrace_user,DB_NAME=buildtrace_db,GCS_BUCKET_NAME=buildtrace-dev-input-buildtrace-dev,GCS_UPLOAD_BUCKET=buildtrace-dev-input-buildtrace-dev,GCS_PROCESSED_BUCKET=buildtrace-dev-processed-buildtrace-dev,PUBSUB_OCR_TOPIC=buildtrace-dev-ocr-queue,PUBSUB_DIFF_TOPIC=buildtrace-dev-diff-queue,PUBSUB_SUMMARY_TOPIC=buildtrace-dev-summary-queue" \
+  --set-secrets="DB_PASS=db-user-password:latest,OPENAI_API_KEY=openai-api-key:latest,SECRET_KEY=jwt-signing-key:latest" \
+  --memory=2Gi --cpu=2 --timeout=3600 --max-instances=10 --min-instances=1 \
+  --allow-unauthenticated --project=$PROJECT_ID
+Deploying container to Cloud Run service [buildtrace-backend] in project [buildtrace-dev] region [us-west2]
+X Deploying new service...                                                                          
+  - Creating Revision...                                                                            
+  . Routing traffic...                                                                              
+  ✓ Setting IAM Policy...                                                                           
+Aborted by user.                                                                                    
+ERROR: (gcloud.run.deploy) Aborted by user.
+ashishrajshekhar@Ashishs-MacBook-Pro frontend % gcloud run services update buildtrace-backend \
+     --set-env-vars="GOOGLE_CLIENT_ID=your-client-id,GOOGLE_CLIENT_SECRET=your-client-secret" \
+     --region=us-west2 --project=buildtrace-dev
+X Deploying...                                                                                      
+  - Creating Revision...                                                                            
+  . Routing traffic...                                                                              
+Aborted by user.                                                                                    
+ERROR: (gcloud.run.services.update) Aborted by user.
+ashishrajshekhar@Ashishs-MacBook-Pro frontend % 

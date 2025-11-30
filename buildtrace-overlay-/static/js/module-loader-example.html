@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildTrace - Module Loader Example</title>
+
+    <!-- Regular CSS files -->
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <!-- Optional: Add a loading indicator -->
+    <style>
+        .module-loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #3b82f6;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+            z-index: 9999;
+            transition: opacity 0.3s;
+        }
+        .module-loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="app-page">
+    <!-- Optional: Loading indicator -->
+    <div id="module-loading" class="module-loading">
+        Loading BuildTrace modules...
+    </div>
+
+    <!-- Your page content here -->
+    <main>
+        <!-- App page content -->
+        <div id="upload-form">
+            <!-- Upload form elements -->
+        </div>
+
+        <!-- OR Results page content -->
+        <div id="drawing-selector" style="display: none;">
+            <!-- Results page elements -->
+        </div>
+    </main>
+
+    <!-- ES6 Module Script -->
+    <script type="module" src="/static/js/main.js"></script>
+
+    <!-- Fallback for browsers that don't support modules -->
+    <script nomodule>
+        console.warn('ES6 modules not supported, loading legacy scripts');
+
+        // Detect page type and load appropriate legacy script
+        if (window.location.pathname.includes('/results/') || document.getElementById('drawing-selector')) {
+            // Results page
+            document.write('<script src="/static/js/results.js"><\/script>');
+        } else {
+            // App page
+            document.write('<script src="/static/js/app.js"><\/script>');
+        }
+    </script>
+
+    <!-- Hide loading indicator once modules are loaded -->
+    <script>
+        // Hide loading indicator after a short delay
+        setTimeout(() => {
+            const loadingEl = document.getElementById('module-loading');
+            if (loadingEl) {
+                loadingEl.classList.add('hidden');
+                setTimeout(() => loadingEl.remove(), 300);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

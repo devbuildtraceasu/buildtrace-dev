@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>API Test for Session: 02fba4ff-ae16-4c90-8b1b-6c39466cca94</h1>
+
+    <h2>1. Test Drawing API</h2>
+    <button onclick="testDrawingAPI()">Test /api/drawings</button>
+    <pre id="drawing-result"></pre>
+
+    <h2>2. Test Changes API</h2>
+    <button onclick="testChangesAPI()">Test /api/changes</button>
+    <pre id="changes-result"></pre>
+
+    <h2>3. Test Image Loading</h2>
+    <button onclick="testImage()">Test Image</button>
+    <div id="image-result"></div>
+
+    <script>
+        const sessionId = '02fba4ff-ae16-4c90-8b1b-6c39466cca94';
+
+        async function testDrawingAPI() {
+            try {
+                const response = await fetch(`http://localhost:5001/api/drawings/${sessionId}`);
+                const data = await response.json();
+                document.getElementById('drawing-result').textContent = JSON.stringify(data, null, 2);
+
+                // If we have comparisons, automatically load the first image
+                if (data.comparisons && data.comparisons.length > 0) {
+                    const firstComparison = data.comparisons[0];
+                    const imgUrl = `http://localhost:5001/image/${firstComparison.overlay_image}`;
+                    document.getElementById('image-result').innerHTML =
+                        `<p>Loading image from: ${imgUrl}</p><img src="${imgUrl}" style="max-width: 100%; height: auto;">`;
+                }
+            } catch (error) {
+                document.getElementById('drawing-result').textContent = 'Error: ' + error;
+            }
+        }
+
+        async function testChangesAPI() {
+            try {
+                const response = await fetch(`http://localhost:5001/api/changes/${sessionId}`);
+                const data = await response.json();
+                document.getElementById('changes-result').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('changes-result').textContent = 'Error: ' + error;
+            }
+        }
+
+        function testImage() {
+            const imgUrl = 'http://localhost:5001/image/new_A-101_new_overlays/A-101_overlay_results/A-101_overlay.png';
+            document.getElementById('image-result').innerHTML =
+                `<p>Loading image from: ${imgUrl}</p><img src="${imgUrl}" style="max-width: 100%; height: auto;"
+                onload="alert('Image loaded successfully!')"
+                onerror="alert('Failed to load image!')">`;
+        }
+
+        // Auto-run drawing API test on load
+        window.onload = () => {
+            testDrawingAPI();
+        };
+    </script>
+</body>
+</html>
