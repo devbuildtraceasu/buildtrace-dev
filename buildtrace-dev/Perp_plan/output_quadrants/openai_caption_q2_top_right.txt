@@ -1,0 +1,249 @@
+Architectural drawing: “TempleTest_Add1”, page/sheet 1, region: top‑right quadrant (q2_top_right). This region contains the upper right portion of a floor plan plus a large notes/legend and title‑block zone to the extreme right.
+
+---
+
+### 1. Floor plan content visible in this quadrant
+
+**General layout**
+
+- Portion of an interior floor plan at upper left of the region; lower right of region is predominantly text, legends, and title‑block graphics.
+- Plan is drawn in black linework with red revision clouds and tags.
+- Plan north arrow for the sheet appears separately in the legend area at far right; plan within this quadrant is partially cut off.
+
+**Rooms / spaces and labels**
+
+- “BAPTISTRY VESTIBULE – SISTERS 130”  
+  - Text in all caps, black, near top‑left of the quadrant, close to a thick wall assembly.
+- “BAPTISTRY DRESSING – SISTERS 131”  
+  - Label in red text (appears as part of a revision cloud annotation) along the left‑center edge of this quadrant.
+- “BAPTISTRY 150”  
+  - Black text next to a central octagonal or polygonal space containing pews or bench seating (shown in plan).
+- Additional space label near top center: unclear due to cropping, but the text “VESTIBULE–” and “SISTERS” are visible along with room number “130”.
+- A small area with a sink/counter (two circular basins) is visible adjacent to the red‑clouded dressing area; no separate room label visible in this crop.
+
+**Doors and door tags**
+
+Multiple door swings are visible, each with a diamond‑shaped door tag (black outline, white interior) containing a number over a sheet reference:
+
+- Door tag near top center: diamond with “4” over small text “A71.40?” (exact sheet number partly obscured).
+- Door tag near top center inside vestibule area: diamond with “2” over “A71.40?” (exact).
+- Door tag near mid‑left just below the vestibule wall: diamond with “2” over “A60.34” (sheet reference clearly legible in one symbol near mid‑right of plan).
+- Door tag near center‑left inside red revision cloud for dressing area: appears as diamond “2” over “A60.34” or similar.
+- Door tag just right of center near octagonal baptistry seating: diamond “11” over “A76.08” (or “476.08”; number is small but clearly an 11).
+- Multiple additional diamond door tags along lower edge of this region:  
+  - “2” over “A60.34” located near bottom‑center.  
+  - “2” over “A75.20” at lower right of the plan area beside some linear elements drawn as benches or seating.  
+  - Another door tag at bottom right margin of the plan: diamond with “7” over unreadable sheet reference (partially clipped).
+
+**Dimensions**
+
+- Horizontal overall dimension line at very top of image, above plan:  
+  - Left segment label: “23'-4 1/2"”.  
+  - Right segment label: “17'-9 1/2"”.  
+  - Dimension string appears between gridlines or reference points, with tick marks at each end.
+- Radial or small local dimensions around fixtures/seating in baptistry area are present but the numeric text is generally too small to read in this crop.
+
+**Walls and structural elements**
+
+- Heavy exterior or major interior walls with multiple parallel lines, likely indicating layered construction.
+- Thinner interior partitions defining smaller rooms and corridors.
+- A stair or step element labeled “OPEN TO BELOW” is visible at right of the octagonal seating area; this annotation is in small black text next to a boundary with arrows or a break line.
+
+**Fixtures / furniture**
+
+- Inside the central baptistry space “BAPTISTRY 150” is a polygonal seating layout with multiple pews/benches drawn in plan, oriented toward a central area.
+- Adjacent to “BAPTISTRY DRESSING – SISTERS 131” is a bank of fixtures:  
+  - A rectangular casework element with multiple narrow rectangles (likely lockers or cubbies).  
+  - A counter with two round sink symbols.
+- Several circle symbols with crosshairs and other annotation marks correspond to ceiling or lighting fixtures (identified in other sheets; here no local labels).
+- Red dashed outline (revision cloud) surrounds portions of the dressing area, casework, and nearby partitions.
+
+**Grid / reference bubbles**
+
+- Circular grid or reference bubble near right of the plan with number “8”.
+- Another circular bubble toward bottom center with number “7”.
+- A right‑edge callout bubble “D.5” near top edge, extending from a leader line.
+
+**Section / detail callouts**
+
+- Triangular or circular callout markers with leaders and text such as “A60.34”, “A75.20”, “A76.08”, “A75.91?” etc., indicating references to detail or section sheets.  
+- Example clearly readable: symbol with triangle, number “5” above, “A60.34” below.
+
+---
+
+### 2. General Notes – Floor Plan (upper right text block)
+
+Heading:
+
+- “GENERAL NOTES – FLOOR PLAN”
+
+Numbered list (all caps, black text):
+
+1. “READ IN CONJUNCTION WITH PROJECT SPECIFICATIONS.”
+2. “ADVISE CONSULTANT OF DISCREPANCIES WITH THE DIMENSION PLAN OR CONFLICTS WITH OTHER PARTS OF THE WORK. ADJUST LOCATIONS AS REQUIRED BASED ON REVIEW.”
+3. “ALL GYPSUM BOARD PARTITIONS SHALL BE LEVEL 5 FINISH; TAPED, SPACKLED AND SANDED WITH NO VISIBLE JOINTS. ALL SURFACES SHALL BE ALIGNED.”
+4. “WHERE FURRED PARTITIONS EXCEED MAXIMUM HEIGHT, BRACE TO ADJACENT STRUCTURE.”
+5. “FIRE SAFE PENETRATIONS AT RATED PARTITIONS PER APPLICABLE ULC ASSEMBLY.”
+6. “ALL INTERIOR PARTITIONS, PENETRATIONS AND OTHER OPENINGS IN THE BUILDING SHALL BE SEALED, GASKETED OR WEATHER STRIPPED.”
+7. “PROVIDE FIRE TREATED BLOCKING AS REQUIRED AT LOCATIONS INCLUDING BUT NOT LIMITED TO GRAB BARS, SHELVING, OVERHEAD CABINETS, TOILET ROOMS, ACCESSORIES, EQUIPMENT, ETC.”
+8. “ALL DIMENSIONS ARE FROM THE FACE OF STUD UNLESS OTHERWISE NOTED.”
+9. “ALL WOOD TO BE FIRE TREATED RATED IN ACCORDANCE WITH LOCAL CODES.”
+10. “ALL DIMENSIONS MARKED ‘CLEAR’ OR ‘CL’ SHALL BE MAINTAINED AND SHALL ALLOW FOR THICKNESS OF ALL WALL FINISHES. THESE DIMENSIONS SHALL NOT VARY MORE THAN 1/4" ± WITHOUT WRITTEN CONSENT FROM THE ARCHITECT.”
+11. “ALL CASEWORK TO BE PREMIUM GRADE OR BETTER AS DEFINED BY THE ARCHITECTURAL WOOD INSTITUTE.”
+12. “EDGES OF ALL DOOR CASINGS TO BE 4" FROM CORNER OF ROOM UNLESS NOTED OTHERWISE.”
+13. “FOR WALL TYPES, SEE A604 SERIES SHEETS.”
+
+---
+
+### 3. Floor Plan Graphic Legend (center‑right column)
+
+Heading:
+
+- “FLOOR PLAN GRAPHIC LEGEND”
+- Subheading beneath: “SEE A01‑20 FOR ALL GENERAL NOTES, ABBREVIATIONS, AND SYMBOLS”
+
+Legend subsections:
+
+#### a. ROOM TAG
+
+- Small box labeled “ROOM TAG”.
+- Diagram with two stacked text lines:  
+  - Top line label: “ROOM NAME”.  
+  - Bottom line: “ROOM NUMBER”.
+- Left of diagram: text “ROOM NAME” aligned with upper line; beneath it “ROOM NUMBER”.
+- To right: sub‑heading “CLEARANCES” which applies to next diagrams (see below).
+
+#### b. WALL TAG
+
+- Label: “WALL TAG”.
+- Simple symbol of a horizontal bar with circle or text zone above/below.
+- Side text:  
+  - “WALL TYPE” above.  
+  - “VARIANT (IF APPLICABLE)” below.
+
+#### c. DOOR TAG
+
+- Label: “DOOR TAG”.
+- Diamond symbol with number above a second line of text.
+- Side text:  
+  - “DOOR NUMBER”.
+  - No sheet reference text spelled out here in words, but the diagram shows similar two‑line format.
+
+#### d. SECTION TAG
+
+- Label: “SECTION TAG”.
+- Circular symbol divided horizontally; top half holds a number, bottom half sheet reference.
+- Side text:  
+  - “SIMILAR (IF APPLICABLE)”.  
+  - “VIEW NUMBER”.  
+  - “SHEET NUMBER”.
+
+#### e. EXTERIOR ELEVATION TAG
+
+- Label: “EXTERIOR ELEVATION TAG”.
+- Circular symbol similar to section tag with arrow or triangle pointer.
+- Side text:  
+  - “SIMILAR (IF APPLICABLE)”.  
+  - “VIEW NUMBER”.  
+  - “SHEET NUMBER”.
+
+#### f. CLEARANCES (diagram set to right of legend)
+
+Clearances diagrams are arranged as vertical stack of circular and rectangular dashed zones with dimensions:
+
+1. **Wheelchair Clearance**  
+   - Heading: “WHEELCHAIR CLEARANCE”.  
+   - Dashed circle diameter dimension labeled “5'-0" Ø” or similar (text near circle).  
+   - Arrow dimensions around: examples “2'-6"”, “2'-0"”, etc.
+
+2. **Sink & Urinal Clearance**  
+   - Heading: “SINK & URINAL CLEARANCE”.  
+   - Rectangular clearance plan with “2'-6"” and “5'-0"” dimensions (approx) around fixtures.
+
+3. **Toilet Clearance**  
+   - Heading: “TOILET CLEARANCE”.  
+   - Rectangular area with front and side clearances, example dimensions “5'-0"”, “4'-0"” (figures approximate but clearly labeled in feet‑inches).
+
+4. **Door Clearance**  
+   - Heading: “DOOR CLEARANCE”.  
+   - Arc representing door swing with rectangular clear space; side dimension strings.
+
+(Exact dimension text is partially small; retrieval should note that these diagrams standardize code clearances for accessibility.)
+
+---
+
+### 4. Date / Issue / Revision block (upper‑right narrow column)
+
+A small table with three vertical columns titled (from left to right):
+
+- “DATE”
+- “ISSUED FOR”
+- “REV”
+
+Rows include:
+
+1. Row 1:  
+   - DATE: “01/11/2024”  
+   - ISSUED FOR: “ISSUE FOR TENDER” (possibly “ISSUE FOR TENDER” or “ISSUE FOR ???”; text mostly legible).  
+   - REV: “A”
+2. Row 2:  
+   - DATE: “21/03/2025”  
+   - ISSUED FOR: text begins “ADDENDUM 01 – …” or “ADD’L / UNDER …”; partially clipped.  
+   - REV: “D”
+3. Row 3:  
+   - DATE: “21/03/2025”  
+   - ISSUED FOR: “ADDENDUM 01 – ONGOING COORDINATION” (clearly includes “ADDENDUM 01 – ONGOING COORDINATION”).  
+   - REV: “F”
+
+---
+
+### 5. North Arrow and project use note (mid‑right)
+
+**North Arrow graphic**
+
+- Circular diagram labeled “North Arrow”.
+- Center shows intersecting lines marking the cardinal directions; right side notes orientation of “TRUE NORTH”.
+- Adjacent text label near arrow: “TRUE NORTH”.
+
+**Use / copyright note**
+
+Rectangular note box below north arrow, text in small caps:
+
+- “This drawing has been prepared solely for the use of THE CHURCH OF JESUS CHRIST OF LATTER‑DAY SAINTS and their representatives and may not be used by NORR or any party with whom NORR has not entered into a contract.”
+- Second paragraph:  
+  - “This drawing shall not be used for construction purposes until the seal appearing hereon is signed and dated by the Architect of Record.”
+
+(NORR refers to the architecture/engineering firm; full corporate name may appear elsewhere in title block but is not clearly visible in this crop.)
+
+---
+
+### 6. Project component / key plan (lower‑right)
+
+Small section titled:
+
+- “Project Component”
+- Sub‑heading: “CONSTRUCTION DOCUMENTS”
+
+Below that is a key plan graphic:
+
+- Rectangular outline with a highlighted region labeled “AREA A”.
+- To the right of key plan, text: “Key Plan”.
+
+Below or beside key plan is a heading “Consultants” (further content falls below the region cut; individual consultant names not readable here).
+
+---
+
+### 7. Additional annotations and miscellaneous text
+
+- Several circular tags with numbers (e.g., “8”, “7”) correspond to column lines or reference bubbles.
+- Text “OPEN TO BELOW” next to seating area.
+- Miscellaneous small dimension texts (e.g., “17 3/8"”, “1'‑0"”) around fixtures, casework, and walls; many are too small to read precisely but indicate typical interior dimensions.
+- Red revision clouds labeled with delta/triangle revision markers such as triangular bubble “∆ B” or similar near lower central edge of this quadrant, marking revised zones around “BAPTISTRY DRESSING – SISTERS 131” and nearby casework.
+- Several leader notes or keynotes appear with hexagonal or circular tags (e.g., “A03A”, “A03B” etc.) adjacent to components; legible examples:  
+  - “A03A” near sinks.  
+  - “A03A”/“A03B” repeated along casework and walls.  
+  - “A05?” near center.
+
+---
+
+This caption enumerates all legible labels, symbols, notes, and title‑block elements visible in the top‑right quadrant (q2_top_right) of sheet “TempleTest_Add1, page 1,” providing exhaustive textual detail for retrieval in lieu of the original image.

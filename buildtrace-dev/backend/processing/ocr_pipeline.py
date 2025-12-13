@@ -1,8 +1,8 @@
 """OCR pipeline for BuildTrace.
 
 Extracts drawing names, converts PDF to PNG, and extracts detailed information
-from each page using OpenAI Vision API. Stores page-by-page logs and generates
-a summary for display during comparison.
+from each page using Google Gemini 2.5 Pro (primary) or OpenAI Vision API (fallback).
+Stores page-by-page logs and generates a summary for display during comparison.
 """
 
 from __future__ import annotations
@@ -26,6 +26,15 @@ from config import config
 
 logger = logging.getLogger(__name__)
 
+# Try to import Google Generative AI (Gemini)
+try:
+    import google.generativeai as genai
+    GEMINI_AVAILABLE = True
+except ImportError:
+    GEMINI_AVAILABLE = False
+    logger.warning("Google Generative AI library not available - will try OpenAI fallback")
+
+# Try to import OpenAI as fallback
 try:
     from openai import OpenAI
     OPENAI_AVAILABLE = True
@@ -47,17 +56,31 @@ class OCRPipeline:
         self.session_factory = session_factory or get_db_session
         self.dpi = dpi
         
-        # Initialize OpenAI client if available
-        # Read API key from environment variable first, then config
+        # Initialize Gemini client (primary) - using Gemini 2.5 Pro
+        self.gemini_model = None
+        gemini_api_key = os.getenv('GOOGLE_API_KEY') or os.getenv('GEMINI_API_KEY')
+        if GEMINI_AVAILABLE and gemini_api_key:
+            try:
+                genai.configure(api_key=gemini_api_key)
+                # Use gemini-2.5-pro-preview or gemini-2.0-flash-exp for structured output
+                model_name = os.getenv('GEMINI_MODEL', 'gemini-2.0-flash-exp')
+                self.gemini_model = genai.GenerativeModel(model_name)
+                logger.info(f"Gemini client initialized with model: {model_name}")
+            except Exception as e:
+                logger.warning(f"Failed to initialize Gemini: {e}")
+                self.gemini_model = None
+        
+        # Initialize OpenAI client as fallback
+        self.openai_client = None
+        self.model = None
         api_key = os.getenv('OPENAI_API_KEY') or config.OPENAI_API_KEY
         if OPENAI_AVAILABLE and api_key:
-            self.openai_client = OpenAI(api_key=api_key, timeout=180.0)  # 3 minute timeout for GPT-5
+            self.openai_client = OpenAI(api_key=api_key, timeout=180.0)
             self.model = os.getenv('OPENAI_MODEL') or config.OPENAI_MODEL or "gpt-4o"
-            logger.info(f"OpenAI client initialized with key length: {len(api_key)}, model: {self.model}")
-        else:
-            self.openai_client = None
-            self.model = None
-            logger.warning("OpenAI client not initialized - detailed OCR will be limited")
+            logger.info(f"OpenAI client initialized as fallback with model: {self.model}")
+        
+        if not self.gemini_model and not self.openai_client:
+            logger.warning("No AI client initialized - detailed OCR will be limited")
 
     def run(self, drawing_version_id: str) -> Dict:
         """Process a drawing version: extract names, convert to PNG, extract text."""
@@ -255,12 +278,26 @@ class OCRPipeline:
                 Path(tmp_pdf_path).unlink(missing_ok=True)
     
     def _extract_page_information(self, png_path: str, drawing_name: str, page_num: int) -> Dict:
-        """Extract detailed information from a single page using OpenAI Vision API"""
+        """Extract detailed information from a single page using Gemini 2.5 Pro (primary) or OpenAI Vision API (fallback)"""
         try:
-            # Re-check API key at runtime (in case env var was updated)
+            # Read image bytes
+            with open(png_path, 'rb') as f:
+                image_bytes = f.read()
+            
+            # Try Gemini first (primary)
+            gemini_api_key = os.getenv('GOOGLE_API_KEY') or os.getenv('GEMINI_API_KEY')
+            if GEMINI_AVAILABLE and gemini_api_key:
+                try:
+                    result = self._extract_with_gemini(image_bytes, drawing_name, page_num)
+                    if result:
+                        return result
+                except Exception as e:
+                    logger.warning(f"Gemini extraction failed, falling back to OpenAI: {e}")
+            
+            # Fallback to OpenAI
             api_key = os.getenv('OPENAI_API_KEY') or config.OPENAI_API_KEY
             if not api_key or not OPENAI_AVAILABLE:
-                # Fallback: return basic info
+                # Final fallback: return basic info
                 return {
                     'drawing_name': drawing_name,
                     'page_number': page_num,
@@ -268,15 +305,13 @@ class OCRPipeline:
                     'extraction_method': 'basic'
                 }
             
-            # Re-initialize client with current API key if needed
+            # Re-initialize OpenAI client with current API key if needed
             if not self.openai_client or api_key != getattr(self, '_last_api_key', None):
                 self.openai_client = OpenAI(api_key=api_key, timeout=180.0)
                 self._last_api_key = api_key
                 logger.info(f"OpenAI client re-initialized with key length: {len(api_key)}")
             
-            # Read image and convert to base64
-            with open(png_path, 'rb') as f:
-                image_bytes = f.read()
+            # Convert to base64 for OpenAI
             image_base64 = base64.b64encode(image_bytes).decode('utf-8')
             
             # Expert-level extraction prompt designed by prompt engineers for construction managers and architects
@@ -519,6 +554,82 @@ Return a comprehensive JSON object with all sections above. Use arrays for lists
                 'raw_response': f'Error: {str(e)}'
             }
     
+    def _extract_with_gemini(self, image_bytes: bytes, drawing_name: str, page_num: int) -> Optional[Dict]:
+        """Extract information using Google Gemini 2.5 Pro with structured output"""
+        try:
+            gemini_api_key = os.getenv('GOOGLE_API_KEY') or os.getenv('GEMINI_API_KEY')
+            if not gemini_api_key:
+                return None
+            
+            # Re-configure if needed
+            genai.configure(api_key=gemini_api_key)
+            
+            # Use the latest Gemini model with vision capabilities
+            model_name = os.getenv('GEMINI_MODEL', 'gemini-2.0-flash-exp')
+            model = genai.GenerativeModel(model_name)
+            
+            # Create image part for Gemini
+            import PIL.Image
+            import io
+            image = PIL.Image.open(io.BytesIO(image_bytes))
+            
+            # Structured extraction prompt
+            extraction_prompt = f"""Analyze this architectural/construction drawing page ({drawing_name}, page {page_num}) and extract ALL information in a structured JSON format.
+
+Extract the following information if present:
+
+1. TITLE_BLOCK: project_name, project_address, project_number, sheet_number, drawing_title, scale, date, revision
+2. DESIGN_TEAM: architect_firm, architect_name, engineer_firms, consultants (list all with names, addresses, phones, emails)
+3. REVISIONS: list of {{revision_number, date, description}}
+4. KEYNOTES: list of {{number, description}} - EXTRACT ALL numbered keynotes visible
+5. DIMENSIONS: overall_dimensions, room_dimensions, key_measurements
+6. SPECIFICATIONS: materials, finishes, equipment mentioned
+7. SCHEDULES: any door/window/room schedules as structured data
+8. GENERAL_NOTES: list of all general notes text
+9. DRAWING_TYPE: floor_plan, elevation, section, detail, schedule, site_plan, etc.
+10. GRID_LINES: list of grid line labels (A, B, C, 1, 2, 3, etc.)
+
+Return ONLY valid JSON with these keys. If a section is not visible, use null or empty array.
+Be thorough - construction managers need every detail for cost estimation and coordination."""
+
+            # Generate with Gemini
+            response = model.generate_content(
+                [extraction_prompt, image],
+                generation_config=genai.types.GenerationConfig(
+                    temperature=0.1,
+                    max_output_tokens=4000,
+                )
+            )
+            
+            response_text = response.text
+            
+            # Try to parse as JSON
+            try:
+                # Clean up response if it has markdown code blocks
+                if '```json' in response_text:
+                    response_text = response_text.split('```json')[1].split('```')[0]
+                elif '```' in response_text:
+                    response_text = response_text.split('```')[1].split('```')[0]
+                
+                extracted_data = json.loads(response_text.strip())
+            except json.JSONDecodeError:
+                # If JSON parsing fails, wrap the text response
+                extracted_data = {'raw_text': response_text}
+            
+            logger.info(f"Gemini extraction successful for page {page_num}")
+            
+            return {
+                'drawing_name': drawing_name,
+                'page_number': page_num,
+                'sections': extracted_data,
+                'extraction_method': 'gemini_2.5_pro',
+                'raw_response': response_text
+            }
+            
+        except Exception as e:
+            logger.error(f"Gemini extraction error: {e}", exc_info=True)
+            return None
+
     def _parse_text_response(self, text: str) -> Dict:
         """Parse text response into structured format if JSON parsing fails"""
         sections = {}
@@ -612,6 +723,68 @@ Return a comprehensive JSON object with all sections above. Use arrays for lists
             return {
                 'total_pages': len(ocr_results),
                 'error': str(e)
+            }
+
+
+    # =========================================================================
+    # STREAMING MODE: Process single page from pre-extracted PNG
+    # =========================================================================
+    
+    def run_page(self, page_gcs_path: str, page_identifier: str) -> Dict:
+        """
+        Process a single page image for OCR (streaming mode).
+        
+        Args:
+            page_gcs_path: GCS path to the PNG image
+            page_identifier: Identifier for this page (e.g., "old_page_1", "new_page_2")
+            
+        Returns:
+            Dict with result_ref and extracted info
+        """
+        logger.info(
+            "Running OCR on single page",
+            extra={"page_gcs_path": page_gcs_path, "page_identifier": page_identifier}
+        )
+        
+        # Download page image
+        page_bytes = self.storage.download_file(page_gcs_path)
+        
+        with tempfile.TemporaryDirectory() as temp_dir:
+            # Save locally for processing
+            png_path = Path(temp_dir) / f"{page_identifier}.png"
+            png_path.write_bytes(page_bytes)
+            
+            # Extract information from the page
+            page_info = self._extract_page_information(
+                str(png_path),
+                page_identifier,
+                1  # Single page
+            )
+            
+            # Create OCR result payload
+            ocr_payload = {
+                "page_identifier": page_identifier,
+                "page_gcs_path": page_gcs_path,
+                "extracted_info": page_info,
+                "processed_at": datetime.utcnow().isoformat(),
+            }
+            
+            # Upload result to GCS
+            result_ref = self.storage.upload_file(
+                json.dumps(ocr_payload).encode('utf-8'),
+                f"ocr_pages/{page_identifier}.json",
+                content_type='application/json'
+            )
+            
+            logger.info(
+                "Page OCR complete",
+                extra={"page_identifier": page_identifier, "result_ref": result_ref}
+            )
+            
+            return {
+                "result_ref": result_ref,
+                "page_identifier": page_identifier,
+                "extracted_info": page_info
             }
 
 

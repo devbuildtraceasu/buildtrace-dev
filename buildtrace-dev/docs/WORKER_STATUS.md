@@ -1,29 +1,46 @@
-# Worker Status - November 29, 2025
+# Worker Status – December 3, 2025
 
-## Current Pod States (prod-app namespace)
+The Kubernetes worker cluster has been decommissioned. All long‑running processors now execute as **independent Cloud Run services** wired to Pub/Sub pull subscriptions.
+
+## Current Cloud Run Services
+
+| Service | Description | Status | Last Deployed |
+| --- | --- | --- | --- |
+| `buildtrace-ocr-worker` | Handles Gemini OCR extraction and page slicing | ✅ `gcloud run services list` shows latest revision `00005` serving 100% traffic | 2025‑12‑03 16:38 UTC |
+| `buildtrace-diff-worker` | Performs image alignment + overlay generation | ✅ Revision `00007` | 2025‑12‑03 16:50 UTC |
+| `buildtrace-summary-worker` | Calls OpenAI/Gemini for AI summaries | ✅ Revision `00008` (token limit hotfix) | 2025‑12‑03 17:43 UTC |
+
+### How to Verify
+
+```bash
+gcloud run services list \
+  --region=us-west2 \
+  --project=buildtrace-dev
+
+# Tail an individual worker
+gcloud run logs tail buildtrace-summary-worker \
+  --region=us-west2
 ```
-diff-worker-7dc79b98bc-b5xxl   1/1   Running            0      14m
-ocr-worker-59cb7dd9d4-789j9    0/1   Running (initial)  0      50s
-ocr-worker-9d48655cd-wzpkz     0/1   CrashLoopBackOff   5      6m
-summary-worker-6647fb659d-zqcdh 0/1  CrashLoopBackOff   8      18m
-summary-worker-77bf6d975b-swkg7 0/1  CrashLoopBackOff   8      18m
-```
 
-## Known Issues
-1. **OCR Worker**
-   - One pod (`59cb7dd9d4-789j9`) starting but will crash once it begins pulling Pub/Sub messages due to insufficient scopes.
-   - Second pod stuck in CrashLoop with Pub/Sub access errors.
+## Recent Health Check
 
-2. **Summary Workers**
-   - Both pods fail with `ACCESS_TOKEN_SCOPE_INSUFFICIENT` when connecting to Pub/Sub.
+- `a8c2b4e5-9dc5-47a5-aa67-443ff80f7c18` comparison ran end‑to‑end using the Cloud Run workers.
+- OCR + Diff logs show streaming messages are picked up immediately after Pub/Sub publish.
+- Summary worker now uses a higher `max_completion_tokens` (16k) to avoid truncated JSON outputs. Last run produced a 12‑change report with `finish_reason=stop`.
 
-3. **Root Causes**
-   - Cluster originally created without Workload Identity; node SA credentials lack Pub/Sub scopes.
-   - Compute default service account missing Pub/Sub roles and GCS bucket permissions (being added now).
-   - Image rebuild in progress to include libGL dependencies; latest tag pushed.
+## Operational Notes
+
+1. **No Kubernetes resources remain.** The `k8s/` manifests are retained for history only; deployment is now purely Cloud Run.
+2. **Scaling:** Each worker inherits Cloud Run autoscaling (min 0, max 10). For long jobs set `min-instances=1` via:
+   ```bash
+   gcloud run services update buildtrace-ocr-worker \
+     --region=us-west2 \
+     --min-instances=1
+   ```
+3. **Pub/Sub Credentials:** Workers authenticate with the `buildtrace-service-account` service account; no Workload Identity tweaks required.
 
 ## Next Steps
-- Finish IAM fixes (artifact registry, GCS, Pub/Sub) for node SA.
-- Confirm Workload Identity pool `buildtrace-dev.svc.id.goog` active and SA binding applied.
-- Restart workers after IAM propagation (~2-3 minutes) and monitor logs.
-- Once pods stable, run full job test.
+
+- Continue monitoring Cloud Run metrics (error rate, concurrent requests).
+- Optionally delete the obsolete GKE cluster from GCP console to avoid residual charges (already done as of Dec 3).
+- Keep `deploy-workers-gke.sh` disabled; use the standard Docker build + `gcloud run deploy` flow documented in `docs/deployment/DEPLOYMENT_GUIDE.md`.

@@ -1,0 +1,1 @@
+This document is titled "A1 Construction Drawing Region-Based RAG PoC" and is identified

@@ -15,6 +15,14 @@ interface ProcessingMonitorProps {
   onViewResults?: () => void
 }
 
+interface PageProgress {
+  page_number: number
+  drawing_name?: string
+  ocr_status: string
+  diff_status: string
+  summary_status: string
+}
+
 interface OcrLogData {
   drawing_name: string
   log: {
@@ -46,10 +54,34 @@ export default function ProcessingMonitor({
   const allCompleted = steps.every(step => step.status === 'completed')
   const [ocrLogs, setOcrLogs] = useState<OcrLogData[]>([])
   const [showOcrInfo, setShowOcrInfo] = useState(false)
+  const [pageProgress, setPageProgress] = useState<PageProgress[]>([])
+  const [totalPages, setTotalPages] = useState(0)
   
   // Check if OCR step is active or completed
   const ocrStep = steps.find(step => step.id === 'ocr')
   const isOcrActive = ocrStep?.status === 'active' || ocrStep?.status === 'completed'
+  
+  // Fetch progress data for per-page updates
+  useEffect(() => {
+    if (jobId) {
+      const fetchProgress = async () => {
+        try {
+          const progress = await apiClient.getJobProgress(jobId)
+          if (progress.pages) {
+            setPageProgress(progress.pages as PageProgress[])
+            setTotalPages(progress.total_pages || 0)
+          }
+        } catch (error) {
+          console.debug('Progress not available yet:', error)
+        }
+      }
+      
+      fetchProgress()
+      // Poll every 2 seconds for real-time updates
+      const interval = setInterval(fetchProgress, 2000)
+      return () => clearInterval(interval)
+    }
+  }, [jobId])
   
   // Fetch OCR logs when OCR step is active or completed
   useEffect(() => {
@@ -115,72 +147,140 @@ export default function ProcessingMonitor({
 
       {/* Processing Steps */}
       <div className="space-y-4 mb-8">
-        {steps.map((step) => (
-          <div key={step.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
-            <div className="flex items-center space-x-3">
-              {/* Step Icon */}
-              <div className="flex-shrink-0">
-                {step.status === 'completed' ? (
-                  <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                    <Check className="w-4 h-4 text-green-600" />
+        {steps.map((step) => {
+          // Get per-page progress for this step
+          let completedPages = 0
+          let inProgressPages = 0
+          let totalPagesForStep = totalPages
+          
+          if (step.id === 'ocr' && pageProgress.length > 0) {
+            completedPages = pageProgress.filter(p => p.ocr_status === 'completed').length
+            inProgressPages = pageProgress.filter(p => p.ocr_status === 'in_progress').length
+          } else if (step.id === 'diff' && pageProgress.length > 0) {
+            completedPages = pageProgress.filter(p => p.diff_status === 'completed').length
+            inProgressPages = pageProgress.filter(p => p.diff_status === 'in_progress').length
+          } else if (step.id === 'summary' && pageProgress.length > 0) {
+            completedPages = pageProgress.filter(p => p.summary_status === 'completed').length
+            inProgressPages = pageProgress.filter(p => p.summary_status === 'in_progress').length
+          }
+          
+          return (
+            <div key={step.id} className="p-4 bg-gray-50 rounded-lg">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center space-x-3">
+                  {/* Step Icon */}
+                  <div className="flex-shrink-0">
+                    {step.status === 'completed' ? (
+                      <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                        <Check className="w-4 h-4 text-green-600" />
+                      </div>
+                    ) : step.status === 'failed' ? (
+                      <AlertCircle className="w-6 h-6 text-red-500" />
+                    ) : step.status === 'active' ? (
+                      <LoadingSpinner size="sm" />
+                    ) : (
+                      <div className="w-6 h-6 rounded-full bg-gray-200" />
+                    )}
                   </div>
-                ) : step.status === 'failed' ? (
-                  <AlertCircle className="w-6 h-6 text-red-500" />
-                ) : step.status === 'active' ? (
-                  <LoadingSpinner size="sm" />
-                ) : (
-                  <div className="w-6 h-6 rounded-full bg-gray-200" />
-                )}
-              </div>
 
-              {/* Step Details */}
-              <div className="text-left">
-                <p className={clsx(
-                  'font-medium',
-                  {
-                    'text-green-600': step.status === 'completed',
-                    'text-red-600': step.status === 'failed',
-                    'text-blue-600': step.status === 'active',
-                    'text-gray-500': step.status === 'pending'
-                  }
-                )}>
-                  {step.name}
-                </p>
-                {step.message && (
-                  <p className="text-sm text-gray-500">{step.message}</p>
+                  {/* Step Details */}
+                  <div className="text-left">
+                    <p className={clsx(
+                      'font-medium',
+                      {
+                        'text-green-600': step.status === 'completed',
+                        'text-red-600': step.status === 'failed',
+                        'text-blue-600': step.status === 'active',
+                        'text-gray-500': step.status === 'pending'
+                      }
+                    )}>
+                      {step.name}
+                    </p>
+                    {step.message && (
+                      <p className="text-sm text-gray-500">{step.message}</p>
+                    )}
+                  </div>
+                </div>
+
+                {/* Progress Count */}
+                {totalPagesForStep > 0 && step.status !== 'completed' && (
+                  <div className="text-sm text-gray-500 font-medium">
+                    {completedPages}/{totalPagesForStep} pages
+                  </div>
                 )}
               </div>
+              
+              {/* Per-page progress bar */}
+              {totalPagesForStep > 0 && step.status !== 'completed' && (
+                <div className="mt-2">
+                  <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div
+                      className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+                      style={{
+                        width: `${(completedPages / totalPagesForStep) * 100}%`
+                      }}
+                    />
+                  </div>
+                  {inProgressPages > 0 && (
+                    <p className="text-xs text-gray-500 mt-1">
+                      {inProgressPages} page{inProgressPages !== 1 ? 's' : ''} in progress...
+                    </p>
+                  )}
+                  
+                  {/* Page-by-page status (show first few pages) */}
+                  {pageProgress.length > 0 && pageProgress.length <= 5 && (
+                    <div className="mt-2 flex flex-wrap gap-1">
+                      {pageProgress.map((page) => {
+                        let pageStatus = 'pending'
+                        if (step.id === 'ocr') pageStatus = page.ocr_status
+                        else if (step.id === 'diff') pageStatus = page.diff_status
+                        else if (step.id === 'summary') pageStatus = page.summary_status
+                        
+                        return (
+                          <div
+                            key={page.page_number}
+                            className={clsx(
+                              'px-2 py-1 rounded text-xs font-medium',
+                              {
+                                'bg-green-100 text-green-700': pageStatus === 'completed',
+                                'bg-blue-100 text-blue-700': pageStatus === 'in_progress',
+                                'bg-gray-100 text-gray-500': pageStatus === 'pending',
+                                'bg-red-100 text-red-700': pageStatus === 'failed'
+                              }
+                            )}
+                            title={page.drawing_name || `Page ${page.page_number}`}
+                          >
+                            P{page.page_number}
+                          </div>
+                        )
+                      })}
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
-
-            {/* Progress */}
-            {typeof step.progress === 'number' && step.status !== 'completed' && (
-              <div className="text-sm text-gray-500 font-medium">
-                {step.progress}%
-              </div>
-            )}
-          </div>
-        ))}
+          )
+        })}
       </div>
 
       {/* Actions */}
-      {(hasFailedStep || allCompleted) && (
-        <div className="flex justify-center space-x-4">
-          <Button
-            variant="secondary"
-            onClick={onReset}
-            className="flex items-center space-x-2"
-          >
-            <RotateCcw className="w-4 h-4" />
-            <span>Start Over</span>
-          </Button>
+      <div className="flex justify-center space-x-4">
+        {/* Always show Cancel/Reset button */}
+        <Button
+          variant="secondary"
+          onClick={onReset}
+          className="flex items-center space-x-2"
+        >
+          <RotateCcw className="w-4 h-4" />
+          <span>{hasFailedStep || allCompleted ? 'Start Over' : 'Cancel'}</span>
+        </Button>
 
-          {allCompleted && onViewResults && (
-            <Button onClick={onViewResults}>
-              View Results
-            </Button>
-          )}
-        </div>
-      )}
+        {allCompleted && onViewResults && (
+          <Button onClick={onViewResults}>
+            View Results
+          </Button>
+        )}
+      </div>
 
       {/* Progress Bar for Overall Progress */}
       {!hasFailedStep && !allCompleted && (

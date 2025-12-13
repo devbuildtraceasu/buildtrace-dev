@@ -1,12 +1,32 @@
 # BuildTrace Dev
 
-Drawing comparison and change detection system for architectural drawings.
+**Version:** 2.0.0 | **Status:** Production-Ready ✅
+
+Drawing comparison and change detection system for architectural drawings. BuildTrace is a cloud-native SaaS platform that uses AI-powered OCR, computer vision, and LLM analysis to identify, visualize, and summarize changes between construction drawing versions.
 
 ## 📚 Documentation
 
+### 📋 Software Documentation (NEW!)
+
+Complete software engineering documentation in **[soft_doc/](./soft_doc/INDEX.md)**:
+
+| Document | Description |
+|----------|-------------|
+| **[SRS.md](./soft_doc/SRS.md)** | Software Requirements Specification |
+| **[USE_CASE_DIAGRAMS.md](./soft_doc/USE_CASE_DIAGRAMS.md)** | Use Case Diagrams with Actor Analysis |
+| **[SEQUENCE_DIAGRAMS.md](./soft_doc/SEQUENCE_DIAGRAMS.md)** | Sequence Diagrams for Key Flows |
+| **[ACTIVITY_DIAGRAMS.md](./soft_doc/ACTIVITY_DIAGRAMS.md)** | Activity Diagrams for Processes |
+| **[DFD.md](./soft_doc/DFD.md)** | Data Flow Diagrams (Level 0, 1, 2) |
+| **[ARCHITECTURE_DIAGRAMS.md](./soft_doc/ARCHITECTURE_DIAGRAMS.md)** | System Architecture & Component Diagrams |
+| **[DATABASE_SCHEMA.md](./soft_doc/DATABASE_SCHEMA.md)** | Complete Database Schema Documentation |
+| **[API_REFERENCE.md](./soft_doc/API_REFERENCE.md)** | REST API Reference |
+
 ### Core Documentation
 - **[docs/SYSTEM_OVERVIEW.md](./docs/SYSTEM_OVERVIEW.md)** - Complete system overview and repository structure
-- **[docs/ARCHITECTURE.md](./ARCHITECTURE.md)** - Detailed system architecture
+- **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Detailed system architecture
+- **[ANALYSIS.md](./ANALYSIS.md)** - Codebase analysis and improvements
+- **[Advanced_next_rag_build_plan.md](./Advanced_next_rag_build_plan.md)** - ⭐ **NEW: Advanced RAG Implementation Plan** (OpenAI Tool Calling + pgvector)
+- **[plan_gcp_rag.md](./plan_gcp_rag.md)** - Original RAG architecture plan
 - **[docs/PROGRESS.md](./docs/PROGRESS.md)** - Implementation status and progress
 - **[docs/PENDING.md](./docs/PENDING.md)** - Remaining tasks and priorities
 - **[docs/FLOW_DIAGRAM.md](./docs/FLOW_DIAGRAM.md)** - Complete data flow diagrams
@@ -70,6 +90,55 @@ See [docs/deployment/QUICK_DEPLOY.md](./docs/deployment/QUICK_DEPLOY.md) for qui
 - **Frontend:** https://buildtrace-frontend-136394139608.us-west2.run.app
 
 ## 📝 Recent Changes
+
+### 2025-12-12: Advanced RAG Implementation Plan (Updated with Gemini 3 Pro)
+
+Added comprehensive **Advanced RAG Build Plan** for next-generation question-answering:
+
+| Component | Technology | Status |
+|-----------|-----------|--------|
+| **Agentic Pipeline** | Gemini Function Calling | ✅ Planned |
+| **Vector Database** | pgvector on Cloud SQL | ✅ Decided |
+| **Embeddings** | text-embedding-3-small | ✅ Planned |
+| **Intent Classification** | Gemini 3 Pro | ✅ Planned |
+| **Agentic Planning** | Gemini 3 Pro | ✅ Planned |
+| **Answer Generation** | Gemini 3 Pro Vision | ✅ Planned |
+| **Implementation** | 7-week phased approach | 📋 Ready |
+
+**Key Features:**
+- Natural language Q&A over architectural drawings
+- Multi-region vector search with smart routing
+- <8s P95 latency, **<$0.012 per query** (4x cheaper than GPT-4o)
+- 90%+ accuracy on test set
+- **Best-in-class vision** (81% MMMU-Pro benchmark, Nov 2025)
+- **1M token context window** (5x larger than competitors)
+
+**Why Gemini 3 Pro:**
+- 60% cheaper than Claude Opus 4.5 ($2/1M vs $5/1M)
+- Already using Gemini 2.5 Pro for OCR (easy migration)
+- Native GCP integration via Vertex AI
+
+See **[Advanced_next_rag_build_plan.md](./Advanced_next_rag_build_plan.md)** for full details.
+
+### 2025-12-01: Sync with buildtrace-overlay-
+
+Synchronized key components with `buildtrace-overlay-` for consistent behavior:
+
+| Component | Status | Details |
+|-----------|--------|---------|
+| **Overlay Colors** | ✅ Synced | Light red (100,100,255), Light green (100,255,100), Gray (150,150,150) |
+| **Overlay Algorithm** | ✅ Synced | Simple mask-based approach, same as buildtrace-overlay- |
+| **Change Analyzer** | ✅ Synced | Same Gemini prompts (5-section analysis) |
+| **Summary Pipeline** | ✅ Synced | Same OpenAI prompts for summary generation |
+| **Chatbot Service** | ✅ Synced | Web search via DuckDuckGo + same system prompt |
+| **PDF Layer Overlay** | ❌ Not Needed | Per user request |
+
+**Files Modified:**
+- `backend/utils/image_utils.py` - Overlay color palette
+- `backend/processing/change_analyzer.py` - AI prompts synced
+- `backend/processing/summary_pipeline.py` - Summary prompts synced
+- `backend/services/chatbot_service.py` - Full rewrite with web search
+- `backend/blueprints/chat.py` - Updated for new chatbot service
 
 ### 2025-11-29: Repository Organization
 - Organized all files into appropriate folders

@@ -5,6 +5,7 @@ Creates alignment overlays by comparing two drawing versions using SIFT feature 
 
 from __future__ import annotations
 
+import json
 import logging
 import os
 import uuid
@@ -303,6 +304,165 @@ class DiffPipeline:
         except Exception as e:
             logger.warning(f"Error calculating alignment score: {e}")
             return 0.5  # Default score
+
+
+    # =========================================================================
+    # STREAMING MODE: Process single page from pre-extracted PNG
+    # =========================================================================
+    
+    def run_page(
+        self,
+        job_id: str,
+        page_number: int,
+        old_page_gcs: str,
+        new_page_gcs: str,
+        old_version_id: str,
+        new_version_id: str,
+        drawing_name: str,
+        metadata: Dict = None,
+    ) -> Dict:
+        """
+        Process a single page pair for diff (streaming mode).
+        
+        Args:
+            job_id: Job ID
+            page_number: Page number (1-indexed)
+            old_page_gcs: GCS path to old page PNG
+            new_page_gcs: GCS path to new page PNG
+            old_version_id: Old drawing version ID
+            new_version_id: New drawing version ID
+            drawing_name: Name of the drawing
+            metadata: Additional metadata
+            
+        Returns:
+            Dict with diff_result_id, overlay_ref, etc.
+        """
+        import numpy as np
+        
+        logger.info(
+            "Running diff on single page",
+            extra={
+                "job_id": job_id,
+                "page_number": page_number,
+                "drawing_name": drawing_name
+            }
+        )
+        
+        # Download page images
+        old_page_bytes = self.storage.download_file(old_page_gcs)
+        new_page_bytes = self.storage.download_file(new_page_gcs)
+        
+        with tempfile.TemporaryDirectory() as temp_dir:
+            # Save locally for processing
+            old_path = Path(temp_dir) / "old_page.png"
+            new_path = Path(temp_dir) / "new_page.png"
+            old_path.write_bytes(old_page_bytes)
+            new_path.write_bytes(new_page_bytes)
+            
+            # Load images
+            old_img = self._load_page_image(str(old_path))
+            new_img = self._load_page_image(str(new_path))
+            
+            # Align images using SIFT
+            aligned_old_img = self.aligner.align(old_img, new_img)
+            if aligned_old_img is None:
+                logger.warning("Alignment failed, using original old image")
+                aligned_old_img = old_img
+            
+            # Create overlay
+            overlay_img = create_overlay_image(aligned_old_img, new_img)
+            
+            # Calculate metrics
+            alignment_score = self._calculate_alignment_score(old_img, new_img, aligned_old_img)
+            
+            # Count changes (non-gray pixels in overlay)
+            gray_value = 150
+            tolerance = 30
+            non_gray_mask = np.any(
+                np.abs(overlay_img.astype(int) - gray_value) > tolerance,
+                axis=2
+            )
+            change_count = int(np.sum(non_gray_mask) // 100)  # Normalize to reasonable number
+            
+            # Save overlay locally
+            overlay_path = Path(temp_dir) / "overlay.png"
+            cv2.imwrite(str(overlay_path), overlay_img)
+            
+            # Upload overlay to GCS
+            overlay_gcs_path = f"overlays/{job_id}/page_{page_number:03d}.png"
+            with open(overlay_path, 'rb') as f:
+                overlay_bytes = f.read()
+            overlay_ref = self.storage.upload_file(
+                overlay_bytes,
+                overlay_gcs_path,
+                content_type='image/png'
+            )
+            
+            # Create diff result payload
+            diff_result_id = str(uuid.uuid4())
+            diff_payload = {
+                "job_id": job_id,
+                "page_number": page_number,
+                "drawing_name": drawing_name,
+                "alignment_score": alignment_score,
+                "change_count": change_count,
+                "overlay_ref": overlay_ref,
+                "old_page_gcs": old_page_gcs,
+                "new_page_gcs": new_page_gcs,
+            }
+            
+            # Upload diff result JSON
+            diff_ref = self.storage.upload_file(
+                json.dumps(diff_payload).encode('utf-8'),
+                f"diffs/{job_id}/page_{page_number:03d}.json",
+                content_type='application/json'
+            )
+            
+            # Create DiffResult record in database
+            with self.session_factory() as db:
+                diff_result = DiffResult(
+                    id=diff_result_id,
+                    job_id=job_id,
+                    old_drawing_version_id=old_version_id,
+                    new_drawing_version_id=new_version_id,
+                    page_number=page_number,
+                    drawing_name=drawing_name,
+                    machine_generated_overlay_ref=diff_ref,
+                    alignment_score=float(alignment_score),
+                    changes_detected=change_count > 0,
+                    change_count=int(change_count),
+                    diff_metadata={
+                        "overlay_image_ref": overlay_ref,
+                        "baseline_image_ref": old_page_gcs,
+                        "revised_image_ref": new_page_gcs,
+                        "page_number": page_number,
+                        "drawing_name": drawing_name,
+                        "total_pages": metadata.get("total_pages", 1) if metadata else 1,
+                    }
+                )
+                db.add(diff_result)
+                db.commit()
+            
+            logger.info(
+                "Page diff complete",
+                extra={
+                    "job_id": job_id,
+                    "page_number": page_number,
+                    "diff_result_id": diff_result_id,
+                    "change_count": change_count,
+                    "alignment_score": alignment_score
+                }
+            )
+            
+            return {
+                "diff_result_id": diff_result_id,
+                "overlay_ref": overlay_ref,
+                "diff_ref": diff_ref,
+                "change_count": change_count,
+                "alignment_score": alignment_score,
+                "page_number": page_number,
+                "drawing_name": drawing_name,
+            }
 
 
 __all__ = ["DiffPipeline"]

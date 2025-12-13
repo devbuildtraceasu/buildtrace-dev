@@ -7,6 +7,7 @@ import { useAuthStore } from '@/store/authStore'
 
 export default function LoginButton() {
   const { isAuthenticated, user } = useAuthStore()
+  const isMockMode = process.env.NEXT_PUBLIC_USE_MOCKS === 'true'
 
   const handleLogin = async () => {
     try {
@@ -53,7 +54,27 @@ export default function LoginButton() {
         >
           Logout
         </Button>
+        {isMockMode && (
+          <span className="text-xs font-semibold text-green-600 uppercase tracking-wide">
+            Mock Mode
+          </span>
+        )}
       </div>
+    )
+  }
+
+  if (isMockMode) {
+    return (
+      <Button
+        size="sm"
+        onClick={async () => {
+          const { mockUser } = await import('@/mocks/data')
+          useAuthStore.getState().setUser(mockUser)
+          useAuthStore.getState().setToken('mock-token')
+        }}
+      >
+        Use Mock User
+      </Button>
     )
   }
 

@@ -4,7 +4,7 @@ Change Analyzer for Drawing Overlays
 This module analyzes drawing overlay results using Gemini API to generate
 comprehensive change lists for architectural modifications.
 
-Adapted from buildtrace-overlay- for buildtrace-dev with Gemini support
+Synced prompts with buildtrace-overlay- for consistent analysis output
 """
 
 import os
@@ -91,36 +91,10 @@ class ChangeAnalyzer:
         self.model = genai.GenerativeModel(model)
         self.model_name = model
         
-        self.system_prompt = """
-You are an expert project manager at a general contractor company with access to document search and web research tools. 
+        # System prompt - synced with buildtrace-overlay-
+        self.system_prompt = """You are an expert project manager at a general contractor company with access to document search and web research tools. 
 Analyze the provided architectural drawings thoroughly and identify all changes between the old and new versions.
 Focus on practical construction implications and cost impacts.
-
-CRITICAL: When analyzing changes, identify the SPATIAL LOCATION of each change by describing bounding regions.
-Think of the drawing as having distinct sections (like floor plans, legends, notes, schedules, title blocks) that can be 
-bounded by rectangular regions. Changes may occur in:
-- Main drawing area (floor plan, elevation, section views)
-- Legend sections (material legends, symbol legends, finish schedules)
-- Note sections (general notes, sheet notes, specifications)
-- Title block area (project info, revision history)
-- Detail callouts and sections
-
-For each change, provide:
-1. **Change Description**: Clear description of what changed
-2. **Spatial Location**: Describe which section/region of the drawing (e.g., "Main floor plan - northwest quadrant", 
-   "Finish legend - row 3", "General notes section - note #5", "Title block - revision history")
-3. **Bounding Reference**: If possible, reference nearby elements to help locate the change (e.g., "near grid line A-3", 
-   "adjacent to room 101", "in the flooring types legend between CPT-1 and STL-1")
-
-Provide your analysis in a structured format:
-1. **Most Critical Change**: Identify the most significant change in terms of cost and construction impact, including its location
-2. **Complete Change List**: Provide a numbered list of ALL changes found, each with spatial location information
-3. **Change Format**: Use clear descriptions like "Room 101 extended by 10 feet from 200 to 300 sq ft [Location: Main floor plan, 
-   northwest quadrant, near grid intersection A-3]"
-4. **Construction Impact**: Assess implications for construction timeline and cost
-5. **Recommendations**: Provide professional insights on construction implications
-
-Format each change as: [Aspect] + [Action] + [Detail] + [Location/Reference] + [Spatial Region]
 """
     
     def _image_to_base64(self, image_path: str) -> str:
@@ -201,73 +175,22 @@ Format each change as: [Aspect] + [Action] + [Detail] + [Location/Reference] + [
             
             logger.info(f"Loaded images: {old_png}, {new_png}, {overlay_png}")
             
-            # Create enhanced analysis prompt with bounding box guidance
+            # Analysis prompt - synced with buildtrace-overlay-
             analysis_prompt = f"""
-Please analyze these three architectural drawings for drawing {drawing_name} and identify all changes with spatial precision:
+Please analyze these three architectural drawings for drawing {drawing_name} and identify all changes:
 
 1. BEFORE drawing - the original design
 2. AFTER drawing - the updated design  
 3. OVERLAY drawing - Red shows removed content (old only), green shows added content (new only), grey means no change
 
-ANALYSIS APPROACH:
-Think of the drawing as having distinct bounded regions, similar to how architectural drawings are organized:
-- **Main Drawing Area**: The primary floor plan, elevation, or section view (typically the largest central area)
-- **Legend Sections**: Material legends, finish schedules, symbol legends (typically in side panels or corners)
-- **Note Sections**: General notes, sheet notes, specifications (typically in side panels or bottom)
-- **Title Block**: Project information, revision history, sheet identification (typically bottom-right corner)
-- **Detail Callouts**: Enlarged details, sections, or special views (may be in side panels or separate areas)
-
-For each change you identify:
-
-1. **Locate the Change Region**: Identify which bounded section contains the change
-   - Is it in the main drawing area? Which quadrant or region?
-   - Is it in a legend? Which row or entry?
-   - Is it in a note section? Which note number or item?
-   - Is it in the title block? Which field or section?
-
-2. **Describe Spatial Context**: Provide spatial references to help locate the change
-   - Reference nearby room numbers, grid lines, or labels
-   - Reference adjacent elements in legends or schedules
-   - Use directional references (northwest, southeast, etc.) for main drawing areas
-   - Reference note numbers or schedule rows for text-based sections
-
-3. **Identify Change Type**: Categorize the change
-   - **Geometric Change**: Room size, wall position, door/window location changes
-   - **Material/Finish Change**: Finish type, material specification changes
-   - **Text/Annotation Change**: Note modifications, specification updates, revision changes
-   - **Legend/Schedule Change**: New entries, removed entries, modified entries in legends or schedules
-   - **Title Block Change**: Revision updates, date changes, sheet number changes
-
 Please provide a detailed analysis including:
-1. **Most Critical Change**: Identify the most significant change in terms of cost and construction impact, including:
-   - Exact description of the change
-   - Spatial location (which bounded region and specific area)
-   - Nearby reference elements for precise location
+1. **Most Critical Change**: Identify the most significant change in terms of cost and construction impact
+2. **Complete Change List**: Provide a numbered list of ALL changes found
+3. **Change Format**: Use clear descriptions like "Room 101 extended by 10 feet from 200 to 300 sq ft"
+4. **Construction Impact**: Assess implications for construction timeline and cost
+5. **Recommendations**: Provide professional insights on construction implications
 
-2. **Complete Change List**: Provide a numbered list of ALL changes found, each with:
-   - Change description
-   - Spatial location (bounded region + specific area)
-   - Change type (geometric/material/text/legend/title block)
-   - Nearby reference elements
-
-3. **Change Format Example**: 
-   "1. [Geometric Change] Room 101 extended by 10 feet from 200 to 300 sq ft [Location: Main floor plan, northwest quadrant, 
-   near grid intersection A-3, adjacent to corridor]"
-
-4. **Construction Impact**: Assess implications for construction timeline and cost, organized by:
-   - Structural impact
-   - MEP (mechanical/electrical/plumbing) impact
-   - Finish/material impact
-   - Schedule/timeline impact
-   - Cost impact (if estimable)
-
-5. **Recommendations**: Provide professional insights on construction implications, prioritized by:
-   - Critical actions required
-   - Coordination needs
-   - Potential issues or risks
-   - Best practices for implementation
-
-Format each change as: [Change Type] + [Aspect] + [Action] + [Detail] + [Spatial Location] + [Reference Elements]
+Format each change as: [Aspect] + [Action] + [Detail] + [Location/Reference]
 """
             
             # Call Gemini API with images
@@ -281,8 +204,7 @@ Format each change as: [Change Type] + [Aspect] + [Action] + [Detail] + [Spatial
                     overlay_img
                 ],
                 generation_config={
-                    'max_output_tokens': 4000,
-                    'temperature': 0.7,
+                    'max_output_tokens': 2000
                 }
             )
             
@@ -332,6 +254,7 @@ Format each change as: [Change Type] + [Aspect] + [Action] + [Detail] + [Spatial
     def _parse_analysis_response(self, analysis_text: str) -> Tuple[List[str], str, List[str]]:
         """
         Parse Gemini response to extract structured information
+        Synced with buildtrace-overlay- parsing logic
         
         Args:
             analysis_text: Raw analysis text from Gemini
@@ -345,26 +268,22 @@ Format each change as: [Change Type] + [Aspect] + [Action] + [Detail] + [Spatial
         
         lines = analysis_text.split('\n')
         current_section = None
-        critical_section_active = False
         
         for line in lines:
             line = line.strip()
             if not line:
                 continue
                 
-            # Detect sections (more flexible matching)
+            # Detect sections
             line_lower = line.lower()
             if "critical change" in line_lower or "most significant" in line_lower or "most critical" in line_lower:
                 current_section = "critical"
-                critical_section_active = True
                 continue
             elif "change list" in line_lower or "changes found" in line_lower or "changes:" in line_lower or "complete change" in line_lower:
                 current_section = "changes"
-                critical_section_active = False
                 continue
             elif "recommendation" in line_lower or "recommendations:" in line_lower:
                 current_section = "recommendations"
-                critical_section_active = False
                 continue
             elif "construction impact" in line_lower or "impact:" in line_lower:
                 # Don't treat impact section as recommendations
@@ -387,16 +306,14 @@ Format each change as: [Change Type] + [Aspect] + [Action] + [Detail] + [Spatial
                         recommendations.append(clean_line)
                         continue
             
-            # Extract critical change (collect multi-line if needed)
-            elif current_section == "critical" or critical_section_active:
+            # Extract critical change
+            elif current_section == "critical" and line:
                 # Skip section headers
                 if "critical" not in line_lower and len(line) > 15:
                     if critical_change:
                         critical_change += " " + line
                     else:
                         critical_change = line
-                    critical_section_active = True
-            
         
         # Clean up critical change
         if critical_change:

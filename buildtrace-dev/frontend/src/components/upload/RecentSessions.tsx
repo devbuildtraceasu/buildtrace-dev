@@ -1,14 +1,13 @@
 'use client'
 
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { clsx } from 'clsx'
-import { Eye, Clock, FileText, Calendar } from 'lucide-react'
+import { Eye, FileText, FolderOpen, List, LayoutGrid, ChevronDown, ChevronRight, Trash2, RefreshCw } from 'lucide-react'
 import { apiClient } from '@/lib/api'
-import Card from '@/components/ui/Card'
 import Button from '@/components/ui/Button'
 import LoadingSpinner from '@/components/ui/LoadingSpinner'
-import { JobSummaryRow, JobStage } from '@/types'
+import { JobSummaryRow, JobStage, Project } from '@/types'
 import { useAuthStore } from '@/store/authStore'
 
 type StageSummaryItem = {
@@ -18,13 +17,23 @@ type StageSummaryItem = {
   message?: string
 }
 
+type ViewMode = 'flat' | 'byProject'
+
+interface ProjectWithJobs {
+  project: Project
+  jobs: JobSummaryRow[]
+}
+
 export default function RecentSessions() {
   const router = useRouter()
   const { user } = useAuthStore()
   const [sessions, setSessions] = useState<JobSummaryRow[]>([])
+  const [projects, setProjects] = useState<Project[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [stageSummaries, setStageSummaries] = useState<Record<string, StageSummaryItem[]>>({})
   const [stagesLoading, setStagesLoading] = useState(false)
+  const [viewMode, setViewMode] = useState<ViewMode>('flat')
+  const [expandedProjects, setExpandedProjects] = useState<Set<string>>(new Set())
 
   const summarizeStages = (stages: JobStage[]): StageSummaryItem[] => {
     const summary: StageSummaryItem[] = []
@@ -95,18 +104,68 @@ export default function RecentSessions() {
     if (!user) return
     setIsLoading(true)
     try {
-      const response = await apiClient.listJobs({ userId: user.user_id, limit: 5 })
-      const jobs = response.jobs || []
+      // Load jobs and projects in parallel
+      const [jobsResponse, projectsData] = await Promise.all([
+        apiClient.listJobs({ userId: user.user_id, limit: 20 }),
+        apiClient.getProjects(user.user_id)
+      ])
+      const jobs = jobsResponse.jobs || []
       setSessions(jobs)
+      setProjects(projectsData as Project[] || [])
       loadStageSummaries(jobs)
+      
+      // Auto-expand first project if in byProject mode
+      if (projectsData?.length > 0) {
+        setExpandedProjects(new Set([projectsData[0].project_id]))
+      }
     } catch (error) {
       console.error('Failed to load jobs', error)
       setSessions([])
+      setProjects([])
       setStageSummaries({})
     } finally {
       setIsLoading(false)
     }
   }, [user, loadStageSummaries])
+  
+  // Group jobs by project
+  const projectsWithJobs = useMemo((): ProjectWithJobs[] => {
+    const projectMap = new Map<string, ProjectWithJobs>()
+    
+    // Initialize with all projects
+    projects.forEach(project => {
+      projectMap.set(project.project_id, { project, jobs: [] })
+    })
+    
+    // Group jobs by project
+    sessions.forEach(job => {
+      const projectEntry = projectMap.get(job.project_id)
+      if (projectEntry) {
+        projectEntry.jobs.push(job)
+      }
+    })
+    
+    // Return only projects with jobs, sorted by most recent activity
+    return Array.from(projectMap.values())
+      .filter(p => p.jobs.length > 0)
+      .sort((a, b) => {
+        const aLatest = a.jobs[0]?.created_at || ''
+        const bLatest = b.jobs[0]?.created_at || ''
+        return bLatest.localeCompare(aLatest)
+      })
+  }, [sessions, projects])
+  
+  const toggleProjectExpand = (projectId: string) => {
+    setExpandedProjects(prev => {
+      const next = new Set(prev)
+      if (next.has(projectId)) {
+        next.delete(projectId)
+      } else {
+        next.add(projectId)
+      }
+      return next
+    })
+  }
 
   useEffect(() => {
     if (!user) return
@@ -122,6 +181,34 @@ export default function RecentSessions() {
       hour: '2-digit',
       minute: '2-digit'
     })
+  }
+
+  // Format relative time like "1 day ago", "2 days ago"
+  const formatRelativeTime = (dateString?: string) => {
+    if (!dateString) return '—'
+    const date = new Date(dateString)
+    const now = new Date()
+    const diffMs = now.getTime() - date.getTime()
+    const diffMins = Math.floor(diffMs / (1000 * 60))
+    const diffHours = Math.floor(diffMs / (1000 * 60 * 60))
+    const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24))
+    
+    if (diffMins < 1) return 'Just now'
+    if (diffMins < 60) return `${diffMins} min${diffMins === 1 ? '' : 's'} ago`
+    if (diffHours < 24) return `${diffHours} hour${diffHours === 1 ? '' : 's'} ago`
+    if (diffDays === 1) return '1 day ago'
+    if (diffDays < 30) return `${diffDays} days ago`
+    return formatDate(dateString)
+  }
+
+  // Truncate file name for display
+  const truncateFileName = (name?: string, maxLength: number = 16) => {
+    if (!name) return '—'
+    if (name.length <= maxLength) return name
+    const ext = name.includes('.') ? name.substring(name.lastIndexOf('.')) : ''
+    const baseName = name.substring(0, name.lastIndexOf('.') || name.length)
+    const truncatedBase = baseName.substring(0, maxLength - ext.length - 4)
+    return `${truncatedBase}....${ext}`
   }
 
   const getStatusBadge = (status: string) => {
@@ -165,31 +252,132 @@ export default function RecentSessions() {
 
   if (isLoading) {
     return (
-      <Card>
-        <div className="text-center py-12">
-          <LoadingSpinner size="lg" />
-          <p className="text-gray-500 mt-4">Loading recent comparisons...</p>
+      <div className="bg-white rounded-2xl shadow-card p-8">
+        <div className="animate-pulse">
+          <div className="h-6 bg-gray-200 rounded w-48 mb-6"></div>
+          <div className="space-y-4">
+            {[...Array(3)].map((_, i) => (
+              <div key={i} className="h-12 bg-gray-100 rounded"></div>
+            ))}
+          </div>
         </div>
-      </Card>
+      </div>
     )
   }
 
+  // Render job row (reused in both views)
+  const renderJobRow = (session: JobSummaryRow) => (
+    <tr 
+      key={session.job_id} 
+      className="hover:bg-gray-50 border-b border-gray-100"
+      data-testid={`row-comparison-${session.job_id}`}
+    >
+      <td className="py-4 px-4 text-sm text-gray-500" data-testid="text-date">
+        {formatRelativeTime(session.created_at)}
+      </td>
+      <td className="py-4 px-4 text-sm text-gray-700" title={session.baseline_name}>
+        {truncateFileName(session.baseline_name)}
+      </td>
+      <td className="py-4 px-4 text-sm text-gray-700" title={session.revised_name}>
+        {truncateFileName(session.revised_name)}
+      </td>
+      <td className="py-4 px-4 text-center">
+        <span className={clsx(
+          'inline-flex items-center justify-center min-w-[2rem] px-2 py-0.5 rounded text-sm font-medium',
+          session.change_count && session.change_count > 0 
+            ? 'text-green-600' 
+            : 'text-gray-400 border border-dashed border-gray-300'
+        )}>
+          {session.change_count || 0}
+        </span>
+      </td>
+      <td className="py-4 px-4">
+        <span className={clsx(
+          'inline-flex items-center px-2.5 py-1 rounded text-xs font-semibold uppercase tracking-wide',
+          session.status === 'completed' ? 'bg-green-100 text-green-700' :
+          session.status === 'in_progress' || session.status === 'processing' ? 'bg-yellow-100 text-yellow-700' :
+          session.status === 'failed' ? 'bg-red-100 text-red-700' :
+          'bg-gray-100 text-gray-600'
+        )}>
+          {session.status === 'in_progress' ? 'Processing' : session.status}
+        </span>
+      </td>
+      <td className="py-4 px-4">
+        <div className="flex items-center space-x-1">
+          <button
+            onClick={() => router.push(`/results?jobId=${session.job_id}`)}
+            className="p-1.5 text-gray-500 hover:text-blue-600 hover:bg-blue-50 rounded transition-colors"
+            title="View results"
+            data-testid={`button-view-${session.job_id}`}
+          >
+            <Eye className="h-4 w-4" />
+          </button>
+          <button
+            onClick={() => {
+              if (confirm('Are you sure you want to delete this comparison?')) {
+                // TODO: Implement delete API
+                console.log('Delete job:', session.job_id)
+              }
+            }}
+            className="p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
+            title="Delete comparison"
+          >
+            <Trash2 className="h-4 w-4" />
+          </button>
+        </div>
+      </td>
+    </tr>
+  )
+
   return (
-    <Card>
+    <div className="bg-white rounded-2xl shadow-card p-8">
+      {/* Header with view toggle */}
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl font-semibold text-gray-900">Recent Comparisons</h2>
-        {user && (
-        <Button
-          variant="ghost"
-          size="sm"
-            onClick={loadJobs}
-          className="flex items-center space-x-2"
-            disabled={isLoading}
-        >
-          <Clock className="w-4 h-4" />
-          <span>Refresh</span>
-        </Button>
-        )}
+        <h2 className="text-2xl font-semibold text-gray-900" data-testid="recent-comparisons-title">
+          Recent Comparisons
+        </h2>
+        <div className="flex items-center space-x-3">
+          {/* View Mode Toggle */}
+          <div className="flex items-center bg-gray-100 rounded-lg p-1">
+            <button
+              onClick={() => setViewMode('flat')}
+              className={clsx(
+                'flex items-center space-x-1 px-3 py-1.5 rounded-md text-sm font-medium transition-all',
+                viewMode === 'flat' 
+                  ? 'bg-white text-blue-600 shadow-sm' 
+                  : 'text-gray-600 hover:text-gray-900'
+              )}
+            >
+              <List className="w-4 h-4" />
+              <span>List</span>
+            </button>
+            <button
+              onClick={() => setViewMode('byProject')}
+              className={clsx(
+                'flex items-center space-x-1 px-3 py-1.5 rounded-md text-sm font-medium transition-all',
+                viewMode === 'byProject' 
+                  ? 'bg-white text-blue-600 shadow-sm' 
+                  : 'text-gray-600 hover:text-gray-900'
+              )}
+            >
+              <LayoutGrid className="w-4 h-4" />
+              <span>By Project</span>
+            </button>
+          </div>
+          
+          {user && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={loadJobs}
+              className="flex items-center space-x-2"
+              disabled={isLoading}
+            >
+              <RefreshCw className={clsx("w-4 h-4", isLoading && "animate-spin")} />
+              <span>Refresh</span>
+            </Button>
+          )}
+        </div>
       </div>
 
       {sessions.length === 0 ? (
@@ -200,82 +388,86 @@ export default function RecentSessions() {
             Upload your first pair of drawings to get started
           </p>
         </div>
+      ) : viewMode === 'flat' ? (
+        /* Flat List View */
+        <div className="overflow-x-auto">
+          <table className="w-full" data-testid="table-recent-comparisons">
+            <thead>
+              <tr className="border-b border-gray-200">
+                <th className="text-left py-3 px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Date</th>
+                <th className="text-left py-3 px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Baseline</th>
+                <th className="text-left py-3 px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Revised</th>
+                <th className="text-center py-3 px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Changes</th>
+                <th className="text-left py-3 px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Status</th>
+                <th className="text-left py-3 px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {sessions.map(renderJobRow)}
+            </tbody>
+          </table>
+        </div>
       ) : (
-        <div className="overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Date
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Job ID
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Status
-                  </th>
-                  <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Actions
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {sessions.map((session) => (
-                  <tr key={session.job_id} className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      <div className="flex items-center space-x-2">
-                        <Calendar className="w-4 h-4" />
-                        <span>{formatDate(session.created_at)}</span>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-mono text-gray-900">
-                      {session.job_id}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      {getStatusBadge(session.status)}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-center text-sm">
-                      <div className="flex flex-col items-center space-y-2">
-                        <div className="flex flex-wrap justify-center gap-2">
-                          {(stageSummaries[session.job_id] || []).map((stage) => (
-                            <span
-                              key={`${session.job_id}-${stage.stage}`}
-                              className={clsx(
-                                'px-2 py-1 rounded-full text-xs font-medium min-w-[80px] text-center',
-                                stageStatusClass(stage.status)
-                              )}
-                            >
-                              {formatStageLabel(stage.stage)}
-                              {stage.progressLabel ? ` · ${stage.progressLabel}` : ''}
-                              {stage.status === 'failed' && stage.message ? ' ⚠' : ''}
-                            </span>
-                          ))}
-                          {!stageSummaries[session.job_id]?.length && (
-                            <span className="text-xs text-gray-400">
-                              {stagesLoading ? 'Loading stages…' : 'No stage data'}
-                            </span>
-                          )}
-                        </div>
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          onClick={() => router.push(`/results?jobId=${session.job_id}`)}
-                          className="flex items-center space-x-1"
-                        >
-                          <Eye className="w-4 h-4" />
-                          <span>View</span>
-                        </Button>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+        /* Project Grouped View */
+        <div className="space-y-4">
+          {projectsWithJobs.length === 0 ? (
+            <div className="text-center py-8 text-gray-500">
+              <FolderOpen className="w-10 h-10 text-gray-400 mx-auto mb-3" />
+              <p>No projects with comparisons found</p>
+            </div>
+          ) : (
+            projectsWithJobs.map(({ project, jobs }) => (
+              <div key={project.project_id} className="border border-gray-200 rounded-xl overflow-hidden">
+                {/* Project Header */}
+                <button
+                  onClick={() => toggleProjectExpand(project.project_id)}
+                  className="w-full flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 transition-colors"
+                >
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <FolderOpen className="w-5 h-5 text-blue-600" />
+                    </div>
+                    <div className="text-left">
+                      <h3 className="font-semibold text-gray-900">{project.name}</h3>
+                      <p className="text-sm text-gray-500">
+                        {jobs.length} comparison{jobs.length !== 1 ? 's' : ''}
+                        {project.location && ` • ${project.location}`}
+                      </p>
+                    </div>
+                  </div>
+                  {expandedProjects.has(project.project_id) ? (
+                    <ChevronDown className="w-5 h-5 text-gray-500" />
+                  ) : (
+                    <ChevronRight className="w-5 h-5 text-gray-500" />
+                  )}
+                </button>
+                
+                {/* Jobs Table (expanded) */}
+                {expandedProjects.has(project.project_id) && (
+                  <div className="bg-white">
+                    <table className="w-full">
+                      <thead>
+                        <tr className="border-b border-gray-100">
+                          <th className="text-left py-2 px-4 text-xs font-medium text-gray-500 uppercase">Date</th>
+                          <th className="text-left py-2 px-4 text-xs font-medium text-gray-500 uppercase">Baseline</th>
+                          <th className="text-left py-2 px-4 text-xs font-medium text-gray-500 uppercase">Revised</th>
+                          <th className="text-center py-2 px-4 text-xs font-medium text-gray-500 uppercase">Changes</th>
+                          <th className="text-left py-2 px-4 text-xs font-medium text-gray-500 uppercase">Status</th>
+                          <th className="text-left py-2 px-4 text-xs font-medium text-gray-500 uppercase">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {jobs.map(renderJobRow)}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+              </div>
+            ))
+          )}
         </div>
       )}
-    </Card>
+    </div>
   )
 }
 

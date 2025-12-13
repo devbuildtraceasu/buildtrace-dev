@@ -1,0 +1,197 @@
+Architectural drawing caption – TempleTest_Add1, page 1, region q4_bottom_right (bottom‑right quadrant)
+
+Overall content:
+- Bottom‑right quadrant of an architectural sheet combining: partial Level 01 floor plan, graphic symbol legend, sheet note schedule, and full title block / project information.
+- Sheet appears to be part of construction documents for a religious building, labeled “NEW TEMPLE PROJECT.”
+
+PART 1 – FLOOR PLAN FRAGMENT (left side of region)
+
+Visible rooms and room labels:
+- “VESTIBULE – CLOTHING” room label appears partially at upper left of region; most of the room is outside this quadrant. No room number visible within this crop.
+- “CORRIDOR – BAPTISTRY” room label located just right of “VESTIBULE – CLOTHING,” between two doors. No room number visible in this crop.
+- “STORAGE” room labeled roughly near middle upper of the plan fragment, text “STORAGE” and a room area or number below it reading “1.85? SF” (only partially legible; appears like “1.85? SF”).
+- “CONFIRMATION” room labeled to the right of “STORAGE”; text “CONFIRMATION,” with smaller text under it possibly a room number or area “1.82?” (not fully legible).
+- Several walls and circulation spaces below these rooms with no visible labels in this quadrant.
+
+Doors:
+- Multiple single‑leaf swing doors into and between rooms:
+  - Door from “VESTIBULE – CLOTHING” swinging into the corridor (door head and swing arc visible near left side).
+  - Door from “CORRIDOR – BAPTISTRY” into “STORAGE” room; door leaf swings into “STORAGE.”
+  - Door from “CORRIDOR – BAPTISTRY” into “CONFIRMATION” room; door leaf swings into “CONFIRMATION.”
+  - Additional doors along the corridor walls at far left edge of region (door frames and swings visible but connected rooms mostly outside quadrant).
+- No explicit door tags or numbers are legible within this specific crop; only graphic door symbols.
+
+Windows / exterior openings:
+- No typical window symbols are visible in this quadrant.
+- A short exterior wall segment at lower center/right includes a thick wall and a small projection but no glazing indicated.
+
+Dimensions:
+- Vertical dimension strings along interior walls partly visible:
+  - One dimension text along wall at left of “VESTIBULE – CLOTHING” reading approximately “11'‑1 1/8"” (text partly truncated).
+  - Another dimension along wall below corridor area reading “??'‑??” (not fully legible due to crop and scale).
+- Inside room “CORRIDOR – BAPTISTRY” there are short dimension strings adjacent to plumbing fixture area, but the numeric text is not clearly legible in the image.
+
+Fixtures / equipment:
+- Inside “CORRIDOR – BAPTISTRY” near the junction with “STORAGE,” a circular symbol and line work indicating plumbing or mechanical fixture at wall (could be a floor drain or similar).
+- A small rectangle near that circle indicates an associated device or control box (exact label not legible).
+
+Section / detail / reference tags on plan:
+- Various diamond‑shaped callout tags:
+  - In “VESTIBULE – CLOTHING” there is a diamond tag with text “A5/3A1” (best reading: top line “A5” bottom line “3A1”).
+  - In “CORRIDOR – BAPTISTRY” another diamond tag near middle with similar configuration “A5/3A1.”
+  - In “STORAGE” one diamond tag again reading “A5/3A1.”
+  - In “CONFIRMATION” one diamond tag “A5/3A1.”
+  - Near the bottom edge, another diamond tag close to an exterior corner labeled “A9/5A0” (top “A9”, bottom “5A0”).
+- Circular matchline / reference bubble along right side of plan labeled “5” (inside circle) located adjacent to legend area, likely indicating a referencing key (corresponds to item “5” in legend list).
+- Another circular matchline / reference bubble at lower right of plan fragment, label “4.5” (inside circle) indicating match or key point along grid / sheet.
+
+Walls and construction:
+- Interior walls shown with standard double‑line wall graphics.
+- Thicker exterior wall at lower center/right of the fragment suggesting a perimeter or structural wall.
+- A cross‑shaped symbol in a wall segment between corridor and adjacent area (could be a column or structural element).
+- Doors are drawn with typical jambs and arcs.
+
+PART 2 – GRAPHIC LEGEND AND TAG EXPLANATIONS (upper‑middle right of region)
+
+Interior Elevation Tags:
+- Heading “INTERIOR ELEVATION TAG.”
+- Illustrative symbol: circle divided, with arrow and text.
+- Text: “VIEW NUMBER (TYP.)” above line and “SHEET NUMBER” below line.
+
+Exterior Wall Section Tag:
+- Heading “EXTERIOR WALL SECTION TAG.”
+- Symbol: circle with arrow; text on right.
+- Annotations:
+  - “SIMILAR (IF APPLICABLE)”
+  - Two lines under symbol: top “VIEW NUMBER” bottom “SHEET NUMBER.”
+
+Callout Tags:
+- Heading “CALLOUT TAGS.”
+- Symbol: circle or rectangle with leader.
+- Associated text:
+  - “SIMILAR (IF APPLICABLE)”
+  - “VIEW NUMBER”
+  - “SHEET NUMBER.”
+
+Fire Ratings:
+- Heading “FIRE RATINGS.”
+- Horizontal line with graphic hatch to indicate different ratings.
+- Text at right:
+  - “1HR FRR”
+  - “2HR FRR.”
+
+Hatch Patterns:
+- Heading “HATCH PATTERNS.”
+- Single swatch of hatch infill.
+- Label underneath: “MILLWORK.”
+
+Matchline Tags:
+- Heading “MATCHLINE TAGS.”
+- Several lines of text describing under/over matchline labeling:
+  - “VIEW NUMBER (ABOVE MATCHLINE)”
+  - First example line: “MATCHLINE, SEE 1/A00‑0.0 —— SHEET NUMBER (ABOVE MATCHLINE)” (sheet number text partly cut but reads like “1/A00‑0.0”).
+  - Second example line: “MATCHLINE, SEE 1/A00‑0.0 —— SHEET NUMBER (BELOW MATCHLINE)”
+  - Final line: “VIEW NUMBER (BELOW MATCHLINE).”
+
+PART 3 – SHEET NOTE SCHEDULE (center‑right)
+
+Heading:
+- Centered, uppercase: “SHEET NOTE SCHEDULE.”
+
+Table columns:
+- Left narrow column headed “#”.
+- Wider right column headed “DESCRIPTION.”
+
+Rows (all uppercase text):
+
+1. Row 1:
+   - “1” in first column.
+   - Description: 
+     “TOUCHLESS ACTUATOR CONTROL FOR DOOR AUTO OPERATOR. BASIS OF DESIGN: LCN 8310‑185. REFER TO INTERIOR ELEVATIONS.”
+
+2. Row 2:
+   - “2”
+   - Description:
+     “KNOXBOX ‑ FINAL LOCATION TBD. TO BE TIED INTO SECURITY SYSTEM.”
+
+3. Row 3:
+   - “3”
+   - Description:
+     “LINEAR FLOOR DRAIN. SEE PLUMBING DRAWINGS FOR MORE INFO.”
+
+4. Row 4:
+   - “4”
+   - Description:
+     “PHENOLIC SHOWER DOOR.”
+
+PART 4 – TITLE BLOCK AND PROJECT INFORMATION (far right side)
+
+Company logo / consultant list (upper right):
+
+- Large logo text: “NORR” (in bold).
+- Address block below:
+  - “2020 I Street, Suite 200”
+  - “Sacramento, CA 95816, United States”
+  - “916.930.0290”
+  - “norr.com”
+- Vertical list of disciplines and firms to left of logo block (each line label then company):
+  - “Survey: SIEGFRIED”
+  - “Civil: SIEGFRIED”
+  - “Geotechnical: [illegible or off‑crop]”
+  - “Architectural: NORR”
+  - “Structural: BUHLER”
+  - “Mechanical: GLUMAC”
+  - “Electrical: GLUMAC”
+  - “Interiors: SAGRADA”
+  - “Landscape: SIEGFRIED”
+  - Some discipline lines include additional address fragments such as “SACRAMENTO, CALIFORNIA” (small text partially cut).
+
+Project team box (mid‑right):
+
+- Label column with roles and names:
+  - “Project Manager” – “Dtran” (or similar; first name initial “D” plus surname; small print).
+  - “Author” – “ANDREA JAGGERS.”
+  - “Project Leader” – “Checked” (text for role may be “Project Leader”; name may be blank or says “Checked” below).
+  - “Checker” – “JULIAN ANDRADE.”
+- To the right of roles: column heading not visible but likely “Drawn / Author / Checked” etc.
+
+Client box:
+
+- Centered text:
+  - “THE CHURCH OF”
+  - “JESUS CHRIST”
+  - “OF LATTER‑DAY SAINTS”
+
+Project box:
+
+- Label “Project” on left.
+- To right, project name in bold uppercase:
+  - “NEW TEMPLE PROJECT”
+- Below, project address line:
+  - “771 W. Fremont Ave. Sunnyvale, CA 94087” (state and ZIP partly small but legible).
+
+Drawing title box:
+
+- Label “Drawing Title.”
+- Title text, centered and multi‑line, uppercase:
+  - “ENLARGED FLOOR PLAN –”
+  - “LEVEL 01 – AREA A”
+
+Scale / project number / drawing number:
+
+- Small boxed area at lower right:
+  - “Scale” label with text: “1/4" = 1'-0".”
+  - “Project No.” with value: “ED2024‑0005‑00.”
+  - “Drawing No.” with value: “A20‑05.”
+
+Footer:
+
+- Very bottom right small copyright / file note:
+  - Line includes: “A101 E1 (Iss. 2024 - Rev (Zero)). Copyright © 2024 NORR” (exact code partly obscured but this is general pattern).
+
+Miscellaneous:
+
+- Bottom center of sheet margin shows grid letter “A” near title block and letter “B” near left, indicating horizontal matchline/grid referencing.
+- Circular bubbles with numbers “5” and “6” appear near legend items, presumably keying symbol descriptions on neighboring views (e.g., “6” near interior elevation / exterior wall section tags, “5” near matchline tags).
+
+Everything above captures all legible text, annotations, and diagram components present in the bottom‑right quadrant of the drawing page “TempleTest_Add1, page 1, region q4_bottom_right.”

@@ -39,7 +39,7 @@ class DatabaseConfig:
         db_user = os.getenv('DB_USER', 'buildtrace_user')
         db_pass = os.getenv('DB_PASS')
         db_name = os.getenv('DB_NAME', 'buildtrace_db')
-        instance_connection_name = os.getenv('INSTANCE_CONNECTION_NAME', 'buildtrace:us-central1:buildtrace-postgres')
+        instance_connection_name = os.getenv('INSTANCE_CONNECTION_NAME', 'buildtrace-dev:us-west2:buildtrace-dev-db')
 
         if os.getenv('USE_CLOUD_SQL_AUTH_PROXY'):
             # If using Cloud SQL Proxy

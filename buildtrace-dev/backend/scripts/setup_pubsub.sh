@@ -9,14 +9,14 @@ REGION=${GCP_REGION:-us-west2}
 echo "Setting up Pub/Sub topics and subscriptions for project: $PROJECT_ID"
 
 # Topics
-OCR_TOPIC="buildtrace-prod-ocr-queue"
-DIFF_TOPIC="buildtrace-prod-diff-queue"
-SUMMARY_TOPIC="buildtrace-prod-summary-queue"
+OCR_TOPIC="buildtrace-dev-ocr-queue"
+DIFF_TOPIC="buildtrace-dev-diff-queue"
+SUMMARY_TOPIC="buildtrace-dev-summary-queue"
 
 # Subscriptions
-OCR_SUB="buildtrace-prod-ocr-worker-sub"
-DIFF_SUB="buildtrace-prod-diff-worker-sub"
-SUMMARY_SUB="buildtrace-prod-summary-worker-sub"
+OCR_SUB="buildtrace-dev-ocr-worker-sub"
+DIFF_SUB="buildtrace-dev-diff-worker-sub"
+SUMMARY_SUB="buildtrace-dev-summary-worker-sub"
 
 # Create topics
 echo "Creating topics..."

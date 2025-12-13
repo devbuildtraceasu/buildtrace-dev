@@ -9,9 +9,10 @@ import sys
 from datetime import datetime
 from pathlib import Path
 from logging.handlers import RotatingFileHandler
-from flask import Flask, request, session
+from flask import Flask, request, session, send_file, send_from_directory
 from flask_cors import CORS
 from config import config
+import os
 
 # Configure logging with timestamps
 class TimestampFormatter(logging.Formatter):
@@ -170,12 +171,13 @@ if config.USE_DATABASE:
 try:
     from blueprints.jobs import jobs_bp
     from blueprints.drawings import drawings_bp
-    from blueprints.projects import projects_bp
+    from blueprints.projects import projects_bp, documents_bp
     from blueprints.overlays import overlays_bp
     from blueprints.summaries import summaries_bp
     app.register_blueprint(jobs_bp)
     app.register_blueprint(drawings_bp)
     app.register_blueprint(projects_bp)
+    app.register_blueprint(documents_bp)
     app.register_blueprint(overlays_bp)
     app.register_blueprint(summaries_bp)
     logger.info("Core blueprints registered successfully")
@@ -212,6 +214,36 @@ try:
     logger.debug(f"Registered routes:\n" + "\n".join(routes))
 except Exception as e:
     logger.debug(f"Could not list routes: {e}")
+
+# File serving endpoint for local development
+@app.route('/api/v1/files/<path:file_path>', methods=['GET'])
+def serve_file(file_path: str):
+    """Serve files from local storage in development mode"""
+    try:
+        from config import config
+        from gcp.storage.storage_service import StorageService
+        
+        storage = StorageService()
+        if storage.use_gcs:
+            # In production with GCS, this shouldn't be called
+            return {'error': 'File serving not available in GCS mode'}, 404
+        
+        # Get local file path
+        local_path = storage._get_local_path(file_path)
+        
+        if not os.path.exists(local_path):
+            return {'error': 'File not found'}, 404
+        
+        # Determine content type
+        import mimetypes
+        content_type, _ = mimetypes.guess_type(local_path)
+        if not content_type:
+            content_type = 'application/octet-stream'
+        
+        return send_file(local_path, mimetype=content_type)
+    except Exception as e:
+        logger.error(f"Error serving file {file_path}: {e}", exc_info=True)
+        return {'error': str(e)}, 500
 
 # Health check endpoint
 @app.route('/health', methods=['GET'])

@@ -1,6 +1,7 @@
 import axios, { AxiosInstance, AxiosResponse, AxiosError, InternalAxiosRequestConfig } from 'axios'
 import { ApiResponse, ApiError, Job, JobStage, DrawingVersion, DiffResultEntry, JobSummaryRow } from '@/types'
 import { useAuthStore } from '@/store/authStore'
+import { mockApiClient } from '@/mocks/mockApiClient'
 
 export interface User {
   user_id: string
@@ -171,6 +172,43 @@ class ApiClient {
     return this.get(`/api/v1/jobs/${jobId}/results`)
   }
 
+  /**
+   * Get streaming pipeline progress with per-page status.
+   * Use this for real-time UI updates during processing.
+   */
+  async getJobProgress(jobId: string): Promise<{
+    job_id: string
+    status: string
+    total_pages: number
+    progress: {
+      ocr: { completed: number; total: number }
+      diff: { completed: number; total: number }
+      summary: { completed: number; total: number }
+    }
+    pages: Array<{
+      page_number: number
+      drawing_name?: string
+      ocr_status: string
+      diff_status: string
+      summary_status: string
+      diff_result?: {
+        diff_result_id: string
+        overlay_url: string
+        changes_detected: boolean
+        change_count: number
+      }
+      summary?: {
+        summary_id: string
+        summary_text: string
+      }
+    }>
+    created_at?: string
+    started_at?: string
+    completed_at?: string
+  }> {
+    return this.get(`/api/v1/jobs/${jobId}/progress`)
+  }
+
   async getOcrLog(jobId: string): Promise<ApiResponse<{
     job_id: string
     ocr_logs: Array<{
@@ -221,6 +259,80 @@ class ApiClient {
     return this.get(`/api/v1/projects${suffix}`)
   }
 
+  async getProjects(userId?: string): Promise<any[]> {
+    const suffix = userId ? `?user_id=${encodeURIComponent(userId)}&include_counts=true` : '?include_counts=true'
+    const response = await this.get(`/api/v1/projects${suffix}`)
+    return response?.projects || []
+  }
+
+  async getProject(projectId: string): Promise<any> {
+    const response = await this.get(`/api/v1/projects/${projectId}`)
+    return response?.project || response
+  }
+
+  async createProject(data: { name: string; description?: string; location?: string; user_id: string; organization_id?: string }): Promise<any> {
+    const response = await this.post('/api/v1/projects', data)
+    return response?.project || response
+  }
+
+  async getDocuments(projectId: string): Promise<any[]> {
+    const response = await this.get(`/api/v1/projects/${projectId}/documents`)
+    return response?.documents || []
+  }
+
+  async getDocumentUrl(documentId: string): Promise<{ url: string } | null> {
+    try {
+      const response = await this.get(`/api/v1/documents/${documentId}/url`)
+      return response
+    } catch (error) {
+      console.error('Error fetching document URL:', error)
+      return null
+    }
+  }
+
+  async getDrawingUrl(drawingVersionId: string): Promise<{ url: string } | null> {
+    try {
+      const response = await this.get(`/api/v1/drawings/${drawingVersionId}/url`)
+      return response
+    } catch (error) {
+      console.error('Error fetching drawing URL:', error)
+      return null
+    }
+  }
+
+  async getDrawings(projectId: string): Promise<any[]> {
+    const response = await this.get(`/api/v1/projects/${projectId}/drawings`)
+    return response?.drawings || []
+  }
+
+  async getComparisons(projectId: string): Promise<any[]> {
+    const response = await this.get(`/api/v1/projects/${projectId}/comparisons`)
+    return response?.comparisons || []
+  }
+
+  // Keep old method names for backwards compatibility
+  async getProjectDocuments(projectId: string): Promise<any[]> {
+    return this.getDocuments(projectId)
+  }
+
+  async getProjectDrawings(projectId: string): Promise<any[]> {
+    return this.getDrawings(projectId)
+  }
+
+  async getProjectComparisons(projectId: string): Promise<any[]> {
+    return this.getComparisons(projectId)
+  }
+
+  async uploadDocument(projectId: string, file: File): Promise<any> {
+    const formData = new FormData()
+    formData.append('file', file)
+    formData.append('project_id', projectId)
+    // Use the drawings upload endpoint - documents are stored as drawing versions
+    return this.client.post(`/api/v1/drawings/upload`, formData, {
+      headers: { 'Content-Type': 'multipart/form-data' }
+    }).then(res => res.data)
+  }
+
   async listJobs(params?: { userId?: string; status?: string; limit?: number }): Promise<{ jobs: JobSummaryRow[] }> {
     const search = new URLSearchParams()
     if (params?.userId) search.append('user_id', params.userId)
@@ -228,10 +340,6 @@ class ApiClient {
     if (params?.limit) search.append('limit', params.limit.toString())
     const suffix = search.toString() ? `?${search.toString()}` : ''
     return this.get(`/api/v1/jobs${suffix}`)
-  }
-
-  async createProject(data: { name: string; user_id: string; organization_id?: string; description?: string }): Promise<ApiResponse<{ project: any }>> {
-    return this.post('/api/v1/projects', data)
   }
 
   // Overlays
@@ -288,10 +396,151 @@ class ApiClient {
       metadata,
     })
   }
+
+  // Chat methods
+  async sendChatMessage(jobId: string, message: string): Promise<{
+    response: string
+    conversation_id: string
+    context_used: boolean
+    model?: string
+  }> {
+    return this.post(`/api/v1/chat/jobs/${jobId}`, { message })
+  }
+
+  async getChatHistory(jobId: string): Promise<{
+    job_id: string
+    conversation_id: string | null
+    messages: Array<{
+      id: string
+      role: 'user' | 'assistant'
+      content: string
+      timestamp: string
+    }>
+  }> {
+    return this.get(`/api/v1/chat/jobs/${jobId}/history`)
+  }
+
+  async getSuggestedQuestions(jobId: string): Promise<{
+    job_id: string
+    suggestions: string[]
+  }> {
+    return this.get(`/api/v1/chat/jobs/${jobId}/suggested`)
+  }
+
+  async restartChat(jobId: string): Promise<{
+    success: boolean
+    conversation_id: string
+    message: string
+  }> {
+    return this.post(`/api/v1/chat/jobs/${jobId}/restart`, {})
+  }
+
+  // Cost & Schedule Impact Reports
+  async getCostImpact(jobId: string): Promise<{
+    categories: Array<{
+      name: string
+      icon: string
+      items: Array<{
+        item: string
+        description: string
+        costRange: string
+      }>
+    }>
+    subtotal: string
+    contingency: string
+    contingencyPercent: number
+    totalEstimate: string
+    ballparkTotal: string
+    importantNotes: string
+    nextSteps: string
+  }> {
+    return this.get(`/api/v1/jobs/${jobId}/cost-impact`)
+  }
+
+  async getScheduleImpact(jobId: string): Promise<{
+    criticalPathItems: Array<{
+      item: string
+      duration: string
+      note: string
+    }>
+    overlapSummary: string
+    scenarios: Array<{
+      name: string
+      description: string
+      impact: string
+      probability: number
+      color: 'green' | 'yellow' | 'red'
+    }>
+    bottomLine: string
+  }> {
+    return this.get(`/api/v1/jobs/${jobId}/schedule-impact`)
+  }
 }
 
-// Export singleton instance
-export const apiClient = new ApiClient()
+const shouldUseMocks =
+  process.env.NEXT_PUBLIC_USE_MOCKS === 'true' ||
+  (typeof window !== 'undefined' && (window as any).__USE_MOCKS__ === true)
+
+// Create a unified type that both clients satisfy
+type UnifiedApiClient = {
+  // Auth
+  googleLogin: () => Promise<any>
+  logout: () => Promise<any>
+  getCurrentUser: () => Promise<ApiResponse<User>>
+  // Projects
+  listProjects: (userId?: string) => Promise<{ projects: any[] }>
+  getProjects: (userId?: string) => Promise<any[]>
+  getProject: (projectId: string) => Promise<any>
+  createProject: (data: { name: string; description?: string; location?: string; user_id: string }) => Promise<any>
+  getDocuments: (projectId: string) => Promise<any[]>
+  getDrawings: (projectId: string) => Promise<any[]>
+  getComparisons: (projectId: string) => Promise<any[]>
+  uploadDocument: (projectId: string, file: File) => Promise<any>
+  getProjectDocuments: (projectId: string) => Promise<any[]>
+  getProjectDrawings: (projectId: string) => Promise<any[]>
+  getProjectComparisons: (projectId: string) => Promise<any[]>
+  // Jobs
+  listJobs: (params?: any) => Promise<{ jobs: JobSummaryRow[] }>
+  getJob: (jobId: string) => Promise<Job>
+  getJobStages: (jobId: string) => Promise<{ job_id: string; stages: JobStage[] }>
+  getJobResults: (jobId: string) => Promise<any>
+  getJobProgress: (jobId: string) => Promise<any>  // Streaming pipeline progress
+  createJob: (oldVersionId: string, newVersionId: string, projectId: string, userId?: string) => Promise<any>
+  // Drawings
+  uploadDrawing: (file: File, projectId: string, oldVersionId?: string, userId?: string, onProgress?: (progress: number) => void) => Promise<any>
+  getDrawing?: (drawingVersionId: string) => Promise<DrawingVersion>
+  listVersions?: (drawingVersionId: string) => Promise<any>
+  // OCR
+  getOcrLog: (jobId: string) => Promise<any>
+  // Overlays
+  getOverlay: (diffId: string) => Promise<any>
+  getOverlayImageUrl: (diffId: string) => Promise<any>
+  getAllImageUrls: (diffId: string) => Promise<any>
+  createManualOverlay: (diffId: string, payload: any) => Promise<any>
+  updateManualOverlay?: (diffId: string, overlayId: string, payload: any) => Promise<any>
+  deleteManualOverlay?: (diffId: string, overlayId: string) => Promise<any>
+  // Summaries
+  getSummaries: (diffId: string) => Promise<any>
+  regenerateSummary: (diffId: string, overlayId?: string) => Promise<any>
+  updateSummary: (summaryId: string, summaryText: string, metadata?: any) => Promise<any>
+  // Chat
+  sendChatMessage: (jobId: string, message: string) => Promise<any>
+  getChatHistory: (jobId: string) => Promise<any>
+  getSuggestedQuestions: (jobId: string) => Promise<any>
+  restartChat: (jobId: string) => Promise<any>
+  // Impact Reports
+  getCostImpact: (jobId: string) => Promise<any>
+  getScheduleImpact: (jobId: string) => Promise<any>
+  // Document/Drawing URLs
+  getDocumentUrl: (documentId: string) => Promise<{ url: string } | null>
+  getDrawingUrl: (drawingVersionId: string) => Promise<{ url: string } | null>
+}
+
+// Export singleton instance with unified type
+// Both clients are cast to UnifiedApiClient to ensure consistent typing across the app
+export const apiClient: UnifiedApiClient = shouldUseMocks 
+  ? (mockApiClient as unknown as UnifiedApiClient) 
+  : (new ApiClient() as unknown as UnifiedApiClient)
 
 // Export class for testing
 export { ApiClient }

@@ -1,8 +1,29 @@
 # BuildTrace Architecture Documentation
 
-**Version:** 2.0.0
-**Last Updated:** November 28, 2025
-**Status:** Production-Ready ✅
+**Version:** 2.1.0
+**Last Updated:** December 12, 2025
+**Status:** Production-Ready ✅ | RAG Enhancement Planned 📋
+
+---
+
+> **📋 Comprehensive Software Documentation**
+>
+> For detailed UML diagrams, SRS, and other software engineering documentation, see the **[soft_doc/](./soft_doc/INDEX.md)** folder:
+> - [SRS (Software Requirements Specification)](./soft_doc/SRS.md)
+> - [Use Case Diagrams](./soft_doc/USE_CASE_DIAGRAMS.md)
+> - [Sequence Diagrams](./soft_doc/SEQUENCE_DIAGRAMS.md)
+> - [Activity Diagrams](./soft_doc/ACTIVITY_DIAGRAMS.md)
+> - [Data Flow Diagrams](./soft_doc/DFD.md)
+> - [Database Schema](./soft_doc/DATABASE_SCHEMA.md)
+> - [API Reference](./soft_doc/API_REFERENCE.md)
+
+> **🚀 Next-Generation RAG Enhancement**
+>
+> **NEW:** Advanced RAG implementation plan for intelligent Q&A over drawings:
+> - **[Advanced_next_rag_build_plan.md](./Advanced_next_rag_build_plan.md)** - Complete implementation roadmap
+> - **Technology:** OpenAI Tool Calling + pgvector on Cloud SQL
+> - **Timeline:** 7-week phased approach
+> - **Target:** <8s P95 latency, 90%+ accuracy, <$0.05/query
 
 ---
 
@@ -1378,12 +1399,17 @@ pytest --cov=. tests/
 
 ### Related Documentation
 
+**Current System:**
 - `DEPLOYMENT_SUCCESS.md` - Initial deployment summary
 - `UPLOAD_FIX_SUMMARY.md` - DetachedInstanceError fix details
 - `FULL_FLOW_FIX_SUMMARY.md` - Complete fix analysis
 - `OAUTH_SETUP.md` - OAuth configuration guide
 - `DEPLOYMENT_GUIDE.md` - Deployment procedures
 - `QUICK_DEPLOY.md` - Quick reference
+
+**Next-Generation RAG System:**
+- **[Advanced_next_rag_build_plan.md](./Advanced_next_rag_build_plan.md)** - Complete RAG implementation plan
+- **[plan_gcp_rag.md](./plan_gcp_rag.md)** - Original RAG architecture reference
 
 ### GCP Project Details
 
@@ -1406,7 +1432,39 @@ Organization: None (individual account)
 
 ---
 
-**Document Version:** 1.0
+## Future Enhancements
+
+### Advanced RAG System (Planned)
+
+**See: [Advanced_next_rag_build_plan.md](./Advanced_next_rag_build_plan.md)**
+
+BuildTrace is planned to receive a major enhancement with an advanced RAG (Retrieval-Augmented Generation) system for intelligent question-answering over architectural drawings.
+
+**Key Components:**
+1. **Vector Database:** pgvector on Cloud SQL (existing instance)
+2. **Embeddings:** OpenAI text-embedding-3-small (1536-dim)
+3. **Agentic Pipeline:** OpenAI Tool Calling (GPT-4o)
+4. **Region Segmentation:** Full page + quadrants + legend + title block
+5. **Combined Context:** Sheet-level aggregated summaries
+
+**New Database Tables:**
+- `regions` - Drawing regions with bounding boxes
+- `captions` - Gemini Vision OCR per region
+- `embeddings` - Vector storage (pgvector)
+- `combined_contexts` - Sheet-level summaries
+- `qa_sessions` - Q&A audit trail
+
+**Implementation Timeline:** 7 weeks (phased approach)
+
+**Performance Targets:**
+- Latency: P95 <8s
+- Accuracy: >90%
+- Cost: <$0.05 per query
+- Scale: 10K queries/month
+
+---
+
+**Document Version:** 2.1.0
 **Prepared By:** Senior Software Engineer
 **Review Status:** ✅ Verified
-**Production Status:** ✅ Ready
+**Production Status:** ✅ Ready | RAG Enhancement Planned 📋

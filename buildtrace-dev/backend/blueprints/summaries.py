@@ -21,13 +21,14 @@ def _serialize_summary(summary: ChangeSummary) -> dict:
         'summary_id': summary.id,
         'diff_result_id': summary.diff_result_id,
         'summary_text': summary.summary_text,
+        'summary_json': summary.summary_json,  # Include structured JSON for frontend parsing
         'source': summary.source,
         'ai_model_used': summary.ai_model_used,
         'created_by': summary.created_by,
         'is_active': summary.is_active,
         'created_at': summary.created_at.isoformat() if summary.created_at else None,
         'updated_at': summary.updated_at.isoformat() if summary.updated_at else None,
-        'metadata': summary.metadata or {},
+        'metadata': summary.summary_metadata or {},  # Column is named summary_metadata, not metadata
     }
 
 

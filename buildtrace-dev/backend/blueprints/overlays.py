@@ -6,7 +6,7 @@ import json
 import uuid
 from datetime import datetime
 
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, request, current_app, Response
 
 from gcp.storage import StorageService
 
@@ -149,7 +149,7 @@ def delete_manual_overlay(diff_result_id: str, overlay_id: str):
 
 @overlays_bp.route('/<diff_result_id>/image-url', methods=['GET'])
 def get_overlay_image_url(diff_result_id: str):
-    """Get a signed URL for the overlay PNG image."""
+    """Get proxy URL for the overlay PNG image."""
     if not DB_AVAILABLE:
         return jsonify({'error': 'Database not available'}), 503
     
@@ -165,22 +165,22 @@ def get_overlay_image_url(diff_result_id: str):
         if not overlay_image_ref:
             return jsonify({'error': 'No overlay image available'}), 404
         
-        try:
-            # Generate signed URL for the image (60 minute expiry)
-            signed_url = storage_service.generate_signed_url(overlay_image_ref, expiration_minutes=60)
-            return jsonify({
-                'diff_result_id': diff_result_id,
-                'overlay_image_url': signed_url,
-                'page_number': metadata.get('page_number'),
-                'drawing_name': metadata.get('drawing_name'),
-            })
-        except Exception as e:
-            return jsonify({'error': f'Failed to generate signed URL: {str(e)}'}), 500
+        # Return absolute proxy URL with backend host
+        host_url = request.host_url.rstrip('/')
+        return jsonify({
+            'diff_result_id': diff_result_id,
+            'overlay_image_url': f"{host_url}/api/v1/overlays/{diff_result_id}/image/overlay",
+            'page_number': metadata.get('page_number'),
+            'drawing_name': metadata.get('drawing_name'),
+        })
 
 
 @overlays_bp.route('/<diff_result_id>/images', methods=['GET'])
 def get_all_image_urls(diff_result_id: str):
-    """Get signed URLs for overlay, baseline, and revised images."""
+    """Get proxy URLs for overlay, baseline, and revised images.
+    
+    Uses proxy endpoints instead of signed URLs to avoid service account key issues.
+    """
     if not DB_AVAILABLE:
         return jsonify({'error': 'Database not available'}), 503
     
@@ -196,59 +196,90 @@ def get_all_image_urls(diff_result_id: str):
         baseline_image_ref = metadata.get('baseline_image_ref')
         revised_image_ref = metadata.get('revised_image_ref')
         
+        # Use absolute proxy URLs with backend host
+        # Get the request host URL (will be the backend domain)
+        host_url = request.host_url.rstrip('/')
+        base_proxy_url = f"{host_url}/api/v1/overlays/{diff_result_id}/image"
+        
         result = {
             'diff_result_id': diff_result_id,
             'page_number': metadata.get('page_number'),
             'drawing_name': metadata.get('drawing_name'),
         }
         
-        # Get overlay image URL
+        # Get overlay image URL via proxy
         if overlay_image_ref:
-            try:
-                result['overlay_image_url'] = storage_service.generate_signed_url(
-                    overlay_image_ref, expiration_minutes=60
-                )
-            except Exception as e:
-                result['overlay_error'] = str(e)
+            result['overlay_image_url'] = f"{base_proxy_url}/overlay"
 
-        # Baseline PNG
+        # Baseline PNG via proxy
         if baseline_image_ref:
-            try:
-                result['baseline_image_url'] = storage_service.generate_signed_url(
-                    baseline_image_ref, expiration_minutes=60
-                )
-            except Exception as e:
-                result['baseline_error'] = str(e)
+            result['baseline_image_url'] = f"{base_proxy_url}/baseline"
 
-        # Revised PNG
+        # Revised PNG via proxy
         if revised_image_ref:
-            try:
-                result['revised_image_url'] = storage_service.generate_signed_url(
-                    revised_image_ref, expiration_minutes=60
-                )
-            except Exception as e:
-                result['revised_error'] = str(e)
-        
-        # Get baseline and revised drawing versions
-        old_version = db.query(DrawingVersion).filter_by(id=diff.old_drawing_version_id).first()
-        new_version = db.query(DrawingVersion).filter_by(id=diff.new_drawing_version_id).first()
-        
-        # For baseline/revised, we'd need to extract the specific page from the PDF
-        # For now, return the full PDF URLs - frontend can handle page extraction
-        if old_version and old_version.drawing and old_version.drawing.storage_path:
-            try:
-                result['baseline_pdf_url'] = storage_service.generate_signed_url(
-                    old_version.drawing.storage_path, expiration_minutes=60
-                )
-            except Exception:
-                pass
-        
-        if new_version and new_version.drawing and new_version.drawing.storage_path:
-            try:
-                result['revised_pdf_url'] = storage_service.generate_signed_url(
-                    new_version.drawing.storage_path, expiration_minutes=60
-                )
-            except Exception:
-                pass
+            result['revised_image_url'] = f"{base_proxy_url}/revised"
         
         return jsonify(result), 200
+
+
+@overlays_bp.route('/<diff_result_id>/image/<image_type>', methods=['GET'])
+def get_image_proxy(diff_result_id: str, image_type: str):
+    """
+    Proxy endpoint to serve images directly from GCS.
+    This bypasses signed URLs which require service account keys.
+    image_type can be: 'overlay', 'baseline', 'revised'
+    """
+    if not DB_AVAILABLE:
+        return jsonify({'error': 'Database not available'}), 503
+    
+    valid_types = ['overlay', 'baseline', 'revised']
+    if image_type not in valid_types:
+        return jsonify({'error': f'Invalid image type. Must be one of: {valid_types}'}), 400
+    
+    with get_db_session() as db:
+        diff = db.query(DiffResult).filter_by(id=diff_result_id).first()
+        if not diff:
+            return jsonify({'error': 'Diff result not found'}), 404
+        
+        metadata = diff.diff_metadata or {}
+        
+        # Map image type to metadata key
+        ref_key_map = {
+            'overlay': 'overlay_image_ref',
+            'baseline': 'baseline_image_ref',
+            'revised': 'revised_image_ref'
+        }
+        
+        image_ref = metadata.get(ref_key_map[image_type])
+        
+        if not image_ref:
+            return jsonify({'error': f'No {image_type} image available'}), 404
+        
+        try:
+            # Download image content directly from GCS
+            image_bytes = storage_service.download_file(image_ref)
+            
+            if not image_bytes:
+                current_app.logger.warning(f"Image file is empty: {image_ref}")
+                return jsonify({'error': f'Image file is empty'}), 404
+            
+            # Determine content type
+            import mimetypes
+            content_type = 'image/png'
+            if image_ref.lower().endswith('.jpg') or image_ref.lower().endswith('.jpeg'):
+                content_type = 'image/jpeg'
+            
+            return Response(
+                image_bytes,
+                mimetype=content_type,
+                headers={
+                    'Cache-Control': 'public, max-age=3600',
+                    'Content-Disposition': f'inline; filename="{image_type}_{diff_result_id}.png"'
+                }
+            )
+        except FileNotFoundError as e:
+            current_app.logger.warning(f"Image file not found: {image_ref} - {e}")
+            return jsonify({'error': f'Image file not found'}), 404
+        except Exception as e:
+            current_app.logger.error(f"Failed to proxy image {image_type} for diff {diff_result_id}: {e}", exc_info=True)
+            return jsonify({'error': f'Failed to load image: {str(e)}'}), 500

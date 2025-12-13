@@ -167,19 +167,11 @@ export default function UploadPage() {
       const jobId = newResponse.job_id
       if (jobId) {
         setActiveJobId(jobId)
-      }
-
-      setProcessingSteps(prev => prev.map(step =>
-        step.id === 'upload'
-          ? { ...step, status: 'completed', progress: 100 }
-          : step.id === 'ocr'
-          ? { ...step, status: 'active' }
-          : step
-      ))
-
-      if (jobId) {
-        pollJobStatus(jobId)
+        // Navigate to results page immediately after upload completes
+        // Results page will show live progress as OCR/diff/summary complete
+        router.push(`/results?jobId=${jobId}`)
       } else {
+        // No job ID - just mark as complete
         setProcessingSteps(prev => prev.map(step => ({
           ...step,
           status: 'completed',
@@ -209,49 +201,75 @@ export default function UploadPage() {
 
     const poll = async () => {
       try {
+        // Use progress endpoint for real-time per-page updates
+        const progress = await apiClient.getJobProgress(jobId)
         const job = await apiClient.getJob(jobId)
-        const stages = await apiClient.getJobStages(jobId)
 
-        const computeStageState = (stepId: string) => {
-          const relevant = stages.stages?.filter((s: any) => {
-            if (stepId === 'ocr') return s.stage === 'ocr'
-            if (stepId === 'diff') return s.stage === 'diff'
-            if (stepId === 'summary') return s.stage === 'summary'
-            return false
-          }) ?? []
-
-          if (!relevant.length) return null
-
-          const total = relevant.length
-          const completedCount = relevant.filter((s: any) => s.status === 'completed' || s.status === 'skipped').length
-
-          if (relevant.some((s: any) => s.status === 'failed')) {
-            return { status: 'failed', message: 'Stage failed' }
-          }
-          if (relevant.some((s: any) => s.status === 'in_progress')) {
-            const msg = total > 1 ? `${completedCount}/${total} pages processed` : undefined
-            return { status: 'active', message: msg }
-          }
-          if (completedCount === total) {
-            const msg = total > 1 ? `All ${total} pages processed` : undefined
-            return { status: 'completed', message: msg }
-          }
-          if (relevant.some((s: any) => s.status === 'pending')) {
-            const msg = total > 1 ? `${completedCount}/${total} pages processed` : undefined
-            return { status: 'pending', message: msg }
-          }
-          return { status: relevant[0].status, message: undefined }
-        }
-
+        // Update steps based on progress data
         setProcessingSteps(prev => prev.map(step => {
-          const aggregate = computeStageState(step.id)
-          if (aggregate) {
-            return {
-              ...step,
-              status: aggregate.status as ProcessingStep['status'],
-              message: aggregate.message
+          if (step.id === 'ocr') {
+            const ocrProgress = progress.progress?.ocr || { completed: 0, total: progress.total_pages || 0 }
+            const ocrPages = progress.pages?.filter((p: any) => p.ocr_status === 'completed').length || 0
+            const ocrInProgress = progress.pages?.some((p: any) => p.ocr_status === 'in_progress') || false
+            
+            let status: ProcessingStep['status'] = 'pending'
+            let message: string | undefined
+            
+            if (ocrProgress.total > 0) {
+              if (ocrPages === ocrProgress.total) {
+                status = 'completed'
+                message = `All ${ocrProgress.total} page${ocrProgress.total !== 1 ? 's' : ''} processed`
+              } else if (ocrInProgress || ocrPages > 0) {
+                status = 'active'
+                message = `Processing ${ocrPages}/${ocrProgress.total} page${ocrProgress.total !== 1 ? 's' : ''}`
+              }
             }
+            
+            return { ...step, status, message }
           }
+          
+          if (step.id === 'diff') {
+            const diffProgress = progress.progress?.diff || { completed: 0, total: progress.total_pages || 0 }
+            const diffPages = progress.pages?.filter((p: any) => p.diff_status === 'completed').length || 0
+            const diffInProgress = progress.pages?.some((p: any) => p.diff_status === 'in_progress') || false
+            
+            let status: ProcessingStep['status'] = 'pending'
+            let message: string | undefined
+            
+            if (diffProgress.total > 0) {
+              if (diffPages === diffProgress.total) {
+                status = 'completed'
+                message = `All ${diffProgress.total} page${diffProgress.total !== 1 ? 's' : ''} compared`
+              } else if (diffInProgress || diffPages > 0) {
+                status = 'active'
+                message = `Comparing ${diffPages}/${diffProgress.total} page${diffProgress.total !== 1 ? 's' : ''}`
+              }
+            }
+            
+            return { ...step, status, message }
+          }
+          
+          if (step.id === 'summary') {
+            const summaryProgress = progress.progress?.summary || { completed: 0, total: progress.total_pages || 0 }
+            const summaryPages = progress.pages?.filter((p: any) => p.summary_status === 'completed').length || 0
+            const summaryInProgress = progress.pages?.some((p: any) => p.summary_status === 'in_progress') || false
+            
+            let status: ProcessingStep['status'] = 'pending'
+            let message: string | undefined
+            
+            if (summaryProgress.total > 0) {
+              if (summaryPages === summaryProgress.total) {
+                status = 'completed'
+                message = `All ${summaryProgress.total} page${summaryProgress.total !== 1 ? 's' : ''} summarized`
+              } else if (summaryInProgress || summaryPages > 0) {
+                status = 'active'
+                message = `Summarizing ${summaryPages}/${summaryProgress.total} page${summaryProgress.total !== 1 ? 's' : ''}`
+              }
+            }
+            
+            return { ...step, status, message }
+          }
+          
           return step
         }))
 
@@ -277,7 +295,8 @@ export default function UploadPage() {
           ))
           setIsProcessing(false)
         } else {
-          pollTimerRef.current = setTimeout(poll, 5000)
+          // Poll more frequently for real-time updates (every 2 seconds)
+          pollTimerRef.current = setTimeout(poll, 2000)
         }
       } catch (err: any) {
         console.error('Error polling job status:', err)
@@ -338,41 +357,75 @@ export default function UploadPage() {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      <div className="container-custom py-8 space-y-6">
-        <ProgressSteps currentStep={currentStep} />
+      <div className="container mx-auto px-4 py-8 space-y-8 max-w-7xl">
+        {/* Hero Section */}
+        <div className="text-center py-12" data-testid="hero-section">
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">BuildTrace AI</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Intelligently detect and analyze changes between construction drawing versions
+          </p>
+        </div>
 
-        <Card>
-          <div className="flex flex-col space-y-2">
-            <label className="text-sm font-medium text-gray-700">Project</label>
-            <select
-              className="border border-gray-300 rounded-md px-3 py-2 text-sm"
-              value={selectedProjectId}
-              onChange={(e) => setSelectedProjectId(e.target.value)}
-            >
-              {[...projects, { project_id: 'default-project', name: 'Default Project' }]
+        {/* Drawing Comparison Card */}
+        <div className="bg-white rounded-2xl shadow-card p-8" data-testid="drawing-comparison-card">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Drawing Comparison</h2>
+          
+          {/* Project Selector - Bigger Cards */}
+          <div className="mb-8">
+            <label className="block text-sm font-medium text-gray-700 mb-3">Select Project</label>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[...projects, { project_id: 'default-project', name: 'Default Project', description: 'Default workspace for comparisons', location: '' }]
                 .filter((project, index, arr) => arr.findIndex(p => p.project_id === project.project_id) === index)
                 .map(project => (
-                  <option key={project.project_id} value={project.project_id}>
-                    {project.name}
-                  </option>
+                  <button
+                    key={project.project_id}
+                    onClick={() => setSelectedProjectId(project.project_id)}
+                    className={`
+                      p-5 rounded-xl border-2 text-left transition-all hover:shadow-md
+                      ${selectedProjectId === project.project_id 
+                        ? 'border-blue-500 bg-blue-50 shadow-md' 
+                        : 'border-gray-200 bg-white hover:border-gray-300'
+                      }
+                    `}
+                  >
+                    <div className="flex items-start justify-between">
+                      <div className="flex-1">
+                        <h3 className={`font-semibold text-lg ${selectedProjectId === project.project_id ? 'text-blue-700' : 'text-gray-900'}`}>
+                          {project.name}
+                        </h3>
+                        {project.description && (
+                          <p className="text-sm text-gray-500 mt-1 line-clamp-2">{project.description}</p>
+                        )}
+                        {project.location && (
+                          <p className="text-xs text-gray-400 mt-2 flex items-center">
+                            <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            {project.location}
+                          </p>
+                        )}
+                      </div>
+                      {selectedProjectId === project.project_id && (
+                        <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 ml-2">
+                          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                      )}
+                    </div>
+                  </button>
                 ))}
-            </select>
+            </div>
           </div>
-        </Card>
 
-        <Card className="mb-8">
-          <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">
-              Drawing Comparison
-            </h1>
-            <p className="text-gray-600">
-              Upload your baseline and revised drawings to analyze changes
-            </p>
-          </div>
+          {/* Stepper */}
+          <ProgressSteps currentStep={currentStep} className="mb-8" />
 
           {!isProcessing ? (
             <>
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
+              {/* Upload Dropzones */}
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <FileUploader
                   title="Baseline Drawing (Old)"
                   description="Drag & drop your baseline drawing here"
@@ -394,18 +447,17 @@ export default function UploadPage() {
                 />
               </div>
 
+              {/* Compare Button */}
               <div className="text-center">
                 <Button
                   onClick={handleStartProcessing}
                   disabled={!canCompare}
                   size="lg"
-                  className="px-8 py-3"
+                  className="px-8 py-3 text-lg font-semibold"
+                  data-testid="button-compare-drawings"
                 >
-                  Compare Drawings
+                  {isProcessing ? "Processing..." : "Compare Drawings"}
                 </Button>
-                <p className="text-sm text-gray-500 mt-2">
-                  Supported formats: PDF, DWG, DXF, PNG, JPG (Max 70MB each)
-                </p>
               </div>
             </>
           ) : (
@@ -416,12 +468,11 @@ export default function UploadPage() {
               onViewResults={activeJobId ? () => router.push(`/results?jobId=${activeJobId}`) : undefined}
             />
           )}
-        </Card>
+        </div>
 
+        {/* Recent Comparisons Table */}
         {!isProcessing && (
-          <div className="mt-12">
-            <RecentSessions />
-          </div>
+          <RecentSessions />
         )}
       </div>
     </div>

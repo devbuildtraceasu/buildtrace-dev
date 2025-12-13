@@ -1,0 +1,136 @@
+Exhaustive caption for architectural drawing “TempleTest_Add1”, page 1, region q1_top_left (top‑left quadrant):
+
+Overall view:
+- Portion of a floor plan occupying the top‑left quadrant of the sheet.
+- Large blank area dominates the upper left and central left of the region, bounded at the top by a horizontal grid line and at the right by part of the building plan (rooms including Laundry and Baptistry Shower – Sisters).
+- Typical black linework on white background; a few dimensions are in red.
+
+Grid / structural layout:
+- At the very top of the image is a continuous horizontal grid line.
+- Along this top grid line, circular grid bubbles with letters, spaced from left to right:
+  - Bubble labeled “I” (furthest left visible in this region).
+  - Bubble labeled “H” to the right of “I”.
+  - Bubble labeled “G” further right.
+  - Bubble labeled “F” at far right edge of region.
+- Between these grid bubbles, dimension strings (approximate text, red) along the top:
+  - Between grid “I” and “H”: “11'-5 1/2"” (appears as a red dimension text roughly centered between I and H).
+  - Between grid “H” and “G”: “27'-0 1/2"” (red dimension text between H and G).
+  - Between grid “G” and “F”: “23'-7"” (red dimension text between G and F).
+- Below the top grid line are vertical centerlines / grid extension lines (light dashed):
+  - One under grid “I”, one under “H”, one under “G”, one under “F”.
+- Along the left edge of the region, a vertical dimension string is visible in red, broken into segments:
+  - Near middle left: red text resembling “31'-4 1/2"” (exact characters a bit small but it is a vertical dimension).
+  - Near lower left: another red vertical dimension text reading approximately “20'-1 1/2"” (or similar fractional dimension).
+- The large central blank area suggests an open exterior or unbuilt zone; only grid lines and a few elevation / section markers appear.
+
+Rooms and spaces:
+In the right‑center and lower‑right part of the region, part of the building plan is visible:
+
+1. Room: “LAUNDRY”
+   - Text label: “LAUNDRY” in caps, centered in a large rectangular room near the right‑center bottom of the region.
+   - Room number below or near the label: “175”.
+   - Room appears as a large rectangular area with interior fixtures or equipment indicated (some faint rectangular hatch or equipment block centrally located).
+   - Along the upper interior side of Laundry, a long row of narrow rectangles fills the wall thickness, likely indicating casework, lockers, or mechanical elements (drawn as multiple adjacent small rectangles).
+   - On the lower right part of Laundry, more small symbols / tags (one circular or diamond symbol touching or near the room label).
+
+2. Room: “VEIL STORAGE”
+   - At the lower‑left of the Laundry room area, a smaller room juts out to the left.
+   - Door from this smaller room swings into Laundry.
+   - Text label inside smaller room: “VEIL STORAGE” in caps.
+   - Room number below: “176”.
+   - Door symbol: single swing door in plan, hinged at right (on the wall between Veil Storage and the exterior corridor or space to its right/above?), with a 90‑degree arc showing the door swing into the Veil Storage room from an adjacent space (most likely from Laundry).
+
+3. Baptistry shower rooms (partial views on far right):
+   - Toward the upper right edge of the region, two vertically stacked room labels are partially visible:
+     - Upper room: Text in two lines:
+       - Line 1: “BAPTISTRY”
+       - Line 2: “SHOWER–”
+       - Line 3: “SISTERS”
+       - Room number: “171” just below or adjacent.
+     - Lower room directly beneath:
+       - Same multi‑line label: “BAPTISTRY / SHOWER– / SISTERS”
+       - Room number: “172”.
+   - Only a small portion of these rooms appears; adjacent walls and fittings mostly fall outside this quadrant.
+
+Doors, windows, and openings:
+- Door between VEIL STORAGE (176) and Laundry (175): 
+  - Single door drawn as thick line in wall, with an arc indicating swing; swings inward into VEIL STORAGE from the right.
+- No windows are clearly visible in this quadrant.
+- Exterior or perimeter wall of the Laundry area:
+  - Heavy polyline forming the outer corner of the building, with multiple closely spaced parallel lines indicating multiple wall layers (exterior wall assembly).
+  - A thicker exterior boundary offset from inner wall lines, suggesting insulation or cladding; no exterior door is fully visible within this cropped region (any such door may lie just off‑frame).
+
+Section / detail callouts and reference symbols:
+- Several diamond‑shaped or circular reference markers scattered around the plan:
+
+  1. Near the right‑center of Laundry / blank area interface:
+     - A solid diamond symbol with a small circle or filled center, containing number “1”.
+     - Below the number, small text in the diamond: “A4/2.03” (or “A4 2.03”; appears as “A4-2.03” or “A42.03”—scale is tiny, but format resembles standard detail reference: detail 1 on sheet A4.2.03).
+     - A leader or thin line from the diamond to a point on the plan (probably indicating a section or enlarged plan reference along a wall edge at the left side of the Laundry area).
+
+  2. Slightly above and to the right (in open area above Laundry):
+     - Another diamond reference symbol labeled “2”.
+     - Below number: “A4/2.03” (similar formatting; denoting another detail or section reference “2/A4.2.03”).
+
+  3. Near lower center‑left of image, on a line extending from the blank grid area toward the building:
+     - Circular callout symbol labeled “3”.
+     - Below number within circle or beside it: text looking like “A7/4.07” or “A7‑4.07”.
+     - A leader pointing to an area on the plan (likely referencing a section or enlarged plan through an exterior element).
+
+  4. Near lower center‑right, closer to Laundry:
+     - Circular callout labeled “1”.
+     - Text below: appears to read “A7‑4.07” (another reference to sheet A7.4.07; symbol partially cropped).
+
+  5. Inside the Laundry room itself, around the middle of the room plan:
+     - A triangle or circular symbol with number “8” (likely a key note or tag).
+     - Another circular symbol with number “2” nearby, both with small leader lines or placed over the room floor area.
+     - Next to or below these symbols, tiny text appears (too small to read clearly in the crop), possibly referring to keynotes on a legend elsewhere on the sheet.
+
+  6. Near the right edge, in the Baptistry shower area:
+     - A circular symbol labeled “23” with a leader pointing to some element; below or near the circle: small text, possibly “A3/4.xx” (details not legible at this zoom).
+
+Annotations / notes:
+- In the blank central area under the grid, two short slanted line strokes appear (likely break or reference marks).
+- Faint diagonal annotation or symbol near bottom left of this blank area (could be a slope arrow or other notation; no readable text).
+- On the right, where building walls turn the corner, a green‑colored number “8” appears along an interior wall segment (possibly a key note or wall type designation).
+- Several red hand‑style annotations near the Baptistry showers (possibly review comments or revision clouds), though specific text not clearly legible; visible is red “23” in a cloud‑like outline near one of the small sections.
+
+Dimensions inside building portion:
+- Within the Laundry / Veil Storage area, a short interior dimension segment is visible, drawn parallel to one interior partition:
+  - Text near the door between VEIL STORAGE and Laundry, showing a door width dimension (appears as a small black dimension string; size too small to read, likely “3'-0"”).
+- No full chain of room dimensions is fully legible inside this quadrant; most room dimensioning lies outside the visible region.
+
+Legends, schedules, title block:
+- No full legend, schedule, or title block is present within this top‑left quadrant.
+- No room finish, door, or window schedules appear here.
+- No title block information (project name, client, architect, sheet number) is visible in this cropped region.
+
+Miscellaneous elements:
+- Along the right‑most vertical edge near the Laundry room, a small rectangle with text “FEC” appears (likely indicating a Fire Extinguisher Cabinet) adjacent to a corridor or space just off the visible area.
+- Inside the Laundry room near the lower edge are several rectangular casework or equipment outlines.
+- Hatch patterns:
+  - A light cross‑hatched or shaded rectangle is located centered within Laundry, representing a large piece of equipment, platform, or island.
+  - Thin diagonal hatch above Laundry, within the wall buildup, perhaps representing structure or soffit.
+
+Orientation and sheet context:
+- The region likely represents part of a basement or service level plan in a temple building (inferred from room names “BAPTISTRY” and “VEIL STORAGE,” but not explicitly titled here).
+- North direction is not indicated within this quadrant.
+- This is described as drawing “TempleTest_Add1, page 1” but the sheet identifier (e.g., “A1.1”) is not visible in this crop.
+
+Summary of key searchable text in this region:
+- Grid letters: “I”, “H”, “G”, “F”.
+- Room names and numbers:
+  - “LAUNDRY 175”
+  - “VEIL STORAGE 176”
+  - “BAPTISTRY SHOWER– SISTERS 171”
+  - “BAPTISTRY SHOWER– SISTERS 172”
+- Tags / symbols:
+  - “1/A4.2.03” (approx)
+  - “2/A4.2.03” (approx)
+  - “3/A7.4.07” (approx)
+  - “1/A7.4.07” (approx)
+  - Keynote numbers: “8”, “2”, “23” (inside symbols).
+- Other text:
+  - “FEC” (Fire Extinguisher Cabinet).
+  - Various fractional dimensions in red between grid lines: “11'-5 1/2"”, “27'-0 1/2"”, “23'-7"”.
+  - Partial vertical dimensions along left side (approx “31'-4 1/2"”, “20'-1 1/2"”).

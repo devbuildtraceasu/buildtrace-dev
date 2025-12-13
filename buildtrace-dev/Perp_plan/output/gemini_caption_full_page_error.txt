@@ -1,0 +1,8 @@
+Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+Traceback (most recent call last):
+  File "/Users/ashishrajshekhar/Desktop/Job_interview_tasks/Job_trial/Perp_plan/region_rag_poc.py", line 303, in caption
+    if hasattr(response, "text") and response.text:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/google/generativeai/types/generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.

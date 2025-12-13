@@ -54,9 +54,9 @@ def get_current_user_id() -> Optional[str]:
     return user_id
 
 
-def require_auth():
+def require_auth_helper():
     """
-    Decorator or helper to require authentication.
+    Helper function to require authentication.
     Returns (user_id, error_response) tuple.
     If authenticated: (user_id, None)
     If not authenticated: (None, (json_response, status_code))
@@ -66,4 +66,22 @@ def require_auth():
         from flask import jsonify
         return None, (jsonify({'error': 'Not authenticated'}), 401)
     return user_id, None
+
+
+def require_auth(f):
+    """
+    Decorator to require authentication for a route.
+    Returns 401 if not authenticated.
+    """
+    from functools import wraps
+    from flask import jsonify
+    
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        user_id = get_current_user_id()
+        if not user_id:
+            return jsonify({'error': 'Not authenticated'}), 401
+        return f(*args, **kwargs)
+    
+    return decorated_function
 

@@ -74,7 +74,7 @@ class Config:
 
         # Storage settings
         if self.USE_GCS:
-            self.GCS_BUCKET_NAME = os.getenv('GCS_BUCKET_NAME', 'buildtrace-storage')
+            self.GCS_BUCKET_NAME = os.getenv('GCS_BUCKET_NAME', 'buildtrace-dev-input-buildtrace-dev')
             self.GCS_UPLOAD_BUCKET = os.getenv('GCS_UPLOAD_BUCKET', 'buildtrace-drawings-upload')
             self.GCS_PROCESSED_BUCKET = os.getenv('GCS_PROCESSED_BUCKET', 'buildtrace-drawings-processed')
         else:
@@ -116,12 +116,12 @@ class Config:
         # Pub/Sub settings
         if self.USE_PUBSUB:
             self.GCP_PROJECT_ID = os.getenv('GCP_PROJECT_ID', os.getenv('GOOGLE_CLOUD_PROJECT', 'buildtrace-dev'))
-            self.PUBSUB_OCR_TOPIC = os.getenv('PUBSUB_OCR_TOPIC', 'buildtrace-prod-ocr-queue')
-            self.PUBSUB_DIFF_TOPIC = os.getenv('PUBSUB_DIFF_TOPIC', 'buildtrace-prod-diff-queue')
-            self.PUBSUB_SUMMARY_TOPIC = os.getenv('PUBSUB_SUMMARY_TOPIC', 'buildtrace-prod-summary-queue')
-            self.PUBSUB_OCR_SUBSCRIPTION = os.getenv('PUBSUB_OCR_SUBSCRIPTION', 'buildtrace-prod-ocr-worker-sub')
-            self.PUBSUB_DIFF_SUBSCRIPTION = os.getenv('PUBSUB_DIFF_SUBSCRIPTION', 'buildtrace-prod-diff-worker-sub')
-            self.PUBSUB_SUMMARY_SUBSCRIPTION = os.getenv('PUBSUB_SUMMARY_SUBSCRIPTION', 'buildtrace-prod-summary-worker-sub')
+            self.PUBSUB_OCR_TOPIC = os.getenv('PUBSUB_OCR_TOPIC', 'buildtrace-dev-ocr-queue')
+            self.PUBSUB_DIFF_TOPIC = os.getenv('PUBSUB_DIFF_TOPIC', 'buildtrace-dev-diff-queue')
+            self.PUBSUB_SUMMARY_TOPIC = os.getenv('PUBSUB_SUMMARY_TOPIC', 'buildtrace-dev-summary-queue')
+            self.PUBSUB_OCR_SUBSCRIPTION = os.getenv('PUBSUB_OCR_SUBSCRIPTION', 'buildtrace-dev-ocr-worker-sub')
+            self.PUBSUB_DIFF_SUBSCRIPTION = os.getenv('PUBSUB_DIFF_SUBSCRIPTION', 'buildtrace-dev-diff-worker-sub')
+            self.PUBSUB_SUMMARY_SUBSCRIPTION = os.getenv('PUBSUB_SUMMARY_SUBSCRIPTION', 'buildtrace-dev-summary-worker-sub')
 
         # Security settings
         self.ALLOWED_EXTENSIONS = {'pdf', 'dwg', 'dxf', 'png', 'jpg', 'jpeg'}

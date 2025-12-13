@@ -10,8 +10,67 @@ import LoadingSpinner from '@/components/ui/LoadingSpinner'
 export default function Home() {
   const router = useRouter()
   const { user, isAuthenticated, isLoading, setUser, setLoading, setToken } = useAuthStore()
+  const isMockMode = process.env.NEXT_PUBLIC_USE_MOCKS === 'true'
+
+  // Initialize from localStorage on mount (client-side only) - run only once
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    
+    // Check if we've already initialized to avoid re-running
+    const currentState = useAuthStore.getState()
+    if (currentState.user || currentState.token) {
+      return // Already initialized
+    }
+    
+    try {
+      const storedUser = localStorage.getItem('buildtrace-user')
+      const storedToken = localStorage.getItem('buildtrace-token')
+      
+      if (storedUser) {
+        try {
+          const parsedUser = JSON.parse(storedUser)
+          setUser(parsedUser)
+        } catch (parseError) {
+          console.warn('[Home] Failed to parse stored user:', parseError)
+          localStorage.removeItem('buildtrace-user')
+        }
+      }
+      if (storedToken) {
+        setToken(storedToken)
+      }
+    } catch (e) {
+      console.warn('[Home] Failed to load from localStorage:', e)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []) // Only run once on mount
 
   useEffect(() => {
+    if (!isMockMode || typeof window === 'undefined') {
+      return
+    }
+    ;(window as any).__USE_MOCKS__ = true
+    let cancelled = false
+    ;(async () => {
+      try {
+        const { mockUser } = await import('@/mocks/data')
+        if (!cancelled) {
+          setUser(mockUser)
+          setToken('mock-token')
+          setLoading(false)
+        }
+      } catch (error) {
+        console.warn('[Home] Failed to load mock user', error)
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [isMockMode, setUser, setToken, setLoading])
+
+  useEffect(() => {
+    if (isMockMode) {
+      return
+    }
     let mounted = true
 
     const checkAuth = async () => {
@@ -108,6 +167,8 @@ export default function Home() {
 
     if (isAuthenticated && user) {
       console.log('[Home] Already authenticated:', { user_id: user.user_id })
+      // Ensure loading is false when already authenticated
+      setLoading(false)
       return () => {
         mounted = false
       }

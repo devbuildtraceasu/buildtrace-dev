@@ -40,10 +40,19 @@ echo "==========================================================================
 echo "Fetching Backend URL"
 echo "================================================================================"
 
-BACKEND_URL=$(gcloud run services describe buildtrace-backend \
+# Use the correct backend URL (the numeric project ID URL is more reliable)
+BACKEND_URL="https://buildtrace-backend-136394139608.us-west2.run.app"
+
+# Try to get the URL from gcloud, but use the hardcoded one as fallback
+DETECTED_URL=$(gcloud run services describe buildtrace-backend \
   --region=${REGION} \
   --project=${PROJECT_ID} \
-  --format='value(status.url)' 2>/dev/null || echo "https://buildtrace-backend-136394139608.us-west2.run.app")
+  --format='value(status.url)' 2>/dev/null || echo "")
+
+# Use detected URL if it matches our expected pattern, otherwise use hardcoded
+if [[ "$DETECTED_URL" == *"buildtrace-backend"* ]]; then
+  BACKEND_URL="$DETECTED_URL"
+fi
 
 echo "Backend URL: ${BACKEND_URL}"
 echo ""

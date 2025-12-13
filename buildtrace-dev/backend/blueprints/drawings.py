@@ -128,24 +128,55 @@ def upload_drawing():
                     )
                     return jsonify({'error': 'Baseline drawing version not found'}), 404
 
+                # Get GCS storage paths for streaming job
+                old_storage_path = None
+                if old_version.drawing and old_version.drawing.storage_path:
+                    old_storage_path = old_version.drawing.storage_path
+                
                 logger.info(
                     "Found old version, creating comparison job",
                     extra={
                         'old_version_id': old_version.id,
                         'old_project_id': old_version.project_id,
                         'new_version_id': upload_result.drawing_version_id,
-                        'new_project_id': upload_result.project_id
+                        'new_project_id': upload_result.project_id,
+                        'old_storage_path': old_storage_path,
+                        'new_storage_path': upload_result.storage_path
                     }
                 )
 
             orchestrator = OrchestratorService()
-            job_id = orchestrator.create_comparison_job(
-                old_version_id=old_version_id,
-                new_drawing_version_id=upload_result.drawing_version_id,
-                project_id=upload_result.project_id,
-                user_id=user_id
-            )
-            logger.info("Comparison job created", extra={'job_id': job_id})
+            
+            # Use streaming job for multi-page support with real-time progress
+            if old_storage_path and upload_result.storage_path:
+                try:
+                    job_id = orchestrator.create_streaming_job(
+                        old_version_id=old_version_id,
+                        new_drawing_version_id=upload_result.drawing_version_id,
+                        project_id=upload_result.project_id,
+                        user_id=user_id,
+                        old_pdf_gcs_path=old_storage_path,
+                        new_pdf_gcs_path=upload_result.storage_path
+                    )
+                    logger.info("Streaming job created", extra={'job_id': job_id})
+                except Exception as e:
+                    logger.warning(f"Streaming job failed, falling back to legacy: {e}")
+                    job_id = orchestrator.create_comparison_job(
+                        old_version_id=old_version_id,
+                        new_drawing_version_id=upload_result.drawing_version_id,
+                        project_id=upload_result.project_id,
+                        user_id=user_id
+                    )
+                    logger.info("Legacy comparison job created", extra={'job_id': job_id})
+            else:
+                # Fallback to legacy job if storage paths not available
+                job_id = orchestrator.create_comparison_job(
+                    old_version_id=old_version_id,
+                    new_drawing_version_id=upload_result.drawing_version_id,
+                    project_id=upload_result.project_id,
+                    user_id=user_id
+                )
+                logger.info("Legacy comparison job created (no storage paths)", extra={'job_id': job_id})
 
         return jsonify({
             'drawing_version_id': upload_result.drawing_version_id,
@@ -191,6 +222,44 @@ def get_drawing(drawing_version_id: str):
     except Exception as e:
         current_app.logger.error(f"Error getting drawing: {e}", exc_info=True)
         return jsonify({'error': str(e)}), 500
+
+@drawings_bp.route('/<drawing_version_id>/url', methods=['GET'])
+def get_drawing_url(drawing_version_id: str):
+    """Get a signed URL for viewing/downloading a drawing"""
+    if not DB_AVAILABLE:
+        return jsonify({'error': 'Database not available'}), 503
+    try:
+        with get_db_session() as db:
+            drawing_version = db.query(DrawingVersion).filter_by(id=drawing_version_id).first()
+            if not drawing_version:
+                return jsonify({'error': 'Drawing version not found'}), 404
+            
+            # Get the rasterized image ref (PNG) or fall back to the original file
+            image_ref = drawing_version.rasterized_image_ref
+            
+            # If no rasterized image, try to get from the parent drawing's storage path
+            if not image_ref and drawing_version.drawing:
+                # Original PDF storage path
+                image_ref = drawing_version.drawing.storage_path
+            
+            if not image_ref:
+                return jsonify({'error': 'No image available for this drawing'}), 404
+            
+            # Generate signed URL
+            from gcp.storage import StorageService
+            storage = StorageService()
+            signed_url = storage.generate_signed_url(image_ref, expiration_minutes=60)
+            
+            return jsonify({
+                'url': signed_url,
+                'drawing_name': drawing_version.drawing_name,
+                'version_number': drawing_version.version_number
+            }), 200
+            
+    except Exception as e:
+        current_app.logger.error(f"Error getting drawing URL: {e}", exc_info=True)
+        return jsonify({'error': str(e)}), 500
+
 
 @drawings_bp.route('/<drawing_version_id>/versions', methods=['GET'])
 def list_versions(drawing_version_id: str):

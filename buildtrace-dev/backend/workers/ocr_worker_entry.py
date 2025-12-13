@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Entry point for OCR worker service running in GKE."""
+"""Entry point for OCR worker service running in Cloud Run."""
 import logging
 import sys
 import os
+import threading
+from http.server import HTTPServer, BaseHTTPRequestHandler
 
 # Add backend directory to path (when running from /app in container)
 backend_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,10 +21,37 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
+class HealthHandler(BaseHTTPRequestHandler):
+    """Simple health check handler for Cloud Run."""
+    
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/plain')
+        self.end_headers()
+        self.wfile.write(b'OCR Worker OK')
+    
+    def log_message(self, format, *args):
+        # Suppress HTTP request logs
+        pass
+
+
+def run_health_server(port):
+    """Run HTTP health check server."""
+    server = HTTPServer(('0.0.0.0', port), HealthHandler)
+    logger.info(f"Health check server listening on port {port}")
+    server.serve_forever()
+
+
 def main():
     if not config.USE_PUBSUB:
         logger.error("USE_PUBSUB must be True for worker deployment")
         sys.exit(1)
+    
+    # Start health check server in background thread (Cloud Run requirement)
+    port = int(os.getenv('PORT', '8080'))
+    health_thread = threading.Thread(target=run_health_server, args=(port,), daemon=True)
+    health_thread.start()
     
     logger.info(f"Starting OCR worker")
     logger.info(f"Project: {config.GCP_PROJECT_ID}")

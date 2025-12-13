@@ -1,0 +1,131 @@
+Exhaustive caption for architectural drawing region “TempleTest_Add1, page 1, q3_bottom_left (bottom‑left quadrant)”:
+
+Overall view and sheet info
+- This region shows the lower left portion of a floor plan titled in the lower left corner as:
+  - “FLOOR PLAN – LEVEL 01 AREA A”
+  - Below the title: “SCALE: 1/4" = 1'-0"”
+  - A circular reference symbol just left of the title contains:
+    - Top number: “1”
+    - Bottom text: “A20-205”
+- Along the left sheet margin, rotated text (running vertically) reads approximately: “Architect Studio 1030, Temple, Salt Lake County, XXXXX 000000 • A/E: Salt Architecture, number: 854.474” (exact numerals partly cut off).
+- Bottom grid letters / alignment:
+  - At bottom center margin: letter “D”
+  - At bottom toward right (but still within this quadrant) a faint letter “C”
+  - At far bottom left margin: letter “E”
+- A horizontal centerline / matchline style line runs across near the bottom of the building area, with small triangular symbols at intersections; created as a dashed line marking perhaps an extent or other reference.
+
+Spaces / rooms labeled in this view
+1. “ENTRY VESTIBULE 100”
+   - Located inside the building just above the bottom border, centered left‑of‑middle of the quadrant.
+   - Rectangular room with the tag text centered: “ENTRY VESTIBULE” on first line, “100” on second line.
+   - Bounded on the north by an interior wall that separates it from “FIRST AID CLOSET 152” and another interior corridor/space; on the east by a wall with a doorway into the large space “NON‑PATRON WAITING 152”; on the west and south by exterior walls.
+   - Contains several tags / symbols:
+     - Near the south exterior wall inside the vestibule is a diamond‑shaped keynoted symbol with text “A605-2?” (partially visible) associated with a door or glazing.
+     - Above the west interior door, a door swing symbol is shown (door opens into the vestibule from the exterior).
+2. “FIRST AID CLOSET 152”
+   - Small rectangular room immediately north of the “ENTRY VESTIBULE 100”.
+   - Room tag text: “FIRST AID” on first line, “CLOSET” second line, “152” third line (152 is underlined in red).
+   - Accessed via a single interior door from the ENTRY VESTIBULE (door swings north into the closet).
+   - The upper wall of this closet forms part of the boundary with the larger space labeled “NON‑PATRON WAITING 152”.
+3. “NON‑PATRON WAITING 152”
+   - Large open area occupying most of the upper part of the quadrant, continuing beyond the right edge of this region.
+   - Room tag: “NON‑PATRON” on first line, “WAITING” second line, “152” third line, with “152” underlined in red.
+   - Several doors connect into this space from the south (ENTRY VESTIBULE 100) and from other spaces to the east (not fully visible in this quadrant).
+   - Along its north and west sides are thick exterior walls.
+4. At far right edge of the quadrant (cut off) the beginning of an adjacent room tag is visible, likely “PATRON WAITING 151” (only “PATRON WAITING 15_” shows, with last digit partly out of view).
+
+Exterior / site elements at the bottom
+- Along the exterior south side of the building, several circular reference / detail markers and associated callouts indicate exterior elevations, details, or sections:
+  - From left to right along the bottom exterior line (just outside the building footprint):
+    1. Circular callout with top number “1” and bottom text “A2-07?” (partially “A2-07” or “A2-07?”). Located near the southwest corner of the building / entry vestibule area.
+    2. Circular callout with top number “2” and bottom text “A7-402” near an exterior site element (possibly a planter or column) slightly right of the first callout.
+    3. Circular callout with top number “3” and bottom text “A7-402” located slightly to the right of callout 2, aligned with another exterior element and a short wall bump‑out next to the vestibule.
+    4. Circular callout with top number “6” and bottom text “A05-2?” placed along the exterior south wall roughly aligned with the east door of the vestibule / main building entry.
+    5. Circular callout with top number “5” and bottom text “A05-3?” labeled “ENTRY 100” nearby in red (an annotation tag pointing to the main entry door).
+    6. Further right in this quadrant along the same dashed exterior reference line:
+       - Circular callout with top number “3” and bottom text “A7-53?” near a hatched square symbol (possibly a ramp, platform, or landscape feature).
+       - Circular callout with top number “2” and bottom text “A7-53?” just right of that hatched square, near a vertical element that looks like a light pole or sign post.
+    7. To the far right edge of the quadrant (near the adjacent “PATRON WAITING 15_” area) another rotated circular callout with top number “10?” and bottom text “A05-3?” is visible just inside the “PATRON WAITING” area (diamond‑shaped with arrow).
+
+Doors and door swings
+- South exterior:
+  - Main entrance door at the bottom center of the building opens into “ENTRY VESTIBULE 100”; the door is drawn as a single leaf swinging inward (north).
+  - To the immediate west of the main entrance, another single exterior door leads directly into a small internal space near the first aid closet (perhaps a service entry); it swings inward (north‑east).
+- Interior:
+  - From ENTRY VESTIBULE 100 into FIRST AID CLOSET 152: single interior door, swinging into the closet (north).
+  - From ENTRY VESTIBULE 100 east into NON‑PATRON WAITING 152: single interior door located at the northeast corner of vestibule, swinging east into the waiting area.
+  - Another interior door from the first aid closet or adjacent corridor opens into the large NON‑PATRON WAITING 152 room along the closet’s north wall (door symbol shown at mid‑wall).
+- Door tags:
+  - Adjacent to some doors, small hex/diamond‑like tags appear with numbers such as “3”, “4”, “5” but the door‑number text itself is not fully legible in this zoom.
+
+Windows / glazed openings
+- Along the main south exterior wall of the ENTRY VESTIBULE 100, dashed rectangles in plan indicate full‑height glazing or sidelights adjacent to the main entrance door; each glazed panel is aligned with exterior detail callouts.
+- The west exterior wall outside FIRST AID CLOSET 152 and NON‑PATRON WAITING 152 has no explicit window symbols visible in this crop, but may have narrow wall segments and thicker wall lines indicating solid construction.
+
+Walls and structural elements
+- Exterior walls:
+  - Drawn as double parallel thick lines with an interior/insulation hatch between; corners and jogs form a vestibule projection and an additional thicker block at the far southwest (possibly a stair, mechanical shaft, or structural core).
+  - At far left, a thick, almost square exterior appendage with interior voids and a circular symbol indicates a utility or stair / shaft structure; surrounded by dashed outline representing overhead elements or extents.
+- Interior walls:
+  - Thinner double lines divide the first aid closet, vestibule, and adjacent spaces.
+  - In some locations, short segments with a perpendicular thicker line denote a wall with a door opening.
+- Structural / column or site feature:
+  - Just outside left bottom area, a square-with-circle symbol inside may represent a column, bollard, or site fixture, with label “2 A7-402”.
+
+Annotations, symbols, and keynotes
+- Numerous diamond‑shaped symbols with text such as:
+  - “A605-32” (black diamond with white center, number at top “9”, bottom text “A605-32”) located inside the NON‑PATRON WAITING 152 area near the south wall.
+  - “A605-3?” near vestibule doors.
+  - “A605-15” (diamond with “AG05-15” or similar) positioned outside near the south of the vestibule, between callout 2 and 3, possibly indicating a glazing or door type.
+  - “AG05-3?” and “AG05-2?” appear as repeating keynote labels for certain door or glazing conditions.
+- Red text annotations:
+  - Under room numbers “152” and “100” the numerals are underlined in red.
+  - Over the main south entry door is red text: “ENTRY 100” with an arrow pointing at the door.
+  - Above the FIRST AID CLOSET room tag, “152” is also underlined in red.
+- Miscellaneous smaller annotation tags:
+  - Circular small symbols with numbers at some wall junctions (e.g., “SFO1” or “SF01”) indicating structural framing or shear wall notes.
+  - At upper left of this quadrant, along the west exterior wall, a small hex or circle shows “SF01”.
+- Dashed rectangles/tints:
+  - Light dashed rectangles overlaid in the NON‑PATRON WAITING 152 room may mark furniture zones, ceiling elements, or areas of another phase; three are visible roughly aligned along the south side.
+  - A hatched rectangle outside on the south near mid‑right represents a concrete pad, landing, or ramp.
+
+Dimensions and grids
+- Vertical grid line:
+  - A heavy dashed vertical grid line runs near the far left side labeled “3F” (text appears next to it at mid‑height).
+- No explicit numerical dimension strings are fully legible in this zoomed quadrant, but small ticks and dimension arrows are positioned along some exterior walls indicating typical dimensioning elsewhere on the sheet.
+
+Title block / legend / schedules within this region
+- The main title “FLOOR PLAN – LEVEL 01 AREA A” and scale note are the only elements of the title block visible in this quadrant.
+- No full legends or schedules (door schedule tables, finish schedules) appear within this bottom‑left quadrant; only symbol callouts and room tags.
+
+Summary of readable text (as appears)
+- “FLOOR PLAN – LEVEL 01 AREA A”
+- “SCALE: 1/4" = 1'-0"”
+- “1 A20-205”
+- Left margin text (partial): “Architect Studio 1030, Temple, Salt Lake County, … • A/E: Salt Architecture …”
+- Room names and numbers:
+  - “ENTRY VESTIBULE 100”
+  - “FIRST AID CLOSET 152”
+  - “NON-PATRON WAITING 152”
+  - Partial at right edge: “PATRON WAITING 15_”
+- Exterior entries:
+  - “ENTRY 100” (red text near main south door)
+- Detail / reference callouts (bottom row and interior):
+  - “1 A2-07?” (or “A2-07?”)
+  - “2 A7-402”
+  - “3 A7-402”
+  - “6 A05-2_”
+  - “5 A05-3_”
+  - “3 A7-53_”
+  - “2 A7-53_”
+  - Diamond symbols such as:
+    - “9 A605-32”
+    - “AG05-15”
+    - “AG05-3_”
+    - “AG05-2_”
+- Miscellaneous tag:
+  - “SF01” (or similar) along west wall.
+- Grid / reference:
+  - “3F” at vertical grid line.
+
+This caption enumerates all legible textual and graphical information in the bottom‑left quadrant of the drawing, including rooms, doors, annotations, symbols, and title information, to support text‑based retrieval of the original image.

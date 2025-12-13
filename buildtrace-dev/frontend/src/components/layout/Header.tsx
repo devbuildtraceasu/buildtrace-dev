@@ -2,11 +2,14 @@
 
 import React, { useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import LoginButton from '@/components/auth/LoginButton'
 import { useAuthStore } from '@/store/authStore'
 import { apiClient } from '@/lib/api'
+import { Home, FolderOpen, GitCompare } from 'lucide-react'
 
 export default function Header() {
+  const pathname = usePathname()
   const { user, isAuthenticated, setUser, setToken, setLoading } = useAuthStore()
 
   useEffect(() => {
@@ -117,34 +120,50 @@ export default function Header() {
     }
   }, [setUser, setToken]) // Include dependencies
 
+  const navItems = [
+    { href: '/', label: 'Home', icon: Home },
+    { href: '/projects', label: 'Projects', icon: FolderOpen },
+  ]
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/'
+    return pathname?.startsWith(href)
+  }
+
   return (
     <header className="bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo and Brand */}
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="text-2xl font-bold text-blue-600">
-              BuildTrace AI
+          <Link href="/" className="flex items-center space-x-2">
+            <div className="text-2xl font-bold text-gray-900">
+              BuildTrace
             </div>
+            <span className="text-sm text-gray-400 font-medium">AI</span>
           </Link>
 
-          {/* Tagline */}
-          <div className="hidden md:block">
-            <p className="text-sm text-gray-600">
-              Intelligent Drawing Comparison & Analysis
-            </p>
-          </div>
-
           {/* Navigation */}
-          <div className="flex items-center space-x-4">
-            <Link href="/">
-              <span className="text-sm text-gray-600 hover:text-gray-900">Home</span>
-            </Link>
-            <Link href="/results">
-              <span className="text-sm text-gray-600 hover:text-gray-900">Results</span>
-            </Link>
+          <nav className="flex items-center space-x-2">
+            {navItems.map((item) => {
+              const Icon = item.icon
+              const active = isActive(item.href)
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    active
+                      ? 'bg-blue-600 text-white'
+                      : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                  }`}
+                >
+                  <Icon className="w-4 h-4" />
+                  <span>{item.label}</span>
+                </Link>
+              )
+            })}
             <LoginButton />
-          </div>
+          </nav>
         </div>
       </div>
     </header>

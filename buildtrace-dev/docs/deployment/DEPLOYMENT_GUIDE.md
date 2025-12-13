@@ -122,6 +122,32 @@ Simplest option - just deploys everything.
 - Tailwind CSS
 - API integration with backend
 
+### Worker Services (Cloud Run)
+
+All asynchronous processing has been moved off Kubernetes and onto Cloud Run pull subscribers. Each worker reuses the backend codebase and the shared `Dockerfile.worker`.
+
+| Service | Purpose | Deploy Command |
+| --- | --- | --- |
+| `buildtrace-ocr-worker` | Gemini OCR extraction + page slicing | `gcloud run deploy buildtrace-ocr-worker --image=us-west2-docker.pkg.dev/buildtrace-dev/buildtrace/buildtrace-ocr-worker:latest --region=us-west2` |
+| `buildtrace-diff-worker` | Alignment, overlay, and diff metadata generation | `gcloud run deploy buildtrace-diff-worker --image=us-west2-docker.pkg.dev/buildtrace-dev/buildtrace/buildtrace-diff-worker:latest --region=us-west2` |
+| `buildtrace-summary-worker` | OpenAI/Gemini summary generation | `gcloud run deploy buildtrace-summary-worker --image=us-west2-docker.pkg.dev/buildtrace-dev/buildtrace/buildtrace-summary-worker:latest --region=us-west2` |
+
+**To build/push an updated worker image:**
+
+```bash
+cd buildtrace-dev/backend
+docker buildx build \
+  --platform linux/amd64 \
+  -f Dockerfile.worker \
+  -t us-west2-docker.pkg.dev/buildtrace-dev/buildtrace/buildtrace-summary-worker:latest .
+docker push us-west2-docker.pkg.dev/buildtrace-dev/buildtrace/buildtrace-summary-worker:latest
+gcloud run deploy buildtrace-summary-worker \
+  --image=us-west2-docker.pkg.dev/buildtrace-dev/buildtrace/buildtrace-summary-worker:latest \
+  --region=us-west2
+```
+
+> 💡 **Important:** The workers now scale independently via Cloud Run (min 0, max 10). No Kubernetes cluster is required.
+
 ## Configuration
 
 ### Backend Environment Variables

@@ -205,8 +205,11 @@ class StorageService:
         if self.use_gcs and self.bucket:
             return self._generate_gcs_signed_url(path, expiration_minutes)
         else:
-            # For local development, return a local URL
-            return f"/static/uploads/{path}"
+            # For local development, return a URL that can be served by Flask
+            # Remove gs:// prefix if present
+            clean_path = self._normalize_gcs_path(path)
+            # Return a path that can be served via Flask route
+            return f"/api/v1/files/{clean_path}"
 
     # GCS-specific methods
     def _upload_to_gcs(self, file_content: BinaryIO, destination_path: str, content_type: Optional[str] = None) -> str:

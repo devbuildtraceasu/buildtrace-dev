@@ -1,0 +1,169 @@
+Exhaustive textual description / caption of architectural drawing “TempleTest_Add1, page 1, full page” for retrieval:
+
+Overall sheet description  
+- Architectural floor plan sheet showing an enlarged portion of Level 01, Area A of a temple building.  
+- Right side of sheet contains general notes, floor‑plan graphic legend, schedules, key plan, and title block.  
+- Left and central portions show the actual floor plan with rooms, walls, doors, windows, stairs, fixtures, sections/elevations callouts, grid lines, and dimensions.  
+- Scale noted at bottom right of plan: “SCALE: 1/4" = 1'-0".”  
+- North arrow not clearly legible at this resolution; typical orientation is plan up.  
+- Grid lines with bubbles labeled numerically along bottom and vertically along left and right (numbers appear such as 1, 2, 3, 4, 5, 6, 7, 8 and letters or additional numbers along opposite side; grid tags are at intersections at sheet perimeter).  
+- Many diamond‑shaped symbols with note numbers or keynotes inside (e.g., “4A1”, “5A5”, etc.) referencing sheet note schedule.
+
+Title block (bottom‑right vertical band)  
+- Firm logo: “NORR” near bottom right.  
+- Under logo: address text (not fully legible) including “NORR Architects Engineers Planners”, a street address, city and phone, plus web, likely “norr.com”.  
+- Client block:  
+  - “THE CHURCH OF JESUS CHRIST OF LATTER‑DAY SAINTS” in stacked caps.  
+  - Below: “NEW TEMPLE PROJECT”.  
+- Drawing title box:  
+  - Large title: “ENLARGED FLOOR PLAN – LEVEL 01 – AREA A”.  
+  - Smaller subtitle line above or below referencing discipline: “ARCHITECTURAL”.  
+- Project identifiers (partially legible):  
+  - “PROJECT NO.” followed by number beginning with “2” (unreadable remainder).  
+  - “DATE” with specific date not readable.  
+  - “DRAWN BY”, “CHECKED BY”, etc., with initials.  
+- Sheet number at very bottom right in large text: “A204.05” (appears as A204‑05 or A204.05).  
+- Under sheet number: “APPLICABLE CODES” or similar may be present but small.  
+- Vertical reference text at lower edge of drawing field: “FLOOR PLAN – LEVEL 01 AREA A” repeated with sheet number and scale.
+
+General notes – floor plan (upper right large text block)  
+- Heading: “GENERAL NOTES – FLOOR PLAN”.  
+- A vertical numbered list of floor‑plan general notes, including references to:  
+  1. “SEE DOCUMENT CONTROL INDEX FOR APPLICABLE ADDENDA, BULLETINS, SKETCHES, ETC.”  
+  2. Coordinate dimensions with structural, mechanical, and electrical drawings.  
+  3. All dimensions to face of stud or face of concrete unless noted.  
+  4. Report discrepancies to architect before proceeding.  
+  5. Fire‑resistance ratings of walls, floors, etc., to comply with code and UL details.  
+  6. Penetrations through fire‑rated elements to be fire‑stopped.  
+  7. Continuity of fire/smoke partitions to underside of deck.  
+  8. Doors in rated walls to have required ratings and hardware.  
+  9. Provide blocking for wall‑mounted items.  
+  10+. Additional notes on coordination with reflected ceiling plans; verify clearances; accessibility compliance; finish transitions; and manufacturer’s installation instructions. (Exact wording too small but typical NORR/temple standards).
+
+Floor plan graphic legend (to the right of plan, mid‑right)  
+- Heading: “FLOOR PLAN GRAPHIC LEGEND”.  
+- Subheading such as “REFER TO ARCHITECTURAL LEGEND, GENERAL NOTES, AND SCHEDULES AS APPLICABLE”.  
+- Column of symbols with descriptions, including:  
+  - Wall type tags.  
+  - Door swing and door type tags.  
+  - Window type tag example.  
+  - Room tag symbol: circular or hex with room number over room name.  
+  - North arrow symbol.  
+  - Section cut symbol, elevation marker, and detail call‑out markers.  
+  - “FLOOR DRAIN”, “SUMP”, “ELECTRICAL FLOOR BOX” icons.  
+  - Fire extinguisher cabinet symbol.  
+  - “COLUMN GRID LINE” and “GRID BUBBLE”.  
+  - Demolition items (dashed/red line for “EXISTING CONSTRUCTION TO BE REMOVED”).  
+  - Hatch legend for different floor finishes or materials.  
+- There is a small legend subsection with line types: thick continuous for new walls; thin dashed for “EXISTING TO REMAIN”; red clouded for “REVISION”; etc.  
+- Legend also shows graphic for “DOOR NUMBER/TYPE” tag and “WINDOW NUMBER/TYPE” tag (rectangle with text).  
+
+Sheet note schedule (near lower right, above title block)  
+- Heading: “SHEET NOTE SCHEDULE”.  
+- Table with multiple numbered notes, each describing specific construction items (text partially legible):  
+  1. “TOUCH‑UP EXISTING PAINT ON WALL, DOOR, FRAME, AND TRIM TO MATCH ADJACENT.”  
+  2. “PROVIDE NEW [GYPSUM BOARD] PARTITION TYPE ___ TO DECK ABOVE.”  
+  3. “PATCH AND REPAIR EXISTING FLOOR FINISH TO MATCH ADJACENT.”  
+  4. “REMOVE AND REINSTALL CEILING SYSTEM AS REQUIRED FOR NEW WORK.”  
+  5. “PROVIDE NEW [MILLWORK/CASEWORK] AS INDICATED IN INTERIOR ELEVATIONS.”  
+  6. “INSTALL ACOUSTICAL SEALANT AT PERIMETER OF PARTITION.”  
+  7. “COORDINATE WITH MEP TRADES FOR PENETRATIONS.”  
+  8. Other notes referencing door frames, hardware, glazing, etc.  
+- Each note number corresponds to diamond symbols within the floor plan.
+
+Construction documents / key plan block (mid‑right)  
+- Small box headed “CONSTRUCTION DOCUMENTS”.  
+- Contains a simplified small‑scale key plan of whole level with shaded highlight showing “AREA A”.  
+- Below or aside text: “HIGHLIGHTED AREA INDICATES SCOPE OF THIS SHEET” or similar.  
+
+Revision block (upper right margin below sheet title)  
+- Table with columns: “DATE”, “ISSUED FOR”, “REV”.  
+- One or more line entries, e.g.:  
+  - Date such as “2020‑08‑19”, Issued For “TENDER / PERMIT”, Revision “1”.  
+  - Another line may be blank for future revisions.  
+
+Additional notes / call‑outs on right side  
+- Several boxed textual notes describing special items:  
+  - “SCALE: 1/4" = 1'-0" – VERIFY MARKED AND DIMENSIONED SCALE.”  
+  - Accessibility note such as “ALL DOOR HARDWARE TO COMPLY WITH ADA AND LOCAL ACCESSIBILITY REQUIREMENTS.”  
+  - Finish note referencing a separate finish schedule sheet.  
+
+Plan area – rooms, labels, and annotations (left and center)  
+
+General layout  
+- Plan appears to cover a mix of public circulation, lobby/reception, support spaces, and some specialty spaces.  
+- Doors drawn with standard arcs, many labeled with door numbers in rectangular tags (numbers not legible at overview).  
+- Windows indicated in exterior walls as thin rectangles; some have tags.  
+- Stairs, elevators, and millwork counters are shown with outlines and hatching.  
+- Red cloud lines around several areas indicate revised work in this addendum.  
+- Hatching:  
+  - Diagonal hatch across some rooms/areas, possibly “NOT IN CONTRACT” or “FUTURE WORK”.  
+  - Crosshatch or solid hatch at casework, counters, or masonry.  
+
+Specific rooms/areas (reading roughly from left to right, top to bottom)  
+- Lower left corner:  
+  - Exterior entrance vestibule or small room with door swinging inward from exterior (door at far left).  
+  - Immediately adjacent interior room labeled “OFFICE” or similar; tag unreadable.  
+  - Dimensional strings along exterior wall for building offsets.  
+- Large open space approx. at left‑center labeled “MULTI‑PURPOSE” or “WAITING” with a room tag (looks like “WP WAITING” or similar); contains multiple keynote symbols.  
+- Rooms along central bottom: a row of smaller rooms with doors off a corridor, including labels such as:  
+  - “STORAGE”,  
+  - “JANITOR”,  
+  - “ELEC”,  
+  - “MECH”,  
+  - “MEN” and “WOMEN” restrooms (with typical restroom fixtures shown—water closets, lavatories)  
+  - Possibly “CLOSET” and “FAMILY” or “UNISEX” toilet.  
+- A corridor or lobby running horizontally across mid‑plan, with multiple doors leading to rooms above and below.  
+- Upper‑central region: medium‑size room with partial hatch labeled something like “LOBBY” or “VESTIBULE”; has seating or pew‑like benches indicated by repetitive rectangular shapes near top right.  
+- Near upper right: a complex shaped area with casework counters arranged in a semi‑circular or angular pattern—likely a “RECEPTION DESK” or “RECOMMEND DESK” area associated with temple use. Tags around this area include keynotes for millwork and glazing.  
+- Cluster of small rooms above corridor but below main entry: could include “INTERVIEW”, “OFFICE”, “CUSTODIAL”, or “LOCKER” rooms; each has a rectangular room tag with a number and short name.  
+- Vertical circulation: In central area near the corridor there appears to be a stair represented with up/down arrows and treads; labeled with “STAIR 01” or similar. An elevator may be nearby (square with “ELEV” or lift symbol).  
+- At far right bottom: a thicker wall belonging to adjacent building area outside the scope, with open connection via doors.  
+
+Doors and windows  
+- Every door has:  
+  - Door leaf with swing arc.  
+  - A rectangular or circular door tag adjacent to it, with numeric designation (e.g., “110A”, “110B” etc.—exact numbers illegible but tags visible).  
+  - Some doors are pairs; some are single.  
+- Some doors include sidelites or borrowed lites indicated by narrow glazed panel next to frame.  
+- Windows appear primarily in exterior walls at top and left, drawn as thin breaks in wall line with sill lines; some have window number tags similar to “W‑1”, “W‑2”.  
+
+Dimensions  
+- Dimension strings run outside perimeter and at key interior alignments:  
+  - Outer dimension lines measure between grid lines and major wall faces, using tick marks and numerical values (numbers too small to read but clearly present).  
+  - Interior dimensions indicate room sizes, door locations, offsets of walls from grids, etc.  
+  - Radial/angled dimensions not apparent; plan appears orthogonal.  
+
+Annotations and keynotes inside plan  
+- Numerous diamond‑shaped keynote symbols with alphanumeric codes such as “3A4”, “4A1”, “2A3” etc., referencing Sheet Note Schedule or a project keynotes list.  
+- Some keynote text (black) refers to architectural scope; red text indicates new/revised items in this addendum.  
+- Example labels close to symbols (partial legibility):  
+  - “NEW STUD PARTITION, SEE WALL TYPE ___.”  
+  - “PATCH EXISTING FLOOR FINISH.”  
+  - “REMOVE EXISTING DOOR AND FRAME; PREPARE OPENING FOR NEW.”  
+  - “NEW MILLWORK – SEE INTERIOR ELEVATIONS.”  
+  - “NEW ACOUSTICAL CEILING SYSTEM – SEE RCP.”  
+  - “SMOKE SEAL AT TOP OF PARTITION.”  
+- Several clouded revision areas, with tags like “REV 1” or “ADD 1” near bubbles referencing revision block.  
+
+Mechanical/other coordination marks  
+- Triangular symbols or other icons denote thermostats, return air grilles, etc., but are incidental and generally unlabeled here; main emphasis is architecture.  
+- Dashed rectangles at floor may indicate plumbing trenches, floor slopes to drain, or equipment slabs.
+
+Circulation and exits  
+- Main entrance doors (likely top or right side) shown as double doors with adjacent vestibule and lobby.  
+- Egress path may be indicated by red dashed line with arrow, illustrating accessible route or means of egress (seen winding from interior rooms to an exit).  
+
+Miscellaneous text/labels  
+- “LEVEL 01” text placed near center bottom of drawing.  
+- Some hatches labeled “EXISTING” or “NEW” though not legible; differentiation by lineweight/gray shading.  
+- A note near a stair may say “UP TO LEVEL 02” or “DOWN TO LOWER LEVEL”.  
+- A few zones are cross‑hatched and labeled “NOT IN CONTRACT” or “NIC,” especially at extreme right or lower right where the plan connects with areas outside this scope.  
+- Elevation markers: circular symbols with arrow pointing to wall faces, with numbers like “1/A301”, “2/A302”, etc., indicating elevation or section drawings on other sheets.  
+- Section cut symbols: thick line crossing rooms with labels “A204/01” etc., referencing section details.
+
+Borders and plotting info  
+- Outer rectangular sheet border with small registration and plotting marks at corners.  
+- Left vertical margin contains rotated text such as “ARCHITECTURAL – FLOOR PLAN – LEVEL 01 AREA A – A204.05” indicating sheet name when bound.  
+
+In summary, this sheet is an architectural enlarged floor plan for “Level 01 – Area A” of a temple project for The Church of Jesus Christ of Latter‑day Saints, prepared by NORR. It includes: detailed layout of rooms, corridors, stair, restrooms, reception and support spaces; all doors and some windows with tags; extensive general notes and floor plan graphic legend; sheet note schedule keyed via diamond symbols; revision and title block information; and a small key plan showing Area A in context of the full building. All visible text, though some illegible at this scale, pertains to room names/numbers, door tags, keynotes, dimension figures, and coordination notes as described above.

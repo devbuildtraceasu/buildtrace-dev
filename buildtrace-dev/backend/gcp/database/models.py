@@ -313,6 +313,7 @@ class Job(Base):
     old_drawing_version_id = Column(String(36), ForeignKey('drawing_versions.id'), nullable=False)
     new_drawing_version_id = Column(String(36), ForeignKey('drawing_versions.id'), nullable=False)
     status = Column(String(50), default='created')  # created, in_progress, completed, failed, cancelled
+    total_pages = Column(Integer, default=1)  # Number of pages in the PDF (for streaming progress)
     created_by = Column(String(36), ForeignKey('users.id'), nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow)
     started_at = Column(DateTime)
@@ -340,12 +341,13 @@ class Job(Base):
 
 
 class JobStage(Base):
-    """Tracks individual stages (OCR, diff, summary) within a job"""
+    """Tracks individual stages (OCR, diff, summary) within a job - now per-page for streaming"""
     __tablename__ = 'job_stages'
 
     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     job_id = Column(String(36), ForeignKey('jobs.id', ondelete='CASCADE'), nullable=False)
     stage = Column(String(50), nullable=False)  # ocr, diff, summary
+    page_number = Column(Integer, nullable=True)  # Which page this stage is for (1-indexed, NULL for whole-job stages)
     drawing_version_id = Column(String(36), ForeignKey('drawing_versions.id'), nullable=True)  # For OCR stage
     status = Column(String(50), default='pending')  # pending, in_progress, completed, failed, skipped
     started_at = Column(DateTime)
@@ -365,18 +367,21 @@ class JobStage(Base):
         Index('idx_job_stages_job', 'job_id'),
         Index('idx_job_stages_status', 'status'),
         Index('idx_job_stages_stage', 'stage'),
-        UniqueConstraint('job_id', 'stage', 'drawing_version_id', name='uq_job_stage_drawing'),
+        Index('idx_job_stages_page', 'job_id', 'page_number'),
+        UniqueConstraint('job_id', 'stage', 'page_number', 'drawing_version_id', name='uq_job_stage_page_drawing'),
     )
 
 
 class DiffResult(Base):
-    """Stores diff calculation results separately from comparisons"""
+    """Stores diff calculation results separately from comparisons - now per-page"""
     __tablename__ = 'diff_results'
 
     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     job_id = Column(String(36), ForeignKey('jobs.id', ondelete='CASCADE'), nullable=False)
     old_drawing_version_id = Column(String(36), ForeignKey('drawing_versions.id'), nullable=False)
     new_drawing_version_id = Column(String(36), ForeignKey('drawing_versions.id'), nullable=False)
+    page_number = Column(Integer, default=1)  # Which page this diff is for (1-indexed)
+    drawing_name = Column(String(255), nullable=True)  # Extracted drawing name for this page
     machine_generated_overlay_ref = Column(Text, nullable=False)  # GCS path to diff JSON
     alignment_score = Column(Float)  # 0-1, quality of alignment
     changes_detected = Column(Boolean, default=False)
@@ -395,6 +400,7 @@ class DiffResult(Base):
     # Indexes
     __table_args__ = (
         Index('idx_diff_results_job', 'job_id'),
+        Index('idx_diff_results_job_page', 'job_id', 'page_number'),
         Index('idx_diff_results_versions', 'old_drawing_version_id', 'new_drawing_version_id'),
     )
 
