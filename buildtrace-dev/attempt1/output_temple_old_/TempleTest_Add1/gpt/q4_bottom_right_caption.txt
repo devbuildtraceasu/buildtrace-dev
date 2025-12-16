@@ -1,0 +1,111 @@
+Bottom-right quadrant (q4_bottom_right) of architectural floor plan **TempleTest_Add1, Page 1** showing the **Baptistry/Confirmation support area** with adjacent storage, corridors, and part of a large open room boundary; includes multiple door tags, room names/numbers, interior elevation/section/detail callouts, and partial grid bubbles.
+
+---
+
+## Grid / reference markers visible (no full grid lines shown in this crop)
+- **Grid bubble “6”** near the **upper-right** edge (no letter/number pair shown; just “6” in a circle).
+- **Grid bubble “5”** at **mid-right**.
+- **Grid bubble “4.5”** at **lower-right**.
+- No explicit vertical/horizontal grid lines or labeled intersections are fully visible within this region; locations below are given **relative to these grid bubbles** and to nearby rooms/doors.
+
+---
+
+## Rooms / spaces (names + numbers) and locations
+
+1) **CLOTHING ISSUE – 178**
+- Location: **left-center** of region, immediately **west** of “VESTIBULE–CLOTHING 179.”
+- Contents/fixtures: multiple long rectangular **millwork/shelving/rack banks** along the left side of this room (drawn as repeated rectangular modules with internal divisions and hatch indicating storage fixtures).
+- Callouts: a **diamond-shaped multi-view marker** inside the room (reads as a cluster of numbers; associated sheet text appears like **“A60-7x”** in red—exact suffix not fully legible in crop).
+
+2) **VESTIBULE – CLOTHING – 179**
+- Location: **center-left**, between Clothing Issue 178 (west) and Corridor–Baptistry 180 (east).
+- Plan feature: a **hatched vertical strip** along the **west side** of this vestibule (material hatch consistent with legend “MILLWORK” style hatch; likely casework/partition treatment).
+- Door/opening: a door labeled **“179B”** appears at the **lower part** of this vestibule zone (door tag number “179B” printed vertically near opening). Door leaf/positioning suggests a **single swing door** connecting to adjacent circulation/space (exact swing direction partially obscured by crop, but swing arc indicates it opens within the vestibule/corridor zone).
+
+3) **CORRIDOR – BAPTISTRY – 180**
+- Location: **center** of region, running vertically; connects north–south with multiple openings.
+- Door/openings:
+  - At the **upper-left** edge of corridor area: door tag **“178”** at a doorway connecting **CLOTHING ISSUE 178** to the corridor/vestibule side; swing arc visible (single swing).
+  - At the **upper-right** portion: door tag **“163A”** at a doorway connecting corridor area toward the **east** (toward storage/confirmation side); swing arc visible (single swing).
+  - Several framed openings/doors along corridor edges indicated by thick wall lines and door swing arcs.
+- Callouts: a **diamond-shaped interior elevation tag** (multi-triangle/quadrant style) near the text “CORRIDOR–BAPTISTRY 180,” with red sheet reference text **“A60-7x”** (suffix not fully legible).
+
+4) **FEC** (small closet/room; label “FEC”)
+- Location: **center-right**, immediately **east** of Corridor–Baptistry 180, just **west** of Storage 161B.
+- Contents: a small plumbing fixture symbol appears adjacent/nearby (small circular/sink-like symbol at the boundary area); exact fixture type unclear in crop.
+- Enclosure: small rectangular room with a door opening on corridor side (door swing shown tight to the wall).
+
+5) **STORAGE – 161B**
+- Location: **center-right**, directly **east** of corridor and **adjacent to FEC** (FEC on west side).
+- Door: door shown at the **upper-left corner** area of Storage, connecting to corridor/adjacent passage (swing arc shown).
+- Callouts: a **diamond-shaped elevation/detail marker** inside the storage room with red reference text **“A60-2.1”** (legible “A60-2.1” in red).
+- Room label text: “STORAGE” with number **161B** below it.
+
+6) **CONFIRMATION – 162**
+- Location: **upper-right** of region, a larger rectangular room east of Storage 161B.
+- Door(s):
+  - A **single swing door** at the **left side** of Confirmation (near its northwest corner area) connecting to corridor/adjacent passage; swing arc shown opening into the confirmation room.
+  - An additional door opening appears along the **upper boundary** near the transition between corridor and confirmation zone (door tag not clearly shown here).
+- Callouts: another **diamond-shaped elevation/detail marker** within Confirmation with red reference text **“A60-0.74”** (legible as “A60-0.74” or similar; exact decimals slightly soft but appears “A60-0.74”).
+- Room label text: “CONFIRMATION” with number **162** below.
+
+7) **PATRON WAITING – 144** (partial)
+- Location: **lower-left corner** of the region (only a portion visible).
+- Callout: a circular bubble **“9 / A75-05”** with **“SIM”** adjacent (indicates similar condition; per legend, “SIM” = Similar). This bubble sits near the patron waiting area boundary.
+
+8) **Large open area / hall space (unnamed in crop)**
+- Location: **lower-right and center-right**: a large open white area bounded by thick walls forming an L-shape around the corridor/storage edge. No room name shown within this crop.
+- At the **right edge**, a vertical stacked note block with numbers **“1, 2, 3, 4”** is partially visible (likely a keyed note list or detail index fragment).
+
+---
+
+## Doors (IDs, locations, swing)
+Door tags visible as small numeric labels near swing arcs; all appear to be **single-swing hinged doors** unless otherwise noted:
+- **Door “178”**: at upper portion near Clothing Issue/Corridor connection (upper-center-left). Swing arc indicates hinged door between Clothing Issue 178 and corridor/vestibule side.
+- **Door “163A”**: upper-center/right near corridor leading toward the storage/confirmation side; swing arc visible.
+- **Door “161B”**: door into Storage 161B at its upper-left side (swing arc visible).
+- **Door “179B”**: label appears vertically near lower-middle corridor/vestibule area (opening along the corridor/vestibule boundary).
+- Additional door leaf at Confirmation 162 west wall (door tag not clearly printed at the leaf in this crop; swing arc shows it opens into Confirmation).
+
+No window tags or glazing callouts are clearly identifiable in this crop; openings shown are primarily doors.
+
+---
+
+## Fixtures / built-ins / millwork
+- **Clothing Issue 178**: extensive built-in **shelving/rack systems** arranged in parallel banks (left side of region), drawn as long rectangles with repeated internal divisions; some portions hatched, consistent with storage/casework.
+- **Vestibule–Clothing 179**: a **hatched panel/strip** (likely millwork or a built-in element) along the left side of the vestibule zone.
+- **Small plumbing symbols**: near FEC/corridor junction, a small circular fixture symbol is visible (exact type not labeled).
+
+---
+
+## Annotations, dimensions, and symbols (all visible text)
+- Room labels and numbers (as above): **CLOTHING ISSUE 178**, **VESTIBULE–CLOTHING 179**, **CORRIDOR–BAPTISTRY 180**, **FEC**, **STORAGE 161B**, **CONFIRMATION 162**, **PATRON WAITING 144**.
+- Door IDs printed near openings: **178**, **163A**, **161B**, **179B**.
+- Callouts / reference markers:
+  - Multiple **diamond-shaped multi-view interior elevation/detail markers** with quadrant-style numbering, each with red sheet references including: **A60-2.1**, **A60-0.74** (approx), and other **A60-7x** references near Clothing Issue / Corridor (suffix not fully legible).
+  - Circular section/detail bubble near Patron Waiting: **“9”** over **“A75-05”** with **“SIM”**.
+  - Additional circular/diamond markers near upper-right: one bubble shows **“4”** with sheet reference text that reads like **“A05-32”** (positioned near top edge); another diamond cluster nearby shows a stacked set of numbers with red **A60-0.21** (approx; characters small but looks like “A60-0.21”).
+- Small numeric dimension strings appear near door heads/walls (e.g., short red/black numbers such as **“475”**, **“462”**, **“468”**, **“179C”** near corridor linework). These are too small/partial to confirm as full dimensions; they appear to be door/frame or partition references rather than long dimension chains.
+- Partial note/index at far right: vertical list **“1 2 3 4”** in a small table fragment (content not visible).
+
+---
+
+## Spatial relationships / circulation
+- **Clothing Issue 178** connects eastward to **Vestibule–Clothing 179**, which in turn connects to the **Corridor–Baptistry 180** running north–south through the center.
+- The corridor provides access eastward to **FEC** (small room), **Storage 161B**, and then further east to **Confirmation 162**.
+- Patron Waiting 144 lies southwest (lower-left) of the corridor/vestibule zone, separated by a wall line and open boundary beyond crop.
+- The large open unlabeled space occupies the lower-right, adjacent to the corridor/storage exterior wall line (L-shaped wall).
+
+---
+
+## Legend context (applies to symbols seen here)
+- **SIM** text next to bubble = “Similar.”
+- Diamond/circular bubbles are **section/elevation/detail callouts** with **view number** and **sheet number** (e.g., **9/A75-05**, **A60-2.1**, **A05-32**).
+- Hatched elements correspond to **MILLWORK** hatch per legend.
+
+---
+
+## What is NOT visible in this crop
+- No title block data, project name block, north arrow, or full keynote schedule is visible in this bottom-right region.
+- No explicit wall type tags (leadered “WALL TYPE / VARIANT”) are clearly readable in this crop.
+- No fire-rating bars (1HR/2HR FRR) are shown in this region.

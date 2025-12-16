@@ -1,0 +1,81 @@
+**Architectural Drawing Caption: Floor Plan - Level 01 Area A (Bottom-Left Quadrant)**
+
+**General Information**
+*   **Sheet Title:** FLOOR PLAN - LEVEL 01 AREA A
+*   **View Number:** 1
+*   **Sheet Number:** A20-05
+*   **Scale:** 1/4" = 1'-0"
+*   **File Path:** Autodesk Docs://LDS_Temple_San Jose, CA/NORR_ED2024-0005_AR_SanJoseTemple_Interior_R24.rvt
+*   **Grid References:** Grid line **E** is visible at the bottom margin, aligning with the primary vertical structural wall of Entry Vestibule 100. Grid line **D** is visible at the bottom right margin.
+
+**Exterior Features (Left of Grid E)**
+*   **Exterior Wall:** Runs vertically along Grid E. Labeled with Wall Tag **SF01** (Hexagon).
+*   **Column/Feature 1 (Top Left):** Large L-shaped/stepped architectural feature. Tagged with Exterior Elevation **4/A71-02**.
+*   **Column/Feature 2 (Bottom Left):** Square base with a circular center and inner square. Tagged with Section **1/A42-01** and Exterior Elevation **2/A71-02**.
+*   **Dimensions:** Vertical dimension **18'-5"** indicated between the two exterior features.
+*   **Elevation Tags:**
+    *   **5/A72-02:** Pointing East toward the main exterior wall.
+    *   **3/A71-02:** Pointing East toward the Entry Vestibule doors.
+*   **Sheet Notes:**
+    *   **Note [2]:** "KNOXBOX - FINAL LOCATION TBD. TO BE TIED INTO SECURITY SYSTEM." Points to the exterior face of the wall at Entry Vestibule 100.
+
+**Interior Spaces & Rooms**
+
+**1. Entry Vestibule 100**
+*   **Location:** Bottom left, centered on Grid E.
+*   **Revision:** Entire room clouded in **Red Revision Cloud** with Delta **K**.
+*   **Doors:**
+    *   **Exterior Double Doors:** Swing outward. Tagged with Sheet Note **[1]**: "TOUCHLESS ACTUATOR CONTROL FOR DOOR AUTO OPERATOR. BASIS OF DESIGN: LCN 8310-810S."
+    *   **Interior Double Doors:** Lead into Entry 101. Swing into Entry 101.
+*   **Interior Elevation Tag:** Diamond symbol pointing North (7), East (2), South (5) to Sheet **A60-15**.
+*   **Adjacency:** Connects to First Aid Closet 152 to the North.
+
+**2. First Aid Closet 152**
+*   **Location:** Directly North of Entry Vestibule 100.
+*   **Revision:** Entire room clouded in **Red Revision Cloud** with Delta **K**.
+*   **Door:** Single door **152** swings outward (South) into Vestibule 100.
+*   **Features:** Contains a solid **Blue Rectangular Symbol** embedded in the North wall.
+*   **Sheet Note:** Note **[1]** (Touchless Actuator) tag is placed near this door, likely referencing the vestibule doors but visually close to 152.
+
+**3. Entry 101**
+*   **Location:** Large circulation space East of Grid E.
+*   **Tags & Annotations:**
+    *   **Interior Elevation:** Diamond symbol pointing North (4), East (3), South (5) to Sheet **A60-30**.
+    *   **Wall Section:** **6/AG05-32** pointing South at the exterior wall.
+    *   **Building Sections:**
+        *   **3/A30-10** pointing East.
+        *   **3/A75-30** pointing East.
+        *   **2/A75-30** pointing East (far right edge).
+    *   **Ceiling:** Dashed lines indicate a soffit or ceiling feature running East-West.
+
+**4. Non-Patron Waiting 102**
+*   **Location:** North of Entry 101.
+*   **Door:** Single door **102** swings inward (North) against the West wall.
+*   **Clearance:** Dashed circle **Ø 5'-0"** indicates wheelchair turning space.
+*   **Interior Elevation Tag:** Diamond symbol pointing North (3), East (4), South (5), West (2) to Sheet **A60-31**.
+
+**5. Shoe & Coat 103**
+*   **Location:** East of Non-Patron Waiting 102.
+*   **Features:**
+    *   "shoe rack" text labeled along the South wall.
+    *   **FEC** (Fire Extinguisher Cabinet) symbol on the East wall.
+*   **Interior Elevation Tag:** Diamond symbol pointing North (13), East (10), South (11), West (12) to Sheet **A60-31**.
+
+**6. Vestibule 104**
+*   **Location:** North of Shoe & Coat 103.
+*   **Door:** Single door **104** swings inward (North).
+*   **Interior Elevation Tag:** Diamond symbol pointing North (9), East (6), South (7), West (8) to Sheet **A60-31**.
+
+**7. Restroom 105**
+*   **Location:** Top right corner of the region.
+*   **Revision:** Entrance area clouded in **Red Revision Cloud** with Delta **K**.
+*   **Door:** Single door **105** swings outward (South) into Vestibule 104.
+*   **Fixtures & Clearances:**
+    *   Sink on West wall with dashed clearance rectangle (2'-6" x 4'-0").
+    *   Toilet on North wall with dashed clearance rectangle (5'-0" x 4'-8").
+*   **Interior Elevation Tag:** Diamond symbol pointing North (24), East (21), South (22), West (23) to Sheet **A61-01**.
+
+**Material & Construction Notes**
+*   **Wall Types:** Refer to AG04 series (per general context).
+*   **Fire Ratings:** Walls around the Vestibule 100 and First Aid 152 appear to be standard partitions. The exterior wall is thick, indicating structural or insulated assembly.
+*   **Millwork:** Hatching visible in the wall cavity near the Restroom 105 sink (plumbing wall).

@@ -1,0 +1,72 @@
+**Region: q1_top_left (Top-left quadrant)**
+
+**General Description:**
+This region depicts the site plan and partial floor plan for the northwest corner of a property located at the intersection of **Pendleton Street** (running vertically) and **De Garmo Ave** (running horizontally). The drawing distinguishes between an existing adjacent structure labeled "NOT A PART" to the north and the project site labeled "FRONT YARD" and "MRF BLDG" to the south.
+
+**Grid Lines and Datums:**
+*   **Grid A:** Horizontal grid line marked with a blue circle bubble "A" on the left. A blue extension line is labeled "FACE OF CMU MRF BLDG".
+*   **Grid D:** Horizontal grid line marked with a blue circle bubble "D" on the left. A blue extension line is labeled "RIDGE MRF BLDG".
+*   **Vertical Alignment:** The primary vertical reference is the centerline of **Pendleton Street**.
+*   **Dimensions:**
+    *   Vertical dimension line along the left side: "OVERALL", "MRF BUILDING".
+    *   Specific vertical dimension: "276'-8 1/8" (F BUILDING)".
+    *   Dimension near the corner property line: "8'-8 1/8"" labeled "TO PROPERTY CORNER".
+
+**Streets and Site Context:**
+*   **Pendleton Street:** Located on the left side, running vertically. Features a dashed centerline and a solid curb line. Labeled "PENDLETON STREET".
+*   **De Garmo Ave:** Located in the upper-middle section, running horizontally. Labeled "DE GARMO AVE".
+*   **Intersection:** The northwest corner of the property features a rounded curb radius at the intersection of Pendleton St and De Garmo Ave.
+*   **Traffic/Drainage Flow:** A series of black arrows points along the curb line of De Garmo Ave (pointing left/west) and turns the corner to run down Pendleton Street (pointing down/south).
+
+**Buildings and Spaces:**
+1.  **"NOT A PART" Structure:**
+    *   **Location:** Top right quadrant, north of De Garmo Ave.
+    *   **Label:** Large text "NOT A PART".
+    *   **Features:** Outline of an existing building with parking stalls visible to its left (west).
+2.  **MRF Building (Partial):**
+    *   **Location:** Far right edge, extending downwards.
+    *   **Graphic:** Shaded with a blue/purple hatch.
+    *   **Boundary:** A thick black wall line defines the western edge.
+    *   **Separation:** A red dashed line runs parallel to the north wall, labeled "BLDG SEPARATION".
+    *   **Dimension:** "1'-9 1/2" V.I.F." (Verify In Field) indicates the distance between the new work and the property line/adjacent structure.
+    *   **Spot Elevation:** "x 882.6" located near the building separation line.
+3.  **Front Yard:**
+    *   **Location:** The open area south of De Garmo Ave and west of the MRF Building.
+    *   **Label:** "FRONT YARD" in blue text.
+    *   **Contents:** Contains outlines of concrete pads or equipment foundations.
+
+**Annotations, Symbols, and Keynotes:**
+*   **Diamond Keynotes (Hexagonal/Diamond tags):**
+    *   **Tag 12:** Points to the curb/sidewalk at the street corner intersection.
+    *   **Tag E8:** Points to the property corner near the intersection.
+    *   **Tag 4:** Points to the sidewalk area on Pendleton Street.
+    *   **Tag 12 (Second instance):** Points to the curb on De Garmo Ave.
+    *   **Tag 4 (Second instance):** Points to the street area on De Garmo Ave.
+    *   **Tag E6:** Points to a rectangular equipment pad in the Front Yard.
+    *   **Tag E7:** Points to a red zigzag line symbol (likely indicating an electrical break or underground utility run) in the Front Yard.
+    *   **Tag E4:** Points to the exterior wall of the MRF Building.
+    *   **Tag E5:** Points to the exterior wall of the MRF Building.
+    *   **Tag 2:** Points to the exterior wall of the MRF Building.
+    *   **Tag 1:** Points to the exterior wall of the MRF Building.
+*   **Red Lines:**
+    *   A red dashed line with long dashes runs along the property line/setback line facing De Garmo Ave and turns the corner down Pendleton Street.
+    *   A red zigzag line is located near tag E7.
+
+**Visible Text and Notes:**
+*   "FACE OF CMU MRF BLDG" (Blue text, aligned with Grid A).
+*   "RIDGE MRF BLDG" (Blue text, aligned with Grid D).
+*   "OVERALL" (Vertical dimension text).
+*   "MRF BUILDING" (Vertical dimension text).
+*   "TO PROPERTY CORNER" (Vertical dimension text).
+*   "276'-8 1/8" (F BUILDING)" (Vertical dimension value).
+*   "8'-8 1/8"" (Vertical dimension value).
+*   "BLDG SEPARATION 1'-9 1/2" V.I.F." (Note at top right).
+*   "FRONT YARD" (Label in center bottom).
+*   "NOT A PART" (Label in top right).
+*   "PENDLETON STREET" (Street label).
+*   "DE GARMO AVE" (Street label).
+
+**Material/Construction Indications:**
+*   **CMU:** The note "FACE OF CMU" indicates Concrete Masonry Unit construction for the MRF Building wall.
+*   **Hatching:** The blue/purple hatching on the right indicates the scope of the new building work.
+*   **Stippling:** Light stippling along the sidewalk areas suggests concrete or pavement.

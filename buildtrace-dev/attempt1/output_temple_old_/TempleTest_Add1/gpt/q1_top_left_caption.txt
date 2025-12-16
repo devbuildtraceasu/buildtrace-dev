@@ -1,0 +1,75 @@
+Top-left quadrant region **q1_top_left** of sheet **TempleTest_Add1 – Page 1** showing primarily **structural/grid layout and exterior wall portion of a building** with a few elevation/section callouts and sparse architectural elements. No full title block/legend strip is visible in this region.
+
+## 1) Grid / datum system (primary content)
+- **Vertical grid lines (top edge, in circular grid bubbles):**
+  - **Grid I**: bubble “I” near the **upper-left** area. A faint vertical gridline drops downward from it.
+  - **Grid H**: bubble “H” near the **upper-center** area. A darker/clearer vertical gridline drops downward from it (center of region).
+  - **Grid G**: bubble “G” near the **upper-right** area. A vertical gridline drops downward from it (fainter than H).
+- **Horizontal dashed gridline**: a long **dashed horizontal datum/gridline** runs across the region roughly through the **upper-middle** portion, intersecting the vertical grids (I, H, G).
+- **Second horizontal dashed gridline**: another **dashed horizontal line** runs across the region lower than the first (closer to the bottom half), also intersecting the vertical grids.
+
+## 2) Dimensions / spacing shown
+- **Across the top between vertical grids:**
+  - Dimension text **“11'-8"”** located near the upper area, positioned between **Grid I and Grid H** (implying spacing I–H = 11'-8").
+  - Dimension text **“27'-0"”** located near upper-middle/right, positioned between **Grid H and Grid G** (implying spacing H–G = 27'-0").
+- **Left-side vertical dimension string (overall vertical spacing between horizontal dashed lines):**
+  - A vertical dimension line at far **left margin** with tick marks indicating two stacked segments:
+    - Upper segment labeled **“47'-4"”** (between the upper dashed horizontal line and the next reference below).
+    - Lower segment labeled **“234'-1 1/2"”** (large vertical extent continuing downward from the lower tick to another datum not fully shown in this quadrant).
+  - These dimensions run parallel to the left edge; the referenced horizontal dashed lines align with the tick marks.
+
+## 3) Section/elevation/detail callouts (using legend context)
+Several **section/callout bubble tags** appear; all are circular tags with a view/detail number over a sheet reference, consistent with the legend’s “SECTION TAG / CALLOUT TAG” conventions.
+
+- **Callout at right side, upper-mid area:**
+  - A circular tag with **“2”** over **“A42-03”**, adjacent to a **filled triangular/wedge indicator** pointing toward the building area at the right edge.
+  - Location: **right side**, roughly mid-height of the region, pointing toward the partial exterior wall/building corner.
+
+- **Callout near right side, mid-lower area:**
+  - Circular tag with **“1”** over **“A42-03”**, also with a filled wedge/indicator pointing toward the same right-edge building wall condition.
+  - Location: slightly left of the right boundary, centered vertically in the lower half.
+
+- **Callout near bottom center-left:**
+  - Circular tag with **“3”** over **“A71-01”**.
+  - Location: near the **bottom** of the region, slightly left of center, aligned close to the lower dashed horizontal gridline.
+
+- **Callout near bottom center:**
+  - Circular tag with **“1”** over **“A71-01”**.
+  - Location: near the **bottom** of the region, slightly right of center.
+
+*(No “SIM” or “TYP.” modifiers are visible within these tags in this region.)*
+
+## 4) Building elements visible (partial, at right edge)
+Only the **left portion of a building footprint** is visible at the **far right** of this quadrant; most of the building lies outside this region to the right/bottom-right.
+
+- **Exterior wall / corner condition:**
+  - A thickened wall linework suggests an **exterior wall assembly** with a **corner/return** near the top-right area.
+  - The wall shows layered linework (outer boundary and inner lines), consistent with exterior wall thickness.
+- **Vertical façade elements (possibly windows/storefront or structural bays):**
+  - Along the right-edge wall segment, there are **stacked vertical rectangular components** with mullion-like profiles (repeating segments), suggesting **window/storefront framing** or articulated wall panels.
+- **Interior/adjacent space label (partial, lower-right):**
+  - A room label appears partially: **“VEIL STORAGE”** with room number **“176”** beneath it (consistent with the legend’s ROOM TAG format: room name over room number).
+  - Only the left portion of this room is in view; the room extends further right/down outside the quadrant.
+- **Door (partial) near VEIL STORAGE:**
+  - A **swing door** is visible adjacent to the VEIL STORAGE boundary:
+    - Door leaf drawn with a curved swing arc.
+    - The swing appears **into the VEIL STORAGE room** (arc shown within the VEIL STORAGE side of the wall).
+    - A nearby red dimension/annotation reads **“4'-7 7/8"”** (located adjacent to the door area; exact reference points are not fully visible due to cropping).
+  - No explicit **door number tag** is visible within this quadrant.
+
+## 5) Hatches / materials
+- A small **diagonal hatch** area appears near the top of the visible building corner/wall (upper-right building fragment), likely indicating a material/element (could correspond to millwork hatch per legend, but here it is embedded within the wall area; no label in this region confirms material).
+
+## 6) Other visible text / metadata
+- Along the far left border, small vertical plot metadata text is present (legible portion includes a timestamp-like string), reading approximately:
+  - **“3/19/2025 11:37:39 AM”** (vertical orientation near upper-left margin).
+- No sheet title, scale, north arrow, keynote list, or general notes are visible in this quadrant.
+
+## 7) Spatial relationships / orientation summary (grid-precise)
+- The region is dominated by open plan/background with **grid bubbles I–H–G** across the top.
+- **Grid H** is the central vertical axis in this quadrant; **Grid I** lies to the left, **Grid G** to the right.
+- The **upper dashed horizontal gridline** crosses all three vertical grids; the **lower dashed horizontal gridline** also crosses them and sits near the bottom where the **A71-01** callouts are placed.
+- The **building footprint** enters the quadrant only at the **far right**, intersecting the grid field closest to **Grid G** area; the **A42-03** callouts point toward this right-edge wall/vertical façade condition.
+- **VEIL STORAGE 176** is located at the **lower-right edge** of the quadrant (mostly outside view), immediately adjacent to the visible exterior wall and the partially shown door opening.
+
+No additional rooms, windows (explicitly tagged), grid intersection labels beyond I/H/G, or keynote numbers are visible in this region.

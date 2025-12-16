@@ -1,0 +1,121 @@
+Based on the analysis of the full drawing A-101 and the provided quadrant captions, here is the comprehensive, grid-level knowledge base.
+
+### GRID SYSTEM
+The drawing utilizes a dual-axis grid system to define the structural bays of the industrial facility.
+*   **Vertical Grid Lines (X-Axis locations, running Top-Bottom):**
+    *   **Grid 0:** Far West wall of the North Backyard Building (along Pendleton St).
+    *   **Grid 1:** Structural line inside North Backyard.
+    *   **Grid 7:** Structural line inside North Backyard.
+    *   **Grid 13:** Structural line inside North Backyard.
+    *   **Grid 18:** Major dividing line. East wall of North Backyard / West wall of South Backyard / West wall of MRF Building.
+    *   **Grid 31:** East wall of MRF Building.
+    *   **Grid 36:** East wall of South Backyard Building.
+    *   **Grid 37:** Edge of Concrete Patio (Far East).
+*   **Horizontal Grid Lines (Y-Axis locations, running Left-Right):**
+    *   **Grid A:** North Face of MRF Building.
+    *   **Grid D:** Ridge of MRF Building.
+    *   **Grid E:** North Face of North Backyard Building.
+    *   **Grid H:** North Face of South Backyard Building.
+    *   **Grid K:** Face of Girt (Structural alignment running through MRF and Backyard).
+    *   **Grid V:** Ridge of North Backyard / Roof Step of South Backyard.
+    *   **Grid DD:** Face of Fire Panel (North Backyard).
+    *   **Grid GG:** South Face of Backyard Building (Face of Fire Panel).
+
+---
+
+### ROOMS/SPACES (Component Inventory)
+
+| Space Name | Grid Location | Description/Notes |
+| :--- | :--- | :--- |
+| **MRF Building** | Grid A-D / 18-31 | **67,390 SF**. New Bale Storage Facade (+742 SF). Contains Keynotes 1, 2, 15. |
+| **North Backyard Building** | Grid E-GG / 0-18 | Part of "Backyard Building". Contains "(E) Recycling Building (Modified)" and "(E) Conc. Bunker". |
+| **South Backyard Building** | Grid H-GG / 18-36 | **183,945 SF**. Main processing area. Contains "(E) Recycling Equipment" and "Cat Pads". |
+| **Staff Building (Annex)** | Grid K-V / 36-37 | **+2,160 SF**. Attached to East side of South Backyard. Includes offices/restrooms. |
+| **Fire Pump Room** | Grid V / 36-37 | **+400 SF**. Attached to Staff Building annex. |
+| **Front Yard** | Grid D-H / 0-18 | Open area West of MRF and North of North Backyard. Contains equipment pads (E6). |
+| **North Parking Lot** | North of Grid A | Located between MRF Building and De Garmo Ave. Contains standard and truck parking. |
+| **Recycling Equipment Area** | Grid K-GG / 18-31 | Designated zone inside South Backyard Building. |
+| **Cat Pads** | Grid V-GG / 31-36 | Interior area in South Backyard with ramp access. |
+
+---
+
+### DOORS (Grid Locations)
+
+| ID | Grid Location | Type | Connection |
+| :--- | :--- | :--- | :--- |
+| **Tag 1** | Grid A / 19 | Coiling Door | MRF North Wall to Exterior |
+| **Tag 1** | Grid A / 21 | Coiling Door | MRF North Wall to Exterior |
+| **Tag 1** | Grid A / 23 | Coiling Door | MRF North Wall to Exterior |
+| **Tag 1** | Grid A / 25 | Coiling Door | MRF North Wall to Exterior |
+| **Tag 1** | Grid A / 27 | Coiling Door | MRF North Wall to Exterior |
+| **Tag 1** | Grid A / 29 | Coiling Door | MRF North Wall to Exterior |
+| **Tag 2** | Grid A / 20 | Man Door | MRF North Wall to Exterior |
+| **Tag 2** | Grid A / 30 | Man Door | MRF North Wall to Exterior |
+| **Tag 1** | Grid 0 / V | Coiling Door | North Backyard West Wall to Pendleton St |
+| **Tag 2** | Grid 0 / V | Man Door | North Backyard West Wall to Pendleton St |
+| **Tag 1** | Grid 36 / K | Coiling Door | South Backyard East Wall to Exterior |
+| **Tag 2** | Grid 36 / V | Man Door | Staff Building to Exterior Patio |
+
+---
+
+### ANNOTATIONS & DIMENSIONS
+
+| Annotation Text | Grid/Location | Context |
+| :--- | :--- | :--- |
+| **"FACE OF CMU MRF BLDG"** | Grid A | Defines Northern boundary of MRF. |
+| **"RIDGE MRF BLDG"** | Grid D | Defines roof peak of MRF. |
+| **"FACE OF CMU SOUTH BACKYARD"** | Grid H | Defines Northern boundary of South Backyard. |
+| **"FACE OF GIRT SOUTH BACKYARD"** | Grid 18 | Defines Western boundary of South Backyard. |
+| **"FACE OF CMU SOUTH BACKYARD"** | Grid 36 | Defines Eastern boundary of South Backyard. |
+| **"276'-8 1/8""** | Left of Grid 0 | Overall vertical dimension of MRF Building. |
+| **"581'-4 1/2""** | Right of Grid 37 | Overall vertical dimension of entire complex. |
+| **"243'-2 1/2""** | Bottom (Grid 18-31) | Width of MRF Building / Central Backyard section. |
+| **"293'-1/8""** | Bottom (Grid 18-36) | Width of South Backyard section. |
+| **"NOT A PART"** | North of De Garmo | Existing structure outside project scope. |
+| **"NOT A PART"** | East of Grid 31 | Area East of MRF, outside project scope. |
+
+---
+
+### SYMBOLS & KEYNOTES (Grid Mapped)
+
+*   **Diamond 1 (Coiling Door):** Multiple instances along Grid A (North MRF) and Grid 0 (West Backyard).
+*   **Diamond 5 (New Truck Scales/Parking):** Located in the North Parking Lot (North of Grid A). *Note: Legend says Scales, context suggests parking stalls.*
+*   **Diamond 7 (ADA Parking):** North Parking Lot, near Grid 18 alignment.
+*   **Diamond 12 (Accessible Path):** Corner of Pendleton/De Garmo and Randall/De Garmo.
+*   **Diamond 13 (Structural Clearance):** Interior of South Backyard (Grid 18-31).
+*   **Diamond 14 (Genset):** West of Grid 0, near Grid K (Pendleton St side).
+*   **Diamond 15 (Overhead Crane):** Interior of MRF (Grid A-D) and South Backyard (Grid K-GG).
+*   **Hexagon E1 (Property Line):** Perimeter of the site.
+*   **Hexagon E2 (DWP Substation):** North of De Garmo Ave (Top Left).
+*   **Hexagon E4 (Scale House):** East of MRF Building (Grid A-D, East of Grid 31).
+*   **Hexagon E6 (Truck Wash/Pad):** Front Yard (Grid D-H, 0-18).
+*   **Hexagon E8 (Fire Hydrant):** Corner of De Garmo/Randall and De Garmo/Pendleton.
+
+---
+
+### SPATIAL RELATIONSHIPS & FLOW
+
+1.  **Site Access:**
+    *   Primary vehicle access appears to be from **De Garmo Ave** (North).
+    *   Trucks enter the **North Parking Lot** or proceed to the **Scale House (E4)** located East of the MRF Building.
+
+2.  **Building Hierarchy:**
+    *   The **MRF Building** (Top) and **Backyard Building** (Bottom) are the two primary masses.
+    *   They are structurally aligned along **Grid 18** (West edge of MRF aligns with West edge of South Backyard).
+    *   They are separated by a yard space roughly between **Grid D and Grid H**, though connected structurally or via roof overhangs near Grid K.
+
+3.  **Circulation:**
+    *   **Pendleton Street (West):** Service access along the "North Backyard" wall (Grid 0). Features a Genset (14) and utility connections.
+    *   **Randall Street (East):** Bounded by the "Not A Part" area for the northern half, but borders the **Staff Building/Patio** at the southeast corner (Grid 36-37).
+    *   **Internal Flow:** Material likely flows from the MRF (Bale Storage) south into the Backyard Building for processing (Recycling Equipment area).
+
+---
+
+### SUMMARY COUNTS
+
+*   **Total Major Buildings:** 2 (MRF Building, Backyard Building).
+*   **Total Annexes:** 2 (Staff Building, Fire Pump Room).
+*   **Coiling Doors (Visible):** ~7 (6 on MRF North Wall, 1 on Backyard West Wall).
+*   **Man Doors (Visible):** ~4 (2 on MRF North Wall, 1 on Backyard West Wall, 1 on Staff Bldg).
+*   **Streets:** 3 (Pendleton, De Garmo, Randall).
+*   **Grid Lines:** 8 Vertical (0-37), 8 Horizontal (A-GG).

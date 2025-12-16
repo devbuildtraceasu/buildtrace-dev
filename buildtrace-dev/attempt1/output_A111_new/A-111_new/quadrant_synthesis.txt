@@ -1,0 +1,158 @@
+Here is the comprehensive, grid-level knowledge base for Drawing A-111_new, synthesized from the quadrant captions and a detailed analysis of the full drawing image (specifically to reconstruct the missing Quadrant 4 data).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**GRID SYSTEM DEFINITION**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   **Orientation:** Plan North is Up (indicated by North Arrow at Grid 0.4/Left Margin).
+*   **Horizontal Grids (Numeric, West to East):**
+    *   **0 - 2:** Staff Building / West Service Yard.
+    *   **3 - 12:** Bale Storage / North Backyard (25'-0" typical spacing).
+    *   **13 - 29:** Main MRF / Backyard Building (25'-0" typical spacing).
+    *   **30 - 37:** East Service Yard / Randall St Frontage.
+*   **Vertical Grids (Alpha, North to South):**
+    *   **A - D:** Front Yard / North Wall of MRF.
+    *   **E - M:** MRF Building / Bale Storage.
+    *   **N - V:** Transition Zone / North Backyard.
+    *   **W - GG:** Backyard Building / South Backyard.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**ROOMS & SPACES INVENTORY**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**1. 101-MRF (Material Recovery Facility)**
+*   **Grid Location:** Spans Horizontal Grids 13 to 29; Vertical Grids B to M.
+*   **Dimensions:** Approx. 243' Width (East-West).
+*   **Key Features:**
+    *   Contains "(E) RECYCLING EQUIPMENT" (Blue text) spanning Grids 14-26 / E-K.
+    *   **Pit/Depression:** Located at Grid 24 / H-K (30'-0" x 40'-6").
+    *   **Crane:** Keynote 8 (1-Ton Overhead Crane) located in the Pit area (Grid 24).
+    *   **Push Wall:** Keynote 1 (New Steel Push Wall) at North Wall (Grid 25/B).
+
+**2. 102-BACKYARD**
+*   **Grid Location:** Spans Horizontal Grids 13 to 29; Vertical Grids M to GG.
+*   **Adjacency:** Directly south of and open to 101-MRF.
+*   **Key Features:**
+    *   Contains "(E) RECYCLING EQUIPMENT" (Blue text) spanning Grids 18-24 / V-BB.
+    *   **Cat Pads:** "CAT PAD" and "(E) RAMP TO CAT PADS" at Grid 28 / V.
+    *   **Transformer:** Keynote 10 (4160 V Transformer) located at Grid 19 / M.
+
+**3. 103-BALE STORAGE**
+*   **Grid Location:** Spans Horizontal Grids 5 to 12; Vertical Grids E to F.
+*   **Adjacency:** West of 101-MRF.
+*   **Key Features:**
+    *   "(E) CONC. BUNKER" located at Grid 9 / J.
+    *   Keynote E2 (In-Ground Conveyor) at Grid 9 / F.
+
+**4. 105-STAFF RESTROOM**
+*   **Grid Location:** Spans Horizontal Grids 1 to 2; Vertical Grids O.4 to V.
+*   **Type:** External bump-out on the West wall.
+*   **Access:** Door D5 (Exterior) and Keynote 2 (Interior Man Door).
+
+**5. 106-STAFF BREAK ROOM**
+*   **Grid Location:** Spans Horizontal Grids 30 to 31; Vertical Grids S to T.
+*   **Type:** Enclosed room on the East side of the facility.
+*   **Adjacency:** Opens to the East exterior (Randall St side).
+
+**6. EXTERIOR YARDS**
+*   **Front Yard (North):** North of Grid B, between Grids 3-29. Contains Stormwater Chamber (Keynote 3).
+*   **North Backyard (West):** West of Grid 2. Contains Keynote 4 (New Paving).
+*   **South Backyard:** South of Grid GG.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**DOORS & OPENINGS INVENTORY**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**North Wall (Grid B Line)**
+*   **Door D9:** Grid 14 / B.
+*   **Door D22:** Grid 15 / B.
+*   **Door D11:** Grid 24 / B.
+*   **Man Door (Keynote 2):** Grid 25 / B.
+*   **Large Opening:** "22'-0" R.O." at Grid 21 and Grid 23.
+
+**West Wall (Grid 2 Line)**
+*   **Door D5:** Grid 1.5 / O.4 (Staff Restroom Exterior).
+*   **Door D2:** Grid 2 / V.2 (Roll-up, 30' x 24').
+*   **Door D1:** Grid 2 / DD (Roll-up, 12' x 14').
+*   **Interior Man Door (Keynote 2):** Grid 2 / O.5 (Access to Restroom).
+
+**East Wall (Grid 29/30 Line)**
+*   **Door (Unlabeled):** Grid 30 / T (Access to Staff Break Room).
+*   **Door (Unlabeled):** Grid 29 / GG (South East Corner).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**ANNOTATIONS & KEYNOTES MAPPING**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**New Work Keynotes (Diamond Symbol)**
+*   **1 (Push Wall):** Grid 25 / B (North Wall).
+*   **2 (Man Door):** Grid 25 / B (North) and Grid 2 / O.5 (West).
+*   **3 (Stormwater Chamber):** Grid 5-7 / C (Front Yard).
+*   **4 (New Concrete Paving):** Grid 1 / V (West Yard).
+*   **5 (Recycling Room):** Grid 2 / O.4 (West Interior) and Grid 30 / S (East Interior).
+*   **6 (Genset & Firepump):** Grid 2 / O.6 (West Interior).
+*   **7 (Switchgear):**
+    *   Grid 0 / M (West Exterior).
+    *   Grid 7 / E (Bale Storage Exterior).
+    *   Grid 26 / B (MRF Interior).
+*   **8 (1-Ton Crane):** Grid 24 / H (Inside Pit).
+*   **10 (Transformer):** Grid 19 / M (Center of Building).
+
+**Existing Keynotes (Diamond 'E')**
+*   **E1 (Property Line):** Perimeter.
+*   **E2 (In-Ground Conveyor):**
+    *   Grid 9 / F (Bale Storage).
+    *   Grid 14 / H (MRF).
+    *   Grid 28 / H (MRF).
+    *   Grid 29 / GG (Backyard).
+*   **E3 (Ramp/Retention):** Grid 23 / B (North Yard).
+*   **E5 (Existing Paving):** Grid 16 / A (North Yard).
+*   **E6 (Truck Scales):** Grid 15 / A (North Yard).
+
+**PEMB Keynotes (Square 'P')**
+*   **P1 (Rigid Frame Column):** Typical at Grid lines (e.g., Grid 6/F, Grid 14/B).
+*   **P2 (End Wall Column):** Grid 2 (West Wall) and Grid 29 (East Wall).
+*   **P4 (Fire Rated Panel):** Grid 29 (East Wall) and Grid DD (South Wall).
+*   **P6 (Cross Bracing):**
+    *   Grid 7 / F.
+    *   Grid 20-21 / B.
+    *   Grid 28-29 / B.
+    *   Grid 2-3 / DD.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**SPATIAL RELATIONSHIPS & FLOW**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   **Primary Workflow:** The facility is divided into two main operational zones: **101-MRF** (North) and **102-BACKYARD** (South), which appear spatially continuous, separated only by the central grid line M.
+*   **Material Flow:** Existing conveyors (E2) run through the facility, notably at Grid 14 and Grid 28, suggesting a loop or processing line connecting the MRF and Backyard areas.
+*   **Vehicle Access:** Large roll-up doors on the West Wall (D1, D2) and openings on the North Wall allow for heavy truck entry/exit. The "Truck Scales" (E6) in the North Yard confirm this is a receiving/shipping area.
+*   **Staff Circulation:** Staff facilities (Restroom 105, Break Room 106) are located at the perimeter (West and East extremes, respectively), keeping pedestrian traffic separate from the central industrial floor.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**SUMMARY COUNTS**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   **Total Named Rooms:** 5 (101-MRF, 102-BACKYARD, 103-BALE STORAGE, 105-RESTROOM, 106-BREAK ROOM).
+*   **Major Exterior Doors:** 6 identified (D1, D2, D5, D9, D11, D22).
+*   **Keynote Types:** 3 Categories (New, Existing, PEMB).
+*   **Wall Sections Referenced:** >15 distinct section cuts (e.g., WS-5, WS-19, WS-20).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**REASONING AND SOURCES**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**Synthesis Process:**
+1.  **Grid Reconstruction:** I utilized the explicit grid labels from Q1 (0-12, A-M), Q2 (13-37, A-M), and Q3 (0-12, M-GG) to build a mental model of the full coordinate system.
+2.  **Q4 Reconstruction (Critical Step):** Since the Q4 caption was missing, I performed a visual extraction of the bottom-right quadrant of the full image. I identified "102-BACKYARD", "106-STAFF BREAK ROOM", and the specific location of the "CAT PAD" and recycling equipment in the south-east region by aligning them with the established grid lines from Q2 (above) and Q3 (left).
+3.  **Conflict Resolution:**
+    *   *Break Room Location:* The label "FACE OF CMU BREAK ROOM" at Grid 36 in Q2 suggested the room was far east. However, visual inspection of the plan shows Room 106 is actually at Grid 30-31. I resolved this by interpreting Grid 36 as the limit of the exterior wall or yard wall associated with that zone, while placing the room itself at Grid 30-31 based on the floor plan label.
+    *   *Room 101/102 Boundary:* The drawing shows no physical wall between 101 and 102. I defined them as distinct zones based on the room labels but noted their spatial continuity.
+
+**Source Citations:**
+*   **Information from Q1:** Front Yard setbacks, Stormwater Chamber (Keynote 3), Bale Storage (Room 103), West Wall Grid 0-2 details.
+*   **Information from Q2:** MRF (Room 101) layout, North Wall openings, Pit location, East Wall PEMB details.
+*   **Information from Q3:** Staff Restroom (Room 105), West Wall roll-up doors (D1, D2), South-West corner grid layout.
+*   **Information from Full Image (filling Q4):** Identification of Room 102 (Backyard), Room 106 (Break Room), Cat Pads, and the continuity of the recycling equipment into the southern half of the building.
+*   **Legend Context:** Used to decode symbols (Diamond=New, Square=PEMB) and text abbreviations (V.I.F., R.O.).
+
+**Confidence Assessment:**
+*   **Grid Locations:** High Confidence. The grid lines are clearly labeled.
+*   **Room Names:** High Confidence. Labels are distinct.
+*   **Keynote Numbers:** High Confidence. Symbols are legible.
+*   **Specific Door IDs on East Wall:** Medium Confidence. The text for door tags on the far East wall (near Grid 30) is small and slightly pixelated in the full view, but the presence of the opening is clear.

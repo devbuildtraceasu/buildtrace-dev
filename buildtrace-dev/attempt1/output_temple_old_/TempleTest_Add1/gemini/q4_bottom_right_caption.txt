@@ -1,0 +1,98 @@
+**Region:** Bottom-right quadrant (q4_bottom_right)
+**Drawing Type:** Architectural Floor Plan
+**Sheet ID:** TempleTest_Add1 (Page 1)
+
+**Grid Location:**
+*   **Horizontal Grids:** Grid 6 (Top), Grid 5 (Middle), Grid 4.5 (Bottom Right).
+*   **Vertical Grids:** Grid C (Left), Grid B (Right).
+
+### **Rooms and Spaces**
+
+**1. EQUIPMENT 177**
+*   **Location:** Top left corner, near Grid C/6.
+*   **Features:**
+    *   Partial view of stairs at the top edge.
+    *   Large rectangular shelving/storage units along the west wall.
+    *   **Door 177:** Single swing door, swings out into the room to the north.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** View 12 on Sheet A60-71 (Pointing North).
+
+**2. CLOTHING ISSUE 178**
+*   **Location:** West side, below Equipment 177.
+*   **Features:**
+    *   Extensive millwork/countertop area indicated by diagonal hatching (per Legend).
+    *   Three rows of storage/shelving units depicted as rectangles with cross-hatching.
+    *   **Door 178:** Single swing door connecting to Vestibule 179.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Views 9, 8, 7, 6 on Sheet A60-71.
+
+**3. VESTIBULE - CLOTHING 179**
+*   **Location:** Central area, between Clothing Issue 178 and Corridor 180.
+*   **Features:**
+    *   **Wheelchair Clearance:** 5'-0" diameter dashed circle shown in the center.
+    *   **Door 179B:** Double doors swinging into Corridor 180 (North).
+    *   **Door 179A:** Double doors swinging South into Patron Waiting 114.
+    *   Pass-through counter connection to Clothing Issue 178.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Views 11, 10 on Sheet A60-71.
+
+**4. CORRIDOR - BAPTISTRY 180**
+*   **Location:** Central corridor running North-South, East of Vestibule 179.
+*   **Features:**
+    *   **Drinking Fountains:** Two circular symbols in a recessed niche on the East wall.
+    *   **FEC:** Fire Extinguisher Cabinet labeled on the wall near the drinking fountains.
+    *   **Door 163A:** Single swing door entering from the North.
+    *   **Door 179C:** Single swing door leading into Storage 161B.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Views 5, 4, 3, 2 on Sheet A60-71.
+
+**5. STORAGE 161B**
+*   **Location:** East of Corridor 180, near Grid B.
+*   **Features:**
+    *   Small enclosed room.
+    *   **Door 161B:** Single swing door swinging out into Corridor 180.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Views 13, 12, 11, 10 on Sheet A60-21.
+
+**6. CONFIRMATION 162**
+*   **Location:** Top right area, near Grid B/6.
+*   **Features:**
+    *   Large room extending towards the right matchline.
+    *   **Door 162:** Single swing door entering from the North/Corridor.
+*   **Annotations:**
+    *   **Section Tag:** View 4 on Sheet AG05-32 (Pointing North).
+    *   **Interior Elevation Tag:** Views 5, 4, 2 on Sheet A60-21 (Pointing North/West/South).
+    *   **Interior Elevation Tag:** Views 5, 4, 3, 2 on Sheet A60-74 (Located in the corridor/area just outside/south of the room).
+
+**7. PATRON WAITING 114**
+*   **Location:** Bottom left area, South of Vestibule 179.
+*   **Features:**
+    *   **Door 114B:** Double doors connecting to Vestibule 179.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Views 9, 10, 8 on Sheet A60-30.
+    *   **Callout Tag:** View 9 on Sheet A75-05 (Labeled "SIM").
+    *   Text fragment "101B" visible on the far left edge.
+
+**8. Unnamed Corridor/Exterior (Bottom Right)**
+*   **Location:** Area near Grid 4.5 and Grid B.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Views 5, 4 on Sheet A60-50.
+    *   **Grid Bubble:** 4.5.
+
+### **Symbols & Keynotes**
+*   **Matchline:** Dashed line on the far right edge labeled "MATCHLINE" (text partially cut off).
+*   **Millwork:** Diagonal hatching present in Clothing Issue 178 counter area.
+*   **North Arrow:** Not directly visible in this quadrant, but orientation is implied by grid and text alignment.
+*   **Wall Types:** Various wall thicknesses shown; some partitions appear to be standard gypsum board (Level 5 finish per general notes).
+
+### **Visible Text & Labels**
+*   "EQUIPMENT 177"
+*   "CLOTHING ISSUE 178"
+*   "VESTIBULE - CLOTHING 179"
+*   "CORRIDOR - BAPTISTRY 180"
+*   "STORAGE 161B"
+*   "CONFIRMATION 162"
+*   "PATRON WAITING 114"
+*   "FEC" (Fire Extinguisher Cabinet)
+*   "SIM" (Similar)
+*   Grid Labels: "C", "B", "6", "5", "4.5"

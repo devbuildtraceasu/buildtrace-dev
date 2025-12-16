@@ -1,0 +1,89 @@
+**Architectural Drawing Caption: A-111_new, Page 1 (Top-Right Quadrant)**
+
+**Region Overview**
+This region depicts the North-East corner of the facility, specifically the **101-MRF** (Material Recovery Facility) building area. It includes the structural grid layout (Grids 13 through 37), the interface with **RANDALL STREET** to the East, and the North property line. The plan shows the layout of existing recycling equipment, new structural components (PEMB), and exterior wall conditions.
+
+**Grid System & Dimensions**
+*   **Horizontal Grids (Top):** Numbered 13, 14, 14.1, 15, 16, 17, 21, 23, 24, 25, 26, 27, 28, 29, 29.1, 30, 31, 31.1, 31.2, 31.3, 31.5, 33.9, 34, 35, 36, 37.
+*   **Vertical Alignment:** The East wall aligns near Grid 29/30.
+*   **Major Dimensions:**
+    *   **MRF Building Width:** 243'-2 1/2" (spanning approximately Grid 14 to Grid 29).
+    *   **Bay Spacing:** Typical bay spacing is 25'-0" (e.g., between Grids 25-26, 26-27).
+    *   **Overall Dimension:** Partial view of 602'-3 1/2".
+    *   **Setbacks:** "TO PROPERTY CORNER" dimensioned at the North-East corner.
+*   **Grid Labels:**
+    *   Grid 13, 30: "FACE OF GIRT MRF BLDG"
+    *   Grid 14.1, 29: "FACE OF FLANGE ENDWALL COLUMNS"
+    *   Grid 31: "FACE OF CMU"
+    *   Grid 34: "FACE OF FLANGE SOUTH BACKYARD"
+    *   Grid 35: "FACE OF GIRT SOUTH BACKYARD"
+    *   Grid 36: "FACE OF CMU BREAK ROOM"
+
+**Room 101-MRF (Interior Layout)**
+*   **Location:** Occupies the majority of the drawing area from Grid 13 to Grid 29.
+*   **Equipment:** Large footprint labeled **"(E) RECYCLING EQUIPMENT"** (Blue text) occupies the floor area between Grids 14 and 26.
+*   **Pit/Depression:** A rectangular area defined by dashed lines near Grid 24. Dimensions: 30'-0" width, 40'-6" length.
+*   **Keynotes (New Work - Red Diamonds):**
+    *   **7**: **ELECTRICAL SWITCHGEAR** (Located near Grid 26, adjacent to the recycling equipment).
+    *   **8**: **1-TON OVERHEAD CRANE** (Located inside the pit area near Grid 24).
+*   **Keynotes (Existing - 'E' Diamonds):**
+    *   **E2**: **IN-GROUND CONVEYOR** (Located near Grid 28 and Grid 14).
+    *   **E3**: **RAMP/RETENTION AREA** (Located near Grid 23).
+    *   **E4**: **EXISTING UTILITY LID** (Located near Grid 25, North wall).
+    *   **E5**: **EXISTING CONCRETE PAVING, 12" THICK** (Located near Grid 16).
+    *   **E6**: **EXISTING TRUCK SCALES** (Located near Grid 15).
+*   **PEMB Keynotes ('P' Squares):**
+    *   **P1**: **RIGID FRAME COLUMN** (Grid 14).
+    *   **P2**: **END WALL COLUMN** (Grid 29).
+    *   **P4**: **2-HOUR FIRE-RATED METAL COMPOSITE WALL PANEL** (East Wall, Grid 29).
+    *   **P6**: **CROSS BRACING** (Visible in bays at Grid 20-21 and Grid 28-29).
+    *   **P7**: **CARRIER BEAM / JACK BEAM** (Grid 14).
+*   **Wall Sections (Interior):**
+    *   **WS-11/A-306**: Interior wall section near Grid 16.
+
+**North Exterior Wall (Top Edge)**
+*   **Openings:**
+    *   **Door D9**: Located near Grid 14.
+    *   **Door D22**: Located near Grid 15.
+    *   **Door D11**: Located near Grid 24.
+    *   **Opening Dimensions:** "22'-0" R.O." (Rough Opening) noted at Grid 21 and Grid 23.
+*   **Keynotes:**
+    *   **1**: **NEW STEEL PUSH WALL, 16' TALL** (Near Grid 25).
+    *   **2**: **MAN DOOR** (Near Grid 25).
+    *   **P6**: Cross bracing noted in the wall plane.
+*   **Wall Sections & Details:**
+    *   **WS-5/A-304**: Wall section callout near Grid 15.
+    *   **C/A-302**: Section cut facing North at Grid 21.
+    *   **D/A-302**: Section cut facing North at Grid 30.
+    *   **E/A-201**: Section cut facing West at Grid 23.
+
+**East Exterior Wall (Right Edge - Randall Street)**
+*   **Context:** Labeled **"RANDALL STREET"** running vertically.
+*   **Wall Construction:** Indicated as PEMB wall with **P4** (2-Hour Fire-Rated Metal Composite Wall Panel) and **P2** (End Wall Column).
+*   **Keynotes:**
+    *   **E2**: Existing In-Ground Conveyor noted near the South-East corner.
+*   **Wall Sections:**
+    *   **WS-9/A-305**: Wall section near Grid 29 (North corner).
+    *   **WS-10/A-306**: Wall section near Grid 29 (Mid-span).
+    *   **WS-12/A-307**: Wall section near Grid 30.
+*   **Enlarged Plan Callouts:**
+    *   **1/A-112**: Large circle callout encompassing the North-East corner (Grid 29).
+    *   **1/A-114**: Large circle callout encompassing the East wall mid-section.
+    *   **1/A-403**: Detail callout near Grid 31.
+    *   **2/A-406B**: Detail callout near Grid 35.
+
+**South Backyard Area (Bottom Right)**
+*   **Label:** "SOUTH BACKYARD" visible at the bottom right edge.
+*   **Grid 34-35:** Area defined by "FACE OF FLANGE SOUTH BACKYARD" and "FACE OF GIRT SOUTH BACKYARD".
+
+**Annotations & Symbols**
+*   **North Arrow:** Not visible in this quadrant, but orientation is implied (North is Up).
+*   **Revision Clouds:** None explicitly visible in this crop, though red dashed lines indicate new work/demolition boundaries.
+*   **Line Types:**
+    *   **Solid Thick Lines:** New walls/structures.
+    *   **Dashed Lines:** Overhead items, foundations, or hidden objects (e.g., the pit at Grid 24).
+    *   **Centerlines:** Grid lines (dash-dot).
+*   **Text Notes:**
+    *   "SIM" (Similar) noted near Grid 15.
+    *   "R.O." (Rough Opening) noted on dimensions.
+    *   "TO PROPERTY CORNER" with dimension "1'-6 1/8"".

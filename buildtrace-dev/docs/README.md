@@ -82,6 +82,13 @@
    - Worker issues: [k8s/README.md](../k8s/README.md)
    - General: [PENDING.md](./PENDING.md) Known Issues section
 
+4. **Cost Management**
+   - See [CLOUD_SQL_MANAGEMENT.md](./CLOUD_SQL_MANAGEMENT.md) for detailed guide
+   - **Stop Cloud SQL:** `./scripts/stop-cloud-sql.sh` - Stops database to save costs
+   - **Start Cloud SQL:** `./scripts/start-cloud-sql.sh` - Restarts database when needed
+   - **Note:** Stopping Cloud SQL will cause all services to fail until restarted
+   - **Cost Savings:** Compute charges stop immediately; only storage is charged while stopped
+
 ---
 
 ## 📖 Documentation by Topic
@@ -102,6 +109,7 @@
 - [QUICK_DEPLOY.md](../QUICK_DEPLOY.md) - Quick deployment reference
 - [k8s/README.md](../k8s/README.md) - Kubernetes deployment
 - [WORKER_DEPLOYMENT_READY.md](../WORKER_DEPLOYMENT_READY.md) - Worker deployment status
+- [CLOUD_SQL_MANAGEMENT.md](./CLOUD_SQL_MANAGEMENT.md) - Cloud SQL instance management (stop/start)
 
 ### Troubleshooting
 - [FINAL_IMAGE_PULL_FIX.md](../FINAL_IMAGE_PULL_FIX.md) - Image pull issues
@@ -208,6 +216,6 @@ For questions or issues:
 
 ---
 
-**Last Updated:** November 29, 2025  
+**Last Updated:** December 12, 2025  
 **Maintained by:** BuildTrace Development Team
 

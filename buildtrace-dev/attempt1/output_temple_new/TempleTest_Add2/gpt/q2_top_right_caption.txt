@@ -1,0 +1,159 @@
+Top-right quadrant of floor plan sheet **TempleTest_Add2 – Page 1**, showing the **Baptistry suite** area with adjacent showers, dressing/vestibule, restroom, laundry edge, and the main **BAPTISTRY** space including an **OPEN TO BELOW** octagonal volume. Region includes architectural walls/partitions, door swings, accessibility clearances (dashed), multiple detail/section callouts (A60-xx / A61-xx / A71-01 / A75-20 / A76-05 / A76-06 / A05-32), grid bubbles (E, F, D.5) and horizontal grids (7, 8). Red revision clouding encloses several modified areas; red delta triangles with letters mark revisions.
+
+---
+
+## 1) Grid / reference system (precise locations)
+- **Vertical grid bubbles at top**:
+  - **Grid F**: bubble “F” near top-left of region; a vertical dashed gridline drops down through the left half of the image.
+  - **Grid E**: bubble “E” near top-center; vertical gridline implied/short dash segment visible below bubble.
+  - **Grid D.5**: bubble “D.5” at top-right; leader indicates its grid position.
+- **Horizontal grid bubbles at right**:
+  - **Grid 8**: bubble “8” at mid-right, aligned with a horizontal dashed gridline running across the baptistry volume.
+  - **Grid 7**: bubble “7” lower-right, aligned with a horizontal dashed gridline crossing the octagonal “open to below” feature.
+- **Top dimension strings between grids** (as printed above the plan linework):
+  - Near Grid F area: **“23'-7"”** (left top).
+  - Between F and E: **“23'-2 1/2"”** (top center).
+  - Between E and D.5: **“17'-0 1/2"”** (top right).
+
+---
+
+## 2) Rooms / spaces and labels (with relative grid placement)
+All room names/numbers visible in this quadrant:
+
+1. **BAPTISTRY SHOWER – SISTERS (171)**  
+   - Location: upper-left portion of this region, generally **left of Grid E and near Grid F**, above the dressing area; bounded by thick perimeter walls.
+   - Contains a shower room layout (partitioning and fixtures not fully legible in this crop), with dashed clearance circle/arc graphics inside the room.
+
+2. **BAPTISTRY SHOWER – SISTERS (172)**  
+   - Location: left-middle portion, **below Room 171**, still generally **left of Grid E**.
+   - Another shower room separated by walls/door opening; shown adjacent to corridor/dressing circulation.
+
+3. **BAPTISTRY VESTIBULE – SISTERS (170)**  
+   - Location: upper center, **between Grids E and F**, directly **north of the dressing area (173)** and **west of the main Baptistry (169)**.
+   - Labeled “BAPTISTRY VESTIBULE - SISTERS 170” with leader pointing to the vestibule floor area.
+
+4. **BAPTISTRY DRESSING – SISTERS (173)**  
+   - Location: center-left, **just below vestibule 170**, generally **left of the central wall spine** and **west of the Baptistry (169)**.
+   - Label appears “BAPTISTRY DRESSING - SISTERS 173”.
+   - Space includes a central circulation zone (dashed turning/clearance arc shown) and adjacent millwork/closet elements (hatched blocks and cabinet/bench-like outlines).
+
+5. **BAPTISTRY RESTROOM – SISTERS (174)**  
+   - Location: lower center-left, **south of dressing 173**, adjacent to a short corridor and door.
+   - Label: “BAPTISTRY RESTROOM - SISTERS 174”.
+   - Shows toilet and lavatory fixtures, and dashed clearance/door maneuvering zone graphics.
+
+6. **LAUNDRY (175)** (partial, at far left/bottom-left edge of region)  
+   - Location: lower-left edge, partially visible; includes laundry equipment outlines (rectangular appliance symbols) and label “LAUNDRY 175”.
+
+7. **BAPTISTRY (169)**  
+   - Location: right-center of region, **between horizontal Grids 7 and 8**, primarily **to the right of the dressing/vestibule suite**.
+   - Label: “BAPTISTRY 169”.
+   - Large open space adjacent to an octagonal structure noted **“OPEN TO BELOW”** (see below).
+
+8. **OPEN TO BELOW** (octagonal feature within Baptistry zone)  
+   - Location: right side, roughly centered between Grids 7 and 8; octagonal thick-lined form with interior decorative/railing-like shapes.
+   - Text: “OPEN TO BELOW” placed just right/lower-right of the octagon.
+
+---
+
+## 3) Walls, partitions, and millwork (hatches / thickness)
+- Building perimeter walls at top and left are thick, multi-line assemblies.
+- Multiple interior partitions create the shower rooms (171/172), vestibule (170), dressing (173), and restroom (174).
+- **Millwork hatch (diagonal hatch)** is visible in several blocks:
+  - In vestibule/dressing boundary zone: two vertically oriented hatched rectangles (upper center-left) that read as millwork/lockers/cabinets.
+  - A long **hatched vertical element** along the **east edge of the dressing corridor** adjacent to the Baptistry (169) (center-right), possibly a millwork/storage/bench run.
+  - Additional hatched zones appear at lower-right inside a red revision cloud (long horizontal hatched assembly, see §8).
+
+---
+
+## 4) Doors / openings (door swings and locations)
+(Doors are shown with swing arcs; exact door numbers are not legible in this crop, but door locations and swing directions are visible.)
+
+- **Door between vestibule/circulation and dressing zone (around Room 173 north side)**:
+  - Location: near center, just below vestibule 170; single-leaf swing shown with arc into the adjacent space.
+- **Door into Room 174 (restroom)**:
+  - Location: lower center-left at the restroom entry; swing arc visible (appears to swing into the restroom).
+- **Door(s) along the central spine/corridor near the east side of dressing area (adjacent to Baptistry 169)**:
+  - Several openings shown with swing arcs in the narrow passage between dressing and baptistry.
+- **Small door/opening near label “173A / 173B”** (see below):
+  - Lower center-right, at the transition from the dressing/restroom suite toward the Baptistry side; door swing arc shown.
+- **Exterior/perimeter openings/windows**: none clearly identifiable by standard window symbols in this cropped quadrant; the top-right shows a long narrow horizontal wall/beam-like element with a framed assembly and callout (could be clerestory/structural opening), but window tagging is not legible.
+
+---
+
+## 5) Fixtures / plumbing elements (as drawn)
+- **Restroom 174**:
+  - Toilet symbol visible in the lower-left of restroom.
+  - A lavatory/sink symbol visible along wall with a small counter outline.
+  - Dashed clearance/approach graphics appear within restroom (typical ADA maneuvering/fixture clearance depiction).
+- **Along the east edge of the dressing-to-baptistry passage** (center-right, vertical run):
+  - Two circular/oval lavatory-like fixtures or basins drawn in a vertical line within a narrow room/alcove; each shows bowl outline and trap/fixture geometry.
+- **Showers 171/172**:
+  - Shower-related fixture outlines present but too small to definitively enumerate; spaces are clearly labeled as showers.
+
+---
+
+## 6) Stairs / vertical circulation
+- A **stair run** is visible near the center-right, between the dressing suite and the Baptistry side:
+  - Location: just right of the center spine wall, near the red revision cloud.
+  - Depicted with repeated tread lines, indicating stairs ascending/descending (direction arrow not clearly visible in this crop).
+
+---
+
+## 7) Callouts, section/detail tags, and annotation bubbles (with sheet references)
+Multiple circular/diamond callouts appear; legibility varies, but the following are clearly readable in this region:
+
+### A) A71-01 references (top center/right)
+- **“4 / A71-01”** callout near the upper center over vestibule/roofline transition.
+- **“2 / A71-01”** callout near top-right over a long horizontal assembly (possibly a canopy/beam/wall section).
+
+### B) A60-20 references (right of center, near Baptistry)
+- **“4 / A60-20”** near upper-right portion of the Baptistry zone (to the right of Grid 8).
+- **“5 / A60-20”** near mid-right of the Baptistry area (left of the octagon).
+
+### C) A76 series (Baptistry area)
+- **“1 / A76-05”** near center-right, adjacent to the Baptistry label.
+- **“2 / A76-05”** appears near lower-right edge, close to the octagon and revision cloud area.
+- **“11 / A76-06”** tag near the upper-middle of the Baptistry zone.
+
+### D) A05-32 (special diamond tag)
+- A dark/filled diamond-style tag reading **“2 / A05-32”** located near upper-center-right, at the edge between vestibule/corridor and Baptistry open area.
+
+### E) A60-11 and A60-12 / A61-01 (left/center suite)
+- Several stacked multi-number callouts appear in the showers/dressing/restroom area:
+  - **A60-11** tags near shower 171 and near the dressing area.
+  - **A60-12** tag appears near the Laundry (175) edge.
+  - **A61-01** tags appear near the central spine and at the restroom entry area; at least one tag shows a cluster of view numbers (e.g., “28/27/26 … / A61-01” type stack) though the individual view numbers are small.
+- Circular detail bubbles labeled with numbers such as **3**, **4**, **5** appear in the dressing area (likely keyed notes or detail references).
+
+---
+
+## 8) Red revision markup / clouds and delta triangles
+- **Red revision clouds** outline modified areas:
+  - A large cloud wraps the **lower-right horizontal hatched assembly** (likely millwork or a wall/bench element) near the bottom-right edge of the region.
+  - A vertical cloud runs along the **east side of the dressing-to-baptistry passage**, adjacent to the hatched vertical element and the two fixture symbols.
+  - Red clouding also appears along the bottom edge of the left-side suite (near Laundry and adjacent corridor), indicating changes at that boundary.
+- **Red revision delta triangles with letters**:
+  - A red delta **“F”** appears near the center-left (around dressing area / wall intersection).
+  - Red delta **“K”** appears near the center-right (along the vertical cloud by the passage) and again near the bottom-right clouded area.
+  - Red delta **“B”** appears near the center-right lower portion, close to the vertical cloud.
+
+---
+
+## 9) Other annotations / misc. text
+- **“FEC”** appears near the lower-left edge adjacent to the Laundry/adjacent wall (likely fire extinguisher cabinet location note).
+- Small green markers/dots appear along some walls/edges (possibly coordination markers or fastener/anchor indicators; not identified in the legend provided).
+
+---
+
+## 10) Spatial relationships / circulation summary (adjacencies)
+- The **Sisters’ Baptistry support suite** is arranged west-to-east: **Showers (171, 172)** on the far left → **Vestibule (170)** at top center → **Dressing (173)** centrally → **Restroom (174)** at lower center-left, with a narrow passage/corridor and stair adjacent on the east side leading toward the main **BAPTISTRY (169)** on the right.
+- The **BAPTISTRY (169)** open area sits directly **east** of the sisters’ suite and contains/abuts the prominent **octagonal “OPEN TO BELOW”** feature.
+- The plan is controlled by grids **F–E–D.5** (vertical) and **8/7** (horizontal), with the Baptistry volume primarily between **Grids 7 and 8**, and the sisters’ suite largely between **Grids E and F**.
+
+---
+
+## 11) What is NOT visible in this quadrant
+- No title block, sheet title, scale, north arrow, or full sheet note schedule is visible in this crop.
+- Door numbers and door types/sizes are not legible here; only swing direction/location is apparent.
+- Window tags/sizes are not clearly identifiable in this region.

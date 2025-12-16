@@ -1,0 +1,112 @@
+**Drawing Title:** FIRST FLOOR PLAN (1/A-111)
+**Project:** Crown Recycling Services (Sun Valley, CA)
+**Scale:** 1/32" = 1'-0"
+
+**Overview:**
+This drawing depicts the comprehensive First Floor Plan for the Crown Recycling Services facility. The layout illustrates a large industrial site comprising an existing Office/Maintenance building, a Material Recovery Facility (MRF), a Bale Storage building, and an extensive exterior Backyard/Service Yard. The site is bounded by De Garmo Avenue to the North, Pendleton Street to the West, and Randall Street to the East.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**1. GRID SYSTEM**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The plan utilizes a dual-axis alphanumeric grid system to locate structural elements and zones.
+
+*   **Vertical Grid (X-Axis):** Numbered **0 through 37**.
+    *   **West Zone (0-17):** Covers the Office, Bale Storage, and West Yard. Spacing is generally 25'-0".
+    *   **East Zone (18-37):** Covers the MRF Building and East Yard.
+    *   **Sub-Grids:** 2.1, 14.1, 31.1, 31.2, 31.3, 31.4.
+*   **Horizontal Grid (Y-Axis):** Lettered **A through GG**.
+    *   **North Zone (A-G):** Defines the primary building structures (Office, MRF, Bale Storage).
+    *   **South Zone (N-GG):** Defines the exterior Backyard and Restrooms.
+    *   **Sub-Grids:** C.1-C.6, D.1-D.2, EE.1.
+*   **Orientation:** Plan North is oriented Up and slightly Left.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**2. SPACES AND ROOMS (Inventory & Location)**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Primary Buildings:**
+*   **(E) CONC. OFFICE & MAINT. BUILDING:** Located at **Grid 0-14 / A-C**. Existing concrete structure serving as the administrative hub. Contains internal partitions (not detailed) and connects to the MRF.
+*   **101-MRF (Material Recovery Facility):** Located at **Grid 14-31 / A-L**. Large open industrial processing floor. Dimensions approx. 243'-2" wide. Contains Chamber 1 and Staff Break Room.
+*   **103-BALE STORAGE:** Located at **Grid 4-12 / E-F**. A modified existing recycling building situated south of the Front Yard.
+*   **104-STAFF BREAK ROOM:** Located at **Grid 28-31 / J-L**. Enclosed area within the southeast corner of the MRF building. Includes internal partitions for kitchenette/seating.
+*   **105-RESTROOMS:** Located at **Grid 4-6 / V-W**. A standalone structure located in the southwest area of the Backyard.
+
+**Exterior Zones:**
+*   **FRONT YARD:** Located at **Grid 4-14 / D-E**. Open circulation area connecting the Office (North) and Bale Storage (South).
+*   **102-BACKYARD:** Located at **Grid 4-32 / N-EE**. Massive exterior service yard spanning the entire southern half of the site.
+*   **(E) RECYCLING EQUIPMENT ZONE:** Located at **Grid 22-28 / W-Y**. Designated area within the central Backyard for processing machinery.
+*   **(E) CONC. BUNKER:** Located at **Grid 8-12 / F-G**. Existing concrete structure immediately south of the Bale Storage.
+
+**Containment Chambers:**
+*   **CHAMBER 1:** Located at **Grid 24-25 / C-D** (Inside MRF). Dimensions: 74' x 15.28' (4058 C.F.). Features New Steel Push Wall (Keynote 1).
+*   **CHAMBER 2:** Located at **Grid 6-8 / Y-Z** (West Backyard). Dimensions: 69' x 24.43' (5347 C.F.). Features New Steel Push Wall (Keynote 1).
+*   **CHAMBER 3:** Located at **Grid 28-30 / P-R** (East Backyard). Dimensions: 52' x 24.43' (4277 C.F.). Features New Steel Push Wall (Keynote 1).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**3. DOORS AND OPENINGS**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+*   **Door D5 (Double Swing):** **Grid 6 / F**. Connects Bale Storage to Backyard (South).
+*   **Door D7 (Single Swing):** **Grid 12 / D**. Connects Office to Front Yard (South).
+*   **Door D9 (Single Swing):** **Grid 14 / B**. Internal connection between Office and MRF.
+*   **Door D11 (Roll-up/Overhead):** **Grid 24 / A**. Large service door connecting MRF to De Garmo Ave (North).
+*   **Door D17 (Single Swing):** **Grid 32 / P**. Egress door from MRF/Break Room corridor to East Exterior (Randall St side). Tagged with Keynote 2 (Man Door).
+*   **Untagged Double Door:** **Grid 31 / J**. Internal entry to Staff Break Room from MRF floor.
+*   **Untagged Single Door:** **Grid 6 / V**. Entry to 105-Restrooms.
+*   **Untagged Single Door:** **Grid 12 / A**. Egress from Office to De Garmo Ave.
+*   **Wall Opening:** **Grid 12 / A**. North wall of Office.
+*   **Wall Opening:** **Grid 0 / B**. West wall of Office (facing Pendleton St).
+*   **Wall Opening:** **Grid 36 / EE**. South wall of East Backyard perimeter.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**4. ANNOTATIONS AND NOTES**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Keynotes (Diamond Tags - Construction):**
+*   **1 (New Steel Push Wall, 16' Tall):** Located at **Grid 24/C** (Chamber 1), **Grid 7/Z** (Chamber 2), **Grid 29/P** (Chamber 3).
+*   **2 (Man Door):** Located at **Grid 32/P** (Door D17).
+*   **6 (Emergency Generator Enclosure):** Located at **Grid 7/E** (Front Yard).
+*   **7 (Electrical Switch Boards):** Located at **Grid 11/C** (Interface between Office and MRF).
+*   **8 (BMP Downspouts):** Located along perimeter walls, e.g., **Grid 4** (West Wall) and **Grid 36** (East Wall).
+
+**P.E.M.B. Keynotes (Square Tags - Pre-Engineered Metal Building):**
+*   **P1 (Rigid Frame Column):** Locations include **Grid 12/F** and **Grid 29/P**.
+*   **P2 (End Wall Column):** Locations include **Grid 4/F** and **Grid 31/B**.
+*   **P4 (2-Hour Rated Metal Composite Wall Panel):** Locations include **Grid 28/B** and **Grid 22/W**.
+*   **P6 (Cross Bracing):** Locations include **Grid 4/F**, **Grid 25/B**, and **Grid 29/W**.
+*   **P7 (Carrier Beam / Jack Beam):** Locations include **Grid 13/B** and **Grid 29/P**.
+
+**Existing Keynotes (Circle Tags):**
+*   **E2 (In-Ground Conveyor):** Located at **Grid 25/D** (Inside MRF).
+*   **E3 (Ramp/Retention Area):** Located at **Grid 28/T** (Backyard Ramp).
+*   **E4 (Existing Utility Lid):** Located at **Grid 24/A** (Exterior North).
+*   **E5 (Existing Concrete Paving):** Located at **Grid 20/C** (Inside MRF).
+
+**Section Cuts:**
+*   **A/A-302:** **Grid 4 / A** (Top).
+*   **B/A-302:** **Grid 8 / A** (Top).
+*   **C/A-302:** **Grid 21 / A** (Top).
+*   **E/A-201:** **Grid 24 / A** (Top).
+*   **D/A-302:** **Grid 31 / A** (Top).
+*   **1/A-113:** **Grid 8 / D** (Front Yard).
+*   **1/A-112:** **Grid 30 / B** (Inside MRF).
+*   **1/A-114:** **Grid 35 / D** (East Ext).
+*   **2/A-301:** **Grid 37 / Q** (East Edge).
+*   **3/A-301:** **Grid 37 / Y** (East Edge).
+*   **S/A-201:** **Grid 37 / T** (East Edge).
+
+**General Notes (Right Column):**
+*   Includes notes on Fire-Resistance Ratings (Table 601), Downspouts, Gas Shutoff Valves, and Means of Egress requirements (Exit signs, illumination, panic hardware).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**5. SPATIAL RELATIONSHIPS & FLOW**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   **Site Access:** Primary vehicle access is from De Garmo Ave (North) via Door D11. Secondary access points exist on Pendleton St (West) and Randall St (East).
+*   **Operational Flow:** The facility operates with a central flow from the Office (Admin) -> MRF (Processing) -> Backyard (Storage/Circulation).
+*   **Material Handling:** Materials likely enter via the North (MRF), are processed (Chamber 1), and moved to the Backyard for storage or further processing (Chambers 2 & 3, Bale Storage).
+*   **Egress:** The plan provides multiple egress routes: North to street, East to side yard, and South to the large open Backyard.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**6. SUMMARY**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+This First Floor Plan (A-111) details a complex industrial recycling facility. It features **7 major spatial zones** (Office, MRF, Bale Storage, Break Room, Restrooms, Front Yard, Backyard) and **3 specific containment chambers**. The structure is a mix of existing concrete buildings and Pre-Engineered Metal Buildings (PEMB), indicated by specific structural keynotes (P1-P8). The site is heavily gridded for precise location of industrial equipment and structural elements, spanning approximately 300 feet in width (West-East) and depth (North-South).

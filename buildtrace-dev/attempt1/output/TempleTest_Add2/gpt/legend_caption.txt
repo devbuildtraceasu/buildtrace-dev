@@ -1,0 +1,140 @@
+## TempleTest_Add2 — Page 1 — Legend Strip  
+### FLOOR PLAN GRAPHIC LEGEND (Symbols / Tags / Linework / Hatches)
+
+> Note on scope: This sheet’s legend explicitly says: **“SEE A01-20 FOR ALL GENERAL NOTES, ABBREVIATIONS, AND SYMBOLS.”**  
+> The items below are the symbols/keys that are actually shown in the **Floor Plan Graphic Legend** on this page, plus the **Sheet Note Schedule** snippet visible in the same legend strip.
+
+---
+
+## 1) Room / Wall / Door / View Tag Symbols
+
+### A. ROOM TAG
+- **Room Name**: displayed as the room name text called out from the tag.
+- **Room Number**: displayed as the room number text called out from the tag (example shows “C00” style numbering).
+
+### B. WALL TAG
+- **Wall Type**: text identifier for wall type (called out).
+- **Variant (if applicable)**: additional modifier/variant indicator next to/under wall type (only present when needed).
+
+### C. DOOR TAG
+- **Door Number**: numeric door identifier (example shows “001” style).
+
+---
+
+## 2) View / Reference Tags (Section/Elevation/Callouts)
+
+### A. SECTION TAG
+Circular/arrowed section reference symbol with:
+- **Similar (if applicable)**: “SIM” note indicating similar condition (only when used).
+- **View Number**: section/detail/view identifier number.
+- **Sheet Number**: sheet reference where the view is drawn.
+
+### B. EXTERIOR ELEVATION TAG
+Exterior elevation reference symbol with:
+- **Similar (if applicable)**: “SIM” note (optional).
+- **View Number**
+- **Sheet Number**
+
+### C. INTERIOR ELEVATION TAG
+Interior elevation marker (multi-direction style) with:
+- **View Number (typ.)**: view number noted as typical.
+- **Sheet Number**
+
+### D. EXTERIOR WALL SECTION TAG
+Exterior wall section reference symbol with:
+- **Similar (if applicable)**: “SIM” note (optional).
+- **View Number**
+- **Sheet Number**
+
+### E. CALLOUT TAGS
+General callout reference bubble/tag with:
+- **Similar (if applicable)**: “SIM” note (optional).
+- **View Number**
+- **Sheet Number**
+
+---
+
+## 3) Clearance Diagrams / Planning Clearances
+
+All shown under **CLEARANCES**:
+
+### A. Wheelchair Clearance
+- **5'-0" diameter** circular clearance (dashed circle) labeled **WHEELCHAIR CLEARANCE**.
+
+### B. Sink & Urinal Clearance
+- Rectangular dashed clearance zone:
+  - **2'-6"** width (dimension shown at top)
+  - **4'-0"** depth/length (dimension shown at side)
+- Labeled **SINK & URINAL CLEARANCE**.
+
+### C. Toilet Clearance
+- Dashed clearance rectangle indicating:
+  - **5'-0"** length/extent (dimension shown)
+  - **4'-8"** depth/extent (dimension shown)
+- Labeled **TOILET CLEARANCE**.
+
+### D. Door Clearance
+- Dashed clearance geometry around a door swing including:
+  - Door swing arc shown
+  - Dimensions shown include **1'-6"**, **4'-0"**, and a small offset noted **1'-0"** (as drawn).
+- Labeled **DOOR CLEARANCE**.
+
+---
+
+## 4) Matchline Tag Convention
+
+### MATCHLINE TAGS
+A matchline reference format showing how the matchline is annotated:
+- **“MATCHLINE, SEE: [sheet]”** (example shows “1/A00-00” formatting)
+- For the matchline reference, the legend indicates placement conventions:
+  - **View Number (above matchline)**
+  - **Sheet Number (above matchline)**
+  - **Sheet Number (below matchline)**
+  - **View Number (below matchline)**
+
+(Meaning: the view/sheet reference is split above/below the matchline so each side references the continuation.)
+
+---
+
+## 5) Fire Rating Graphic Key
+
+### FIRE RATINGS (line/edge graphic)
+Two graphic bars are shown, keyed to fire-resistance rating:
+- **1 HR FRR** = 1-hour fire-resistance rating (associated with the first bar graphic).
+- **2 HR FRR** = 2-hour fire-resistance rating (associated with the second bar graphic).
+
+(“FRR” = **Fire Resistance Rating**.)
+
+---
+
+## 6) Hatch / Material Pattern Key
+
+### HATCH PATTERNS
+- **Millwork**: hatch pattern shown as diagonal 45° parallel lines (single-direction diagonal hatch) labeled **MILLWORK**.
+
+---
+
+# SHEET NOTE SCHEDULE (Keyed Notes) — items visible in legend strip
+At bottom of the legend strip a “SHEET NOTE SCHEDULE” table is shown; the left “#” column is cut off in the provided region, but the **descriptions** are legible. These are keynotes/notes referenced elsewhere on the sheet:
+
+1. **Touchless actuator control for door auto operator.**  
+2. **Basis of design: LCN 8310-8103. Refer to interior elevations.**  
+3. **Knoxbox – final location TBD. To be tied into security system.**  
+4. **Linear floor drain. See plumbing drawings for more info.**  
+5. **Phenolic shower door.**  
+6. **Phenolic ADA bench.**
+
+(If you need the actual keynote numbers exactly as printed, the left side of the schedule with the “#” column must be visible; in this crop the numbering column is not readable.)
+
+---
+
+## Abbreviations explicitly shown in this legend strip
+- **SIM** = Similar (if applicable)
+- **TYP. / (TYP.)** = Typical
+- **FRR** = Fire Resistance Rating
+- **ADA** = Americans with Disabilities Act
+- **TBD** = To Be Determined
+
+---
+
+If you want, I can also extract the **General Notes – Floor Plan** text block on this same legend strip (it contains conventions that affect interpretation), but it is separate from the “Floor Plan Graphic Legend” symbol key.

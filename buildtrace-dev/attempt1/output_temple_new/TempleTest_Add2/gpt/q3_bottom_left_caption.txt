@@ -1,0 +1,102 @@
+Bottom-left quadrant (q3_bottom_left) of **TempleTest_Add2 – Page 1**, showing a portion of the **Level 01 floor plan, Area A**, including entry/vestibule zone, adjacent waiting area edge, and several detail/section callouts and revision clouds.
+
+## Sheet/viewport identifiers and scale (visible in this region)
+- Plan title at bottom: **“FLOOR PLAN - LEVEL 01 AREA A”**
+- View/detail reference bubble at bottom left of title: **“1 / A20-05”**
+- Scale note below title: **“SCALE: 1/4" = 1'-0"”**
+- Partial grid/axis letters along bottom border: **“E”** near bottom center-left and **“D”** near bottom center-right (gridline letters only; no numeric grid bubbles visible in this quadrant).
+
+## Major spaces / room tags (with relative location in this quadrant)
+1. **ENTRY VESTIBULE 100**
+   - Located in the **lower-middle/left** of the quadrant, just above the sheet title area.
+   - Room label appears inside the vestibule: **“ENTRY VESTIBULE”** with room number **“100”**.
+   - Contains multiple door swings at the vestibule perimeter (see Doors section).
+
+2. **FIRST AID CLOSET 152**
+   - Located immediately **to the right (east)** of ENTRY VESTIBULE 100, in the **lower-middle** of the quadrant.
+   - Room label centered: **“FIRST AID CLOSET”** with room number **“152”**.
+   - Enclosed small closet with interior door.
+
+3. **NON-PATRON WAITING 102** (partial)
+   - Large open room occupying the **upper-middle/right** of the quadrant (only lower-left portion of this room is within q3).
+   - Room label visible: **“NON-PATRON WAITING”** with room number **“102”**.
+   - A dashed rectangular outline inside the room near the lower portion suggests a fixture/clearance or furniture zone (no label attached in this view).
+
+4. **ENTRY 101** (partial)
+   - Located in the **lower-right** portion of the quadrant (only partial room shown).
+   - Room label visible: **“ENTRY”** with room number **“101”**.
+
+## Doors and door swings (visible door graphics; numbers when present)
+- **Door at FIRST AID CLOSET 152**
+  - Interior hinged door shown with swing arc from the closet opening (swing shown into the vestibule/adjacent circulation area).
+  - The door leaf and swing arc are clearly drawn; no explicit door number tag visible on the leaf in this quadrant.
+
+- **Vestibule/entry doors around ENTRY VESTIBULE 100**
+  - Multiple hinged door swings are shown at the vestibule boundaries:
+    - One prominent swing at the **bottom of the closet/vestibule junction** and another adjacent swing nearby, indicating a pair of vestibule-related doors opening into/out of the vestibule area.
+  - Door tags with numbers are not clearly legible in this quadrant; only swing arcs and door leaf lines are visible.
+
+- **Door at NON-PATRON WAITING 102 (lower edge)**
+  - A door opening is shown at the **lower boundary of room 102**, near the connection to the corridor/entry zone. A swing arc is visible near the opening.
+  - No door number tag is readable within the cropped quadrant.
+
+## Walls, openings, and exterior/entry geometry
+- Thickened perimeter wall lines indicate exterior wall segments at the **upper-left** and **upper-middle** edges of this quadrant, with a recessed/stepped entry geometry.
+- A large exterior wall corner condition is visible in the **upper-middle**, with layered wall lines suggesting exterior assembly thickness.
+- A projecting/recessed wall volume and a small annex/utility-like protrusion are shown in the **upper-left** area, including:
+  - A small enclosed element with a circular/rounded internal shape (looks like a small mechanical/fixture enclosure) inside dashed boundary lines (likely an exterior/site or roof/overhang dashed line).
+- Dashed lines around portions of the exterior perimeter suggest **overhead elements/soffits/canopies** or building outline above (no explicit label in this quadrant).
+
+## Callouts, section/detail references, and symbols (with locations)
+### Circular detail/section callouts (standard view#/sheet# format)
+- **4 / A71-02**: located in the **upper-left** interior/exterior transition area, near the dashed overhead outline.
+- **5 / A72-02**: near the **upper-middle/left** exterior wall corner.
+- **2 / A71-02**: near the **lower-left** area, adjacent to a dashed square outline containing a circular element.
+- **3 / A71-02**: near the **lower-left/middle** area, close to the vestibule zone.
+
+### Diamond-shaped callouts
+- **A60-15** (diamond tag with filled black triangle graphic): located in the **lower-left** area, near the dashed square/circular element.
+- A second reference adjacent/near vestibule/closet area shows **A60-15** again with a multi-part symbol nearby (see below).
+
+### Multi-part circular/quartered tag near vestibule
+- A circular tag with multiple numbers (appears like interior elevation marker / multi-directional symbol):
+  - Located at the **lower-middle** near the vestibule/first aid closet zone.
+  - Contains numbers arranged in wedges (legibility suggests multiple view numbers) and references **A60-15** directly beneath/adjacent.
+
+### Additional detail callouts near ENTRY 101 (lower-right)
+- **6 / A05-32**: circular callout near the lower-right edge, adjacent to ENTRY 101.
+- A diamond callout near ENTRY 101 referencing **A60-30** with internal numbers **5/3** (diamond shows stacked/triangular number arrangement).
+- Another circular callout referencing **A30-10** with view number **3** (circle with “3” over “A30-10”).
+- Additional circular callouts at the extreme lower-right edge:
+  - **3 / A75-30**
+  - **2 / A75-30**
+  (Both near the border; likely related to nearby architectural or specialty details.)
+
+## Red revision clouds / markups (architect’s review/changes)
+- Two red clouded revision regions with a red triangle containing **“K”**:
+  1. **Upper-right** portion of this quadrant: cloud surrounds part of the area near **RESTROOM 105 / VESTIBULE 104 boundary** (restroom itself mostly outside this quadrant, but cloud edge and nearby tags are visible).
+  2. **Center-lower** portion surrounding **FIRST AID CLOSET 152** and adjacent wall/door area between vestibule and waiting room; includes a red triangle **“K”** near the top of this cloud.
+
+## Dimensions and numeric annotations (visible)
+- A vertical dimension at the far **left margin** reads **“18'-5"”** (dimension line running vertically near the left edge of the quadrant).
+- Small numeric labels near door openings (e.g., **“152”** repeated near closet label; and small numbers like **“1”**, **“2”** in small circles near the vestibule/closet wall) appear to be keyed notes or marker bubbles. Their corresponding schedule text is not shown in this quadrant.
+
+## Fixtures / objects / special elements (lower-left)
+- A **dashed square outline** contains a **concentric circular symbol** with a small rectangular mark at the center—suggestive of a site/fixture pad, floor feature, or equipment base (exact object not labeled here).
+- Nearby, a second dashed-outline area and wall pocketing suggests an exterior alcove or utility niche.
+
+## Adjacent spaces partially visible (upper-right edge of quadrant)
+- Partial labels visible beyond the main focus:
+  - **RESTROOM 105** (upper-right edge; mostly outside q3 but label is readable).
+  - **VESTIBULE 104** and **SHOE & COAT 103** appear at the right edge boundary area (mostly outside q3, but portions of their walls/labels/callouts are visible).
+
+## Spatial relationships / circulation (as depicted)
+- **ENTRY VESTIBULE 100** acts as a transition node between exterior entry geometry (left/upper-left) and interior circulation leading toward **ENTRY 101** (to the right) and toward **NON-PATRON WAITING 102** (upper-right).
+- **FIRST AID CLOSET 152** is directly adjacent to the vestibule/circulation zone, opening off the main path between vestibule and the interior entry/waiting area.
+- Numerous detail/elevation callouts cluster around the entry/vestibule and closet walls, indicating this area is a focus of architectural detailing.
+
+## Items NOT visible / not determinable in this quadrant
+- No complete grid bubble intersections (e.g., “A/1”) are shown—only bottom border letters **D** and **E** appear.
+- No window tags or explicit window sizes are legible in this quadrant.
+- No door numbers (e.g., “001”) are clearly legible on the door symbols within this crop.
+- No finish tags, wall-type tags, or fire-rating hatch bars are explicitly shown in this quadrant.

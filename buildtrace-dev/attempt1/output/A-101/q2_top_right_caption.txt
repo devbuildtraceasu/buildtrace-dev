@@ -1,0 +1,92 @@
+**Region: q2_top_right (Top-right quadrant)**
+
+**Drawing Type:** Site Plan / Partial Floor Plan
+**Project Status:** Proposed / Renovation (indicated by "PROPOSED" and "EXISTING" notes)
+
+**1. KEYNOTES & LEGEND (Right Sidebar)**
+A partial keynote schedule is visible on the right margin.
+*   **Keynotes (Diamond Symbols):**
+    *   **1:** COILING DO[OR]
+    *   **2:** MAN DOOR [EXTERIOR?]
+    *   **3:** STAFF REST[ROOM]
+    *   **4:** LANDSCAPE [AREA]
+    *   **5:** NEW TRUCK [PARKING/STALL]
+    *   **6:** NEW CONCR[ETE PAVING]
+    *   **7:** ADA ACCES[SIBLE STALL]
+    *   **8:** REGULAR PA[RKING]
+    *   **9:** BICYCLE PA[RKING]
+    *   **10:** 5'-0" WIDE AC[CESS AISLE]
+    *   **11:** ELECTRICAL [EQUIPMENT]
+    *   **12:** ACCESSIBLE [ROUTE/PATH] (Notes: MAXIMUM SLOPE, MAXIMUM CROSS SLOPE, SEE CIVIL DWGS)
+    *   **13:** STRUCTURA[L CLEARANCE?] (Notes: 24" BETWEEN..., 6" BETWEEN..., 4" BETWEEN...)
+    *   **14:** GENSET & F[UEL TANK?]
+    *   **15:** OVERHEAD [DOOR/LINE?]
+*   **Existing Conditions (Hexagon Symbols):**
+    *   **E1:** PROPERTY L[INE]
+    *   **E2:** DWP SUBSTA[TION]
+    *   **E3:** FENCED DW[P AREA?]
+    *   **E4:** SCALE HOU[SE]
+    *   **E5:** EXISTING TR[UCK PARKING]
+    *   **E6:** TRUCK WAS[H]
+    *   **E7:** EXISTING PA[VING]
+    *   **E8:** FIRE HYDRA[NT]
+*   **Building Analysis Header:** "BUILDING A..." text visible. "PROPOSED BUILD...", "MRF BUILDING:", "BACKYARD PROC...", "ENCLOSURE OF...".
+
+**2. MRF BUILDING (Bottom Left Region)**
+*   **Location:** Occupies the bottom left area, shaded in blue.
+*   **Label:** "MRF BUILDING" in large blue text.
+*   **Statistics:**
+    *   "67,390 SF"
+    *   "+5,641 SF (E) BALE STORAGE"
+    *   "+742 SF (N) BALE STORAGE FACADE"
+*   **Grid Lines:**
+    *   **Grid A:** Horizontal line labeled "FACE OF CMU MRF BLDG" (Top edge of building).
+    *   **Grid D:** Horizontal line labeled "RIDGE MRF BLDG" (Bottom edge of visible building area).
+*   **Dimensions & Setbacks:**
+    *   "0'-11" MIN. SEPARATION F.O. BLDG TO PROPERTY LINE" (Note at top right corner of building).
+    *   "30'-0"" dimension near a recessed area on the north wall.
+    *   "216'-0"" horizontal dimension (partial).
+    *   "40'-6"" vertical bay dimension.
+    *   "276'-8 1/8" BUILDING" (Overall vertical dimension on right side).
+    *   "8'-9 5/8"" dimension from building corner to property corner.
+*   **Features:**
+    *   **North Wall:** Features multiple Keynote **1** (Coiling Doors) and Keynote **2** (Man Doors).
+    *   **Interior:** Square columns visible.
+    *   **Coordinates:** Red "x" marks with coordinates "881.6" and "880.4" near the north wall.
+
+**3. PARKING LOT (Top Left Region)**
+*   **Location:** North of the MRF Building.
+*   **Boundary:** Enclosed by a red dashed Property Line (Keynote **E1** implied).
+*   **Layout:**
+    *   Parking stalls arranged in north-south rows with drive aisles.
+    *   Directional arrows indicate traffic flow in aisles.
+*   **Stall Types & Counts (Labels):**
+    *   "24R" (Diamond symbol, likely Compact/Regular).
+    *   "13R", "10R", "12R", "3R" (Stall counts/types).
+    *   "11SB", "16SB", "5LB" (Stall types).
+    *   "5HC" (Handicap/Accessible).
+*   **Keynotes Applied:**
+    *   **Diamond 5:** Pointing to large truck stalls on the left.
+    *   **Diamond 8:** Pointing to standard vehicle stalls.
+    *   **Diamond 4:** Pointing to landscaped islands.
+    *   **Diamond 6:** Pointing to new concrete paving.
+    *   **Diamond 7:** Pointing to ADA stalls (bottom left of lot).
+    *   **Diamond 9:** Pointing to bicycle parking area (bottom center of lot).
+    *   **Hexagon E5:** Existing Truck area.
+    *   **Hexagon E7:** Existing Paving (top area).
+
+**4. STREETS & EXTERIOR CONTEXT**
+*   **Randall Street:** Vertical street running along the right side of the drawing.
+    *   Includes sidewalk and curb.
+    *   Keynote **E8** (Fire Hydrant) located at the corner intersection.
+    *   Keynote **12** (Accessible path) located at the corner ramp.
+*   **De Garmo Ave:** Text label "DE GARMO AVE" is located horizontally between the northern parking lot and the southern MRF Building.
+    *   Arrows indicate the street runs East-West.
+    *   Red dashed property lines separate the private site from the public right-of-way.
+*   **"NOT A PART":** Large text in the bottom right quadrant (white space) indicating the property to the east of the MRF Building is outside the project scope.
+
+**5. ANNOTATIONS & SYMBOLS**
+*   **North Arrow:** Not explicitly visible, but grid orientation suggests Plan North is Up.
+*   **Red Dashed Lines:** Indicate Property Lines or Limit of Work.
+*   **Blue Shading:** Indicates the scope of the MRF Building.
+*   **Keynote Tags:** Hexagons (Existing) and Diamonds (New) are used extensively throughout the plan to identify features listed in the legend.

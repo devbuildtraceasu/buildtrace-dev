@@ -1,0 +1,149 @@
+**TempleTest_Add1 – Page 1 – Region q3_bottom_left (bottom-left quadrant of sheet)**  
+**Drawing type:** Architectural **FLOOR PLAN – LEVEL 01 AREA A** (title visible along bottom).  
+**Scale note visible:** **SCALE: 1/4" = 1'-0"** (printed under the plan title at bottom).  
+**Sheet/view reference bubble at bottom-left of this region:** circular tag reading **“1 / A20-05”** adjacent to the plan title (indicates this view is 1 on sheet A20-05).  
+**Grid / column references visible:** bottom border shows grid letters **E** (left of center) and **D** (right of E). No numeric grid bubbles are visible in this region; location descriptions below reference **between Grid E–D** where applicable.
+
+---
+
+## 1) Spaces / rooms shown (names + numbers + precise placement)
+
+### **NON-PATRON WAITING – Room 102**
+- **Location:** Upper-central/right portion of this region, **primarily between Grid E and toward Grid D** (room spans horizontally; right boundary near vestibule/restroom block).  
+- **Label:** “**NON-PATRON WAITING**” with room number **102** in a small box beneath.
+- **Interior callout symbol inside room:** a **diamond-shaped multi-number marker** near the center of the room (numbers appear as a cluster “4/5/3/2” style within the diamond) with red sheet reference text **“A60-34”** (exact numbers inside diamond are small but clearly a multi-part callout tied to A60-34).
+
+### **VESTIBULE – Room 104**
+- **Location:** Upper-right of this region (partially visible), adjacent to restroom and shoe/coat room block.  
+- **Label:** “**VESTIBULE**” with room number **104**.
+- **Associated elevation/section markers nearby:** two **interior elevation-style markers** (diamond markers with stacked numbers and red sheet references) appear in/near the vestibule zone, including one with red ref **A60-31**.
+
+### **RESTROOM – Room 105**
+- **Location:** Top-right corner of this region (partially visible).  
+- **Label:** “**RESTROOM**” with room number **105**.
+- **Fixtures visible:** a **lavatory/sink** at the upper wall and a **toilet** on right side (partial).  
+- **Door:** restroom door swings into/out of vestibule area (door arc shown at vestibule/restroom boundary).
+
+### **SHOE & COAT – Room 103**
+- **Location:** Right-middle edge of region, directly below vestibule 104 area.  
+- **Label:** “**SHOE & COAT**” with room number **103**.  
+- **Additional note/text in corridor area adjacent:** “**FEC**” printed in the adjacent hall/zone to the right of waiting room (likely fire extinguisher cabinet), located near the 103/104 corridor line.
+
+### **ENTRY VESTIBULE – Room 100**
+- **Location:** Lower-center of this region, beneath/left of Non-Patron Waiting 102.  
+- **Label:** “**ENTRY VESTIBULE**” with room number **100**.  
+- **Doors:** paired/adjacent swinging doors shown at the bottom edge of the vestibule area (see Doors section).
+
+### **ENTRY – Room 101**
+- **Location:** Lower-right of this region, to the right of Entry Vestibule 100.  
+- **Label:** “**ENTRY**” with room number **101** (printed with a small room number box).
+- **Multiple callouts clustered around this entry zone** (including A05-32 and A60-30 references; see Callouts).
+
+### **FIRST AID CLOSET – Room 152**
+- **Location:** Immediately left of Entry Vestibule 100 and directly below Non-Patron Waiting 102 (small rectangular room).  
+- **Label:** “**FIRST AID CLOSET**” with room number **152**.
+
+---
+
+## 2) Doors, openings, and swing directions (as visible)
+
+### Doors between **Non-Patron Waiting 102** and adjacent spaces
+- **Two single swing doors along the bottom boundary of Room 102** (opening from the waiting room down into the entry/vestibule zone):
+  1. **Left door:** near the junction above First Aid Closet 152 / Entry Vestibule 100 area; door arc shown swinging (arc indicates a hinged leaf; exact swing direction reads as swinging downward into the lower area from the waiting room wall line).
+  2. **Right door:** closer to the Entry 101 side; another single swing door with arc shown similarly.
+- **Door tags:** no explicit door-number tag boxes are clearly legible in this region; only door leafs/arcs are drawn.
+
+### Doors associated with **Entry Vestibule 100**
+- **Two door swings at the lower edge of Entry Vestibule 100** (suggesting exterior entry doors or vestibule doors):
+  - One swing shown at the left side of vestibule bottom opening.
+  - Another swing shown at the right side of vestibule bottom opening.
+- The arcs indicate **in-swing** into the vestibule (curved arcs drawn inside vestibule footprint).
+
+### Door at **First Aid Closet 152**
+- A **single hinged door** into the First Aid Closet is implied by the wall opening at the closet boundary (door arc is subtle; the closet is immediately adjacent to the vestibule/entry zone).
+
+### Restroom/Vestibule doors (partial)
+- **Restroom 105** door visible with swing arc near Vestibule 104 (upper-right); exact hinge side is shown by the arc at the opening.
+
+---
+
+## 3) Walls, millwork/fixtures, and notable architectural elements
+
+- **Exterior wall thickness** and stepped wall profiles visible along the left/top portions of the plan area; multiple wall lineweights denote structural/exterior vs interior partitions.
+- **Left-side exterior/entry feature:** a small **rectangular projecting bay** with wall offsets and a **small black filled rectangle** (possible equipment/stop/marker) appears on the left wall segment adjacent to the large waiting room.
+- **Small curved/round architectural feature** at far left-middle: a **circular/rounded element** inside a small outlined enclosure (possibly a niche/column/feature) with concentric arcs and a small square at center (looks like a circular pedestal/feature or site/entry element) located left of Entry Vestibule and below the higher-level left projection.
+- **Square pad with circular concentric ring symbol** (left-lower mid): a larger square outline containing a circular concentric symbol and a central square—reads like a **site/structural pad/feature** (possibly a footing/fountain/monument base). It is enclosed by dashed/rounded-corner boundary lines around it.
+- **Hatched element (millwork hatch per legend)**: at lower-right edge of the region, a **diagonal hatch-filled rectangular mass** appears (consistent with legend “MILLWORK” hatch). It sits adjacent to the Entry 101 area and near several callout bubbles (A75-30 references).
+- **Dashed rectangles** inside Non-Patron Waiting 102 near the bottom wall line (two dashed boxed zones) indicating clearances, furniture zones, or equipment footprints (no explicit label inside these dashed boxes in this region).
+
+---
+
+## 4) Annotations, dimensions, and text (all visible)
+
+### Dimension
+- **Vertical dimension** at upper-left edge: **“18'-5"”** (dimension string runs vertically, indicating a major offset/setback distance at the left side of the plan).
+
+### General labels
+- **“FEC”** text printed near the corridor/transition area right of Non-Patron Waiting 102 and near Shoe & Coat 103 zone (likely Fire Extinguisher Cabinet).
+
+### Plan title / scale (bottom border area)
+- **“FLOOR PLAN - LEVEL 01 AREA A”**  
+- **“SCALE: 1/4" = 1'-0"”**
+
+### File/job text (vertical along left border)
+- A long vertical line of text appears along the left sheet margin; partially legible as an Autodesk/Revit or project/job identification string (exact characters not fully readable in this region).
+
+---
+
+## 5) Callouts, section/elevation markers, and detail references (with sheet refs)
+
+> Per legend context: circular/diamond markers are **section/elevation/detail callouts** with **view number(s)** and **sheet number**; red text indicates the target sheet (e.g., A60-xx, A05-xx, A71-02, etc.).
+
+### Left/central callouts near the exterior/entry approach
+- **Circular section/detail bubbles** along the left side and lower-left:
+  - **“4 / A71-02”** (circle) near upper-left of this region.
+  - **“2 / A71-02”** (circle) near lower-left/left-middle.
+  - **“3 / A71-02”** (circle) near left of Entry Vestibule/door zone.
+- **Small circular marker “5 / A72-02”** near the left wall of the main building mass (upper-left of waiting room boundary).
+- **Hexagonal tag “SF01”** with a leader pointing to an element on the left wall (likely a storefront/frame type tag or special feature tag).
+- **Diamond-shaped marker with bold black triangular base** near lower-left center: labeled with red sheet reference **“A60-15”**; above it a smaller circular/numbered marker references **“A05-31”** (two markers clustered).
+- Additional small triangular/circular marker at far lower-left labeled **“1 / A42-01”** (partially visible).
+
+### Callouts within/around Entry Vestibule 100 and Entry 101
+- Near Entry Vestibule 100: a **circular multi-number marker** with red reference **“A60-15”** (numbers appear like 7/2/5 within the circle—multi-part callout).
+- In the Entry 101 zone: multiple markers:
+  - **“9 / A05-32”** (callout with triangular/marker base) near the right-hand door from Waiting 102 down toward Entry.
+  - **“6 / A05-32”** (similar style) slightly below/left of the “9/A05-32”.
+  - A diamond/circle marker with red sheet **“A60-30”** near Entry 101 label (multi-number cluster inside diamond).
+  - Another small circular marker with red sheet **“A30-08”** (text is small but reads A30-08) near the A60-30 callout.
+
+### Right-lower edge callouts near millwork-hatched block
+- Two circular detail bubbles near bottom-right:
+  - **“3 / A75-30”**
+  - **“2 / A75-30”**
+  These are positioned adjacent to the **diagonal hatched (millwork) block**, indicating related details on A75-30.
+
+### Upper-right vestibule/restroom callouts
+- A multi-number diamond marker near Restroom/Vestibule area with red reference **“A60-44”** (adjacent to Restroom 105 area).
+- Another marker in Vestibule 104 area with red reference **“A60-31”**.
+
+---
+
+## 6) Spatial relationships / circulation (adjacency and flow)
+
+- **Non-Patron Waiting 102** is the dominant space in this region, bounded on the **right** by a cluster of service/support spaces (**Vestibule 104**, **Restroom 105**, **Shoe & Coat 103**) and on the **bottom** by access points to the **Entry 101** and **Entry Vestibule 100**.
+- **First Aid Closet 152** sits directly **below the waiting room’s lower-left edge**, functioning as a small support room adjacent to the **Entry Vestibule 100**.
+- **Entry Vestibule 100** connects the interior to the exterior via **two bottom doors**, and connects upward/adjacent into the building circulation toward Waiting 102 and Entry 101.
+- **Entry 101** is immediately **to the right of Entry Vestibule 100**, serving as the main entry circulation zone; it is heavily annotated with multiple detail/elevation references (A05-32, A60-30, A30-08) and is adjacent to a **millwork-hatched** element (likely built-in casework/desk/bench).
+
+---
+
+## 7) Items NOT visible / not legible in this region (for retrieval clarity)
+- No explicit **window tags**, **door numbers**, or **wall type tags** are clearly legible within this cropped quadrant (only door swings and openings are visible).
+- No matchlines are visible in this quadrant.
+- No explicit fire-rating bar graphics (1HR/2HR FRR) are visible here, though wall thickness suggests exterior vs interior partitions.
+
+---
+
+**Key searchable strings captured from region:**  
+“FLOOR PLAN - LEVEL 01 AREA A”, “SCALE: 1/4" = 1'-0"”, “NON-PATRON WAITING 102”, “ENTRY VESTIBULE 100”, “ENTRY 101”, “FIRST AID CLOSET 152”, “VESTIBULE 104”, “RESTROOM 105”, “SHOE & COAT 103”, “FEC”, “SF01”, “18'-5"”, “A71-02”, “A72-02”, “A60-15”, “A05-31”, “A05-32”, “A60-30”, “A60-31”, “A60-34”, “A60-44”, “A75-30”, “A42-01”, “A30-08”, grid letters “E”, “D”.

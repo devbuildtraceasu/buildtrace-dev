@@ -1,0 +1,131 @@
+**Architectural Floor Plan: TempleTest_Add2 - Level 01 Area A**
+
+### **GRID SYSTEM**
+*   **Orientation:** Plan North is Up.
+*   **Vertical Grid Lines (Left to Right):**
+    *   **Grid I:** Far left boundary (Exterior Entry).
+    *   **Grid H:** 11'-8" from Grid I.
+    *   **Grid G:** 27'-0" from Grid H (Major structural wall).
+    *   **Grid F:** 23'-7" from Grid G.
+    *   **Grid E:** 23'-2 1/2" from Grid F (Corridor spine).
+    *   **Grid D.5:** 17'-0 1/2" from Grid E (Far right boundary).
+*   **Horizontal Grid Lines (Top to Bottom):**
+    *   **Grid 8:** Topmost boundary (Baptistry Vestibule).
+    *   **Grid 7:** Runs through Baptistry Font/Laundry.
+    *   **Grid 6:** Runs through Equipment/Confirmation.
+    *   **Grid 5:** Runs through Entry/Clothing Issue.
+    *   **Grid 4.5:** Bottom boundary (Patron Waiting).
+
+---
+
+### **SPACES AND ROOMS**
+**Public & Entry Zone (West - Grids I-G)**
+*   **Entry Vestibule 100** (Grid I-H / 5): Main public entrance with storefront glazing.
+*   **First Aid Closet 152** (Grid H / 5): Small service room accessed from Entry Vestibule.
+*   **Non-Patron Waiting 102** (Grid H-G / 6-5): Large assembly space connecting entry to inner vestibule.
+*   **Shoe & Coat 103** (Grid G / 5): Alcove support space off Non-Patron Waiting.
+*   **Vestibule 104** (Grid G / 5): Transition space connecting Waiting 102 to the inner corridor.
+
+**Service Core (Central - Grids G-F)**
+*   **Restroom 105** (Grid G / 6): Located north of Vestibule 104 (heavily revised area).
+*   **Veil Storage 176** (Grid G / 6): Storage room adjacent to Restroom 105.
+*   **Equipment 177** (Grid G-F / 6): Service room housing mechanical/electrical equipment.
+*   **Laundry 175** (Grid G-F / 7): Service room with cabinetry and sink, north of Equipment 177.
+
+**Baptistry Complex - Sisters (North East - Grids F-D.5)**
+*   **Baptistry Vestibule (Sisters) 170** (Grid E-D.5 / 8): Dedicated entry from exterior/corridor.
+*   **Baptistry Shower (Sisters) 171** (Grid F / 8): Hygiene stall accessed from Vestibule 170.
+*   **Baptistry Shower (Sisters) 172** (Grid F / 7-8): Hygiene stall accessed from Vestibule 170.
+*   **Baptistry Dressing (Sisters) 173** (Grid F-E / 7): Changing area connecting showers to restroom.
+*   **Baptistry Restroom (Sisters) 174** (Grid F / 6-7): Accessed via Dressing 173.
+*   **Baptistry 169** (Grid E-D.5 / 7): Main ritual space containing the Font. Note: "Open to Below".
+
+**Support & Confirmation (South East - Grids F-D.5)**
+*   **Clothing Issue 178** (Grid F-E / 6-5): Support space with storage banks.
+*   **Vestibule Clothing 179** (Grid E / 5): Transition buffer between Clothing Issue and Corridor.
+*   **Corridor Baptistry 180** (Grid E / 6-5): Central circulation spine.
+*   **Storage 161B** (Grid E-D.5 / 5): Storage room accessed from Corridor 180.
+*   **Confirmation 162** (Grid E-D.5 / 6): Assembly room accessed from Corridor 180.
+*   **Patron Waiting 114** (Grid F-E / 4.5): Waiting area at the southern end of the corridor.
+
+---
+
+### **DOORS AND OPENINGS**
+*   **Door 100** (Grid I / 5): Double swing, Main Exterior Entrance.
+*   **Door 152** (Grid H / 5): Single swing, First Aid.
+*   **Door 104** (Grid G / 5): Single swing, Waiting 102 to Vestibule 104.
+*   **Door 105** (Grid G / 6): Single swing, Vestibule 104 to Restroom 105.
+*   **Door 176** (Grid G / 6): Single swing, Corridor to Veil Storage.
+*   **Door 177** (Grid F / 6): Double swing, Corridor to Equipment.
+*   **Door 175** (Grid F / 7): Single swing, Corridor to Laundry.
+*   **Door 170** (Grid E / 8): Double swing, Exterior to Baptistry Vestibule.
+*   **Door 4 (x2)** (Grid F / 7-8): Single swings, Showers 171/172.
+*   **Door 173B** (Grid E / 7): Single swing, Corridor to Dressing 173 (Revised location).
+*   **Door 2** (Grid F / 6): Single swing, Dressing 173 to Restroom 174.
+*   **Door 178** (Grid F / 5): Double swing, Clothing Issue to Vestibule 179.
+*   **Door 179** (Grid E / 5): Single swing, Vestibule 179 to Corridor.
+*   **Door 162** (Grid E / 6): Double swing, Corridor to Confirmation (Heavily revised).
+*   **Door 161B** (Grid E / 5): Single swing, Corridor to Storage.
+*   **Door 114B** (Grid E / 4.5): Single swing, Patron Waiting to Exterior.
+
+---
+
+### **WINDOWS AND GLAZING**
+*   **W-01** (Grid I / 5): Exterior Storefront, Entry Vestibule (West).
+*   **W-02** (Grid H / 6): Exterior Window, Non-Patron Waiting (North).
+*   **W-03** (Grid G / 6): Exterior Window, Restroom 105 (West).
+*   **W-04** (Grid D.5 / 8): Exterior Window, Baptistry Vestibule (North).
+*   **W-05** (Grid D.5 / 7): Exterior Window, Baptistry 169 (East).
+*   **W-06** (Grid D.5 / 6): Exterior Window, Confirmation 162 (East).
+*   **W-07** (Grid E / 5): Interior Glazing, Storage 161B to Corridor.
+
+---
+
+### **ANNOTATIONS AND NOTES**
+**Revision Clouds (Red)**
+*   **Zone 1 (Grid G-F / 6):** Encompasses Restroom 105, Veil Storage 176, and Equipment 177. Indicates layout changes to the service core.
+*   **Zone 2 (Grid G-F / 7):** Covers the southern wall of Laundry 175.
+*   **Zone 3 (Grid F-E / 7):** Surrounds Door 173B and the wall of Dressing 173.
+*   **Zone 4 (Grid E-D.5 / 6-5):** Massive revision cloud covering Corridor 180, Vestibule 179, Clothing Issue 178, and Confirmation 162. Indicates major reconfiguration of circulation and door swings.
+
+**Keynotes & Symbols**
+*   **FEC (Fire Extinguisher Cabinet):** Located in Corridor at Grid F/6 (near Restroom 174) and Grid E/5 (near Storage 161B).
+*   **Section Cuts:**
+    *   **2/A42-03:** Grid G/6 (Points West).
+    *   **1/A71-01:** Grid G/5 (Points North).
+    *   **4/A60-20:** Grid D.5/7 (Points East).
+*   **Detail Callout:** **11/A76-06** at Baptistry Font (Grid D.5/7).
+*   **Revision Deltas:** Delta K (Grid E/6), Delta F (Grid E/7), Delta J (Grid D.5/5).
+
+**Sheet Notes (Bottom Right)**
+1.  Touchless actuator control for door auto operator.
+2.  Basis of Design: LCN 8310-810S. Refer to interior elevations.
+3.  Knoxbox - Final location TBD. To be tied into security system.
+4.  Linear floor drain, see plumbing drawings for more info.
+5.  Phenolic shower door.
+6.  Phenolic ADA bench.
+
+---
+
+### **SPATIAL RELATIONSHIPS**
+1.  **Public to Private Transition:** The plan moves from public assembly (West: Entry/Waiting) through a controlled Vestibule (104) and Service Core (Center) to the sacred/ritual spaces (East: Baptistry/Confirmation).
+2.  **Baptistry Isolation:** The Baptistry complex (North East) functions as a semi-independent suite with its own vestibule (170), hygiene facilities (171-174), and ritual space (169).
+3.  **Circulation Spine:** Corridor 180 (Grid E) is the primary artery for the eastern block, distributing traffic between the Baptistry, Confirmation, Clothing Issue, and Patron Waiting.
+4.  **Service Buffer:** The block containing Laundry, Equipment, and Restrooms (Grid G-F) acts as an acoustic and physical buffer between the Waiting area and the Ritual area.
+
+---
+
+### **SUMMARY**
+This drawing, **TempleTest_Add2**, depicts **Level 01 - Area A** of a religious facility. It features **21 distinct spaces**, **17 doors**, and **7 window units**. The plan is characterized by a clear division between western public waiting areas and eastern ritual spaces (Baptistry/Confirmation). Significant design revisions (marked by red clouds) are concentrated in the central service core and the southeastern corridor/confirmation access points, suggesting recent optimization of traffic flow and room configurations.
+
+---
+
+### **REASONING AND SOURCE CITATIONS**
+*   **Synthesis Strategy:** I constructed the master grid by correlating the visible grid bubbles in the full image (I-D.5, 8-4.5) with the partial data in the quadrant captions.
+*   **Missing Data Recovery (Q3):** The Q3 caption was missing. I visually extracted the bottom-left quadrant data (Entry Vestibule 100, First Aid 152, Non-Patron Waiting 102) directly from the full resolution image to ensure complete coverage.
+*   **Conflict Resolution (Grid Labels):** The Q4 caption incorrectly identified the Clothing Issue area as "Grid C." Visual verification against the full image confirmed this area lies between Grid F and Grid E. I corrected this in the final text to maintain spatial accuracy.
+*   **Revision Analysis:** I overlaid the textual descriptions of "Red Clouds" from the quadrant captions onto the visual map to precisely locate the "Hot Zones" of design change, specifically the massive reconfiguration in the Corridor 180 area.
+*   **Sources:**
+    *   *Primary:* Full Drawing Image (TempleTest_Add2.jpg) for visual verification of grids, room numbers, and geometry.
+    *   *Secondary:* Quadrant Synthesis for structured data organization.
+    *   *Tertiary:* Quadrant Captions (Q1, Q2, Q4) for text recognition of notes and dimensions.

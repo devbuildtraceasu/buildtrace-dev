@@ -1,0 +1,175 @@
+## TempleTest_Add2 — Page 1 — Legend Strip (Floor Plan Graphic Legend + Sheet Note Schedule excerpt)
+
+### Reference note in legend
+- **“SEE A01-20 FOR ALL GENERAL NOTES, ABBREVIATIONS, AND SYMBOLS”**  
+  (Indicates this sheet’s legend is not the complete master symbol/abbreviation set; additional symbols/abbreviations are on sheet A01-20.)
+
+---
+
+## FLOOR PLAN GRAPHIC LEGEND
+
+### 1) ROOM TAG
+**Symbol/Format:** Room tag leader with two text fields  
+- **ROOM NAME** → *Room Name*  
+- **ROOM NUMBER** → *Room Number* (example shown as “C00”)
+
+---
+
+### 2) WALL TAG
+**Symbol/Format:** Wall-type callout (tag with leaders)  
+Fields called out:
+- **WALL TYPE** → Wall type designation
+- **VARIANT (IF APPLICABLE)** → Variant identifier when used
+- Small notation near tag shows something like **“P1x”** (as depicted), representing the wall type/variant code placement in the tag.
+
+---
+
+### 3) DOOR TAG
+**Symbol/Format:** Door swing graphic with a tag callout  
+- **DOOR NUMBER** → Door number (example shown “001”)
+
+---
+
+### 4) SECTION TAG
+**Symbol/Format:** Section/elevation style circular tag with wedge/arrow indicator and split fields  
+Fields/notes:
+- **SIMILAR (IF APPLICABLE)** → Marked as “SIM” when used to denote similar condition
+- **VIEW NUMBER** → View/detail/section number
+- **SHEET NUMBER** → Sheet reference number
+
+---
+
+### 5) EXTERIOR ELEVATION TAG
+**Symbol/Format:** Exterior elevation callout bubble/tag  
+Fields/notes:
+- **SIMILAR (IF APPLICABLE)** (“SIM”)
+- **VIEW NUMBER**
+- **SHEET NUMBER**
+
+---
+
+### 6) INTERIOR ELEVATION TAG
+**Symbol/Format:** Interior elevation marker (multi-directional triangular/quartered style symbol)  
+Fields/notes:
+- **VIEW NUMBER (TYP.)** → View number, typical
+- **SHEET NUMBER**
+
+Abbreviation present:
+- **TYP.** = Typical
+
+---
+
+### 7) CALLOUT TAGS
+**Symbol/Format:** Generic callout bubble/tag used for details/sections/etc.  
+Fields/notes:
+- **SIMILAR (IF APPLICABLE)** (“SIM”)
+- **VIEW NUMBER**
+- **SHEET NUMBER**
+
+Abbreviation present:
+- **SIM** = Similar
+
+---
+
+### 8) MATCHLINE TAGS
+**Symbol/Format:** Matchline reference with text “MATCHLINE, SEE: …” and stacked view/sheet references  
+Legend indicates four reference components tied to the matchline:
+- **VIEW NUMBER (ABOVE MATCHLINE)**
+- **SHEET NUMBER (ABOVE MATCHLINE)**
+- **SHEET NUMBER (BELOW MATCHLINE)**
+- **VIEW NUMBER (BELOW MATCHLINE)**
+
+(Depicted as a matchline note such as “MATCHLINE, SEE: 1/A00-00” style formatting.)
+
+---
+
+## CLEARANCES (Accessibility/fixture clearances)
+
+### 9) WHEELCHAIR CLEARANCE
+**Symbol/Format:** Dashed circle with dimension callout  
+- **Ø 5'-0"** (5-foot diameter turning circle)
+
+### 10) SINK & URINAL CLEARANCE
+**Symbol/Format:** Dashed rectangular clearance zone  
+- **2'-6"** width shown at top
+- **4'-0"** depth/height shown at side  
+(Represents required clear floor space at sinks/urinals.)
+
+### 11) TOILET CLEARANCE
+**Symbol/Format:** Dashed rectangular clearance zone adjacent to toilet  
+- **5'-0"** overall dimension shown
+- **4'-8"** dimension shown (depth)  
+(Represents required clear floor space at toilet.)
+
+### 12) DOOR CLEARANCE
+**Symbol/Format:** Door swing arc plus dashed clearance rectangle around door approach/pull side  
+Key dimensions shown in the legend diagram:
+- **1'-6"** (one dimension shown along one side of approach)
+- **5'-0"** (clearance depth shown)
+- **4'-0"** and **1'-0"** dimensions shown along the bottom/side in the diagram  
+(Used to depict required maneuvering clearance at doors.)
+
+---
+
+## EXTERIOR WALL SECTION TAG
+**Symbol/Format:** Oval/circular section tag with leader  
+Fields/notes:
+- **SIMILAR (IF APPLICABLE)** (“SIM”)
+- **VIEW NUMBER**
+- **SHEET NUMBER**
+
+---
+
+## FIRE RATINGS (line/assembly graphic conventions)
+
+### 13) 1 HR FRR
+**Symbol/Format:** Solid bar with repeated filled blocks pattern (as shown)  
+- **1HR FRR**
+
+### 14) 2 HR FRR
+**Symbol/Format:** Similar bar with denser/alternate block pattern (as shown)  
+- **2HR FRR**
+
+Abbreviations present:
+- **HR** = Hour
+- **FRR** = Fire Resistance Rating
+
+---
+
+## HATCH PATTERNS
+
+### 15) MILLWORK HATCH
+**Symbol/Format:** Diagonal hatch (closely spaced diagonal lines)  
+- **MILLWORK** = indicates millwork surfaces/objects in plan via hatch.
+
+---
+
+# SHEET NOTE SCHEDULE (visible portion on page 1)
+
+The schedule is shown with columns:
+- **#** (keynote number)
+- **DESCRIPTION** (keynote text)
+
+Visible descriptions (some are partially obscured by a red cloud/markup in the provided image). Transcribed exactly as legible:
+
+1. **“TOUCHLESS ACTUATOR CONTROL FOR DOOR AUTO OPERATOR.”**
+2. **“BASIS OF DESIGN: LCN 8310-8103. REFER TO INTERIOR ELEVATIONS.”**
+3. **“KNOXBOX - FINAL LOCATION TBD. TO BE TIED INTO SECURITY SYSTEM.”**
+4. **“LINEAR FLOOR DRAIN. SEE PLUMBING DRAWINGS FOR MORE INFO.”**
+5. **“PHENOLIC SHOWER DOOR”** *(partially obscured but readable)*
+6. **“PHENOLIC ADA BENCH”** *(partially obscured but readable)*
+
+Abbreviations present:
+- **LCN** = (Manufacturer abbreviation used in hardware context; legend indicates it as part of “Basis of Design”)
+- **TBD** = To Be Determined
+- **ADA** = Americans with Disabilities Act
+
+---
+
+## Other notation/conventions explicitly shown in this legend strip
+- **“SIM” / “SIMILAR (IF APPLICABLE)”**: Tag modifier indicating the referenced detail/view applies to a similar condition.
+- **Typical view numbering convention:** Tags consistently carry **VIEW NUMBER** over/with **SHEET NUMBER** (standard detail reference structure).
+- **Clearance graphics are dashed** (clear floor space / maneuvering clearance zones are represented with dashed outlines).
+- **Door clearance diagram includes swing arc** (door swing shown with arc; clearance indicated with dashed boundary and dimensions).
+
+If you want, I can also extract the **General Notes – Floor Plan** block on the same strip (it’s not a symbol key, but it contains conventions that affect interpretation).

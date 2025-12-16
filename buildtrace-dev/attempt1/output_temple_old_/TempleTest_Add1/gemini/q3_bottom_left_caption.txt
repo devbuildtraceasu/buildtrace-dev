@@ -1,0 +1,91 @@
+**Region Analysis: Bottom-Left Quadrant (Floor Plan - Level 01 Area A)**
+
+**Title Block & Sheet Information:**
+*   **View Title:** "1 FLOOR PLAN - LEVEL 01 AREA A"
+*   **View Number:** 1
+*   **Sheet Number:** A20-05
+*   **Scale:** 1/4" = 1'-0"
+*   **File Path (Left Margin):** "Autodesk Docs://LDS_Temple_San Jose, CA/NORR_ED2024-0005_AR_SanJoseTemple_Interior_R24.rvt"
+*   **Grid Reference:** While specific grid bubbles are not visible, the plan depicts the southwest corner entry sequence of the building.
+
+**Exterior Features (West & South Facade):**
+*   **Columns/Pillars:** Two large square architectural column bases are located outside the main entry on the left (West).
+    *   **Elevation Tag:** 1/A42-01 points West from the lower column.
+    *   **Elevation Tag:** 2/A71-02 points South from the lower column.
+    *   **Elevation Tag:** 4/A71-02 points West from the upper column.
+*   **Exterior Walls:**
+    *   **Window Tag:** Hexagonal tag "SF01" on the West-facing wall north of the entry.
+    *   **Dimension:** Vertical dimension "18'-5"" marks the span along the West exterior wall.
+    *   **Elevation Tag:** 5/A72-02 points West at the upper wall section.
+    *   **Elevation Tag:** 3/A71-02 points South at the entry wall.
+    *   **Wall Section Tag:** 3/AG05-31 points to the exterior wall corner near the entry.
+
+**Interior Spaces & Rooms:**
+
+**1. Entry Vestibule (Room 100):**
+*   **Location:** Central bottom, main entrance.
+*   **Doors:**
+    *   Main exterior double doors (swing out).
+    *   Interior double doors leading to Non-Patron Waiting 102.
+    *   Single door leading to First Aid Closet 152.
+*   **Annotations:**
+    *   **Keynote [1]:** Located at the exterior door and interior door (Refers to "TOUCHLESS ACTUATOR CONTROL FOR DOOR AUTO OPERATOR").
+    *   **Keynote [2]:** Located at the exterior wall (Refers to "KNOXBOX").
+    *   **Interior Elevation Tag:** Diamond shape with arrows 2, 5, 7 pointing to sheet A60-15.
+    *   **Wall Section Tag:** 1/A60-15 pointing to the West wall.
+
+**2. First Aid Closet (Room 152):**
+*   **Location:** Directly West of Entry Vestibule 100.
+*   **Door:** Single door labeled "152", swings out into Vestibule 100.
+*   **Size:** Small rectangular utility space.
+
+**3. Entry (Room 101):**
+*   **Location:** East of Entry Vestibule 100.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Diamond shape with arrows 4, 5, 3 pointing to sheet A60-30.
+    *   **Wall Section Tag:** 6/AG05-32 pointing to the wall shared with Vestibule 100.
+    *   **Wall Section Tag:** 9/AG05-32 pointing North.
+    *   **Section Tag:** 3/A30-09 pointing East.
+
+**4. Non-Patron Waiting (Room 102):**
+*   **Location:** North of Entry Vestibule 100.
+*   **Doors:**
+    *   Double doors labeled "102" connecting to Vestibule 100.
+    *   Door connecting to Vestibule 104.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Diamond shape with arrows 4, 2, 3, 5 pointing to sheet A60-31.
+    *   **Keynote [1]:** Located at the double doors (Touchless Actuator).
+
+**5. Shoe & Coat (Room 103):**
+*   **Location:** East of Non-Patron Waiting 102.
+*   **Features:**
+    *   **Millwork:** "shoe rack" labeled along the South wall.
+    *   **Fire Safety:** "FEC" (Fire Extinguisher Cabinet) symbol on the East wall.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Diamond shape with arrows 13, 12, 11, 10 pointing to sheet A60-31.
+
+**6. Vestibule (Room 104):**
+*   **Location:** North of Shoe & Coat 103.
+*   **Doors:**
+    *   Door labeled "104" connecting to Non-Patron Waiting.
+    *   Door labeled "105" connecting to Restroom.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Diamond shape with arrows 9, 8, 7, 6 pointing to sheet A60-31.
+
+**7. Restroom (Room 105):**
+*   **Location:** Top right corner (North-East).
+*   **Fixtures:**
+    *   Sink on the North wall with dashed clearance rectangle (2'-6" x 4'-0").
+    *   Toilet on the East wall (partially visible).
+*   **Clearances:**
+    *   Dashed circle (5'-0" diameter) indicating wheelchair turning radius.
+    *   Dashed door maneuvering clearance.
+*   **Annotations:**
+    *   **Interior Elevation Tag:** Diamond shape with arrows 24, 23, 22, 21 pointing to sheet A61-01.
+
+**Additional Annotations & Symbols:**
+*   **Section Cuts (Far Right):**
+    *   Tag 3/A75-30 pointing East.
+    *   Tag 2/A75-30 pointing East.
+*   **Hatching:** Diagonal hatching visible on the wall section at the far right edge (Grid line area).
+*   **Wall Types:** Standard partition walls shown; exterior walls appear thicker with cavity lines.

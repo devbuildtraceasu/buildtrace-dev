@@ -1,0 +1,85 @@
+**Architectural Drawing Analysis: TempleTest_Add1, Page 1 (Bottom-Right Quadrant)**
+
+**Region Overview:**
+This plan view depicts a cluster of service and administrative rooms including a Clothing Issue area, Vestibule, Baptistry Corridor, Storage, and Confirmation room. The area spans vertically from Grid 4.5 to Grid 6 and horizontally across Grid C and Grid B.
+
+**Grid Locations:**
+*   **Grid 6:** Runs horizontally across the top of the region.
+*   **Grid 5:** Runs horizontally through the center, just below the Confirmation room.
+*   **Grid 4.5:** Runs horizontally near the bottom right.
+*   **Grid C:** Vertical grid line visible at the bottom left margin.
+*   **Grid B:** Vertical grid line visible at the bottom center-right margin.
+
+**Detailed Space & Room Breakdown:**
+
+**1. Clothing Issue (Room 178)**
+*   **Location:** Left side, between Grid 5 and Grid 6.
+*   **Features:**
+    *   Extensive **Millwork/Shelving** (indicated by diagonal hatching) lines the west wall.
+    *   **Callout:** Detail tag "12 / A60-71" points to the shelving unit.
+    *   **Interior Elevation Tag:** Diamond symbol with views 6, 7, 8, 9 on Sheet **A60-71**.
+    *   **Door:** Door 178 connects to Vestibule 179.
+    *   **Hatching:** Diagonal hatch pattern near the entrance to Vestibule 179 suggests a counter or transition threshold.
+
+**2. Vestibule - Clothing (Room 179)**
+*   **Location:** Central vertical circulation space, west of Grid B.
+*   **Doors:**
+    *   **Door 179B:** Double-acting or single swing door at the north end, connecting to the corridor above.
+    *   **Door 179A:** Located at the south end, connecting to Patron Waiting 114.
+*   **Interior Elevation Tag:** Diamond symbol with views 10, 11 on Sheet **A60-71**.
+*   **Connections:** Openings to Clothing Issue 178 (west) and Corridor-Baptistry 180 (east).
+
+**3. Corridor - Baptistry (Room 180)**
+*   **Location:** Central corridor east of Vestibule 179.
+*   **Features:**
+    *   **FEC:** Fire Extinguisher Cabinet symbol noted on the east wall near Door 179C.
+    *   **Interior Elevation Tag:** Diamond symbol with views 2, 3, 4, 5 on Sheet **A60-71**.
+*   **Doors:**
+    *   **Door 163A:** Swings into the corridor from the north.
+    *   **Door 179C:** Connects to Storage 161B.
+
+**4. Storage (Room 161B)**
+*   **Location:** East of Corridor 180, near Grid B/6 intersection.
+*   **Door:** Door 161B swings outward (West) into the corridor.
+*   **Interior Elevation Tag:** Diamond symbol with views 10, 11, 12, 13 on Sheet **A60-21**.
+*   **Symbol:** Small square symbol (possibly electrical or data) on the south wall.
+
+**5. Confirmation (Room 162)**
+*   **Location:** Top right, below Grid 6 and east of Grid B.
+*   **Door:** Door 162 swings inward (North) against the east wall.
+*   **Interior Elevation Tag:** Diamond symbol with views 2, 3, 4, 5 on Sheet **A60-74**.
+*   **Ceiling:** Dashed lines indicate a soffit or ceiling feature.
+
+**6. Patron Waiting (Room 114)**
+*   **Location:** Bottom left, below Grid 5.
+*   **Door:** Door 114B connects North to Vestibule 179.
+*   **Interior Elevation Tag:** Diamond symbol with views 8, 9, 10 on Sheet **A60-30**.
+*   **Callout:** Detail bubble "9 / A75-05" with note "SIM" (Similar) points to the wall/corner.
+*   **Wall Tag:** Partial wall tag "101B" visible on the far left wall.
+
+**7. Equipment (Room 177) - Partial View**
+*   **Location:** Top left corner, above Grid 6.
+*   **Door:** Door 177 swings outward.
+*   **Stairs:** Stair tread lines visible in the top left corner.
+
+**Annotations, Symbols & Tags:**
+
+*   **Exterior Elevation Tag:** Located at Grid 6/B intersection. Symbol points North. Text: "4 / AG05-32".
+*   **Section Tag:** Located near Grid 6/B. Symbol points Northwest. Text: "5 / A60-21".
+*   **Section Tag:** Located at Grid 4.5/B. Symbol points Northwest. Text: "5 / A60-50".
+*   **Matchline:** A matchline is partially visible on the far right edge.
+*   **Wall Types:** Thick solid lines indicate walls.
+*   **Dimensions/Clearances:**
+    *   Door clearances are implied by the layout but specific dashed clearance lines are less prominent in this specific crop compared to standard ADA diagrams.
+    *   Dashed lines in Room 162 and Corridor 180 indicate ceiling transitions or overhead features.
+
+**Visible Text & Notes:**
+*   "EQUIPMENT 177"
+*   "CLOTHING ISSUE 178"
+*   "VESTIBULE - CLOTHING 179"
+*   "CORRIDOR - BAPTISTRY 180"
+*   "STORAGE 161B"
+*   "CONFIRMATION 162"
+*   "PATRON WAITING 114"
+*   "FEC" (Fire Extinguisher Cabinet)
+*   "SIM" (Similar) next to callout 9/A75-05.

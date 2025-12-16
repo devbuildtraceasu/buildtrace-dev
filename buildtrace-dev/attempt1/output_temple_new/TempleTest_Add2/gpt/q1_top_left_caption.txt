@@ -1,0 +1,91 @@
+**TempleTest_Add2 — Page 1 — Region q1_top_left (top-left quadrant) — Exhaustive retrieval caption**
+
+### Overall view / what this quadrant contains
+- Predominantly **open plan background** with **structural grid** and **overall dimension strings**; only the **upper-left portion of a room/building footprint** appears at the **far right edge** of the quadrant.
+- No title block is visible in this quadrant.
+- No room tag legend strip is visible here; however, **detail/section callout symbols** appear consistent with the provided legend context (view number over sheet number).
+
+---
+
+## 1) Structural grid lines / grid identifiers (primary content)
+At the **top margin**, three vertical grid lines are indicated with circular grid bubbles:
+- **Grid I** (circle with “I”) at the upper left portion of the quadrant.
+- **Grid H** (circle with “H”) near top center.
+- **Grid G** (circle with “G”) toward the upper right of the quadrant.
+
+Grid line graphics:
+- Faint/dashed **vertical grid centerlines** descend from each bubble (I, H, G) into the plan field.
+- Two prominent **horizontal dashed lines** (likely grid lines or reference datums) run across the quadrant from left toward right:
+  - One **upper horizontal dashed line** located roughly in the upper-middle of the quadrant.
+  - One **lower horizontal dashed line** located roughly mid-height, extending toward the right where the building footprint begins.
+
+---
+
+## 2) Dimensions shown between grid lines / along left side
+### Horizontal spacing between vertical grids (top dimension string)
+- Between **Grid I and Grid H**: **11'-8"** (dimension text centered between I and H).
+- Between **Grid H and Grid G**: **27'-0"** (dimension text centered between H and G).
+
+### Vertical dimension string at left side (two stacked segments)
+A vertical dimension line with tick marks shows two vertical spans (aligned near the left margin):
+- Upper vertical segment: **17'-11"** (dimension text oriented vertically).
+- Lower vertical segment: **23'-11 1/2"** (dimension text oriented vertically; includes the 1/2").
+
+These vertical dimensions appear to reference the spacing between the two horizontal dashed datum/grid lines and another lower reference, indicating bay spacing in the north-south direction within this quadrant.
+
+---
+
+## 3) Detail/section callouts (symbols and sheet references)
+Two **callout/section-style tags** (triangular pointer with circular bubble) are visible, formatted as **view number over sheet number**:
+
+1. **Callout “2 / A42-03”**
+   - Located in the **upper-right area** of the quadrant, pointing generally toward the right (toward the building footprint area beyond/at the edge of this region).
+   - Bubble shows **“2”** above **“A42-03”**.
+
+2. **Callout “1 / A42-03”**
+   - Located closer to the **center-right** of the quadrant, pointing toward the building footprint at the far right.
+   - Bubble shows **“1”** above **“A42-03”**.
+
+Additionally, near the bottom of the quadrant there are two small circular reference bubbles:
+- **“3 / A71-01”** near the **lower-left/left-center** area of the quadrant (small circular detail reference).
+- **“1 / A71-01”** nearer the **lower center-right** area (small circular detail reference).
+
+(These appear as standard detail references: **view/detail number** over **sheet number**.)
+
+---
+
+## 4) Building/room footprint fragment at far right edge (partial)
+Only a **partial plan fragment** is visible at the **far right edge** and **lower-right corner** of this quadrant:
+
+### Walls / partitions / outline
+- A thick perimeter/partition line indicates the edge of a room or building enclosure.
+- Inside the partial footprint, a **red revision cloud** outlines a portion along the **upper interior edge** of the visible room area (red scalloped cloud indicating a revised area).
+
+### Fixtures / elements (partially visible)
+- A **toilet fixture** (plan symbol resembling a WC) is visible near the right-edge room fragment, located along/near a wall (exact room not fully visible).
+- Millwork/hatched rectangles appear in the upper-right room fragment (diagonal hatch consistent with **millwork hatch** per legend context), but only partially visible.
+
+### Door (partial) and room label glimpse
+- In the **lower-right corner** of the quadrant, a **door swing** arc is partially visible, with a nearby small text that reads **“176”** adjacent to the swing (likely door number or related annotation; context is cut off).
+- A small room label is partially readable: **“VEIL STORAGE”** with a number beneath/near it that appears to be **“176”** (room number likely 176). The room itself is mostly outside this quadrant; only the left/top of the label and door area are visible.
+
+---
+
+## 5) Other visible text / marginalia
+- Along the far left border, faint vertical plot/date text is present (appears like a timestamp/plot stamp), but it is too small to fully confirm beyond showing a **date/time style string**.
+
+---
+
+## 6) What is NOT present / not visible in this quadrant (important for retrieval)
+- **No full room tags** (room name/number bubbles) are clearly and fully visible except the partial “VEIL STORAGE 176” glimpse at the far right edge.
+- **No door tags** (formatted door number tags per legend) are fully visible—only a partial door swing with “176” text near it.
+- **No window tags** or explicit window symbols are clearly visible in this quadrant.
+- **No matchline text** (“MATCHLINE, SEE: …”) appears in this quadrant.
+- **No keynote schedule/legend strip** is visible here; only the callout tags and grid/dimensions dominate.
+
+---
+
+### Spatial relationships / orientation summary
+- The quadrant is organized around **vertical grids I–H–G** (left to right) with **two major horizontal dashed datums** crossing the field.
+- The **building footprint** begins at the **far right edge**, implying this quadrant is mostly **site/blank plan area** or **unoccupied drawing field** left of the main plan massing.
+- Callouts **1/A42-03** and **2/A42-03** both target the right-side building fragment, indicating referenced details/sections are located on **sheet A42-03**. Detail references **1/A71-01** and **3/A71-01** are placed lower in the field, likely referencing additional details on **A71-01**.

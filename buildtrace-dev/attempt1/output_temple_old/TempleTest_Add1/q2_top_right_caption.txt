@@ -1,0 +1,101 @@
+**Architectural Drawing Analysis: TempleTest_Add1, Page 1 (Top-Right Quadrant)**
+
+**Region Overview:**
+This region depicts the "Sisters" side of a Baptistry complex, located between Grid Lines F and D.5 horizontally, and Grid Lines 8 and 7 vertically. The plan includes the Baptistry Vestibule, Showers, Dressing Room, Restroom, Laundry, and the Baptistry font (pool) itself.
+
+**Grid System & Dimensions:**
+*   **Vertical Grids:** Grid F (left), Grid E (center), Grid D.5 (right).
+*   **Horizontal Grids:** Grid 8 (top), Grid 7 (middle-right).
+*   **Dimensions (Top):**
+    *   Left of Grid F: 23'-7"
+    *   Grid F to Grid E: 23'-2 1/2"
+    *   Grid E to Grid D.5: 17'-0 1/2"
+
+**Detailed Space Breakdown:**
+
+**1. Baptistry Vestibule - Sisters (Room 170)**
+*   **Location:** North of Grid 8, between Grids E and F.
+*   **Access:** Entry from the north; double doors (Door 170) lead south into the Dressing Room.
+*   **Annotations:**
+    *   **Wall Section Tag 4/A71-01:** Points North at the exterior wall.
+    *   **Wall Section Tag 2/A71-01:** Points North at the exterior wall (near Grid E).
+    *   **Wall Tag:** Diamond symbol "2/AG05-32" on the wall near Grid E.
+
+**2. Baptistry Shower - Sisters (Room 171)**
+*   **Location:** West of Grid F, adjacent to the Vestibule.
+*   **Features:** Single shower stall.
+*   **Keynote #4:** Points to the door, indicating "PHENOLIC SHOWER DOOR".
+*   **Interior Elevation Tag:** Circle symbol with arrows 16, 17, 18, 19 referencing Sheet **A60-11**.
+*   **Clearance:** Dashed circle (Ø 5'-0" Wheelchair Clearance) shown in the adjacent clear floor space.
+*   **Drain:** Floor drain symbol visible in center.
+*   **Revision:** Enclosed in a red revision cloud labeled "F".
+
+**3. Baptistry Shower - Sisters (Room 172)**
+*   **Location:** Directly south of Room 171.
+*   **Features:** Single shower stall.
+*   **Keynote #4:** Points to the door ("PHENOLIC SHOWER DOOR").
+*   **Interior Elevation Tag:** Circle symbol with arrows 10, 11, 12, 13 referencing Sheet **A60-11**.
+*   **Clearance:** Dashed circle (Ø 5'-0" Wheelchair Clearance) shown.
+*   **Drain:** Floor drain symbol visible.
+*   **Revision:** Enclosed in a red revision cloud labeled "F".
+
+**4. Baptistry Dressing - Sisters (Room 173)**
+*   **Location:** Central space between Grids F and E.
+*   **Features:**
+    *   **Lockers/Cubicles:** Located along the East wall (Grid E).
+    *   **Seating:** Central bench seating.
+    *   **Keynote #3:** Points to a "LINEAR FLOOR DRAIN" running North-South.
+*   **Doors:**
+    *   **Door 173B:** Leads East into the stair/Baptistry area.
+    *   **Door 173A:** Leads South (partial view).
+*   **Interior Elevation Tags:**
+    *   Arrows 22, 23, 24, 25 referencing Sheet **A60-11** (center).
+    *   Arrow 9 referencing Sheet **A60-11** (East wall).
+    *   Arrow 20 referencing Sheet **A60-11** (East wall).
+    *   Arrows 14, 15 referencing Sheet **A60-11** (South wall).
+*   **Clearance:** Multiple dashed 5'-0" wheelchair turning circles.
+*   **Revision:** Area enclosed in red revision cloud labeled "F".
+
+**5. Baptistry Restroom - Sisters (Room 174)**
+*   **Location:** South of the Dressing Room, along Grid F.
+*   **Features:** Toilet (West wall), Sink (South wall).
+*   **Clearances:**
+    *   Dashed rectangle around toilet (5'-0" x 4'-8").
+    *   Dashed rectangle in front of sink (2'-6" x 4'-0").
+    *   Dashed circle (Ø 5'-0") for wheelchair turning.
+*   **Interior Elevation Tag:** Arrows 25, 26, 27, 28 referencing Sheet **A61-01**.
+*   **Door:** Door 174 swings into the room.
+
+**6. Laundry (Room 175)**
+*   **Location:** Bottom left corner, West of Grid F.
+*   **Features:** Countertop with sink, hatched area for laundry machines.
+*   **Note:** "FEC" (Fire Extinguisher Cabinet) mounted on the East wall.
+*   **Interior Elevation Tags:**
+    *   Arrows 2, 3, 4, 5 referencing Sheet **A60-12**.
+    *   Arrow 6 referencing Sheet **A60-12**.
+
+**7. Baptistry (Room 169)**
+*   **Location:** East side, centered on Grid 7, between Grids E and D.5.
+*   **Features:** Large hexagonal pool with steps descending into the water.
+*   **Annotation:** "OPEN TO BELOW" indicates a double-height space or view to lower level.
+*   **Keynote #3:** "LINEAR FLOOR DRAIN" indicated near the pool edge.
+*   **Section/Elevation Tags:**
+    *   **Section 4/A60-20:** Points North.
+    *   **Section 1/A76-05:** Points West.
+    *   **Section 5/A60-20:** Points West.
+    *   **Section 11/A76-06:** Points Northwest.
+    *   **Section 10, 11/A60-24:** Points Northwest.
+    *   **Section 2/A60-20:** Points South.
+    *   **Section 2/A76-05:** Points South.
+    *   **Section 2/A75-20:** Points South.
+    *   **Section 3/A75-20:** Points West (at bottom right).
+*   **Revision:** The wall separating the Baptistry from the Dressing area is marked with a red revision cloud labeled "B".
+
+**Stairs & Circulation:**
+*   A staircase is located immediately East of the Dressing Room (Grid E), leading down towards the Baptistry pool level.
+*   **Interior Elevation Tag:** Arrow 21, 22, 23, 24 referencing Sheet **A60-23** is located near the stairs.
+
+**Material & Construction Notes:**
+*   **Walls:** Exterior walls show thick insulation hatching. Interior walls are standard stud width.
+*   **Millwork:** Hatched patterns in Laundry (175) and Dressing (173) indicate casework/lockers.
+*   **Fire Ratings:** No specific fire rating lines (squares in lines) are prominently visible in this specific crop, though wall types are tagged.

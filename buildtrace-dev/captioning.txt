@@ -1,0 +1,37 @@
+ 		
+Drawing Upload -> ocr 
+
+Segmentation to separate out legend vs drawing (sam 3) or gemini
+
+Extract drawing specific notes and stuff because it will cover bubbles there from the segmented area.
+
+Convert the extracted drawing into 4 quadrants -> very strong prompt that captures all information with provisions such that it can be used to combine later
+ 
+send for detailed captioning and capture all information with legend passed alongside -. information synthesis and knowledge base building step 
+
+how can we convert this to spatially related nodes -> embeddingstorage should give good performance
+
+
+
+then combine all information of that drawing with grid level specifications -> high quality synthesis prompt and top llm call after synthesis
+
+
+ATTEMPT -1 
+1. upload 1 drawing , segment it only legend and drawing and two segments(right side)(75 % + 25 % )
+2. From the drawing ->  convert 4 quadrants and caption with this support .(of separated legend)
+3. synthesise these (4) quadrant captions and full drawing image to combine information for detailed drawing info. 
+    till here we should have at least grid level info of every component.
+4. full drawing caption new synthesised with detailed quadrant level info too.
+5. Perform search and retrieval on this 
+
+First step is making sure the captions contain enough information 
+Human level evaluations needed at this level .
+
+        
+ATTEMPT -2
+1. Above steps after making sure the synthesised information covers all go level stuff.
+2. Now update the 4 quadrants information with relation to the total information. (Decide if images go in this prompt too).
+
+
+ATTEMPT -3
+1. 

@@ -1,0 +1,94 @@
+**Drawing Title:** FIRST FLOOR PLAN (1/A-111)
+**Region:** Bottom-Right Quadrant (Exterior Backyard and Building Perimeter)
+**Scale:** 1/32" = 1'-0"
+
+**General Location & Zoning:**
+This region depicts the exterior area labeled **"102-BACKYARD"** and the southern perimeter of the building structure. It includes a large exterior service yard, recycling equipment area, "Cat Pads," and the interface with the main building wall along the right side. A column of General Notes and Means of Egress notes runs along the far right edge.
+
+**Grid System:**
+*   **Vertical Grids (Bottom Axis):** Grids 18 through 37.
+    *   Sub-grids: 31.1, 31.2, 31.3, 31.4.
+    *   Grid Spacing Dimensions: 15'-0" (18-19), 25'-0" (19-20), 25'-0" (20-21), 25'-0" (21-22), 25'-0" (22-23), 14'-0" (23-24), 11'-0" (24-25), 25'-0" (25-26), 25'-0" (26-27), 25'-0" (27-28), 20'-0" (28-29), 25'-0" (29-31), 24'-1 1/2" (31-32).
+    *   Overall Dimension: 293'-1 1/8" (SOUTH BACKYARD BUILDING).
+*   **Horizontal Grids (Right Axis):** Grids N through GG.
+    *   Specific Grids: N, P, Q, R, S, T, U, V, W, X, Y, EE, EE.1, FF, GG.
+    *   Grid Spacing Dimensions: 20'-0", 25'-0", 25'-0", 16'-7", 29'-0", 28'-7", 25'-0", 25'-0", 25'-0", 25'-0", 23'-3".
+    *   Overall Dimension: 308'-6 1/2" (SOUTH BACKYARD BUILDING).
+
+**Spaces & Features:**
+
+1.  **102-BACKYARD (Exterior):**
+    *   **Location:** Spans Grids 18-32 horizontally and Grids P-EE vertically.
+    *   **Recycling Area:** Large rectangular footprint labeled **"(E) RECYCLING EQUIPMENT"** located between Grids 22-28 and Grids W-Y.
+    *   **Cat Pads:** Three square concrete pads labeled **"CAT PAD"** located at:
+        *   Grid 29/U
+        *   Grid 30/W
+        *   Grid 29/Y
+    *   **Ramp:** Labeled **"(E) RAMP TO CAT PADS"** located at Grid 28-29 between Grids T-U.
+    *   **Paving/Surface Markers:** Labels P2, P4, P6, P7, P8 scattered throughout the yard (likely paving types or bollard locations).
+    *   **Chamber 3:** Dashed outline labeled **"CHAMBER 3: 52' X 24.43' 4277 C.F."** located near Grid 28-30 / Grid P.
+
+2.  **Building Perimeter (Right Side):**
+    *   **Wall Line:** Runs vertically along Grid 32/33 up to Grid 36.
+    *   **Impervious Boundary:** Dashed line labeled **"IMPERVIOUS"** running vertically near Grid 35.
+    *   **Spot Elevations:**
+        *   **+ 876.7** near Grid 36/S.
+        *   **+ 876.3** near Grid 36/W.
+    *   **Property Corner:** Note "TO PROPERTY CORNER" near Grid 36/X.
+
+**Annotations, Symbols & Callouts:**
+
+*   **Section Cuts:**
+    *   **C/A-302:** Facing West, located at Grid 21/EE.
+    *   **W/A-201:** Facing South, located at Grid 22/EE.
+    *   **D/A-302:** Facing East, located at Grid 31/EE.
+    *   **S/A-201:** Facing North, located at Grid 37/T.
+    *   **2/A-301:** Facing West, located at Grid 37/Q.
+    *   **3/A-301:** Facing West, located at Grid 37/Y.
+*   **Wall Sections:**
+    *   **WS-15/A-308:** Located at Grid 31/EE.
+    *   **WS-14/A-308:** Located at Grid 36/X.
+    *   **WS-13/A-307:** Located at Grid 36/N.
+*   **Detail Callouts:**
+    *   **1/A-402** and **1/A-405:** Near Grid 27/P (Chamber 3).
+    *   **1/A-404:** Near Grid 36/EE.
+*   **Keynotes/Tags:**
+    *   **E5:** Electrical tag near Grid 25/R.
+    *   **D17:** Door/Window tag near Grid 32/P.
+*   **North Arrow:** Plan North arrow located in the bottom right corner, pointing up and slightly left.
+
+**Text Notes (Right Column):**
+
+*   **General Notes (Continuation):**
+    *   2) ALL DOWNSPOUTS...
+    *   3) THE CONTRACTOR... UNOBSTRUCTED ACCESS... (POWER POLES, PULL BOXES... APPURTENANCES, ETC... CONSTRUCTION SHALL... OR NOT THE LINES ARE... CAUSE CONSTRUCTION...
+    *   4) AN APPROVED SEISMIC... GAS LINE ON THE DOWNSTREAM... CONNECTED TO THE BUILDING... FUEL GAS PIPING... AND TI WORK OVER $...
+    *   5) PROVIDE ULTRA-LOW... EXISTING SHOWER HEADS... CONSUMPTION.
+    *   6) A COPY OF THE BUILDING... MADE AVAILABLE AT THE...
+
+*   **MEANS OF EGRESS:**
+    *   1) EXIT SIGNS SHALL BE...
+    *   2) EXIT SIGNS ILLUMINATED... OF NOT LESS THAN 5...
+    *   3) INTERNALLY ILLUMINATED... INSTALLED IN ACCORDANCE... SECTION 2702.
+    *   4) EXIT SIGNS SHALL BE...
+    *   5) EXIT SIGNS SHALL BE... WILL PROVIDE AT LEAST... PRIMARY POWER...
+    *   6) EGRESS DOORS SHALL... WITHOUT THE USE OF... FOR EXCEPTION...
+    *   7) DOOR HANDLES... AT A MIN. 34" AND MAX...
+    *   8) THIS DOOR TO REMAIN...
+    *   9) ALL EGRESS DOORS... 1008.1.9.12
+    *   10) THE MEANS OF EGRESS... ILLUMINATED AT ALL... EGRESS IS OCCUPIED...
+    *   11) THE MEANS OF EGRESS... CANDLE AT THE WALKING...
+    *   12) THE POWER SUPPLY FOR... BE PROVIDED BY... SUPPLY FAILURE... ILLUMINATE THE FOLLOWING...
+        *   a. AISLES AND UNENCLOSED... REQUIRE TWO OR MORE...
+        *   b. CORRIDORS, EXIT... REQUIRED TO HAVE...
+        *   c. EXTERIOR EGRESS... DISCHARGE UNTIL... REQUIRED TO HAVE...
+        *   d. INTERIOR EXIT DISCHARGE... BUILDINGS REQUIRED...
+        *   e. EXTERIOR LANDINGS... DOORWAYS IN BUILDINGS...
+    *   13) THE EMERGENCY POWER... NOT LESS THAN 90 MIN... EQUIPMENT OR AN... EMERGENCY POWER...
+    *   14) EMERGENCY LIGHTING... ILLUMINATION THE... MINIMUM AT ANY POINT... PATH OF EGRESS... TO DECLINE TO 0.6... POINT OF 0.06 FOOT... LIGHTING TIME DURATION... RATIO OF 40 TO 1.
+
+**Title Block Info (Bottom Right):**
+*   **Drawing Number:** A-111
+*   **Sheet Number:** 1
+*   **Title:** FIRST FLOOR PLAN
+*   **Scale:** 1/32" = 1'-0", 1' = 1'-0"

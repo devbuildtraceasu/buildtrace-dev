@@ -1,0 +1,44 @@
+**Architectural Drawing Analysis: TempleTest_Add1, Page 1 (Top-Left Quadrant)**
+
+**Overview**
+This region depicts the upper-left exterior grid layout and the northwest corner of the building footprint. The drawing is dominated by grid lines and dimensions in the open site area, with the interior build-out visible only in the bottom-right portion of the quadrant, specifically showing "Veil Storage" and an adjacent room.
+
+**Grid System & Dimensions**
+*   **Vertical Grid Lines:**
+    *   **Grid I:** Located on the far left.
+    *   **Grid H:** Located centrally.
+    *   **Grid G:** Located on the right, aligning with the exterior face of the building wall.
+*   **Horizontal Dimensions (Top):**
+    *   **11'-8":** Distance between Grid I and Grid H.
+    *   **27'-0":** Distance between Grid H and Grid G.
+*   **Vertical Dimensions (Left):**
+    *   **17'-11":** Dimension spanning the upper section of the grid lines.
+    *   **23'-1 1/2":** Dimension spanning the lower section, terminating near the building perimeter.
+
+**Exterior Annotations & Symbols**
+*   **Section Tags (Bottom Edge):**
+    *   **Tag 3 / A71-01:** Located between Grid H and Grid I. Symbol is a circle with a triangle pointing North (up).
+    *   **Tag 1 / A71-01:** Located near Grid G. Symbol is a circle with a triangle pointing North (up).
+*   **Exterior Wall Section Tags (Right Side/Building Face):**
+    *   **Tag 1 / A42-03:** Located on Grid G, pointing East toward the exterior wall of the Veil Storage. Symbol is a solid black triangle attached to a circle.
+    *   **Tag 2 / A42-03:** Located higher up on Grid G, pointing East toward the exterior wall of the room above Veil Storage. Symbol is a solid black triangle attached to a circle.
+
+**Interior Spaces & Components (Bottom Right)**
+*   **Room: VEIL STORAGE (Room 176)**
+    *   **Location:** Bottom right corner of the image, just East of Grid G.
+    *   **Room Tag:** Rectangular tag labeled "VEIL STORAGE" (top) and "176" (bottom).
+    *   **Door 176:** Located on the south wall of the room. Swing direction is inward (North) and right-handed.
+    *   **Walls:** The West wall (along Grid G) is a thick exterior assembly. The East wall is a thinner interior partition.
+    *   **Windows/Niches:** The West exterior wall features two recessed window or niche openings.
+    *   **Millwork:** Indicated by line work on the East wall (shelving/cabinetry).
+*   **Unlabeled Room (North of Veil Storage)**
+    *   **Location:** Directly above Room 176.
+    *   **Features:** Contains a large rectangular area with **diagonal hatching** (indicating Millwork per legend) and a smaller hatched rectangle.
+    *   **Exterior Wall:** Continues along Grid G with similar recessed window/niche detailing.
+
+**Metadata**
+*   **Timestamp:** "3/19/2025 11:37:39 AM" printed vertically in the top-left margin.
+
+**Construction & Material Notes**
+*   **Hatching:** Diagonal lines in the upper room indicate Millwork.
+*   **Wall Types:** Distinction shown between thick exterior walls (Grid G) and thinner interior partitions.

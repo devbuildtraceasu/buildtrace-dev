@@ -1,0 +1,45 @@
+**Region: q1_top_left (Top-left quadrant)**
+
+**General Overview:**
+This region depicts the upper-left exterior and interior corner of a building plan, specifically focusing on a "Veil Storage" area and an adjacent restroom/service space. A significant portion of the left side of the image is empty site/plan space defined by grid lines and dimensions.
+
+**Grid System and Dimensions:**
+*   **Vertical Grid Lines:**
+    *   **Grid I:** Located on the far left.
+    *   **Grid H:** Located centrally.
+    *   **Grid G:** Located on the right side, aligning with the primary exterior wall of the building structure.
+*   **Horizontal Dimensions (Top):**
+    *   Distance between Grid I and Grid H: **11'-8"**.
+    *   Distance between Grid H and Grid G: **27'-0"**.
+*   **Vertical Dimensions (Left):**
+    *   Upper segment dimension: **17'-11"**.
+    *   Lower segment dimension: **23'-1 1/2"**.
+*   **Grid Lines:** Dashed grid lines extend vertically and horizontally throughout the empty space to define the coordinate system.
+
+**Architectural Spaces and Rooms:**
+*   **Room: VEIL STORAGE (Room 176)**
+    *   **Location:** Bottom right corner of the image, adjacent to Grid G.
+    *   **Door:** Door tag **176**. Single-swing door located on the south wall, swinging inward (left-hand swing) against the west wall.
+    *   **Walls:** Enclosed by interior partitions on the north and west; exterior wall on the east (along Grid G).
+*   **Unlabeled Room (Restroom/Service Area):**
+    *   **Location:** Directly North of Veil Storage 176.
+    *   **Fixtures:** Contains a toilet/water closet positioned against the west wall.
+    *   **Casework:** Upper (north) wall features built-in cabinetry or shelving.
+    *   **Floor:** A rectangular hatched area (possibly a floor mat or tile pattern) is visible in the center of the room.
+    *   **Windows:** A window opening is visible on the west wall, adjacent to the toilet fixture.
+
+**Revisions and Annotations:**
+*   **Revision Clouds:** Prominent **red revision clouds** surround the north and west perimeter of the restroom/storage block, indicating recent changes to the exterior envelope or wall configuration in this area.
+
+**Symbols and Callouts:**
+*   **Elevation/Section Marker (Right):** Symbol **2/A42-03** is located on the right edge (Grid G), pointing West (left) towards the building exterior.
+*   **Interior Elevation Marker:** Symbol **1/A42-03** is located to the left of the restroom wall, pointing East (right) towards the toilet fixture.
+*   **Elevation Marker (Bottom Center):** Symbol **1/A71-01** is located at the bottom edge, pointing North (up).
+*   **Elevation Marker (Bottom Left):** Symbol **3/A71-01** is located at the bottom left, pointing North (up).
+
+**Metadata:**
+*   **Timestamp:** Vertical text along the far left border reads: **"9/12/2025 3:56:06 PM"**.
+
+**Construction Details:**
+*   **Walls:** The walls surrounding the restroom and storage area are depicted with double lines, indicating framed construction. The exterior wall along Grid G appears thicker, suggesting structural or insulated exterior wall assembly.
+*   **Glazing:** The window on the west wall of the restroom includes sill lines.

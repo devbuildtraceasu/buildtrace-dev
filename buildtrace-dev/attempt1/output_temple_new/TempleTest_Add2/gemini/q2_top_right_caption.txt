@@ -1,0 +1,113 @@
+**Architectural Drawing Analysis: TempleTest_Add2, Page 1 (Top-Right Quadrant)**
+
+**Region Overview**
+This region depicts the "Baptistry - Sisters" suite, a Laundry facility, and the main Baptistry font area. The plan is overlaid with a grid system and contains significant red revision clouds indicating changes to the design.
+
+**Grid Layout & Dimensions**
+*   **Vertical Grids:** Grid **F** (Left), Grid **E** (Center), Grid **D.5** (Right).
+*   **Horizontal Grids:** Grid **8** (Top), Grid **7** (Middle-Right).
+*   **Dimensions:**
+    *   Distance between Grid F and Grid E: **23'-2 1/2"**
+    *   Distance between Grid E and Grid D.5: **17'-0 1/2"**
+    *   Partial dimension to the left of Grid F: **23'-7"**
+
+**Rooms and Spaces**
+
+1.  **Baptistry Vestibule - Sisters (Room 170)**
+    *   **Location:** Between Grids E and D.5, South of Grid 8.
+    *   **Access:** Entry via double doors from the North corridor; connects to Dressing Room 173 via Door 173B.
+    *   **Tags/Annotations:**
+        *   Room Tag: **BAPTISTRY VESTIBULE - SISTERS 170**
+        *   Exterior Elevation Tag: **4/A71-01** (Pointing North)
+        *   Interior Elevation Tag: **9/A60-11** (Pointing West)
+        *   Wall Section Tag: **2/AG05-32** (Pointing East at the wall)
+        *   Keynote **[1]**: Located at the entry door (indicates Touchless Actuator Control).
+    *   **Features:** Millwork bench along the North wall. Wheelchair clearance circle (dashed) shown.
+
+2.  **Baptistry Shower - Sisters (Room 171)**
+    *   **Location:** West of Grid E, adjacent to the Vestibule.
+    *   **Tags/Annotations:**
+        *   Room Tag: **BAPTISTRY SHOWER - SISTERS 171**
+        *   Interior Elevation Tag: Diamond **19/18/17/16** on Sheet **A60-11**.
+        *   Keynote **[4]**: Pointing to shower door (Phenolic Shower Door).
+    *   **Features:** Shower stall with floor drain.
+
+3.  **Baptistry Shower - Sisters (Room 172)**
+    *   **Location:** Directly South of Room 171.
+    *   **Tags/Annotations:**
+        *   Room Tag: **BAPTISTRY SHOWER - SISTERS 172**
+        *   Interior Elevation Tag: Diamond **12/13/10/11** on Sheet **A60-11**.
+        *   Keynote **[4]**: Pointing to shower door.
+    *   **Features:** Shower stall with floor drain.
+
+4.  **Baptistry Dressing - Sisters (Room 173)**
+    *   **Location:** Central area West of Grid E.
+    *   **Tags/Annotations:**
+        *   Room Tag: **BAPTISTRY DRESSING - SISTERS 173**
+        *   Interior Elevation Tag: Diamond **24/25** on Sheet **A60-11**.
+        *   Interior Elevation Tag: Circle **22/A60-11** (Pointing North-West).
+        *   Keynote **[3]**: Pointing to linear floor drain.
+        *   Keynote **[5]**: Pointing to bench (Phenolic ADA Bench).
+        *   Fire Extinguisher Symbol: **F** inside a triangle.
+    *   **Revisions:** **Red Cloud** surrounds the bench and linear drain area.
+    *   **Features:** Long bench, lockers/storage along the East wall (indicated by diagonal millwork hatch and elevation tag **20/23 A60-11**).
+
+5.  **Baptistry Restroom - Sisters (Room 174)**
+    *   **Location:** South of Dressing Room 173.
+    *   **Tags/Annotations:**
+        *   Room Tag: **BAPTISTRY RESTROOM - SISTERS 174**
+        *   Interior Elevation Tag: Diamond **28/27/26/25** on Sheet **A61-01**.
+        *   Wheelchair clearance circle (dashed) shown.
+    *   **Features:** Toilet and sink.
+    *   **Revisions:** **Red Cloud** surrounds the entry area and adjacent corridor wall.
+
+6.  **Laundry (Room 175)**
+    *   **Location:** Bottom Left corner, West of Grid F.
+    *   **Tags/Annotations:**
+        *   Room Tag: **LAUNDRY 175**
+        *   Interior Elevation Tag: Diamond **4/5/3** on Sheet **A60-12**.
+        *   Interior Elevation Tag: Circle **6/A60-12** (Pointing South-West).
+        *   Annotation: **FEC** (Fire Extinguisher Cabinet) on the East wall.
+    *   **Revisions:** Entire room layout is enclosed in a **Red Cloud**.
+    *   **Features:** Countertop with sink, space for washer/dryer units.
+
+7.  **Baptistry (Room 169)**
+    *   **Location:** East of Grid E, centered on Grid 7.
+    *   **Tags/Annotations:**
+        *   Room Tag: **BAPTISTRY 169**
+        *   Text: **OPEN TO BELOW**
+    *   **Section/Elevation Tags around Font:**
+        *   **5/A60-20** (Pointing West)
+        *   **1/A76-05** (Pointing West)
+        *   **4/A60-20** (Pointing North)
+        *   **11/A76-06** (Pointing North)
+        *   **2/A60-20** (Pointing South)
+        *   **2/A76-05** (Pointing South)
+    *   **Features:** Large octagonal font with steps leading down into the water. Decorative railing surrounds the opening.
+
+**Corridors & Circulation**
+*   **Corridor 173A:** Runs North-South along Grid E. Contains a bank of lockers/millwork on the East side.
+*   **Door 173A:** Located at the South end of the corridor.
+*   **Keynote [2]:** Located near Door 173A (Knoxbox - Final Location TBD).
+*   **Interior Elevation Tag:** **15/14** on Sheet **A60-11** pointing to a vanity/sink area in the corridor.
+
+**Exterior Walls & Revisions**
+*   **North Wall:** Along Grid 8. Includes Exterior Elevation tag **2/A71-01**.
+*   **South-East Wall:** Near Grid D.5/7 intersection.
+    *   **Revision:** Large **Red Cloud** covering the wall section and window area.
+    *   **Wall Section Tag:** **3/A75-20** (Pointing South).
+    *   **Revision Tags:** Triangle **K** and Triangle **B** associated with the red clouds.
+
+**Keynotes (Mapped from Legend)**
+*   **[1]** TOUCHLESS ACTUATOR CONTROL FOR DOOR AUTO OPERATOR. (Near Room 170 entry).
+*   **[2]** KNOXBOX - FINAL LOCATION TBD. (Near Door 173A).
+*   **[3]** LINEAR FLOOR DRAIN. (In Room 173).
+*   **[4]** PHENOLIC SHOWER DOOR. (In Rooms 171, 172).
+*   **[5]** PHENOLIC ADA BENCH. (In Room 173).
+
+**Symbols & Patterns**
+*   **Fire Ratings:**
+    *   **2HR FRR:** Double black block line separating Laundry 175 from the corridor.
+    *   **1HR FRR:** Single black block line separating the Baptistry suite from the main Baptistry font area.
+*   **Millwork:** Diagonal hatching used for benches and lockers.
+*   **Clearances:** Dashed circles (Wheelchair Ø 5'-0") and rectangles (Door maneuvering) visible throughout.

@@ -1,0 +1,142 @@
+**Architectural Floor Plan: Level 01 Area A - TempleTest_Add2**
+
+### **GRID SYSTEM**
+*   **Orientation:** Plan North is Up.
+*   **Vertical Grid Lines (West to East):**
+    *   **Grid I:** Far West exterior setback line.
+    *   **Grid H:** Primary structural wall (West of Entry 101). Distance I-H: **11'-8"**.
+    *   **Grid G:** Primary structural wall (West of Laundry 175). Distance H-G: **27'-0"**.
+    *   **Grid F:** Primary structural wall (West of Baptistry Showers). Distance G-F: **23'-7"**.
+    *   **Grid E:** Primary structural wall (West of Baptistry Vestibule 170). Distance F-E: **23'-2 1/2"**.
+    *   **Grid D.5:** Far East structural wall (East of Baptistry). Distance E-D.5: **17'-0 1/2"**.
+*   **Horizontal Grid Lines (North to South):**
+    *   **Grid 8:** Northern exterior wall (Baptistry Suite).
+    *   **Grid 7:** Centerline of Baptistry Font 169.
+    *   **Grid 6:** Demising wall (Laundry/Restroom line).
+    *   **Grid 5:** Demising wall (Clothing Issue/Waiting line).
+    *   **Grid 4.5:** Southern exterior wall line.
+
+---
+
+### **SPACES AND ROOMS**
+
+**1. Public Entry & Support (South-West | Grids I-G / 6-4.5)**
+*   **Entry Vestibule [100]:** (Grid I-H / 5-4.5) Main entrance. Contains **Revision Cloud (Delta K)**. Features Note [1] (Touchless Actuator) and Note [2] (Knoxbox) on exterior.
+*   **First Aid Closet [152]:** (Grid I-H / 5) Small room North of Entry 100. Inside **Revision Cloud (Delta K)**.
+*   **Entry [101]:** (Grid H-G / 5-4.5) Main lobby space. Connects to Shoe & Coat.
+*   **Non-Patron Waiting [102]:** (Grid H-G / 6-5) North of Entry 101.
+*   **Shoe & Coat [103]:** (Grid H-G / 6-5) Transition space East of Waiting 102.
+*   **Vestibule [104]:** (Grid H-G / 6) Small circulation node connecting Shoe & Coat to Restroom.
+*   **Restroom [105]:** (Grid G-F / 6) Single-user hygiene room. Entrance area marked with **Revision Cloud (Delta K)**.
+
+**2. Service Core (Central | Grids G-F / 7-6)**
+*   **Veil Storage [176]:** (Grid G-F / 7-6) Storage room North of Restroom 105.
+*   **Laundry [175]:** (Grid G-F / 7-6) Large service room containing washer/dryer/sink. Entire room marked with **Revision Cloud**.
+*   **Equipment [177]:** (Grid G-F / 6) Mechanical space South of Laundry.
+
+**3. Baptistry Sisters Suite (North-East | Grids F-D.5 / 8-7)**
+*   **Baptistry Vestibule - Sisters [170]:** (Grid E-D.5 / 8) Northern entry. Features Note [1] (Touchless Actuator).
+*   **Baptistry Shower - Sisters [171]:** (Grid F-E / 8-7) North shower stall. Note [4] (Phenolic Door).
+*   **Baptistry Shower - Sisters [172]:** (Grid F-E / 7) South shower stall. Note [4] (Phenolic Door).
+*   **Baptistry Dressing - Sisters [173]:** (Grid F-E / 8-7) Locker area. Contains Note [3] (Linear Drain) and Note [5] (Phenolic Bench). Bench area marked with **Revision Cloud**.
+*   **Baptistry Restroom - Sisters [174]:** (Grid F-E / 7-6) Hygiene room South of Dressing.
+*   **Baptistry [169]:** (Grid E-D.5 / 7) Ritual space containing the Font. Annotation: "OPEN TO BELOW".
+
+**4. Ritual Support & Circulation (South-East | Grids F-D.5 / 6-4.5)**
+*   **Clothing Issue [178]:** (Grid F-E / 6-5) Room with shelving rows.
+*   **Patron Waiting [114]:** (Grid F-E / 5-4.5) Seating area South of Clothing Issue.
+*   **Vestibule Clothing [179]:** (Grid E-D.5 / 6-5) Circulation hub. Entire space marked with **Revision Cloud (Delta K)**.
+*   **Corridor Baptistry [180]:** (Grid E-D.5 / 6-5) Hallway connecting Vestibule 179 to Storage. Marked with **Revision Cloud (Delta K)**.
+*   **Storage [161B]:** (Grid E-D.5 / 6) Storage room North of Corridor 180. Marked with **Revision Cloud**.
+*   **Confirmation [162]:** (Grid D.5+ / 6) Partial view of ritual room East of Storage.
+
+---
+
+### **DOORS AND OPENINGS**
+
+*   **Exterior Entry:** (Grid I-H / 4.5) Double swing into Entry Vestibule 100. Auto Operator (Note [1]).
+*   **Vestibule Inner:** (Grid H / 5) Double swing from Entry Vestibule 100 to Entry 101.
+*   **Door 152:** (Grid H / 5) Single swing, First Aid 152 to Vestibule 100.
+*   **Door 102:** (Grid H / 5.5) Single swing, Entry 101 to Waiting 102.
+*   **Door 104:** (Grid G / 6) Single swing, Shoe & Coat 103 to Vestibule 104.
+*   **Door 105:** (Grid G / 6) Single swing, Vestibule 104 to Restroom 105.
+*   **Door 176:** (Grid G / 6.5) Single swing into Veil Storage 176.
+*   **Door 178:** (Grid F / 5.5) Single swing, Vestibule 179 to Clothing Issue 178.
+*   **Door 179:** (Grid E / 5) Double swing, Exterior/Corridor to Vestibule 179.
+*   **Door 179C:** (Grid E / 5.5) Single swing, Vestibule 179 to Corridor 180.
+*   **Door 161B:** (Grid E / 6) Single swing into Storage 161B.
+*   **Door 162:** (Grid D.5 / 6) Single swing into Confirmation 162.
+*   **Door 173B:** (Grid E / 8) Single swing, Baptistry Vestibule 170 to Dressing 173.
+*   **Door 173A:** (Grid E / 6.5) Single swing, Corridor to Exterior/Adjacent.
+
+---
+
+### **WINDOWS**
+*   **Entry 101 Storefront:** (Grid H-G / 4.5) Exterior glazing system along the South wall.
+*   **Baptistry Vestibule 170:** (Grid E-D.5 / 8) Exterior glazing along the North wall.
+*   **Patron Waiting 114:** (Grid F-E / 4.5) Exterior glazing along the South wall.
+
+---
+
+### **ANNOTATIONS AND NOTES**
+
+**Sheet Note Schedule (Grid Location varies):**
+*   **[1]** Touchless Actuator Control for Door Auto Operator. Locations: Entry 100 (Grid I/4.5), Baptistry Vestibule 170 (Grid E/8).
+*   **[2]** Knoxbox - Final Location TBD. Locations: Entry 100 Exterior (Grid I/5), Corridor 173A Exterior (Grid E/6.5).
+*   **[3]** Linear Floor Drain. Location: Dressing 173 (Grid F/7.5).
+*   **[4]** Phenolic Shower Door. Location: Showers 171, 172 (Grid F/7.5).
+*   **[5]** Phenolic ADA Bench. Location: Dressing 173 (Grid F/7.5).
+
+**Revisions:**
+*   **Delta K (Rev K):**
+    *   Entry Vestibule 100 & First Aid 152 (Grid I-H / 5).
+    *   Restroom 105 Entrance (Grid G / 6).
+    *   Vestibule 179 & Corridor 180 (Grid E-D.5 / 6-5).
+*   **Unlabeled Clouds:**
+    *   Laundry 175 (Grid G-F / 7).
+    *   Dressing 173 Bench Area (Grid F-E / 7.5).
+
+**Wall Tags:**
+*   **SF01:** Hexagon tag on exterior wall at Grid E / 5.
+*   **A60-11, A60-12, A60-30:** Interior elevation tags throughout.
+
+---
+
+### **SPATIAL RELATIONSHIPS**
+*   **Flow:** Public access begins at the South-West (Entry 100/101), transitions through Shoe & Coat (103) to the Clothing Issue (178) area. From Clothing Issue, patrons access the ritual spaces (Baptistry/Confirmation) via Vestibule 179.
+*   **Zoning:**
+    *   **West:** Public Entry and Waiting.
+    *   **Center:** Service Core (Laundry/Storage) acts as a buffer.
+    *   **North-East:** Sisters' Baptistry Suite (Hygiene/Dressing).
+    *   **South-East:** Ritual Circulation and Confirmation.
+*   **Adjacencies:** Laundry 175 shares a plumbing wall with Restroom 105 and Veil Storage 176. The Baptistry Font 169 is visually open ("OPEN TO BELOW") but physically separated from the Vestibule 170 by a railing/low wall.
+
+---
+
+### **SUMMARY**
+*   **Drawing:** Floor Plan - Level 01 Area A (Sheet A20-05).
+*   **Total Rooms:** 22 identified spaces.
+*   **Key Features:** Baptistry Font, Sisters' Dressing Suite, Central Laundry, Main Entry Vestibule.
+*   **Revision Status:** Significant revisions (Delta K) affecting the Entry Vestibule, Restroom access, and the Baptistry Corridor/Vestibule circulation loop.
+
+---
+
+### **REASONING AND SOURCE CITATIONS**
+
+**Synthesis Process:**
+1.  **Grid Alignment (Source: Full Drawing Image):**
+    *   *Reasoning:* The quadrant captions had minor discrepancies regarding the exact location of Grid E. I verified against the full image where the grid bubbles are clearly visible at the top. Grid E aligns with the wall separating the Baptistry Showers from the Baptistry Vestibule.
+    *   *Correction:* Adjusted all room coordinates to align strictly with the I, H, G, F, E, D.5 vertical system and 8, 7, 6, 5, 4.5 horizontal system.
+
+2.  **Room Inventory (Source: Quadrant Captions + Full Image):**
+    *   *Integration:* Combined the detailed room lists from Q1 (Exterior/Storage), Q2 (Baptistry/Laundry), Q3 (Entry/Restroom), and Q4 (Clothing/Corridor).
+    *   *Verification:* Checked the "Patron Waiting 114" which was visible in Q4 but partially cut off; confirmed its location via the full image. Confirmed "First Aid 152" location relative to the Revision Cloud.
+
+3.  **Annotation Mapping (Source: Sheet Note Schedule):**
+    *   *Process:* The Sheet Note Schedule (bottom right of full image) lists notes 1-5. I mapped these numbers to their specific locations on the plan (e.g., finding every instance of [1] and [2]).
+    *   *Confidence:* High. The symbols are distinct squares/circles with numbers.
+
+4.  **Revision Analysis (Source: Visual Inspection):**
+    *   *Reasoning:* The red clouds are the most visually prominent feature. I correlated the "Delta K" symbol found in the clouds with the Revision Schedule (top right) to confirm they represent "ADDENDUM 2 - ONGOING COORDINATION" or similar recent changes.
+
+**Confidence Level:** High. The combination of high-resolution quadrant analysis and full-context image verification allows for precise grid positioning and text recognition.

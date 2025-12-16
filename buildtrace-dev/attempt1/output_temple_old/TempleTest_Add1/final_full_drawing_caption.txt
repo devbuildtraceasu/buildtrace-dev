@@ -1,0 +1,142 @@
+**Architectural Drawing Analysis: TempleTest_Add1 - Enlarged Floor Plan - Level 01 Area A**
+
+**Sheet Number:** A20-05
+**Project:** New Temple Project
+**Scale:** 1/4" = 1'-0"
+
+### **GRID SYSTEM**
+The structural grid defines the spatial organization of the plan.
+*   **Vertical Grid Lines (Left to Right):**
+    *   **Grid I:** Westernmost boundary line.
+    *   **Grid H:** 11'-8" East of Grid I.
+    *   **Grid G:** 27'-0" East of Grid H.
+    *   **Grid F:** 22'-7" East of Grid G.
+    *   **Grid E:** 23'-2 1/2" East of Grid F.
+    *   **Grid D.5:** 17'-0 1/2" East of Grid E (Easternmost boundary).
+*   **Horizontal Grid Lines (Top to Bottom):**
+    *   **Grid 8:** Northern boundary (Baptistry Vestibule).
+    *   **Grid 7:** Runs through Baptistry Dressing/Showers.
+    *   **Grid 6:** Runs through Laundry/Equipment/Confirmation.
+    *   **Grid 5:** Runs through Clothing Issue/Waiting areas.
+    *   **Grid 4.5:** Southern boundary (Entry/Patron Waiting).
+
+---
+
+### **SPACES AND ROOMS (Inventory & Location)**
+
+#### **Zone 1: Main Entry & Reception (Grids G-F, 4.5-5)**
+*   **Entry Vestibule 100:** [Grid G-F / 4.5] Main southwest entrance. Features storefront glazing and Keynote 1 (Touchless Actuator).
+*   **Entry 101:** [Grid G-F / 4.5-5] Central reception lobby connecting Vestibule 100, Waiting 102, and Patron Waiting 114.
+*   **First Aid Closet 152:** [Grid G / 5] Small room located immediately North of Vestibule 100.
+*   **Non-Patron Waiting 102:** [Grid G-F / 5] Waiting area North of Entry 101.
+*   **Shoe & Coat 103:** [Grid G-F / 5] Located East of Waiting 102. Contains shoe racks/shelving. Features an FEC (Fire Extinguisher Cabinet).
+*   **Vestibule 104:** [Grid G-F / 5] Small transition space North of Shoe & Coat 103.
+*   **Restroom 105:** [Grid G-F / 5-6] Accessible restroom North of Vestibule 104.
+*   **Patron Waiting 114:** [Grid F-E / 4.5-5] Large waiting area East of Entry 101. Connects to the Clothing Vestibule.
+
+#### **Zone 2: Support Services (Grids G-F, 5-7)**
+*   **Veil Storage 176:** [Grid G-F / 6-7] Storage room located Northwest of the Laundry area.
+*   **Laundry 175:** [Grid G-F / 6] Service room South of Restroom 174. Contains washer/dryer hookups and FEC.
+*   **Equipment 177:** [Grid G-F / 6] Utility room South of Laundry 175.
+*   **Clothing Issue 178:** [Grid F / 5-6] Room featuring extensive millwork/shelving on the West wall. Located West of Vestibule 179.
+
+#### **Zone 3: Circulation & Administration (Grids F-D.5, 5-6)**
+*   **Vestibule - Clothing 179:** [Grid F-E / 5-6] Central hub connecting Patron Waiting 114, Clothing Issue 178, and the Baptistry Corridor.
+*   **Corridor - Baptistry 180:** [Grid F-E / 5-6] Corridor running East from Vestibule 179. Features an FEC.
+*   **Storage 161B:** [Grid E / 5-6] Storage room accessed from Corridor 180.
+*   **Confirmation 162:** [Grid E-D.5 / 6] Room located North of Storage 161B.
+
+#### **Zone 4: Baptistry Complex - Sisters (Grids F-D.5, 7-8)**
+*   **Baptistry Vestibule - Sisters 170:** [Grid F-E / 8] Northern entry point to the Baptistry suite.
+*   **Baptistry Shower - Sisters 171:** [Grid F / 7-8] Shower stall West of Vestibule 170. Keynote 4 (Phenolic Door).
+*   **Baptistry Shower - Sisters 172:** [Grid F / 7] Shower stall South of Shower 171. Keynote 4 (Phenolic Door).
+*   **Baptistry Dressing - Sisters 173:** [Grid F-E / 7] Central dressing area with lockers and bench. Keynote 3 (Linear Floor Drain).
+*   **Baptistry Restroom - Sisters 174:** [Grid F / 7] Restroom South of Shower 172.
+*   **Baptistry 169 (Font):** [Grid E-D.5 / 7] Contains the baptismal font. Annotation: "OPEN TO BELOW". Keynote 3 (Linear Floor Drain).
+
+---
+
+### **DOORS AND OPENINGS**
+
+*   **Door 100A:** [Grid G / 4.5] Exterior double door, swing out.
+*   **Door 100B:** [Grid G / 4.5] Interior double door, Vestibule 100 to Entry 101.
+*   **Door 152:** [Grid G / 5] Single door, First Aid.
+*   **Door 102:** [Grid G-F / 5] Double door, Non-Patron Waiting.
+*   **Door 103:** [Grid G-F / 5] Cased opening (no swing indicated), Shoe & Coat.
+*   **Door 104:** [Grid G-F / 5] Single door, Vestibule 104.
+*   **Door 105:** [Grid G-F / 5] Single door, Restroom 105.
+*   **Door 114B:** [Grid F / 5] Single door, Patron Waiting 114 to Vestibule 179.
+*   **Door 176:** [Grid G / 6] Single door, Veil Storage.
+*   **Door 175:** [Grid G-F / 6] Single door, Laundry.
+*   **Door 177:** [Grid G-F / 6] Single door, Equipment.
+*   **Door 178:** [Grid F / 5.5] Single door (Dutch door implied by counter?), Clothing Issue.
+*   **Door 179A:** [Grid F-E / 5] Single door, Vestibule 179 to Waiting 114.
+*   **Door 179B:** [Grid F-E / 6] Single door, Vestibule 179 to Corridor North.
+*   **Door 179C:** [Grid E / 5.5] Single door, Corridor 180 to Storage 161B.
+*   **Door 162:** [Grid E / 6] Single door, Confirmation.
+*   **Door 170:** [Grid F-E / 8] Double door, Baptistry Vestibule.
+*   **Door 171:** [Grid F / 7.5] Phenolic shower door.
+*   **Door 172:** [Grid F / 7] Phenolic shower door.
+*   **Door 173A:** [Grid F-E / 7] Single door, Dressing to Vestibule 170.
+*   **Door 173B:** [Grid E / 7] Single door, Dressing to Font area.
+*   **Door 174:** [Grid F / 7] Single door, Restroom 174.
+
+---
+
+### **ANNOTATIONS AND NOTES**
+
+#### **Keynotes (Hexagonal Tags)**
+*   **Keynote 1:** [Grid G / 4.5] "TOUCHLESS ACTUATOR CONTROL FOR DOOR AUTO OPERATOR" (at Entry 100).
+*   **Keynote 2:** [Grid G / 4.5] "KNOXBOX - FINAL LOCATION TBD" (Exterior Wall).
+*   **Keynote 3:** [Grid F-E / 7 & Grid E / 7] "LINEAR FLOOR DRAIN" (Located in Dressing 173 and Baptistry 169).
+*   **Keynote 4:** [Grid F / 7] "PHENOLIC SHOWER DOOR" (at Showers 171, 172).
+
+#### **Section & Elevation Tags**
+*   **4/A71-02:** [Grid G / 5] Exterior Elevation tag pointing East.
+*   **2/A71-02:** [Grid G / 4.5] Exterior Elevation tag pointing East.
+*   **1/A42-01:** [Grid G / 4.5] Exterior Corner Elevation tag.
+*   **4/A71-01:** [Grid F-E / 8] Wall Section tag pointing North.
+*   **2/A71-01:** [Grid E / 8] Wall Section tag pointing North.
+*   **5/A60-21:** [Grid E / 6] Interior Section tag.
+*   **5/A60-50:** [Grid E / 4.5] Interior Section tag.
+
+#### **Safety Symbols**
+*   **FEC (Fire Extinguisher Cabinet):**
+    *   Inside Shoe & Coat 103 [Grid G-F / 5].
+    *   Inside Laundry 175 [Grid G-F / 6].
+    *   Inside Corridor 180 [Grid F-E / 5.5].
+
+---
+
+### **SPATIAL RELATIONSHIPS & FLOW**
+1.  **Public Access:** Patrons enter at the Southwest corner (Grid G/4.5). The sequence flows from **Vestibule 100** -> **Entry 101**.
+2.  **Patron Separation:** From Entry 101, patrons separate into **Non-Patron Waiting 102** (North) or **Patron Waiting 114** (East).
+3.  **Processing:** Patrons moving to the Baptistry proceed from Waiting 114 -> **Vestibule 179** -> **Clothing Issue 178** (to collect clothing) -> North to Dressing Rooms.
+4.  **Baptistry Loop:** The Sisters' Baptistry suite functions as a loop: **Vestibule 170** (Entry) -> **Dressing 173** (Change) -> **Showers 171/172** (Cleanse) -> **Baptistry 169** (Ordinance).
+5.  **Service Block:** The "wet" service wall (Laundry, Restrooms, Showers) is consolidated along Grid F/G to centralize plumbing.
+
+---
+
+### **SUMMARY**
+This drawing (A20-05) details "Area A" of Level 01, specifically the Sisters' Baptistry and Main Entry. It features a precise grid system (I-D.5 vertical, 8-4.5 horizontal). The plan includes 19 distinct spaces, 20+ doors, and specific accessibility/safety features like touchless actuators and Knoxboxes. The layout emphasizes a clear separation between public entry, patron processing (clothing issue), and the sacred ordinance space (Baptistry font).
+
+---
+
+### **REASONING AND SOURCE CITATIONS**
+
+**Synthesis Process:**
+1.  **Grid Reconstruction:** I utilized the full drawing image to verify the grid labels (I, H, G, F, E, D.5 top; 8, 7, 6, 5, 4.5 right). This corrected the error in the Q4 caption which misidentified grids as "C" and "B".
+2.  **Data Integration:**
+    *   **Room Names & Numbers:** Extracted from Quadrant Captions (Q2, Q3, Q4) and verified against the full image for spelling and number accuracy (e.g., confirming "161B" vs "161").
+    *   **Keynotes:** Correlated the hexagonal numbers (1, 2, 3, 4) on the plan with the "Sheet Note Schedule" visible in the bottom right of the full image.
+    *   **Dimensions:** Read directly from the dimension strings at the top and left of the full image to ensure precision.
+3.  **Verification:**
+    *   *Conflict Resolution:* The Q3 caption placed the Entry at "Grid E to D", but the full image clearly shows it at Grid G-F. I used the visual evidence of the full image to assign the correct Grid G-F location to the Entry zone.
+    *   *Completeness:* I visually scanned the full image for items missed in quadrant captions, such as the specific location of FECs and the "Open to Below" note in the Baptistry.
+
+**Sources:**
+*   **Full Drawing Image:** Primary source for grid labels, global dimensions, and spatial verification.
+*   **Quadrant Captions (Q1-Q4):** Source for OCR text of room names and initial object identification.
+*   **Quadrant Synthesis:** Used as a checklist to ensure all previously identified zones were included.
+
+**Confidence:** High. The grid system is clearly legible, and the text labels for rooms and notes are sharp, allowing for a definitive transcription.

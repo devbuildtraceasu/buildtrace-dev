@@ -1,0 +1,91 @@
+**Architectural Drawing Analysis: A-101, Page 1 (Region: Bottom-Right Quadrant)**
+
+**Drawing Title:** SITE PLAN (Detail 1)
+**Scale:** 1" = 40'
+**Sheet Number:** A-101
+
+**1. Primary Structure: Backyard Building**
+*   **Location:** Occupies the majority of the left and center portion of the image, spanning horizontally from Grid 18 to Grid 36 and vertically extending upwards from Grid GG.
+*   **Building Label:** Large blue text reads "BACKYARD BUILDING".
+*   **Area Data:**
+    *   "183,945 SF"
+    *   "+2,160 SF (N) STAFF BUILDING"
+    *   "+ 400 SF (N) FIRE PUMP ROOM"
+*   **Interior Features:**
+    *   **Recycling Area:** A designated zone labeled "(E) RECYCLING EQUIPMENT" (blue text) is located roughly between Grid 18 and Grid 31. It is marked by a blue shaded rectangle with a vertical dimension of 67'-7".
+    *   **Cat Pads:** An area labeled "CAT PAD" and "(E) RAMP TO CAT PADS" is located near the eastern wall (approx. Grid 31-36). This area features hatched ramp markings.
+    *   **Columns:** Square column symbols are arranged in a regular grid pattern throughout the building interior.
+    *   **Equipment/Skylights:** Numerous small rectangular symbols with "X" or grid patterns are distributed across the roof plan (Keynote 13, 15).
+*   **Wall Construction:** Thick black lines denote the exterior building envelope.
+    *   **West Wall:** Aligned near Grid 18 ("FACE OF GIRT SOUTH BACKYARD").
+    *   **East Wall:** Aligned near Grid 36 ("FACE OF CMU SOUTH BACKYARD").
+    *   **South Wall:** Aligned near Grid GG ("FACE OF FIRE PANEL SOUTH BACKYARD").
+
+**2. Annex / Staff Building / Fire Pump Room**
+*   **Location:** Attached to the eastern facade of the main building, centered around Grid 36-37.
+*   **Features:**
+    *   Small enclosed room structure protruding from the main building line.
+    *   Annotation: "FINISH FLOOR -3'-0"".
+    *   Access: Stairs and a landing area are visible on the south side of this annex.
+    *   Keynotes: Hexagonal tags 1, 2, 4, 12, E1, E8 are clustered around this entrance/annex area.
+
+**3. Site & Hardscape (East of Building)**
+*   **Topography/Paving:** Stippled texture indicates paved or hardscape areas east of Grid 36.
+*   **Spot Elevations:**
+    *   "876.7" (near the annex entrance).
+    *   "876.3" (further east near the street).
+*   **Property & Street Lines:**
+    *   **Property Line:** A vertical line runs parallel to the building (approx. Grid 37 area).
+    *   **Street Centerlines:** Two centerlines are dimensioned to the property corner/line.
+        *   Dimension: "60'-10 1/2"" TO C OF STREET.
+        *   Dimension: "65'-10"" TO C OF STREET.
+    *   Annotation: "TO PROPERTY CORNER" with a dimension of "5'-0"".
+
+**4. Grid System & Dimensions**
+*   **Vertical Grids (Bottom Labels):**
+    *   **Grid 18:** Labeled "FACE OF GIRT SOUTH BACKYARD".
+    *   **Grid 31:** Labeled "FACE OF CMU MRF BLDG".
+    *   **Grid 36:** Labeled "FACE OF CMU SOUTH BACKYARD".
+    *   **Grid 37:** Labeled "EDGE OF CONCRETE PATIO".
+*   **Horizontal Grids (Right Labels):**
+    *   **Grid H:** Labeled "FACE OF CMU SOUTH BACKYARD".
+    *   **Grid K:** Labeled "FACE OF GIRT MRF BLDG".
+    *   **Grid V:** Labeled "C/ROOF STEP SOUTH BACKYARD".
+    *   **Grid GG:** Labeled "FACE OF FIRE PANEL SOUTH BACKYARD".
+*   **Horizontal Dimensions (Bottom):**
+    *   "243'-2 1/2"" (MRF BUILDING)
+    *   "134'-2 1/2""
+    *   "293'-1/8"" (SOUTH BACKYARD)
+    *   "24'-1 1/2"" (BACKYARD BUILDINGS)
+    *   "0'-9 7/8"" (Offset dimension)
+*   **Vertical Dimensions (Right):**
+    *   "581'-4 1/2"" (Overall vertical span shown).
+    *   "308'-6 1/2"" (SOUTH BACKYARD BUILDING).
+    *   "1'-6 3/8"" (PATIO).
+
+**5. Annotations & Notes (Right Column)**
+*   **Hardscape Schedule:**
+    *   **PENDLETON STREET:** CONCRETE HARDSCAPE... LANDSCAPE AREA=3,0...
+    *   **DE GARMO AVENUE:** CONCRETE HARDSCAPE... LANDSCAPE AREA=2,6...
+    *   **RANDALL STREET:** CONCRETE HARDSCAPE... LANDSCAPE AREA=3,9...
+    *   **TOTAL:** 22,745 SF CONCRETE HARDSCAPE... LANDSCAPE AREA=9,6...
+*   **Notes Section:**
+    *   **Note 1:** Discusses construction unobstructed by utilities (POWER POLES, METERS).
+    *   **Note 2:** Discusses "APPROVED FUEL GAS LINE" and rigid connections to structure (referencing 170,158).
+    *   **Note 3:** Discusses plumbing, "PROVIDE ULTRA LOW FLOW," and water consumption.
+*   **Legend (Partial):**
+    *   Arrow symbol labeled "ACCESSIBLE".
+    *   Text fragments: "-MAXIMUM S...", "-MAXIMUM C...", "-SEE CIVIL D...".
+
+**6. Symbols & Keynotes**
+*   **Hexagons (Keynotes):**
+    *   **7:** Located inside the main building near the text "183,945 SF".
+    *   **13:** Located on the roof/interior near Grid 18.
+    *   **15:** Located near the Recycling Equipment area.
+    *   **1, 2, 4, 12, E1, E8:** Clustered around the eastern annex/staff building.
+*   **North Arrow:** Located at the bottom right, pointing Up and Left (Plan North).
+
+**7. Miscellaneous Text**
+*   "F.O. BLDG TO PROPERTY LINE" (Face of Building to Property Line) dimensioned vertically as "0'-9" MIN. SEPARATION".
+*   "P. CONSTRUCTION EASEMENT" visible on the far left edge.
+*   "TO PROPERTY CORNER" arrows indicating boundaries.

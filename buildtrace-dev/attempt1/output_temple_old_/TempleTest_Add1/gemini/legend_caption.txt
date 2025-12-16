@@ -1,0 +1,101 @@
+Based on the provided architectural drawing, here is the comprehensive **Legend and Symbol Key**.
+
+### **FLOOR PLAN GRAPHIC LEGEND**
+
+#### **Tags & Annotation Symbols**
+*   **ROOM TAG:**
+    *   **Symbol:** Rectangular box with rounded corners.
+    *   **Top Text:** Room Name.
+    *   **Bottom Text:** Room Number.
+*   **WALL TAG:**
+    *   **Symbol:** Hexagonal/Diamond shape attached to a leader line.
+    *   **Top Value:** Wall Type.
+    *   **Bottom Value:** Variant (if applicable).
+    *   **Example Text:** P1x.
+*   **DOOR TAG:**
+    *   **Symbol:** Oval/Capsule shape.
+    *   **Content:** Door Number (e.g., 000).
+*   **SECTION TAG:**
+    *   **Symbol:** Circle with a filled triangular arrow pointing in the direction of the view. Tail extends back.
+    *   **Top Number:** View Number.
+    *   **Bottom Number:** Sheet Number.
+    *   **Tail Text:** "SIM" indicates "Similar (If Applicable)".
+*   **EXTERIOR ELEVATION TAG:**
+    *   **Symbol:** Triangle pointing toward the elevation face.
+    *   **Top Number:** View Number.
+    *   **Bottom Number:** Sheet Number.
+    *   **Tail Text:** "SIM" indicates "Similar (If Applicable)".
+*   **INTERIOR ELEVATION TAG:**
+    *   **Symbol:** Circle with arrows pointing in up to four cardinal directions.
+    *   **Number inside Arrow:** View Number (Typical).
+    *   **Text below Circle:** Sheet Number (e.g., A00-00).
+*   **EXTERIOR WALL SECTION TAG:**
+    *   **Symbol:** Solid black triangle pointing to the wall, attached to a circle.
+    *   **Top Number (in circle):** View Number.
+    *   **Bottom Number (in circle):** Sheet Number.
+    *   **Tail Text:** "SIM" indicates "Similar (If Applicable)".
+*   **CALLOUT TAGS:**
+    *   **Symbol:** Rounded rectangle (bubble) outlining an area, connected to a split circle.
+    *   **Top Number:** View Number.
+    *   **Bottom Number:** Sheet Number.
+    *   **Tail Text:** "SIM" indicates "Similar (If Applicable)".
+*   **MATCHLINE TAGS:**
+    *   **Symbol:** Long dashed line with text label.
+    *   **Format:** "MATCHLINE, SEE: [View Number]/[Sheet Number]"
+    *   **Top Number:** View Number (Above/Below Matchline).
+    *   **Bottom Number:** Sheet Number (Above/Below Matchline).
+
+#### **Clearance Diagrams (Dashed Lines)**
+*   **WHEELCHAIR CLEARANCE:**
+    *   **Symbol:** Dashed circle.
+    *   **Dimension:** 5'-0" Diameter (Turning radius).
+*   **SINK & URINAL CLEARANCE:**
+    *   **Symbol:** Dashed rectangle centered on fixture.
+    *   **Dimensions:** 2'-6" Width x 4'-0" Depth.
+*   **TOILET CLEARANCE:**
+    *   **Symbol:** Dashed rectangle centered on toilet.
+    *   **Dimensions:** 5'-0" Width x 4'-8" Depth.
+*   **DOOR CLEARANCE:**
+    *   **Symbol:** Dashed lines indicating maneuvering clearance around door swing.
+    *   **Dimensions Shown:**
+        *   Latch side approach: 1'-6" min.
+        *   Depth of approach: 5'-0".
+        *   Width of approach: 4'-0".
+        *   Push side clearance: 1'-0".
+
+#### **Line Types & Fire Ratings**
+*   **1HR FRR (Fire Resistance Rating):**
+    *   **Line Style:** Solid line with single black squares spaced at intervals.
+*   **2HR FRR (Fire Resistance Rating):**
+    *   **Line Style:** Solid line with double black squares spaced at intervals.
+
+#### **Hatch Patterns**
+*   **MILLWORK:**
+    *   **Pattern:** Diagonal hatching (thin parallel lines).
+
+---
+
+### **SHEET NOTE SCHEDULE**
+*(Note: The specific keynote numbers are blank in the provided image column "#", but the descriptions are listed below)*
+
+*   **[Note 1]:** TOUCHLESS ACTUATOR CONTROL FOR DOOR AUTO OPERATOR. BASIS OF DESIGN: LCN 8310-810S. REFER TO INTERIOR ELEVATIONS.
+*   **[Note 2]:** KNOXBOX - FINAL LOCATION TBD. TO BE TIED INTO SECURITY SYSTEM.
+*   **[Note 3]:** LINEAR FLOOR DRAIN. SEE PLUMBING DRAWINGS FOR MORE INFO.
+*   **[Note 4]:** PHENOLIC SHOWER DOOR.
+
+---
+
+### **GENERAL NOTES & CONVENTIONS**
+*(Extracted from General Notes section relevant to symbol interpretation)*
+
+*   **"CLEAR" / "CLR":** Dimensions marked with these terms must be maintained (do not adjust for wall finishes).
+*   **Wall Finishes:** All gypsum board partitions are Level 5 Finish unless noted otherwise.
+*   **Casework:** Premium Grade or better (AWI standards).
+*   **Door Casings:** Located 4" from corner of room unless noted otherwise.
+*   **Reference:** For Wall Types, see AG04 series sheets.
+
+---
+
+### **MISCELLANEOUS SYMBOLS**
+*   **NORTH ARROW:** Circle with a "V" arrow pointing to True North.
+*   **KEY PLAN:** Outline of the building footprint with the active area shaded (labeled "AREA A").

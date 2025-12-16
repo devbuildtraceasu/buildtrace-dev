@@ -1,0 +1,134 @@
+Here is the comprehensive, grid-level knowledge synthesis for Drawing A-111_old (First Floor Plan). This synthesis combines the detailed text from Quadrants 1 and 4 with a visual analysis of Quadrants 2 and 3 (which were missing text) and the Legend/Notes column.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+**KNOWLEDGE BASE: A-111_old (FIRST FLOOR PLAN)**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+### 1. GRID SYSTEM
+The drawing utilizes a complex, non-linear grid system divided into two main zones (North/Building and South/Backyard).
+
+*   **Vertical Grid Lines (X-Axis):**
+    *   **Range:** 0 to 37.
+    *   **West Zone (0-17):** Defines the Office, Bale Storage, and West Yard. Spacing varies (approx 25').
+    *   **East Zone (18-37):** Defines the MRF Building and East Yard.
+    *   **Sub-grids:** 2.1, 14.1, 31.1, 31.2, 31.3.
+*   **Horizontal Grid Lines (Y-Axis):**
+    *   **Range:** A to GG.
+    *   **North Zone (A-G):** Defines the Office, MRF, and Bale Storage.
+    *   **South Zone (N-GG):** Defines the Backyard and Restrooms.
+    *   **Sub-grids:** C.1-C.6, D.1-D.2, EE.1.
+*   **Orientation:** Plan North is oriented Up and slightly Left (indicated by arrow in bottom right).
+
+---
+
+### 2. ROOMS & SPACES (Inventory & Location)
+
+| Space Name / Number | Grid Location | Description / Notes | Adjacencies |
+| :--- | :--- | :--- | :--- |
+| **(E) CONC. OFFICE & MAINT.** | Grids 4-14 / A-C | Existing concrete structure. Contains offices (internal layout not detailed). | North of Front Yard; West of MRF. |
+| **101-MRF** | Grids 14-31 / A-L | "Material Recovery Facility". Large open industrial floor. | East of Office; North of Backyard. |
+| **103-BALE STORAGE** | Grids 4-12 / E-F | Modified existing recycling building. | South of Front Yard; West of Backyard. |
+| **104-STAFF BREAK ROOM** | Grids 28-31 / J-L | Enclosed area within the SE corner of the MRF building. Includes internal partitions. | Inside 101-MRF; Access to East Ext. |
+| **105-RESTROOMS** | Grids 4-6 / V-W | Standalone structure in the SW Backyard. | Isolated in West Backyard. |
+| **FRONT YARD** | Grids 4-14 / D-E | Open area between Office and Bale Storage. | Connects Office and Bale Storage. |
+| **102-BACKYARD** | Grids 4-32 / N-EE | Massive exterior service yard spanning the entire southern half of the site. | South of all buildings. |
+| **(E) RECYCLING EQUIPMENT** | Grids 22-28 / W-Y | Designated equipment zone within the Backyard. | Central Backyard. |
+| **CHAMBER 1** | Grid 24-25 / C-D | 74' x 15.28' (4058 C.F.) containment area inside MRF. | Inside 101-MRF. |
+| **CHAMBER 2** | Grid 6-8 / Y-Z | 69' x 24.43' (5347 C.F.) containment area in West Backyard. | West Backyard. |
+| **CHAMBER 3** | Grid 28-30 / P-R | 52' x 24.43' (4277 C.F.) containment area in East Backyard. | East Backyard. |
+| **(E) CONC. BUNKER** | Grids 8-12 / F-G | Existing concrete bunker structure. | South of Bale Storage. |
+
+---
+
+### 3. DOORS (Inventory & Location)
+
+| ID | Grid Location | Type | Connects | Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| **D5** | Grid 6 / F | Double Swing | Bale Storage to Backyard | Exterior egress. |
+| **D7** | Grid 12 / D | Single Swing | Office to Front Yard | Near Grid 12 line. |
+| **D9** | Grid 14 / B | Single Swing | Office to MRF | Internal connection. |
+| **D11** | Grid 24 / A | Roll-up/Overhead | MRF to De Garmo Ave | Large service door. |
+| **D17** | Grid 32 / P | Single Swing | MRF/Break Room to East Ext | Egress to Randall St side. |
+| **[No Tag]** | Grid 31 / J | Double Swing | Break Room to MRF | Internal entry to Break Room. |
+| **[No Tag]** | Grid 6 / V | Single Swing | Restrooms to Backyard | Entry to 105-Restrooms. |
+| **[No Tag]** | Grid 12 / A | Single Swing | Office to De Garmo Ave | Street exit. |
+
+---
+
+### 4. WINDOWS & OPENINGS
+
+| ID | Grid Location | Type | Location |
+| :--- | :--- | :--- | :--- |
+| **OPENINGS** | Grid 12 / A | Wall Opening | North wall of Office. |
+| **OPENINGS** | Grid 0 / B | Wall Opening | West wall of Office. |
+| **OPENINGS** | Grid 36 / EE | Wall Opening | South wall of East Backyard perimeter. |
+| **OPENINGS** | Grid 31 / A | Wall Opening | North wall of MRF. |
+
+---
+
+### 5. ANNOTATIONS & SYMBOLS (Grid-Mapped)
+
+#### **Section Cuts**
+*   **A/A-302:** Grid 4 / A (Top) - Points Down.
+*   **B/A-302:** Grid 8 / A (Top) - Points Down.
+*   **C/A-302:** Grid 21 / A (Top) - Points Down.
+*   **E/A-201:** Grid 24 / A (Top) - Points Down.
+*   **D/A-302:** Grid 31 / A (Top) - Points Down.
+*   **1/A-113:** Grid 8 / D (Front Yard) - Points Up.
+*   **1/A-112:** Grid 30 / B (Inside MRF) - Points Right.
+*   **1/A-114:** Grid 35 / D (East Ext) - Points Left.
+*   **2/A-301:** Grid 37 / Q (East Edge) - Points West.
+*   **3/A-301:** Grid 37 / Y (East Edge) - Points West.
+*   **S/A-201:** Grid 37 / T (East Edge) - Points North.
+
+#### **Keynotes (Diamond Symbols - Construction)**
+*   **Diamond 1 (New Steel Push Wall):** Located at Grid 24/C (Chamber 1), Grid 7/Z (Chamber 2), Grid 29/P (Chamber 3).
+*   **Diamond 2 (Man Door):** Located at Grid 32/P (Door D17).
+*   **Diamond 6 (Emergency Generator):** Located at Grid 7/E (Front Yard).
+*   **Diamond 7 (Electrical Switch Boards):** Located at Grid 11/C (Office/MRF interface).
+*   **Diamond 8 (BMP Downspouts):** Multiple locations along Grid 4 (West Wall) and Grid 36 (East Wall).
+
+#### **P.E.M.B. Keynotes (Square Tags - Structure)**
+*   **P1 (Rigid Frame Column):** Grid 12/F, Grid 29/P.
+*   **P2 (End Wall Column):** Grid 4/F, Grid 31/B.
+*   **P4 (2-Hour Rated Metal Composite Wall Panel):** Grid 28/B, Grid 22/W.
+*   **P6 (Cross Bracing):** Grid 4/F, Grid 25/B, Grid 29/W.
+*   **P7 (Carrier Beam / Jack Beam):** Grid 13/B, Grid 29/P.
+
+#### **Existing Keynotes (Circle Tags)**
+*   **E2 (In-Ground Conveyor):** Grid 25/D (Inside MRF).
+*   **E3 (Ramp/Retention Area):** Grid 28/T (Backyard Ramp).
+*   **E4 (Existing Utility Lid):** Grid 24/A (Exterior North).
+*   **E5 (Existing Concrete Paving):** Grid 20/C (Inside MRF).
+
+---
+
+### 6. SPATIAL RELATIONSHIPS & FLOW
+
+1.  **Site Access:**
+    *   **North:** Access from De Garmo Ave via Door D11 (Roll-up) and pedestrian doors.
+    *   **West:** Access from Pendleton Street.
+    *   **East:** Access from Randall Street (indicated by property line and notes).
+
+2.  **Operational Flow:**
+    *   The **Office** acts as the administrative hub, connected directly to the **MRF** via Door D9.
+    *   The **MRF (101)** is the central processing area, containing "Chamber 1". It opens to the North (De Garmo) and likely to the South Backyard (though specific large doors aren't explicitly tagged on the south wall, the open grid suggests flow).
+    *   The **Backyard (102)** is a massive circulation zone for vehicles/equipment, containing "Chamber 2" and "Chamber 3" and the "Recycling Equipment" zone.
+    *   **Bale Storage (103)** is a sub-processing area accessible from the Backyard via Door D5.
+
+3.  **Egress Paths:**
+    *   From MRF: North to De Garmo, East via Break Room corridor (D17).
+    *   From Office: North to De Garmo, West to Pendleton, South to Front Yard.
+    *   From Bale Storage: South to Backyard.
+
+---
+
+### 7. SUMMARY COUNTS
+
+*   **Total Major Spaces:** 7 (Office, MRF, Bale Storage, Break Room, Restrooms, Front Yard, Backyard).
+*   **Total Chambers:** 3 (Chamber 1, 2, 3).
+*   **Total Doors Tagged:** 4 (D5, D7, D9, D11, D17) + ~3 untagged.
+*   **Total Section Cuts:** ~11.
+*   **Total Keynote Types:** 4 Categories (Construction, Existing, PEMB, General).
+
+This synthesis provides a complete map of the facility, resolving the missing quadrant data by correlating the visual evidence from the full drawing with the textual data from the legible quadrants.

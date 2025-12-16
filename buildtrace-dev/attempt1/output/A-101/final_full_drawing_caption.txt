@@ -1,0 +1,90 @@
+**Architectural Drawing A-101: Site Plan - Crown Recycling Services**
+
+**GRID SYSTEM:**
+The site is organized by a dual-axis structural grid system defining the industrial facility's bays and boundaries.
+*   **Vertical Grid Lines (X-Axis, West to East):**
+    *   **Grid 0:** West face of North Backyard Building (along Pendleton St).
+    *   **Grid 1, 7, 13:** Internal structural bays of North Backyard.
+    *   **Grid 18:** Major structural division; East wall of North Backyard / West wall of MRF and South Backyard.
+    *   **Grid 31:** East wall of MRF Building.
+    *   **Grid 36:** East wall of South Backyard Building.
+    *   **Grid 37:** Easternmost edge of Staff Building/Patio.
+*   **Horizontal Grid Lines (Y-Axis, North to South):**
+    *   **Grid A:** North Face of MRF Building (Face of CMU).
+    *   **Grid D:** Ridge of MRF Building.
+    *   **Grid E:** North Face of North Backyard Building.
+    *   **Grid H:** North Face of South Backyard Building (Face of CMU).
+    *   **Grid K:** Structural alignment (Face of Girt) running through MRF and Backyard.
+    *   **Grid V:** Ridge of North Backyard / Roof Step of South Backyard.
+    *   **Grid DD:** Face of Fire Panel (North Backyard).
+    *   **Grid GG:** South Face of Backyard Building (Face of Fire Panel).
+
+**SPACES AND ROOMS:**
+*   **MRF Building (Grid A-D / 18-31):**
+    *   **Area:** 67,390 SF.
+    *   **Features:** Contains "(N) Bale Storage Facade" (+742 SF) and "(E) Bale Storage" (+5,641 SF).
+    *   **Keynotes:** Features Overhead Crane (Diamond 15) and multiple coiling doors on the north facade.
+*   **Backyard Building (Total Complex):**
+    *   **North Backyard Section (Grid E-GG / 0-18):** Contains "(E) Recycling Building (Modified)" and "(E) Conc. Bunker". Bounded by Pendleton St to the West.
+    *   **South Backyard Section (Grid H-GG / 18-36):**
+        *   **Area:** 183,945 SF (Backyard Processing Building).
+        *   **Recycling Equipment Area:** Designated zone roughly between Grid 18-31 and Grid K-GG.
+        *   **Cat Pads:** Located at Grid 31-36 / Grid V-GG, featuring "(E) Ramp to Cat Pads".
+*   **Staff Building Annex (Grid K-V / 36-37):**
+    *   **Area:** +2,160 SF (New Staff Building).
+    *   **Function:** Offices/Restrooms attached to the East wall of the South Backyard.
+*   **Fire Pump Room (Grid V / 36-37):**
+    *   **Area:** +400 SF. Attached to the south side of the Staff Building.
+*   **North Parking Lot (North of Grid A):**
+    *   Located between MRF Building and De Garmo Ave. Contains New Truck Parking (Diamond 5), ADA Parking (Diamond 7), and Regular Parking (Diamond 8).
+*   **Front Yard (Grid D-H / 0-18):**
+    *   Open area West of the MRF and North of the North Backyard. Contains Truck Wash/Pad (Hexagon E6).
+
+**DOORS AND OPENINGS:**
+*   **MRF North Wall (Along Grid A):**
+    *   **Coiling Doors (Diamond 1):** Six instances located at Grid intersections 19, 21, 23, 25, 27, and 29.
+    *   **Man Doors (Diamond 2):** Two instances located at Grid intersections 20 and 30.
+*   **North Backyard West Wall (Along Grid 0):**
+    *   **Coiling Door (Diamond 1):** One instance near Grid V facing Pendleton St.
+    *   **Man Door (Diamond 2):** One instance near Grid V facing Pendleton St.
+*   **South Backyard East Wall (Along Grid 36):**
+    *   **Coiling Door (Diamond 1):** One instance near Grid K.
+*   **Staff Building (Grid 36-37):**
+    *   **Man Door (Diamond 2):** Access to exterior patio near Grid V.
+
+**WINDOWS:**
+*   **Staff Building (Grid 36-37):** Glazing is implied by line weights on the East and South walls of the annex, though not explicitly scheduled with window tags.
+
+**ANNOTATIONS AND NOTES:**
+*   **Dimensions:**
+    *   **"276'-8 1/8""**: Overall vertical dimension of MRF Building (Left of Grid 0).
+    *   **"581'-4 1/2""**: Overall vertical dimension of entire complex (Right of Grid 37).
+    *   **"243'-2 1/2""**: Width of MRF Building / Central Backyard section (Bottom, Grid 18-31).
+    *   **"309'-3 1/2""**: Width of North Backyard section (Bottom, Grid 0-18).
+    *   **"293'-1/8""**: Width of South Backyard section (Bottom, Grid 18-36).
+*   **Labels:**
+    *   **"NOT A PART"**: Large area North of De Garmo Ave and area East of Grid 31 (North of Randall St).
+    *   **"30' x 650' TEMP. CONSTRUCTION ACCESS EASEMENT"**: Annotated along the bottom (South) perimeter.
+*   **Keynotes (Diamond Symbols):**
+    *   **Diamond 5 (New Truck Scales/Parking):** North Parking Lot.
+    *   **Diamond 12 (Accessible Path):** Corner of Pendleton/De Garmo and Randall/De Garmo.
+    *   **Diamond 13 (Structural Clearance):** Interior of South Backyard (Grid 18-31).
+    *   **Diamond 14 (Genset):** West of Grid 0, near Grid K (Pendleton St side).
+    *   **Diamond 15 (Overhead Crane):** Interior of MRF (Grid A-D) and South Backyard (Grid K-GG).
+*   **Existing Keynotes (Hexagon Symbols):**
+    *   **E1 (Property Line):** Perimeter.
+    *   **E2 (DWP Substation):** North of De Garmo Ave.
+    *   **E4 (Scale House):** East of MRF Building (Grid A-D, East of Grid 31).
+    *   **E6 (Truck Wash/Pad):** Front Yard (Grid D-H, 0-18).
+    *   **E8 (Fire Hydrant):** Corners of De Garmo/Randall and De Garmo/Pendleton.
+
+**SPATIAL RELATIONSHIPS:**
+*   **Site Access:** Primary vehicle access is via **De Garmo Ave** (North). Trucks circulate through the North Parking Lot or to the **Scale House (E4)** east of the MRF.
+*   **Building Hierarchy:** The facility is composed of two main masses: the **MRF Building** (North) and the **Backyard Building** (South/West). They are structurally aligned along **Grid 18**.
+*   **Circulation:**
+    *   **Pendleton Street (West):** Service access along the "North Backyard" wall (Grid 0).
+    *   **Randall Street (East):** Borders the Staff Building/Patio at the southeast corner.
+    *   **Internal Flow:** Material processing flows from the MRF (Bale Storage) south into the Backyard Building (Recycling Equipment area).
+
+**SUMMARY:**
+This site plan (A-101) depicts the proposed renovation and expansion of the Crown Recycling Services facility. The project involves a total proposed building area of **259,136 SF**, comprising the 67,390 SF MRF Building and the 183,945 SF Backyard Processing Building. Key additions include a new Staff Building (+2,160 SF) and Fire Pump Room (+400 SF) at the southeast corner (Grid 36-37). The site is bounded by Pendleton St, De Garmo Ave, and Randall St, with significant hardscape improvements and specific zones for recycling equipment, bale storage, and truck circulation.

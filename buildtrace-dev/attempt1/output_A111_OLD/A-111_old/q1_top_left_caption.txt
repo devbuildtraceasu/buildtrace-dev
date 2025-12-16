@@ -1,0 +1,94 @@
+**Region: q1_top_left (Top-left quadrant of Drawing A-111_old)**
+
+**Overview:**
+This region depicts the site plan and partial floor plan of an industrial facility located at the intersection of **De Garmo Ave** (North) and **Pendleton Street** (West). The drawing focuses on the exterior boundaries, grid systems, and the layout of an existing office/maintenance building and a recycling building.
+
+**Grid System & Dimensions:**
+*   **Vertical Grids (Top):** Labeled 0, 1, 2, 2.1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 14.1, 15, 16, 17.
+    *   Grid spacing dimensions are provided between lines (e.g., 25'-0", 25'-0", 25'-0", 24'-0", 23'-7").
+    *   **Grid 0:** Aligned with "FACE OF FINISH STAFF BUILDING".
+    *   **Grid 1:** Aligned with "FACE OF CMU NORTH BACKYARD".
+    *   **Grid 2:** Aligned with "FACE OF GIRT NORTH BACKYARD".
+    *   **Grid 2.1:** Aligned with "FACE OF FLANGE ENDWALL COLUMNS".
+    *   **Grid 12:** Aligned with "FACE OF CMU".
+    *   **Grid 13:** Aligned with "FACE OF GIRT MRF BLDG".
+    *   **Grid 14:** Aligned with "FACE OF FLANGE ENDWALL COLUMNS".
+*   **Horizontal Grids (Left):** Labeled A, B, C, C.1, C.2, C.3, C.4, C.6, D, D.1, D.2, E, F, G, J, K, M.
+    *   **Grid A:** Aligned with "FACE OF CMU".
+    *   **Grid B:** Aligned with "FACE OF GIRT MRF BLDG".
+    *   **Grid C:** Aligned with "FACE OF FLANGE MRF BLDG".
+    *   **Grid D:** Aligned with "RIDGE MRF BLDG".
+    *   **Grid E:** Aligned with "FACE OF CMU".
+    *   **Grid F:** Aligned with "FACE OF GIRT NORTH BACKYARD".
+    *   **Grid G:** Aligned with "FACE OF FLANGE NORTH BACKYARD".
+*   **Overall Dimensions:**
+    *   Top: "OVERALL 23'-1"", "MRF BUILDING 272'-1"".
+    *   Left: "MRF BUILDING 253'-9 1/8"", "BUILDING GRID 31'-6 7/8"".
+
+**Site Boundaries & Streets:**
+*   **De Garmo Ave:** Runs horizontally along the top of the plan.
+    *   Property line indicated with long-short-short dashed line.
+    *   Survey point: "x 882.6" elevation near Grid 13.
+    *   Note: "TO PROPERTY CORNER" with dimension "5'-4 3/4"" at the NW corner.
+*   **Pendleton Street:** Runs vertically along the left side.
+    *   Note: "TO PROPERTY CORNER" with dimension "31'-6 7/8"" near Grid A.
+    *   Survey point: "x 884.5" elevation near Grid E/2.
+
+**Buildings & Spaces:**
+
+1.  **"(E) CONC. OFFICE AND MAINT. BUILDING"**
+    *   **Location:** Upper right quadrant, spanning Grids 4 to 14 and Grids A to C.
+    *   **Description:** Existing concrete structure.
+    *   **Annotations:**
+        *   "OPENINGS" noted near Grid 12.
+        *   "FIRE PANEL" noted near Grid 12.
+        *   **Door D9:** Located near Grid 14/B.
+        *   **Wall Section Callout:** WS-8/A-305 near Grid 12/C.
+        *   **Elevation Note:** "T.O. WALL = +16'-0"" and "FINISHED SURFACE = ~+3'-0"" near Grid 12/C.
+        *   **Detail Callout:** 1/G-108 (circle) near Grid 8/C.
+        *   **Keynotes:** Diamond symbol "8" appears three times along the west wall (Grid 4).
+
+2.  **"FRONT YARD"**
+    *   **Location:** Central area between the Office Building and the Recycling Building (Grids 4-11, D-E).
+    *   **Callouts:**
+        *   **Section Cut:** Large circle "1/A-113" pointing up, located at Grid 8/D.
+        *   **Detail Callout:** Hexagon "E/A-203" near Grid 9/D.
+        *   **Wall Section:** Hexagon "WS-20/A-310" near Grid 10/D.
+        *   **Wall Section:** Hexagon "WS-2/A-303" near Grid 12/D.
+        *   **Keynotes:** Hexagon "6" and "7" near Grid 7/E and 11/C respectively.
+
+3.  **"(E) RECYCLING BUILDING (MODIFIED)" / "103-BALE STORAGE"**
+    *   **Location:** Lower portion of the drawing, starting below Grid E.
+    *   **Description:** Area labeled "103-BALE STORAGE".
+    *   **Annotations:**
+        *   **Wall Section:** Hexagon "WS-5/A-304" near Grid 4/E.
+        *   **Wall Section:** Hexagon "WS-19/A-310" near Grid 9/E.
+        *   **Wall Section:** Hexagon "WS-18/A-310" near Grid 8/F.
+        *   **Wall Section:** Hexagon "WS-7/A-305" near Grid 12/E.
+        *   **Detail Callout:** Triangle "N/A-203" near Grid 6/E.
+        *   **Door D5:** Double door indicated near Grid 6/F.
+        *   **Door D7:** Located near Grid 12/D.
+        *   **Dimensions:** "51'-3"", "3'-8"", "18'-0" R.O." along Grid E.
+        *   **Material Tags:** "P6", "P1" (likely paving or panel types) near Grid 4/F.
+
+4.  **"(E) CONC. BUNKER"**
+    *   **Location:** Partially visible at the very bottom edge, spanning Grids 8-12.
+
+**Section Cuts & Details:**
+*   **A/A-302:** Section cut symbol pointing down, located at Grid 4 (Top).
+*   **B/A-302:** Section cut symbol pointing down, located at Grid 8 (Top).
+*   **1/A-301:** Section cut symbol pointing right, located at Grid C.4 (Left).
+*   **1/A-113:** Large section cut symbol in the Front Yard.
+
+**Keynotes & Symbols:**
+*   **Diamond 8:** Repeated along Grid 4 (West wall of Office Bldg).
+*   **Diamond 6:** Near Grid 7/E.
+*   **Diamond 7:** Near Grid 11/C.
+*   **Square Tags:** P1, P2, P4, P6, P7 scattered throughout (e.g., P1 near Grid 12, P2 near Grid 12, P7 near Grid 13).
+*   **Elevation Targets:** Circular targets with crosshairs (e.g., near Grid 10/E).
+
+**Material & Construction Notes:**
+*   "FACE OF CMU" (Concrete Masonry Unit) referenced on multiple grid lines.
+*   "FACE OF GIRT" and "FACE OF FLANGE" referenced for steel structure alignment.
+*   "FINISHED SURFACE = ~+3'-0"" indicates grade or slab elevation changes.
+*   "T.O. WALL = +16'-0"" (Top of Wall elevation).

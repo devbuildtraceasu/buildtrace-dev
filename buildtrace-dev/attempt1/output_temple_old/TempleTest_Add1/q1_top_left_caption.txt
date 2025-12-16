@@ -1,0 +1,43 @@
+**Region: q1_top_left (Top-left quadrant)**
+
+**Overview**
+This region depicts the upper-left exterior corner of the site plan and a portion of the building's interior layout in the bottom-right corner. The area is dominated by structural grid lines and dimensions defining the building's placement. The visible built area includes a specific room labeled "VEIL STORAGE."
+
+**Grid System & Dimensions**
+*   **Vertical Grid Lines:**
+    *   **Grid I:** Located on the far left.
+    *   **Grid H:** Located centrally, spaced **11'-8"** to the right of Grid I.
+    *   **Grid G:** Located on the right side, spaced **27'-0"** to the right of Grid H.
+*   **Horizontal Dimensions (Top):**
+    *   Dimension string indicates **11'-8"** between Grid I and Grid H.
+    *   Dimension string indicates **27'-0"** between Grid H and Grid G.
+*   **Vertical Dimensions (Left):**
+    *   Upper segment dimension: **17'-11"**.
+    *   Lower segment dimension: **23'-1 1/2"**.
+*   **Plot Stamp:** Vertical text in the far left margin reads: "3/19/2025 11:37:39 AM".
+
+**Architectural Spaces & Components**
+*   **Room: VEIL STORAGE 176**
+    *   **Location:** Bottom right corner of the image, positioned to the right of Grid G.
+    *   **Room Tag:** Rectangular tag reading "VEIL STORAGE" (top) and "176" (bottom).
+    *   **Door 176:**
+        *   **Type:** Single swing door.
+        *   **Swing:** Right-hand reverse (swings into the room against the south wall).
+        *   **Tag:** Oval tag labeled "176".
+        *   **Clearance:** Dashed lines indicate maneuvering clearance inside the room.
+    *   **Windows/Openings:** Two recessed window units or niches are visible on the west-facing wall of this room.
+    *   **Millwork:** Diagonal line hatching indicates millwork/casework along the north and east walls of the room.
+    *   **Walls:** Thick double lines denote the exterior and interior walls.
+
+**Annotations & Symbols**
+*   **Exterior Elevation Tags (Circle with filled triangle):**
+    *   **Tag 2 / A42-03:** Located in the open space in the upper-middle right area. Points West (left).
+    *   **Tag 1 / A42-03:** Located adjacent to the west wall of Veil Storage 176. Points West (left) toward the building facade.
+*   **Section Tags (Circle with arrow):**
+    *   **Tag 3 / A71-01:** Located at the very bottom edge, aligned vertically near Grid H. Arrow points North (up).
+    *   **Tag 1 / A71-01:** Located at the bottom edge, between Grid H and Grid G. Arrow points North (up).
+*   **Wall Section/Detail:** The exterior wall of Veil Storage 176 shows complex layering, likely indicating specific insulation or finish details, though specific wall tags are not fully visible in this crop.
+
+**Spatial Relationships**
+*   The "VEIL STORAGE" room represents the northwest corner of this specific building block.
+*   The area to the north and west of the building (Grids I through G) appears to be open exterior space or site area, defined only by grid lines and elevation markers.

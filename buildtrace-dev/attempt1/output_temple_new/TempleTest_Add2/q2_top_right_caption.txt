@@ -1,0 +1,104 @@
+**Region: q2_top_right (Top-right quadrant)**
+**Drawing Type:** Architectural Floor Plan Detail
+**Project Area:** Baptistry and Support Facilities (Sisters' Side)
+
+**Grid System & Dimensions:**
+*   **Vertical Grid Lines:** Grid F, Grid E, Grid D.5.
+*   **Horizontal Grid Lines:** Grid 8, Grid 7.
+*   **Dimensions:**
+    *   Left margin to Grid F: 23'-7"
+    *   Grid F to Grid E: 23'-2 1/2"
+    *   Grid E to Grid D.5: 17'-0 1/2"
+
+**Rooms and Spaces:**
+
+1.  **Room 170: Baptistry Vestibule - Sisters**
+    *   **Location:** Between Grid E and D.5, extending down from the top margin.
+    *   **Access:** Double doors swinging outward into the Baptistry area.
+    *   **Annotations:**
+        *   Interior Elevation Callout: 9/A60-11.
+        *   Section Callout: 2/AG05-32.
+        *   Wall Type Tag: Diamond 3.
+        *   Ceiling/Soffit Detail Callout: 4/A71-01 (pointing to exterior wall/window line).
+
+2.  **Room 171: Baptistry Shower - Sisters**
+    *   **Location:** Left of Grid F, near Grid 8.
+    *   **Features:** Shower stall with drain, bench seating.
+    *   **Access:** Single swing door (Door Tag 4).
+    *   **Annotations:**
+        *   Interior Elevation Target: 19, 18, 17, 16 on Sheet A60-11.
+
+3.  **Room 172: Baptistry Shower - Sisters**
+    *   **Location:** Directly below Room 171.
+    *   **Features:** Shower stall, bench seating.
+    *   **Access:** Single swing door (Door Tag 4).
+    *   **Annotations:**
+        *   Interior Elevation Target: 12, 13, 10, 11 on Sheet A60-11.
+        *   **Revision:** Red revision cloud surrounding the entrance/door area.
+
+4.  **Room 173: Baptistry Dressing - Sisters**
+    *   **Location:** Central area between Grid F and E, below the showers.
+    *   **Features:** Bank of lockers/cubbies along the right wall.
+    *   **Access:** Door 173B (Single swing) leading to the central corridor.
+    *   **Annotations:**
+        *   Interior Elevation Target: 24, 25 on Sheet A60-11.
+        *   Interior Elevation Target: 22 on Sheet A60-11.
+        *   Interior Elevation Target: 20, 23 on Sheet A60-11.
+        *   **Revision:** Heavy red revision clouding around Door 173B and the adjacent wall.
+        *   Revision Delta: Triangle "F" near the door.
+
+5.  **Room 174: Baptistry Restroom - Sisters**
+    *   **Location:** Below Room 173, near Grid F.
+    *   **Features:** Toilet, vanity with sink, mirror.
+    *   **Access:** Single swing door (Door Tag 2).
+    *   **Annotations:**
+        *   Interior Elevation Target: 28, 26, 27, 25 on Sheet A61-01.
+        *   Wall Type Tag: Diamond 5.
+        *   Adjacent Corridor Feature: "FEC" (Fire Extinguisher Cabinet) recessed in wall.
+
+6.  **Room 175: Laundry**
+    *   **Location:** Bottom left corner.
+    *   **Features:** Countertop, under-counter appliances (washer/dryer indicated by dashed lines).
+    *   **Annotations:**
+        *   Interior Elevation Target: 5, 4, 2, 3 on Sheet A60-12.
+        *   Section Callout: 6/A60-12.
+        *   **Revision:** Extensive red revision clouding along the bottom wall/floor boundary.
+
+7.  **Room 169: Baptistry**
+    *   **Location:** Right side of the drawing, spanning Grid 8 to Grid 7.
+    *   **Features:** Large octagonal font structure with steps leading down into the water.
+    *   **Text:** "OPEN TO BELOW".
+    *   **Railing:** Decorative railing depicted around the font perimeter.
+    *   **Annotations:**
+        *   Section Callout: 4/A60-20 (pointing right).
+        *   Section Callout: 5/A60-20 (pointing left).
+        *   Section Callout: 1/A76-05 (pointing left).
+        *   Section Callout: 2/A60-20 (pointing down).
+        *   Section Callout: 2/A76-05 (pointing down).
+        *   Detail Callout: 11/A76-06.
+        *   Detail Callout: 3/A75-20 (at bottom right wall section).
+        *   Wall Type Tag: Diamond 3.
+
+**Corridors and Circulation:**
+*   **Central Corridor:** Runs vertically along Grid E. Contains a staircase/ramp feature with handrails (Detail 15/14 on A60-11).
+*   **Door 173A:** Double doors at the bottom of the corridor (partially visible).
+*   **Revision:** Red revision clouding along the wall separating the corridor from the Baptistry (Grid E line).
+*   **Revision Deltas:** Triangle "K" and Triangle "B" located in the revision clouds near the corridor wall.
+
+**Exterior/Perimeter Details:**
+*   **Top Wall (Grid D.5):** Window/Glazing system visible.
+*   **Section Callout:** 2/A71-01 (pointing down through the exterior wall).
+*   **Detail Callout:** 4/A60-20 (at the window mullion).
+
+**Symbols and Keynotes:**
+*   **Revision Clouds:** Red scalloped lines indicating changes to the drawing (prominent in Laundry, Dressing Room entry, and Corridor wall).
+*   **Elevation Targets:** Circles with arrows and fraction-style text (e.g., 20/A60-11) indicating interior elevation drawings.
+*   **Section Cuts:** Circles with arrows and filled tails (e.g., 4/A71-01).
+*   **Wall Types:** Diamond shapes containing numbers (3, 5).
+*   **Door Tags:** Circles containing numbers (2, 4) or text (173B).
+*   **Centerline Symbol:** "CL" symbol on Grid 7.
+
+**Material/Construction Notes:**
+*   Tile patterns indicated in showers and restrooms.
+*   Glazing indicated at the top right exterior wall.
+*   Handrails indicated on the corridor stair/ramp and Baptistry font.

@@ -1,0 +1,95 @@
+Based on the provided architectural drawing, here is the comprehensive **LEGEND/SYMBOL KEY** extracted from the "FLOOR PLAN GRAPHIC LEGEND" and "SHEET NOTE SCHEDULE".
+
+### **FLOOR PLAN GRAPHIC LEGEND**
+
+**1. Tags & Identifiers**
+*   **Room Tag:**
+    *   *Symbol:* Rectangle with a horizontal line dividing text.
+    *   *Top Text:* ROOM NAME
+    *   *Bottom Text:* ROOM NUMBER (e.g., 000)
+*   **Wall Tag:**
+    *   *Symbol:* Hexagon/Diamond shape pointing to a wall.
+    *   *Top Text:* WALL TYPE (e.g., P1x)
+    *   *Bottom Text:* VARIANT (IF APPLICABLE)
+*   **Door Tag:**
+    *   *Symbol:* Oval/Capsule shape.
+    *   *Text:* DOOR NUMBER (e.g., 000)
+*   **Section Tag:**
+    *   *Symbol:* Circle with a filled arrow pointing in the direction of the section view.
+    *   *Top Text:* VIEW NUMBER (e.g., 1)
+    *   *Bottom Text:* SHEET NUMBER (e.g., A00-00)
+    *   *Annotation:* "SIM" indicates SIMILAR (IF APPLICABLE)
+*   **Exterior Elevation Tag:**
+    *   *Symbol:* Circle with a filled triangle arrow attached.
+    *   *Top Text:* VIEW NUMBER
+    *   *Bottom Text:* SHEET NUMBER
+    *   *Annotation:* "SIM" indicates SIMILAR (IF APPLICABLE)
+*   **Interior Elevation Tag:**
+    *   *Symbol:* Circle with an arrow pointing towards a wall.
+    *   *Inside Text:* VIEW NUMBER (TYP.)
+    *   *Outside Text:* SHEET NUMBER
+*   **Exterior Wall Section Tag:**
+    *   *Symbol:* Circle with a filled arrow and a tail line extending back.
+    *   *Top Text:* VIEW NUMBER
+    *   *Bottom Text:* SHEET NUMBER
+    *   *Annotation:* "SIM" indicates SIMILAR (IF APPLICABLE)
+*   **Callout Tags:**
+    *   *Symbol:* Rounded rectangle (bubble) connected to a circle tag.
+    *   *Circle Top:* VIEW NUMBER
+    *   *Circle Bottom:* SHEET NUMBER
+    *   *Annotation:* "SIM" indicates SIMILAR (IF APPLICABLE)
+*   **Matchline Tags:**
+    *   *Symbol:* Long dashed line with text above and below.
+    *   *Format:* "MATCHLINE, SEE: [View Number]/[Sheet Number]"
+    *   *Top Components:* VIEW NUMBER (ABOVE MATCHLINE) / SHEET NUMBER (ABOVE MATCHLINE)
+    *   *Bottom Components:* SHEET NUMBER (BELOW MATCHLINE) / VIEW NUMBER (BELOW MATCHLINE)
+
+**2. Clearances (Dashed Lines)**
+*   **Wheelchair Clearance:**
+    *   *Symbol:* Dashed circle.
+    *   *Dimension:* Ø 5'-0" (Diameter)
+*   **Sink & Urinal Clearance:**
+    *   *Symbol:* Dashed rectangle positioned in front of fixture.
+    *   *Dimensions:* 2'-6" (Width) x 4'-0" (Depth)
+*   **Toilet Clearance:**
+    *   *Symbol:* Dashed rectangle surrounding the toilet.
+    *   *Dimensions:* 5'-0" (Width) x 4'-8" (Depth)
+*   **Door Clearance:**
+    *   *Symbol:* Dashed lines indicating maneuvering clearance around door swing.
+    *   *Dimensions Shown:*
+        *   1'-6" (Latch side clearance)
+        *   5'-0" (Depth perpendicular to door)
+        *   4'-0" (Width parallel to door)
+        *   1'-0" (Hinge side/approach clearance)
+
+**3. Fire Ratings (Line Types)**
+*   **1HR FRR (Fire Resistance Rating):**
+    *   *Symbol:* Thick solid line interrupted by single black squares.
+*   **2HR FRR (Fire Resistance Rating):**
+    *   *Symbol:* Thick solid line interrupted by double black squares.
+
+**4. Hatch Patterns**
+*   **Millwork:**
+    *   *Symbol:* Diagonal line hatching (single lines).
+
+---
+
+### **SHEET NOTE SCHEDULE**
+*(Keynotes used to denote specific items on the plan)*
+
+*   **#1:** TOUCHLESS ACTUATOR CONTROL FOR DOOR AUTO OPERATOR. BASIS OF DESIGN: LCN 8310-810S. REFER TO INTERIOR ELEVATIONS.
+*   **#2:** KNOXBOX - FINAL LOCATION TBD. TO BE TIED INTO SECURITY SYSTEM.
+*   **#3:** LINEAR FLOOR DRAIN. SEE PLUMBING DRAWINGS FOR MORE INFO.
+*   **#4:** PHENOLIC SHOWER DOOR
+
+---
+
+### **GENERAL CONVENTIONS & NOTES**
+*(Extracted from General Notes section relevant to symbol interpretation)*
+
+*   **Dimensions:** All dimensions are from the **FACE OF STUD**, unless otherwise noted.
+*   **"CLEAR" / "CLR":** Dimensions marked "CLEAR" or "CLR" shall be maintained and shall allow for thickness of all wall finishes. These dimensions shall not vary more than +/- 1/8" without written consent.
+*   **Casework:** All casework to be Premium Grade or better as defined by the Architectural Wood Institute.
+*   **Door Casings:** Edges of all door casings to be 4" from corner of room unless noted otherwise.
+*   **Wall Types:** For wall types, see AG04 series sheets.
+*   **North Arrow:** Graphic provided indicating "TRUE NORTH".

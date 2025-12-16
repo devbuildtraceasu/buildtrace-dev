@@ -1,0 +1,112 @@
+**Architectural Drawing Analysis: TempleTest_Add1, Page 1 (Top-Right Quadrant)**
+
+**Region Overview:**
+This region depicts the "Sisters" wing of a Baptistry complex, located between Grid Lines F and D.5 horizontally, and Grid Lines 7 and 8 vertically. The plan includes the Baptistry font area, a vestibule, dressing rooms, showers, a restroom, and a laundry area. The drawing indicates significant revisions (clouded areas) and detailed interior elevation references.
+
+**Grid System & Dimensions:**
+*   **Vertical Grids:** Grid F (left), Grid E (center), Grid D.5 (right).
+*   **Horizontal Grids:** Grid 8 (top), Grid 7 (bottom right).
+*   **Dimensions:**
+    *   Distance between Grid F and Grid E: **23'-2 1/2"**.
+    *   Distance between Grid E and Grid D.5: **17'-0 1/2"**.
+    *   Partial dimension left of Grid F: **23'-7"**.
+
+**Rooms & Spaces (Detailed Mapping):**
+
+1.  **Baptistry (Room 169):**
+    *   **Location:** Right side, centered on Grid D.5, spanning Grids 7-8.
+    *   **Features:** Large octagonal font with steps descending into the water. Text label: "**OPEN TO BELOW**". Surrounded by a railing/guardrail.
+    *   **Annotations:**
+        *   **Interior Elevation Tags:**
+            *   Tag 11/10/9 on Sheet A60-24 (North/West walls).
+            *   Tag 11 on Sheet A76-06 (Angled wall).
+            *   Tag 5 on Sheet A60-20 (West wall).
+            *   Tag 1 on Sheet A76-05 (West wall).
+            *   Tag 24/23/22/21 on Sheet A60-23 (South wall).
+        *   **Section Tags:**
+            *   Tag 2/A60-20 (Cut through font).
+            *   Tag 2/A76-05 (Cut through font).
+            *   Tag 2/A75-20 (Cut through font).
+        *   **Wall Section Tags:**
+            *   Tag 4/A60-20 (North wall).
+            *   Tag 2/AG05-32 (North wall).
+
+2.  **Baptistry Vestibule - Sisters (Room 170):**
+    *   **Location:** Top center, between Grids E and D.5, below Grid 8.
+    *   **Doors:**
+        *   Double entry doors (Tag 170) leading to Baptistry.
+        *   Door to Dressing Room (Tag 173B).
+    *   **Annotations:**
+        *   **Wall Section Tags:** Tag 4/A71-01 and Tag 2/A71-01 pointing North to the exterior glazing.
+        *   **Interior Elevation Tag:** Tag 9 on Sheet A60-11.
+        *   **Keynote 3:** Indicates a **Linear Floor Drain** in the floor area just outside the vestibule/corridor.
+
+3.  **Baptistry Dressing - Sisters (Room 173):**
+    *   **Location:** Central area, spanning Grids F to E.
+    *   **Features:**
+        *   Millwork/Lockers along the East wall (diagonal hatching).
+        *   Bench seating in the center.
+        *   **Keynote 3:** Indicates a **Linear Floor Drain** in the floor.
+    *   **Doors:**
+        *   Door 173B (Entry from Vestibule).
+        *   Door 173A (Exit to Restroom/Corridor).
+    *   **Annotations:**
+        *   **Interior Elevation Tags:**
+            *   Tag 24/25/22 on Sheet A60-11 (East wall).
+            *   Tag 20 on Sheet A60-11 (South wall).
+            *   Tag 14/15 on Sheet A60-11 (West wall).
+    *   **Revisions:** **Red Revision Cloud 'B'** (Triangle tag) covers the wall shared with the Baptistry (169), indicating a change to the partition or finishes.
+
+4.  **Baptistry Shower - Sisters (Room 171 & 172):**
+    *   **Location:** Left of Grid F, near Grid 8.
+    *   **Room 171 (Top):**
+        *   **Keynote 4:** Points to door, indicating "**PHENOLIC SHOWER DOOR**".
+        *   **Interior Elevation Tag:** 19/18/17/16 on Sheet A60-11.
+    *   **Room 172 (Bottom):**
+        *   **Keynote 4:** Points to door, indicating "**PHENOLIC SHOWER DOOR**".
+        *   **Interior Elevation Tag:** 13/12/11/10 on Sheet A60-11.
+    *   **Revisions:** **Red Revision Cloud 'F'** (Triangle tag) surrounds the shower entrances and partition walls, indicating a layout or specification change.
+
+5.  **Baptistry Restroom - Sisters (Room 174):**
+    *   **Location:** Bottom left, near Grid F.
+    *   **Features:**
+        *   Toilet and Sink.
+        *   **Clearance Diagrams:** Dashed circle (5'-0" turning radius) and dashed rectangles at fixtures indicating ADA compliance.
+    *   **Annotations:**
+        *   **Interior Elevation Tag:** 28/27/26/25 on Sheet A60-01.
+        *   **Keynote 2:** Bubble '2' located near the door/wall of 173A/174. Legend identifies this as "**KNOXBOX - FINAL LOCATION TBD**" (Note: placement interior seems unusual for Knoxbox, may refer to specific device location or note schedule variance).
+
+6.  **Laundry (Room 175):**
+    *   **Location:** Far left edge, below Grid 8.
+    *   **Features:** Countertop with sink, cabinetry.
+    *   **Annotations:**
+        *   Text "**FEC**" on wall (Fire Extinguisher Cabinet).
+        *   **Interior Elevation Tags:** Tag 6 on Sheet A60-12 and Tag 5/4/3/2 on Sheet A60-12.
+
+**Exterior & Structure:**
+*   **North Wall:** Exterior glazing/curtain wall system shown along Grid 8 line.
+*   **Wall Types:**
+    *   Thick partition wall between Baptistry (169) and Dressing (173), likely a plumbing chase or acoustic wall.
+    *   Standard partition walls separating showers and restrooms.
+*   **Revision Clouds:**
+    *   **Cloud F:** Located at Grid F/8, covering the shower area.
+    *   **Cloud B:** Located at Grid E/7, covering the wall between Dressing and Baptistry.
+
+**Keynotes & Symbols (Based on Legend):**
+*   **[3] Linear Floor Drain:** Located in corridor near Grid D.5 and inside Dressing Room 173.
+*   **[4] Phenolic Shower Door:** Located at entrances to Showers 171 and 172.
+*   **[2] Knoxbox (per legend):** Tag located near door 173A.
+*   **North Arrow:** Not directly visible, but elevation tags orient views relative to project North.
+*   **Centerline Symbol ($\phi$):** Visible on the exterior wall line between Grid F and E.
+
+**Visible Text & Labels:**
+*   "BAPTISTRY VESTIBULE - SISTERS 170"
+*   "BAPTISTRY SHOWER - SISTERS 171"
+*   "BAPTISTRY SHOWER - SISTERS 172"
+*   "BAPTISTRY DRESSING - SISTERS 173"
+*   "BAPTISTRY RESTROOM - SISTERS 174"
+*   "LAUNDRY 175"
+*   "BAPTISTRY 169"
+*   "OPEN TO BELOW"
+*   "FEC"
+*   Grid labels: F, E, D.5, 8, 7.

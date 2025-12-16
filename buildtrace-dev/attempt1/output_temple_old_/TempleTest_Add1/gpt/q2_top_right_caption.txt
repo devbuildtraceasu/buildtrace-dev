@@ -1,0 +1,105 @@
+Top-right quadrant of **TempleTest_Add1, Page 1** showing a portion of an interior floor plan centered on the **Baptistry support spaces** and adjacent **Baptistry (room 169)** with surrounding grid bubbles and multiple section/detail callouts.
+
+## 1) Structural grid / reference markers (as shown in this region)
+- **Grid bubble “F”** at the top edge (left of this quadrant), aligned to a **vertical dashed gridline** dropping through the plan.
+- **Grid bubble “E”** near the top edge (roughly center of the quadrant), aligned with another **vertical dashed gridline**.
+- **Grid bubble “D.5”** at the top-right edge (partial vertical dashed gridline/guide near it).
+- **Grid bubble “8”** at the right edge, aligned to a **horizontal dashed gridline** crossing the plan (grid line 8).
+- **Grid bubble “7”** at the right edge lower than “8”, aligned to another **horizontal dashed gridline** crossing the plan (grid line 7).
+- Dimension strings visible along the top:
+  - **“23'-2"** (left top, near grid F)
+  - **“23'-2 1/2"** (near top center, around grid E)
+  - **“17'-0 1/2"** (top right area)
+- Several light dashed construction/grid lines intersecting through rooms; exact intersection labels are not shown beyond bubbles listed above.
+
+## 2) Rooms / spaces and labels (names + numbers; approximate placement by grid)
+### Left/upper-left of quadrant (near Grid F and left of Grid E)
+- **BAPTISTRY SHOWER – SISTERS (171)**  
+  - Label appears in red text on the left side of the quadrant, indicating the larger shower room area just outside/left of the central cluster.
+- **BAPTISTRY SHOWER – SISTERS (172)**  
+  - Another shower room label below the first, also left side.
+- **BAPTISTRY VESTIBULE – SISTERS (170)**  
+  - Label located near the **upper center** of the quadrant, between the shower area and the main baptistry support circulation; vestibule sits just left of the baptistry zone and near the top corridor alignment.
+
+### Center of quadrant (between Grids F–E area; between horizontal gridlines 8 and 7)
+- **BAPTISTRY DRESSING – SISTERS (173)**  
+  - Label centered in the cluster; dressing room occupies the middle area, with interior partitions, door swings, and adjacent millwork/fixture zones.
+
+### Lower-center/left-center (below dressing, closer to gridline 7)
+- **BAPTISTRY RESTROOM – SISTERS (174)**  
+  - Label at lower center-left; restroom is a small enclosed room with fixtures (toilet symbol visible) and a swinging door.
+
+### Lower-left edge of quadrant
+- **LAUNDRY (175)**  
+  - Label visible at bottom-left edge of this quadrant (space extends beyond region).
+
+### Right-center (dominant adjacent worship/ceremonial space)
+- **BAPTISTRY (169)**  
+  - Label in red near the right side of the support spaces, adjacent to a large open area and a prominent **octagonal/angled railing/opening feature**.
+  - The baptistry room/zone is directly adjacent to the dressing/vestibule side and opens to a larger volume.
+
+### Far right (open volume note)
+- **“OPEN TO BELOW”**  
+  - Text appears inside/near the large right-side octagonal opening/railed area, indicating a double-height or void condition.
+
+## 3) Walls, partitions, and material hatching
+- Multiple interior partitions form the shower/vestibule/dressing/restroom suite. Wall thickness varies (some thicker perimeter/structural walls; thinner interior partitions).
+- **Hatched elements** appear in several places:
+  - Rectangular hatched blocks likely indicating **millwork or built-ins** (legend indicates “MILLWORK” hatch pattern is used on this sheet; the hatched blocks match that convention).
+  - Hatched wall pockets/shafts at corners and along certain partitions.
+- A long, narrow hatched zone runs along the bottom edge of the baptistry support area (left side), possibly cabinetry/benching or a thickened wall element.
+
+## 4) Doors (locations and swing graphics)
+(Exact door numbers are not clearly legible in this region; door swings are visible.)
+- Several **single-swing doors** shown with dashed swing arcs:
+  - Door from **Baptistry Vestibule – Sisters (170)** into adjacent interior circulation/support area.
+  - Door(s) into **Baptistry Dressing – Sisters (173)** (swing arcs visible at entry points).
+  - Door into **Baptistry Restroom – Sisters (174)** (clear swing arc shown).
+- Additional doors appear at shower room entries (171/172) and between small vestibule/alcove spaces; all shown with standard plan swing arcs.
+
+## 5) Plumbing fixtures / built-ins (as drawn)
+- In the **Baptistry Dressing – Sisters (173)** area: a counter run with **two lavatory sink basins** is visible (two oval/circular basin symbols in a counter).
+- In **Baptistry Restroom – Sisters (174)**: **toilet** symbol visible.
+- Shower room interiors (171/172) include partitioned wet areas and fixture outlines, but exact fixture types are partially obscured by callouts.
+
+## 6) Callouts, section/elevation/detail tags (by legend types)
+Numerous black diamond/marker callouts and circular section bubbles appear; readable ones include:
+
+### Section/detail/elevation references (readable)
+- Circular tag near top-center: **“4 / A71-01”** (section/detail reference).
+- Circular tag near upper-right area: **“2 / A71-01”**.
+- Diamond marker near upper-right: **“2 / AG05-32”** (appears as a referenced view/detail on sheet AG05-32).
+- Circular tag near right-center: **“11 / A76-06”**.
+- Circular tag near right-center: **“1 / A76-05”**.
+- Circular tag near mid-right: **“5 / A60-20”**.
+- Circular tag near upper-right edge: **“4 / A60-20”**.
+- Several diamond callouts with **A60-14** appear repeatedly in the dressing/shower/restroom cluster (exact view numbers vary; many are partially legible but “A60-14” is consistently readable).
+
+### Additional tags at lower-right
+- Circular tag: **“3 / A75-20”** (near lower-right millwork/bench-like hatched rectangles).
+- Two adjacent circular tags near bottom-right: **“2 / A60-20”** and **“2 / A76-05”** (stacked/adjacent references).
+- Another circular tag near bottom-right: **“2 / A75-20”**.
+
+### Matchline / revision clouding
+- **Red revision clouds** surround multiple areas:
+  - Around portions of the shower/vestibule/dressing suite (notably near the top of dressing and along the right edge of the dressing area).
+  - Around a vertical zone adjacent to the baptistry (169) boundary.
+- A red revision delta marker **“B”** appears near the lower-right of the dressing/baptistry edge area (triangle with “B”).
+
+## 7) Stairs / rail/opening feature (right side)
+- A prominent **octagonal/angled guard/railing** geometry occupies the right side of the quadrant, adjacent to Baptistry (169).
+- The interior of this shape contains repeated decorative/figure-like motifs along the inside edge (graphic silhouettes), suggesting ornamental railing panels or a patterned guard.
+- The note **“OPEN TO BELOW”** indicates this is an opening/void bordered by the angled guard.
+
+## 8) Other annotations and symbols
+- Small green circular markers appear at several jambs/edges (likely indicating hardware, devices, or coordination points; not defined within the provided legend strip beyond general symbol context).
+- A label **“FEC”** appears near the lower-left portion of the quadrant (adjacent to the laundry/support area), likely a coordination note/device label (exact meaning not defined in the provided legend).
+
+## 9) Spatial relationships / circulation (descriptive)
+- The **Sisters’ shower rooms (171, 172)** sit to the left of the central suite and connect via interior partitions toward the **Baptistry Vestibule – Sisters (170)** and **Baptistry Dressing – Sisters (173)**.
+- **Baptistry Dressing – Sisters (173)** is the central hub space, with sinks/counter on its right side and connections downward toward **Baptistry Restroom – Sisters (174)**.
+- The suite is immediately adjacent on the right to the **Baptistry (169)** area, separated by a wall line and revision-clouded edge, with the large **open-to-below** octagonal guarded opening further to the right.
+
+## 10) Title block / sheet info visibility (in this region)
+- No full title block is visible in this top-right quadrant region.
+- No full legend strip is visible here (legend context provided by user is applied to interpret tag types, “SIM/TYP/FRR” conventions, etc.).

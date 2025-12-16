@@ -1,0 +1,196 @@
+Here is the comprehensive, grid-level knowledge base for the **TempleTest_Add1** architectural drawing.
+
+### **GRID SYSTEM**
+*   **Orientation:** Plan North is Up.
+*   **Vertical Grid Lines (West to East):** I, H, G, F, E, D.5, C, B.
+    *   *Spacing:* I-H (11'-8"), H-G (27'-0"), G-F (23'-7"), F-E (23'-2 1/2"), E-D.5 (17'-0 1/2").
+*   **Horizontal Grid Lines (North to South):** 8, 7, 6, 5, 4.5.
+    *   *Note:* Grid 8 represents the Northern exterior face; Grid 4.5 represents the Southern entry face.
+
+---
+
+### **ROOMS & SPACES (Inventory & Grid Location)**
+
+#### **Zone 1: Entry & Waiting (South / Grids 4.5 - 6)**
+*   **ENTRY VESTIBULE [100]:**
+    *   *Grid:* H-G / 4.5-5
+    *   *Type:* Circulation / Entry
+    *   *Adjacencies:* Exterior (South), First Aid [152] (West), Entry [101] (East), Non-Patron Waiting [102] (North).
+*   **FIRST AID CLOSET [152]:**
+    *   *Grid:* H / 4.5-5
+    *   *Type:* Support
+    *   *Adjacencies:* Accessed via Entry Vestibule [100].
+*   **ENTRY [101]:**
+    *   *Grid:* G-F / 4.5-5
+    *   *Type:* Circulation
+    *   *Adjacencies:* Entry Vestibule [100] (West), Patron Waiting [114] (East).
+*   **NON-PATRON WAITING [102]:**
+    *   *Grid:* G-F / 5
+    *   *Type:* Assembly
+    *   *Adjacencies:* Entry Vestibule [100] (South), Shoe & Coat [103] (East).
+*   **SHOE & COAT [103]:**
+    *   *Grid:* F / 5
+    *   *Type:* Support / Millwork
+    *   *Adjacencies:* Non-Patron Waiting [102] (West), Vestibule [104] (North).
+*   **PATRON WAITING [114]:**
+    *   *Grid:* C-B / 4.5-5
+    *   *Type:* Assembly
+    *   *Adjacencies:* Entry [101] (West), Vestibule Clothing [179] (North).
+
+#### **Zone 2: Support & Transition (Middle / Grids 5 - 7)**
+*   **VESTIBULE [104]:**
+    *   *Grid:* F / 5.5
+    *   *Type:* Circulation
+    *   *Adjacencies:* Shoe & Coat [103] (South), Restroom [105] (North).
+*   **RESTROOM [105]:**
+    *   *Grid:* F / 6
+    *   *Type:* Sanitary
+    *   *Adjacencies:* Vestibule [104] (South), Equipment [177] (East).
+*   **VEIL STORAGE [176]:**
+    *   *Grid:* G / 6-7
+    *   *Type:* Storage
+    *   *Adjacencies:* Exterior (West), Laundry [175] (North).
+*   **EQUIPMENT [177]:**
+    *   *Grid:* C / 6
+    *   *Type:* Utility
+    *   *Adjacencies:* Restroom [105] (West), Clothing Issue [178] (South).
+*   **CLOTHING ISSUE [178]:**
+    *   *Grid:* C / 5-6
+    *   *Type:* Service / Millwork
+    *   *Adjacencies:* Equipment [177] (North), Vestibule [179] (East).
+*   **VESTIBULE - CLOTHING [179]:**
+    *   *Grid:* C-B / 5
+    *   *Type:* Circulation
+    *   *Adjacencies:* Clothing Issue [178] (West), Patron Waiting [114] (South), Corridor [180] (East).
+
+#### **Zone 3: Baptistry Complex (North / Grids 7 - 8)**
+*   **LAUNDRY [175]:**
+    *   *Grid:* G-F / 7-8
+    *   *Type:* Service
+    *   *Adjacencies:* Veil Storage [176] (South), Baptistry Restroom [174] (East).
+*   **BAPTISTRY RESTROOM - SISTERS [174]:**
+    *   *Grid:* F / 7
+    *   *Type:* Sanitary
+    *   *Adjacencies:* Laundry [175] (West), Dressing [173] (East).
+*   **BAPTISTRY SHOWER - SISTERS [171 & 172]:**
+    *   *Grid:* F / 8
+    *   *Type:* Sanitary
+    *   *Adjacencies:* Dressing [173] (East).
+*   **BAPTISTRY DRESSING - SISTERS [173]:**
+    *   *Grid:* F-E / 7-8
+    *   *Type:* Changing Room
+    *   *Adjacencies:* Showers (West), Vestibule [170] (East).
+*   **BAPTISTRY VESTIBULE - SISTERS [170]:**
+    *   *Grid:* E-D.5 / 8
+    *   *Type:* Circulation
+    *   *Adjacencies:* Dressing [173] (West), Baptistry [169] (South/East).
+*   **BAPTISTRY [169]:**
+    *   *Grid:* D.5 / 7-8
+    *   *Type:* Ordinance / Assembly
+    *   *Feature:* "OPEN TO BELOW" (Font).
+*   **CORRIDOR - BAPTISTRY [180]:**
+    *   *Grid:* B / 5-6
+    *   *Type:* Circulation
+    *   *Adjacencies:* Vestibule [179] (West), Storage [161B] (East), Confirmation [162] (North).
+*   **CONFIRMATION [162]:**
+    *   *Grid:* B / 6
+    *   *Type:* Ordinance
+    *   *Adjacencies:* Corridor [180] (South).
+*   **STORAGE [161B]:**
+    *   *Grid:* B / 5
+    *   *Type:* Storage
+    *   *Adjacencies:* Corridor [180] (West).
+
+---
+
+### **DOORS (Inventory & Grid Location)**
+
+*   **Exterior Entry:** Double Doors @ Grid G/4.5 (Main Entrance).
+*   **D-100 (Interior):** Double Doors @ Grid G/5 (Vestibule 100 to Waiting 102).
+*   **D-152:** Single Door @ Grid H/5 (Vestibule 100 to First Aid).
+*   **D-102:** Single Door @ Grid F/5 (Waiting 102 to Vestibule 104).
+*   **D-105:** Single Door @ Grid F/5.5 (Vestibule 104 to Restroom 105).
+*   **D-176:** Single Door @ Grid G/6 (Veil Storage).
+*   **D-178:** Single Door @ Grid C/5.5 (Clothing Issue to Vestibule 179).
+*   **D-179A:** Double Doors @ Grid C/5 (Vestibule 179 to Patron Waiting 114).
+*   **D-179B:** Double Doors @ Grid B/5 (Vestibule 179 to Corridor 180).
+*   **D-179C:** Single Door @ Grid B/5 (Corridor 180 to Storage 161B).
+*   **D-163A:** Single Door @ Grid B/6 (Corridor 180 Northbound).
+*   **D-162:** Single Door @ Grid B/6 (Corridor 180 to Confirmation 162).
+*   **D-173A:** Single Door @ Grid F/7 (Dressing 173 to Restroom Corridor).
+*   **D-173B:** Single Door @ Grid E/7.5 (Vestibule 170 to Dressing 173).
+*   **D-170:** Double Doors @ Grid E/8 (Vestibule 170 to Baptistry).
+*   **Shower Doors:** Two doors @ Grid F/8 (Keynote [4] Phenolic).
+
+---
+
+### **WINDOWS & GLAZING**
+
+*   **North Curtain Wall:** Continuous glazing along Grid 8 (Laundry to Baptistry Vestibule).
+*   **West Exterior Windows:**
+    *   Recessed niches/windows at Grid G (Veil Storage).
+    *   Window Tag **SF01** at Grid G/5 (Non-Patron Waiting).
+*   **Entry Glazing:** Storefront system at Grid G/4.5 (Main Entry).
+
+---
+
+### **ANNOTATIONS & SYMBOLS**
+
+*   **Keynote [1] (Auto Door):** Located at Main Entry Doors (Grid G/4.5) and Vestibule Doors (Grid G/5).
+*   **Keynote [2] (Knoxbox):**
+    *   Exterior location: Grid G/4.5 (West of Entry).
+    *   Interior location: Grid F/7 (Near Restroom 174 - likely device location).
+*   **Keynote [3] (Floor Drain):**
+    *   Grid E/8 (Baptistry Vestibule).
+    *   Grid F/7.5 (Dressing Room).
+*   **Keynote [4] (Phenolic Door):** Grid F/8 (Shower Stalls).
+*   **Revision Clouds:**
+    *   **Cloud F:** Grid F/8 (Surrounding Showers 171/172).
+    *   **Cloud B:** Grid E/7 (Wall between Dressing 173 and Baptistry 169).
+*   **Matchline:** Vertical dashed line at far right (East of Grid B), labeled "MATCHLINE, SEE: 1/A00-00".
+*   **Fire Extinguisher Cabinets (FEC):**
+    *   Grid G/7.5 (Laundry 175).
+    *   Grid F/5 (Shoe & Coat 103).
+    *   Grid B/5.5 (Corridor 180).
+
+---
+
+### **SPATIAL RELATIONSHIPS & FLOW**
+
+1.  **Patron Arrival:** Patrons enter from the South (Grid 4.5) into Vestibule [100].
+2.  **Check-in/Waiting:** Flow moves North to Non-Patron Waiting [102] or East to Entry [101] and Patron Waiting [114].
+3.  **Service Sequence:** From Waiting [102/114], patrons move to Shoe & Coat [103] or Clothing Issue [178].
+4.  **Ordinance Preparation:** From Clothing Issue, flow moves North through Vestibule [179] to the Baptistry Dressing area [173] (Sisters).
+5.  **Ordinance:** From Dressing [173], patrons enter the Baptistry Vestibule [170] and proceed to the Baptistry [169] (Grid D.5).
+6.  **Support:** Laundry [175] and Storage [176] are tucked on the West perimeter (Grid G), separated from public flow.
+
+---
+
+### **SUMMARY COUNTS**
+*   **Total Rooms:** ~19 labeled spaces.
+*   **Total Exterior Doors:** 1 set (Main Entry).
+*   **Total Interior Doors:** ~16 doors/sets identified.
+*   **Revision Areas:** 2 major clouds (Showers, Baptistry Wall).
+
+---
+
+### **REASONING AND SOURCES**
+
+**Synthesis Process:**
+1.  **Grid Establishment:** I combined the vertical grid labels from Q1 (I, H, G), Q2 (F, E, D.5), and Q4 (C, B) to create the West-to-East sequence. I combined horizontal labels from Q2 (8, 7) and Q4 (6, 5, 4.5) for the North-to-South sequence.
+2.  **Room Mapping:**
+    *   *Q1 & Q3:* Provided the West perimeter rooms (Veil Storage, Entry Complex). Verified against the full image to align Veil Storage (176) vertically above the Entry (100).
+    *   *Q2:* Provided the detailed "Sisters" wing layout. The "Open to Below" label confirmed the Baptistry location.
+    *   *Q4:* Provided the South-East support spaces. The adjacency of Vestibule 179 to Clothing Issue 178 was derived from the door swings shown in the full image.
+3.  **Annotation Resolution:**
+    *   *Conflict:* Keynote [2] (Knoxbox) appeared in two locations. Q3 caption placed it exterior; Q2 caption placed it interior. *Resolution:* I listed both locations in the synthesis, noting one is likely the exterior access box and the other an interior tie-in or device, as per the legend "To be tied into security system."
+    *   *Conflict:* Grid continuity. The gap between Grid D.5 and C suggests a corridor or wall thickness not fully labeled, but the Matchline confirms the building extends East.
+4.  **Verification:**
+    *   Verified the "Phenolic Shower Door" (Note 4) against the legend and the specific arrows in Q2 pointing to the shower stalls.
+    *   Verified the "Linear Floor Drain" (Note 3) locations by looking for the bubble [3] in the full image within the dashed floor patterns in Q2.
+
+**Confidence Assessment:**
+*   **Grid Coordinates:** High confidence.
+*   **Room Names/Numbers:** High confidence (clearly legible).
+*   **Door Swings:** High confidence (standard symbols used).
+*   **Wall Types:** Medium confidence (visual distinction between thick exterior/chase walls and thin partitions is clear, but specific assembly types rely on tags like "P1x" which are small).

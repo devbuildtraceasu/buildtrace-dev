@@ -1,0 +1,123 @@
+**Architectural Floor Plan: Level 01 Area A - TempleTest_Add1**
+
+### **GRID SYSTEM**
+*   **Orientation:** Plan North is Up.
+*   **Vertical Grid Lines (West to East):**
+    *   **Grid I:** Far West boundary.
+    *   **Grid H:** 11'-8" East of Grid I.
+    *   **Grid G:** 27'-0" East of Grid H (Primary West exterior wall).
+    *   **Grid F:** 23'-7" East of Grid G.
+    *   **Grid E:** 23'-2 1/2" East of Grid F.
+    *   **Grid D.5:** 17'-0 1/2" East of Grid E (Baptistry center).
+    *   **Grid C:** East of D.5 (Service corridor wall).
+    *   **Grid B:** Far East boundary (Matchline).
+*   **Horizontal Grid Lines (North to South):**
+    *   **Grid 8:** Northern exterior face (Baptistry/Laundry).
+    *   **Grid 7:** Internal structural line (Baptistry/Restrooms).
+    *   **Grid 6:** Mid-building structural line.
+    *   **Grid 5:** Internal partition line.
+    *   **Grid 4.5:** Southern exterior face (Main Entry).
+
+---
+
+### **SPACES AND ROOMS (Inventory & Grid Location)**
+
+#### **Zone 1: Entry & Waiting (South / Grids 4.5 - 6)**
+*   **ENTRY VESTIBULE [100]** (Grid H-G / 4.5-5): Main entrance circulation space. Connects to First Aid and Entry 101.
+*   **FIRST AID CLOSET [152]** (Grid H / 4.5-5): Small support room accessed via Vestibule 100.
+*   **ENTRY [101]** (Grid G-F / 4.5-5): Secondary circulation zone connecting Vestibule 100 to Patron Waiting.
+*   **NON-PATRON WAITING [102]** (Grid G-F / 5): Assembly space north of the entry. Features window SF01.
+*   **SHOE & COAT [103]** (Grid F / 5): Support area with millwork/shelving for patron storage.
+*   **PATRON WAITING [114]** (Grid C-B / 4.5-5): Large waiting area on the east side. Connects to Vestibule 179.
+
+#### **Zone 2: Support & Transition (Middle / Grids 5 - 7)**
+*   **VESTIBULE [104]** (Grid F / 5.5): Transition space between Shoe & Coat and Restroom.
+*   **RESTROOM [105]** (Grid F / 6): Single-user sanitary facility.
+*   **VEIL STORAGE [176]** (Grid G / 6-7): Storage room on the west perimeter.
+*   **EQUIPMENT [177]** (Grid C / 6): Utility room containing shelving units.
+*   **CLOTHING ISSUE [178]** (Grid C / 5-6): Service area featuring extensive millwork counters and storage racks.
+*   **VESTIBULE - CLOTHING [179]** (Grid C-B / 5): Circulation hub connecting Clothing Issue, Patron Waiting, and the North Corridor.
+
+#### **Zone 3: Baptistry Complex (North / Grids 7 - 8)**
+*   **LAUNDRY [175]** (Grid G-F / 7-8): Service room with sink and equipment space.
+*   **BAPTISTRY RESTROOM - SISTERS [174]** (Grid F / 7): Sanitary facility serving the dressing area.
+*   **BAPTISTRY SHOWER - SISTERS [171 & 172]** (Grid F / 8): Two shower stalls located within **Revision Cloud F**.
+*   **BAPTISTRY DRESSING - SISTERS [173]** (Grid F-E / 7-8): Changing area connecting showers and the Baptistry Vestibule.
+*   **BAPTISTRY VESTIBULE - SISTERS [170]** (Grid E-D.5 / 8): Transition space leading into the Baptistry.
+*   **BAPTISTRY [169]** (Grid D.5 / 7-8): Main ordinance room featuring a font ("OPEN TO BELOW"). Wall shared with Dressing 173 is marked with **Revision Cloud B**.
+*   **CORRIDOR - BAPTISTRY [180]** (Grid B / 5-6): North-South hallway connecting the southern zones to the Baptistry area.
+*   **CONFIRMATION [162]** (Grid B / 6): Small ordinance room off Corridor 180.
+*   **STORAGE [161B]** (Grid B / 5): Storage closet adjacent to Corridor 180.
+
+---
+
+### **DOORS AND OPENINGS**
+
+*   **Exterior Entry:** Double Doors with Auto-Operator (Keynote [1]) @ Grid G/4.5.
+*   **D-100:** Double Doors (Auto-Op Keynote [1]) @ Grid G/5 (Vestibule 100 to Waiting 102).
+*   **D-152:** Single Door @ Grid H/5 (Vestibule 100 to First Aid).
+*   **D-102:** Single Door @ Grid F/5 (Waiting 102 to Vestibule 104).
+*   **D-105:** Single Door @ Grid F/5.5 (Vestibule 104 to Restroom 105).
+*   **D-176:** Single Door @ Grid G/6 (Veil Storage).
+*   **D-178:** Single Door @ Grid C/5.5 (Clothing Issue to Vestibule 179).
+*   **D-179A:** Double Doors @ Grid C/5 (Vestibule 179 to Patron Waiting 114).
+*   **D-179B:** Double Doors @ Grid B/5 (Vestibule 179 to Corridor 180).
+*   **D-179C:** Single Door @ Grid B/5 (Corridor 180 to Storage 161B).
+*   **D-163A:** Single Door @ Grid B/6 (Corridor 180 Northbound).
+*   **D-162:** Single Door @ Grid B/6 (Corridor 180 to Confirmation 162).
+*   **D-173A:** Single Door @ Grid F/7 (Dressing 173 to Restroom Corridor).
+*   **D-173B:** Single Door @ Grid E/7.5 (Vestibule 170 to Dressing 173).
+*   **D-170:** Double Doors @ Grid E/8 (Vestibule 170 to Baptistry).
+*   **Shower Doors:** Two Phenolic Doors (Keynote [4]) @ Grid F/8.
+
+---
+
+### **WINDOWS AND GLAZING**
+
+*   **North Curtain Wall:** Continuous glazing along Grid 8 (Laundry 175 to Baptistry Vestibule 170).
+*   **West Exterior Niches:** Recessed architectural features at Grid G (Veil Storage).
+*   **Window SF01:** Single window @ Grid G/5 (Non-Patron Waiting).
+*   **Entry Storefront:** Glazing system flanking the main entry doors @ Grid G/4.5.
+
+---
+
+### **ANNOTATIONS AND NOTES**
+
+*   **Keynote [1]:** "TOUCHLESS ACTUATOR CONTROL FOR DOOR AUTO OPERATOR." Locations: Main Entry (Grid G/4.5) and Vestibule Interior Doors (Grid G/5).
+*   **Keynote [2]:** "KNOXBOX - FINAL LOCATION TBD. TO BE TIED INTO SECURITY SYSTEM." Locations: Exterior West Wall (Grid G/4.5) and Interior Hallway (Grid F/7).
+*   **Keynote [3]:** "LINEAR FLOOR DRAIN." Locations: Baptistry Vestibule (Grid E/8) and Dressing Room (Grid F/7.5).
+*   **Keynote [4]:** "PHENOLIC SHOWER DOOR." Location: Showers 171/172 (Grid F/8).
+*   **Revision Cloud F:** Encompasses Showers 171/172 (Grid F/8).
+*   **Revision Cloud B:** Encompasses wall between Dressing 173 and Baptistry 169 (Grid E/7).
+*   **Matchline:** "MATCHLINE, SEE: 1/A00-00" located at the far East edge (Grid B).
+*   **Fire Extinguisher Cabinets (FEC):** Located in Laundry 175, Shoe & Coat 103, and Corridor 180.
+
+---
+
+### **SPATIAL RELATIONSHIPS & FLOW**
+
+1.  **Arrival:** Patrons enter South (Grid 4.5) into Vestibule 100.
+2.  **Distribution:** Traffic splits North to Non-Patron Waiting 102 or East to Patron Waiting 114.
+3.  **Service:** Patrons proceed to Shoe & Coat 103 or Clothing Issue 178 for preparation.
+4.  **Ordinance Flow:** From Clothing Issue, the path leads North through Vestibule 179, into the Corridor 180, and then into the Baptistry Dressing 173.
+5.  **Ordinance Execution:** The sequence terminates in the Baptistry 169 (Grid D.5) via Vestibule 170.
+
+---
+
+### **SUMMARY**
+This drawing, **Sheet A20-05 (Level 01 Area A)**, details the western portion of a temple floor plan. It features a distinct separation between the public entry/waiting zones in the South (Grids 4.5-6) and the sacred Baptistry complex in the North (Grids 7-8). The plan includes 19 labeled spaces, extensive millwork in support areas (Clothing Issue/Shoe & Coat), and specific revision clouds indicating recent changes to the shower and baptistry wall configurations.
+
+---
+
+### **REASONING AND SOURCE CITATIONS**
+
+*   **Synthesis Process:** I integrated the vertical grid labels (I, H, G, F, E, D.5, C, B) and horizontal labels (8, 7, 6, 5, 4.5) from the quadrant analysis to create a unified coordinate system.
+*   **Room Verification:**
+    *   *Source:* Quadrant 2 provided the detailed "Sisters" wing layout (Rooms 170-175).
+    *   *Source:* Quadrant 4 provided the "Clothing Issue" and "Patron Waiting" layout.
+    *   *Verification:* I cross-referenced the "Open to Below" note in the full image to confirm the Baptistry's location at Grid D.5.
+*   **Annotation Resolution:**
+    *   *Conflict:* Keynote [2] appeared in two spots.
+    *   *Resolution:* The legend states "Final Location TBD," explaining why it appears both on the exterior (likely physical box) and interior (likely security tie-in). Both locations were listed for completeness.
+*   **Grid Precision:** Every room and door was assigned a coordinate based on the intersection of the grid lines visible in the full image.
+*   **Confidence:** High. The text labels for rooms, keynotes, and grids are legible, and the standard architectural symbols (door swings, glazing) are clear.

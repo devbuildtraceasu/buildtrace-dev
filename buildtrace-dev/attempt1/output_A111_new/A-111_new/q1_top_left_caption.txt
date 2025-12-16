@@ -1,0 +1,70 @@
+**Architectural Drawing Analysis: A-111_new, Page 1 (Top-Left Quadrant)**
+
+**Region Overview**
+This region depicts the northwest corner of the site, showing the intersection of **De Garmo Ave** (North) and **Pendleton Street** (West). It includes the "Front Yard" setback, the corner of the "MRF Building," and a portion of the "(E) Recycling Building (Modified)" containing the "Bale Storage" area.
+
+**Grid System & Dimensions**
+*   **Horizontal Grids (Top):** Grids 0 through 12 run West to East.
+    *   **Grid 0:** Face of Finish Staff Building.
+    *   **Grid 1:** Face of CMU North Backyard.
+    *   **Grid 2:** Face of Girt North Backyard.
+    *   **Grid 2.1:** Face of Flange Endwall Columns.
+    *   **Grid 3 - 12:** Spaced at 25'-0" intervals (except Grid 2.1-3 is 25'-3").
+    *   **Overall Dimension:** "MRF BUILDING 273'-0"".
+*   **Vertical Grids (Left):** Grids A through M run North to South.
+    *   **Grid A:** Face of CMU.
+    *   **Grid B:** Face of Girt MRF Bldg.
+    *   **Grid C:** Face of Flange MRF Bldg.
+    *   **Grid D:** Ridge MRF Bldg.
+    *   **Grid E, F, G, J, K, M:** Continue southward.
+    *   **Dimensions:** "MRF BUILDING 23'-11"" (Grid B-C), "25'-0"" (Grid C-C.1), "58'-6"" (Grid C.3.6-D).
+
+**Site & Civil Features**
+*   **Streets:**
+    *   **DE GARMO AVE:** Runs horizontally along the top.
+    *   **PENDLETON STREET:** Runs vertically along the left.
+*   **Property Line:** Indicated by a heavy dash-dot line with arrows along the street frontages.
+    *   Dimension: "4'-5 3/4" TO PROPERTY CORNER" at the intersection of Grids 2.1/C.
+    *   Dimension: "884.5" along Pendleton Street (Grid F).
+*   **Front Yard (Grids 3-10, C-E):**
+    *   **Keynote 3 (Diamond):** "SUBTERRANEAN STORMWATER DETENTION CHAMBER PER GEOTECHNICAL ENGINEER RECOMMENDATIONS, SEE CIVIL DRAWINGS." Located at Grid 5-6/C.2.
+    *   **Civil Note:** "10,444 CF STORAGE CHAMBERS DRYWELL AND DESILTING MANHOLE, SEE CIVIL PLANS" with dashed footprint outline at Grid 5-7/C.2.
+    *   **Detail Callout:** Circle "1 / A-113" (Enlarged Plan) located at Grid 7/D.
+    *   **Detail Callout:** Circle "1 / G-108" located at Grid 8/C.1.
+
+**Building: (E) Recycling Building (Modified) / Bale Storage**
+*   **Location:** Bottom right quadrant of this image (Grids 5-12, E-F).
+*   **Room Label:** "103-BALE STORAGE" (Grid 9-11/F).
+*   **Keynote 7 (Diamond):** "ELECTRICAL SWITCHGEAR" located at Grid 7/E (exterior).
+*   **Keynote E2 (Diamond 'E'):** "IN-GROUND CONVEYOR" located at Grid 9/F.
+*   **PEMB Keynotes (Square Symbols):**
+    *   **P1:** "RIGID FRAME COLUMN" at Grid 6/F and Grid 10/F.
+    *   **P6:** "CROSS BRACING" at Grid 7/F.
+*   **Wall Sections (WS) & Details:**
+    *   **WS-5 / A-304:** At Grid 5/F.
+    *   **WS-19 / A-310:** At Grid 7/F.
+    *   **WS-20 / A-310:** At Grid 8/E.
+    *   **WS-21 / A-310:** At Grid 8/D.2.
+    *   **WS-6 / A-304:** At Grid 9/F.
+    *   **Detail N / A-20...:** Door/Opening detail at Grid 7/F.
+*   **Stairs:** Exterior metal stair symbol located at Grid 6/F.
+*   **Annotation:** "(E) CONC. BUNKER" visible at the very bottom edge (Grid 9/J).
+
+**Building: Staff Building / North Backyard (Left Edge)**
+*   **Location:** Grids 0-2, M-K.
+*   **Detail Callout:** Circle "1 / A-406B" at Grid 1/M.
+*   **Keynote 7 (Diamond):** "ELECTRICAL SWITCHGEAR" (Partial view near Grid 0/M).
+
+**Section Cuts**
+*   **A / A-302:** Top margin at Grid 4.
+*   **B / A-302:** Top margin at Grid 7.
+*   **1 / A-301:** Left margin at Grid C.3.6.
+
+**Annotations & Text**
+*   **"OPENINGS"**: Vertical text along Grid 2.1 (Pendleton St side).
+*   **"TO PROPERTY CORNER"**: Dimension note at Grid 2.1/C.
+*   **"FACE OF CMU"**: Label for Grid A and Grid 1.
+*   **"FACE OF GIRT"**: Label for Grid B and Grid 2.
+*   **"FACE OF FLANGE"**: Label for Grid C.
+*   **"RIDGE"**: Label for Grid D.
+*   **Revision Note:** Red circle "D5.1" near Grid 6/F.

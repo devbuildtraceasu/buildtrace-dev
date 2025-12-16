@@ -1,0 +1,397 @@
+## GRID SYSTEM
+**Overall structure (from full sheet + quadrant evidence):**
+- **Vertical gridlines (letters)** run **north–south** and are labeled along the **top border** with circular bubbles. Observed (left→right across sheet):
+  - **I, H, G** (clearly in Q1, continuing into the plan field)
+  - **F, E, D.5** (clearly in Q2 at top of plan)
+  - (Other lettered grids may exist further right/left, but are not visible/legible in the provided view.)
+- **Horizontal gridlines (numbers)** run **east–west** and are labeled along the **right edge** with circular bubbles:
+  - **8** and **7** (visible in Q2, aligned to dashed horizontal gridlines crossing the Baptistry).
+  - Additional horizontal gridlines likely exist above/below but are not legible in the provided view.
+
+**Key inter-grid dimensions captured:**
+- **Between I–H:** 11'-8" (Q1)
+- **Between H–G:** 27'-0" (Q1)
+- **Top string near Baptistry suite:**
+  - segment near F: 23'-7"
+  - **F–E:** 23'-2 1/2"
+  - **E–D.5:** 17'-0 1/2" (Q2)
+- **Vertical bay dimensions at left margin:**
+  - 17'-11"
+  - 23'-11 1/2" (Q1)
+- **Left-side vertical dimension near entry zone:** 18'-5" (Q3)
+
+**Interpretation note (grid-level precision):**
+- Because only **some** horizontal grids (7/8) and **some** vertical letter grids (I through D.5) are visible, grid “coordinates” below are expressed as **spans between known gridlines** and **approximate placement relative to grid intersections** (e.g., “between E–F and near Grid 7”). Where the sheet does not show a grid crossing, I flag it as **grid not visible in crop**.
+
+---
+
+## ROOMS/SPACES (with grid locations)
+(Each item: **Room / No. — Grid location — Type — Adjacencies**)
+
+### Entry / Waiting / Support (mostly Q3 + full-image context)
+1. **ENTRY VESTIBULE (100)**  
+   - **Grid location:** South portion of plan; **between vertical grids ~G–F (approx.)** and **south of horizontal grid 7 (grid numbers not shown here)**. Bottom border shows **letters D/E** but without readable bubble crossings in this view (Q3).  
+   - **Type:** Public entry vestibule.  
+   - **Adjacencies:** Connects to **ENTRY (101)**, **NON-PATRON WAITING (102)**, and near **FIRST AID CLOSET (152)** (Q3).
+
+2. **ENTRY (101)** *(partial in Q3)*  
+   - **Grid location:** Immediately east/right of Vestibule 100; same caveat—**horizontal grid IDs not shown** in this zone (Q3).  
+   - **Type:** Entry/lobby area.  
+   - **Adjacencies:** To **ENTRY VESTIBULE (100)** and toward interior circulation (Q3).
+
+3. **NON-PATRON WAITING (102)** *(partial in Q3; larger in full image)*  
+   - **Grid location:** West/left half of plan massing; roughly **between grids H–G** and extending toward **F** (estimated by alignment to the top grids seen on full sheet).  
+   - **Type:** Waiting area.  
+   - **Adjacencies:** Near **ENTRY VESTIBULE (100)**; adjacent to **SHOE & COAT (103)** and **VESTIBULE (104)** at right edge of Q3 (partial labels) (Q3).
+
+4. **FIRST AID CLOSET (152)**  
+   - **Grid location:** Adjacent to Vestibule 100; **south-central**. Grid letters/numbers not explicitly crossing this closet in the visible crop; approximate alignment places it **between G–F** vertically (Q3 + full image).  
+   - **Type:** Small support closet.  
+   - **Adjacencies:** Opens to vestibule/circulation between **100/101/102** (Q3).
+
+5. **SHOE & COAT (103)** *(partial at Q3 right edge)*  
+   - **Grid location:** East edge of Q3; grid not readable here.  
+   - **Type:** Storage/coat.  
+   - **Adjacencies:** Near **VESTIBULE (104)** and **RESTROOM (105)** (Q3).
+
+6. **VESTIBULE (104)** *(partial at Q3 right edge)*  
+   - **Grid location:** East edge of Q3; grid not readable here.  
+   - **Type:** Interior vestibule.  
+   - **Adjacencies:** Near **RESTROOM (105)**; part of the entry support cluster (Q3).
+
+7. **RESTROOM (105)** *(partial label visible in Q3)*  
+   - **Grid location:** Upper-right edge of Q3; grid not readable here.  
+   - **Type:** Restroom.  
+   - **Adjacencies:** Near **VESTIBULE (104)** (Q3).
+
+### Laundry / Baptistry Support Suite (Q2 + full image)
+8. **LAUNDRY (175)** *(partial in Q2; larger in full image)*  
+   - **Grid location:** **Between vertical grids F–G (approx.)** and **south of grid 8 / north of grid 7 zone** (Q2 + full image).  
+   - **Type:** Support/laundry.  
+   - **Adjacencies:** Near **BAPTISTRY RESTROOM – SISTERS (174)** and circulation spine leading to Baptistry (Q2).
+
+9. **BAPTISTRY VESTIBULE – SISTERS (170)**  
+   - **Grid location:** **Between vertical grids F–E**, near the **top of the suite**; horizontal grid markers not directly through the label, but the suite sits **adjacent to the Grid 8 line** region (Q2).  
+   - **Type:** Vestibule/transition.  
+   - **Adjacencies:** Connects to **DRESSING (173)** and toward **BAPTISTRY (169)** (Q2).
+
+10. **BAPTISTRY SHOWER – SISTERS (171)**  
+   - **Grid location:** Upper-left of suite; **west of Grid E**, near **Grid F** (Q2).  
+   - **Type:** Shower room.  
+   - **Adjacencies:** Near vestibule/dressing circulation (Q2).
+
+11. **BAPTISTRY SHOWER – SISTERS (172)**  
+   - **Grid location:** Below 171; **west of Grid E**, near **Grid F** (Q2).  
+   - **Type:** Shower room.  
+   - **Adjacencies:** Near dressing circulation (Q2).
+
+12. **BAPTISTRY DRESSING – SISTERS (173)**  
+   - **Grid location:** Center-left of Q2; generally **between F–E**, immediately west of the main corridor/spine leading to Baptistry (Q2).  
+   - **Type:** Dressing/support room.  
+   - **Adjacencies:** Adjacent to **Vestibule (170)**, **Restroom (174)**, showers **171/172**, and passage toward **BAPTISTRY (169)** (Q2).
+
+13. **BAPTISTRY RESTROOM – SISTERS (174)**  
+   - **Grid location:** Lower part of suite; **between F–E**, below Dressing 173 (Q2).  
+   - **Type:** Restroom.  
+   - **Adjacencies:** Off the dressing/circulation zone (Q2).
+
+### Baptistry + Vertical Opening (Q2)
+14. **BAPTISTRY (169)**  
+   - **Grid location:** Dominantly **between vertical grids E–D.5** and **between horizontal grids 8–7** (explicit in Q2).  
+   - **Type:** Main baptistry space.  
+   - **Adjacencies:** West to sisters’ support suite/passage; contains/abuts **OPEN TO BELOW** feature (Q2).
+
+15. **OPEN TO BELOW** *(octagonal feature within/at edge of Baptistry)*  
+   - **Grid location:** Within Baptistry; approximately **between E–D.5** and near the **Grid 7** line (Q2).  
+   - **Type:** Vertical opening/volume (octagonal).  
+   - **Adjacencies:** Within the Baptistry volume (Q2).
+
+### Clothing / Corridor / Storage / Confirmation (Q4 + Q1 edge)
+16. **EQUIPMENT (177)** *(partial at top edge of Q4)*  
+   - **Grid location:** North of Clothing Issue; grid not visible in Q4 crop; in full image this cluster sits **southwest of Baptistry suite**, roughly **between grids G–F** (approx.).  
+   - **Type:** Support/equipment room.  
+   - **Adjacencies:** Near **CLOTHING ISSUE (178)** (Q4).
+
+17. **CLOTHING ISSUE (178)**  
+   - **Grid location:** Central-lower portion of overall plan; in full image this room appears **south of Laundry 175** and **west of Corridor 180**, roughly **between grids G–F** (approx.; Q4 has no grid bubbles).  
+   - **Type:** Storage/issue area with rack rows.  
+   - **Adjacencies:** To **VESTIBULE CLOTHING (179)** (east), near **EQUIPMENT (177)** (north) (Q4).
+
+18. **VESTIBULE CLOTHING (179)**  
+   - **Grid location:** Immediately east of 178; approx. **between grids F–E** (inferred from proximity to Baptistry circulation spine in full image; Q4 lacks grid bubbles).  
+   - **Type:** Vestibule/transition.  
+   - **Adjacencies:** Between **Clothing Issue (178)** and **CORRIDOR – BAPTISTRY (180)** (Q4).
+
+19. **CORRIDOR – BAPTISTRY (180)**  
+   - **Grid location:** Vertical corridor spine in Q4; in full image aligns with circulation leading north to the sisters’ suite and east toward Baptistry; approx. **near Grid E line** (inference).  
+   - **Type:** Corridor.  
+   - **Adjacencies:** Connects **Vestibule Clothing (179)**, **Storage (161B)**, and continues toward larger open areas and the Baptistry suite (Q4).
+
+20. **STORAGE (161B)**  
+   - **Grid location:** East of Corridor 180; approx. **between E–D.5** (inferred by adjacency toward Confirmation/Baptistry side; Q4).  
+   - **Type:** Storage/support.  
+   - **Adjacencies:** Off Corridor 180; near **CONFIRMATION (162)** (Q4).
+
+21. **CONFIRMATION (162)**  
+   - **Grid location:** East/right of Storage 161B; approx. **near/between E–D.5** (inferred; Q4).  
+   - **Type:** Program room.  
+   - **Adjacencies:** Accessed from Storage/corridor zone (Q4).
+
+22. **PATRON WAITING (114)** *(partial in Q4)*  
+   - **Grid location:** Lower-left of Q4 crop; in full image this sits **south of the clothing corridor cluster**; grid not visible (Q4).  
+   - **Type:** Waiting area.  
+   - **Adjacencies:** Opens toward circulation (Q4).
+
+23. **VEIL STORAGE (176)** *(partial in Q1; likely part of same baptistry support cluster)*  
+   - **Grid location:** At far right edge of Q1; by full-image context this is **southwest of Baptistry suite**, likely **between grids G–F** (approx.).  
+   - **Type:** Storage room.  
+   - **Adjacencies:** Near corridor/support spaces; door swing partially seen (Q1).
+
+---
+
+## DOORS (with grid locations)
+Door **numbers** are generally **not legible** in the provided sheet image; door **positions** and **connectivity** are based on door swings and room boundaries. Locations are given relative to **known grids** where possible.
+
+### Entry zone (Q3)
+1. **Door D-100a (Vestibule exterior/interior leaf)**  
+   - **Grid position:** South edge of **ENTRY VESTIBULE 100**, approximate **between grids H–G** (inferred), grid intersection not visible (Q3).  
+   - **Type:** Single hinged (swing shown).  
+   - **Connects:** Vestibule 100 to adjacent entry/circulation.
+
+2. **Door D-152 (First Aid Closet door)**  
+   - **Grid position:** At boundary of **FIRST AID CLOSET 152** and vestibule/circulation; grid not visible (Q3).  
+   - **Type:** Single hinged.  
+   - **Connects:** Closet 152 ↔ Vestibule/Circulation near 100.
+
+3. **Door between NON-PATRON WAITING 102 and entry/corridor**  
+   - **Grid position:** At lower edge of room 102; grid not visible (Q3).  
+   - **Type:** Single hinged.  
+   - **Connects:** Waiting 102 ↔ adjacent entry/corridor.
+
+### Sisters’ baptistry suite (Q2)
+4. **Door D-170/173 (Vestibule 170 to Dressing 173)**  
+   - **Grid position:** **Between grids F–E**; near the north edge of Dressing 173 (Q2).  
+   - **Type:** Single hinged.  
+   - **Connects:** 170 ↔ 173.
+
+5. **Door D-174 (into Restroom 174)**  
+   - **Grid position:** **Between grids F–E**, at entry to 174 (Q2).  
+   - **Type:** Single hinged (swing appears into restroom).  
+   - **Connects:** Dressing/circulation ↔ Restroom 174.
+
+6. **Doors along passage between Dressing suite and Baptistry** (multiple)  
+   - **Grid position:** Near **Grid E** line; between **F–E** transitioning toward **E–D.5** (Q2).  
+   - **Type:** Single hinged.  
+   - **Connects:** Suite passage ↔ adjacent small rooms/alcoves and toward Baptistry side.
+
+### Clothing/corridor cluster (Q4)
+7. **Door D-178/179 (Clothing Issue to Vestibule Clothing)**  
+   - **Grid position:** Boundary between rooms 178 and 179; grid not visible (Q4).  
+   - **Type:** Single hinged.  
+   - **Connects:** 178 ↔ 179.
+
+8. **Door D-179/180 (Vestibule Clothing to Corridor Baptistry)**  
+   - **Grid position:** Boundary between 179 and 180; grid not visible (Q4).  
+   - **Type:** Single hinged.  
+   - **Connects:** 179 ↔ 180.
+
+9. **Door D-180/161B (Corridor to Storage 161B)**  
+   - **Grid position:** Right side of Corridor 180; grid not visible (Q4).  
+   - **Type:** Single hinged.  
+   - **Connects:** 180 ↔ 161B.
+
+10. **Door D-161B/162 (toward Confirmation 162)**  
+   - **Grid position:** At entry to Confirmation 162; grid not visible (Q4).  
+   - **Type:** Single hinged.  
+   - **Connects:** Storage/corridor zone ↔ 162.
+
+11. **Door D-179 south (Vestibule Clothing to larger open area south)**  
+   - **Grid position:** South end of room 179; grid not visible (Q4).  
+   - **Type:** Single hinged.  
+   - **Connects:** 179 ↔ open area/circulation south.
+
+### Veil Storage (Q1)
+12. **Door at VEIL STORAGE 176 (partial)**  
+   - **Grid position:** Far right edge of Q1; grid not readable at the door, but within the **G-grid vicinity** (Q1).  
+   - **Type:** Single hinged (partial swing).  
+   - **Connects:** 176 ↔ adjacent corridor/support zone.
+
+---
+
+## WINDOWS (with grid locations)
+- **No window tags or clearly identifiable window symbols** are legible in the quadrant crops (Q1–Q4), and the full sheet image does not provide readable window designations in this view.
+- Therefore: **Windows = not determinable from provided image/crops** (cannot inventory reliably without guessing).
+
+---
+
+## ANNOTATIONS (with grid locations)
+### Grid/dimension annotations
+1. **Top grid spacing dimensions**
+   - **11'-8"** between **I–H** (top, Q1)
+   - **27'-0"** between **H–G** (top, Q1)
+   - **23'-7"**, **23'-2 1/2" (F–E)**, **17'-0 1/2" (E–D.5)** (top, Q2)
+
+2. **Vertical bay dimensions (left)**
+   - **17'-11"** and **23'-11 1/2"** (Q1, left side)
+   - **18'-5"** (Q3, far left)
+
+### Detail/section/callout references (by sheet)
+(Locations are given by grid vicinity where possible.)
+
+**A42-03 (Q1):**
+3. **1/A42-03** – center-right of Q1, pointing toward building footprint at far right (near **Grid G** area).
+4. **2/A42-03** – upper-right of Q1, also pointing toward right-edge footprint (near **Grid G**).
+
+**A71-01 (Q1 + Q2):**
+5. **3/A71-01** – lower-left/left-center of Q1 (between **I–H** field).
+6. **1/A71-01** – lower center-right of Q1.
+7. **4/A71-01** – upper center of Q2 (near **Grid E/F**, above vestibule zone).
+8. **2/A71-01** – top-right of Q2 (near **Grid D.5/E**, over long horizontal assembly).
+
+**A60-20 (Q2):**
+9. **4/A60-20** – upper-right of Baptistry zone (near **E–D.5**, close to Grid 8).
+10. **5/A60-20** – mid-right of Baptistry area (near octagon).
+
+**A76-05 / A76-06 (Q2):**
+11. **1/A76-05** – center-right near “BAPTISTRY 169”.
+12. **2/A76-05** – lower-right near octagon and clouded area.
+13. **11/A76-06** – upper-middle Baptistry zone.
+
+**A05-32 (Q2 + Q3 + Q4):**
+14. **2/A05-32** (diamond) – upper-center-right Q2, at edge between vestibule/corridor and Baptistry open area.
+15. **6/A05-32** – near ENTRY 101 (Q3).
+16. **4/AG05-32** – near upper-right edge of Q4 (as read in crop).
+
+**A60-11 / A60-12 / A61-01 (Q2):**
+17. Multiple tags clustered in showers/dressing/restroom area referencing **A60-11**, **A60-12**, **A61-01** (exact view numbers partly illegible). Location: **between F–E**, west of Baptistry.
+
+**A71-02 / A72-02 (Q3):**
+18. **4/A71-02** – upper-left of Q3 near dashed overhead outline.
+19. **2/A71-02** – lower-left Q3 near dashed square/circular element.
+20. **3/A71-02** – lower-left/middle Q3 near vestibule.
+21. **5/A72-02** – upper-middle/left Q3 exterior wall corner.
+
+**A60-15 / A60-30 / A30-10 / A75-30 (Q3):**
+22. **A60-15** (diamond) – lower-left Q3 near dashed square/circular element; also referenced near vestibule/closet via multi-part marker.
+23. **A60-30** (diamond) – near ENTRY 101 (Q3).
+24. **3/A30-10** (circle) – near ENTRY 101 (Q3).
+25. **3/A75-30** and **2/A75-30** – extreme lower-right edge of Q3.
+
+**A60-7 / A60-21 / A60-74 / A60-30 / A60-50 / A75-05 (Q4):**
+26. **12/A60-7** (circle) – within Clothing Issue 178.
+27. Multiple diamonds referencing **A60-7** (multi-number stacks) – around Clothing Issue 178 / Vestibule 179 / Corridor 180.
+28. Diamond referencing **A60-21** – within/near Storage 161B.
+29. Diamond referencing **A60-74** – within Confirmation 162 area.
+30. Diamond referencing **A60-30** – near Patron Waiting 114.
+31. Diamond referencing **A60-50** – near bottom-right.
+32. **9/A75-05 (SIM)** – near Patron Waiting area.
+
+### Life safety / equipment tags
+33. **FEC** (Fire Extinguisher Cabinet)  
+   - One near Laundry edge in Q2 (lower-left edge of that quadrant).  
+   - One on right side of Corridor 180 in Q4.
+
+### Revision markup (clouds + delta letters)
+34. **Revision clouds** (red) – major clusters:
+   - Q2: along passage east of dressing suite; around lower-right hatched assembly; along bottom of left-side suite.
+   - Q3: around First Aid Closet 152 / adjacent wall and another upper-right cloud near 104/105 boundary.
+   - Q4: around Corridor 180 and Storage 161B; additional right/bottom cloud leader.
+35. **Revision delta markers** (red triangles):
+   - Q2: **F**, **K**, **B** (noted at dressing/passage and lower-right cloud).
+   - Q3: **K** near First Aid cloud.
+   - Q4: **K** (multiple) in corridor; **J** near lower-right with leader.
+
+### Sheet title / scale (Q3 + full image)
+36. **“FLOOR PLAN - LEVEL 01 AREA A”** – bottom of sheet (Q3).
+37. **“1/A20-05”** – view reference at title (Q3).
+38. **Scale:** **1/4" = 1'-0"** (Q3).
+39. Legend strip note: **“SEE A01-20 FOR ALL GENERAL NOTES, ABBREVIATIONS, AND SYMBOLS”** (from provided legend context; located in right-side legend area on full sheet).
+
+---
+
+## SPATIAL RELATIONSHIPS
+**Major adjacency/circulation chains (deduplicated across quadrants):**
+1. **Public entry flow (south/west portion):**  
+   Exterior/approach → **ENTRY VESTIBULE 100** → **ENTRY 101** → **NON-PATRON WAITING 102** and further to interior support spaces (Q3 + full image).
+
+2. **Baptistry support suite to Baptistry (north/east portion):**  
+   **Showers 171/172** + **Vestibule 170** → **Dressing 173** → **Restroom 174** and passage/stair zone → **BAPTISTRY 169** (Q2).
+
+3. **Clothing/service flow (central/south-east portion):**  
+   **CLOTHING ISSUE 178** → **VESTIBULE CLOTHING 179** → **CORRIDOR – BAPTISTRY 180** → **STORAGE 161B** → **CONFIRMATION 162** (Q4).  
+   Corridor also continues south to additional open/circulation area (Q4).
+
+4. **Laundry adjacency:**  
+   **LAUNDRY 175** sits near the sisters’ suite and adjacent circulation linking toward Clothing/Baptistry corridor systems (Q2 + full image).
+
+5. **Vertical volume relationship:**  
+   **OPEN TO BELOW** octagon is embedded in/adjacent to **BAPTISTRY 169**, indicating a two-story/vertical connection at that location (Q2).
+
+---
+
+## SUMMARY COUNTS (from all quadrants, deduplicated)
+**Rooms/spaces identified (named/numbered): 23**
+- Entry/support: 100, 101, 102, 103, 104, 105, 152
+- Baptistry suite: 169, 170, 171, 172, 173, 174, 175
+- Clothing/corridor/support: 114, 161B, 162, 176, 177, 178, 179, 180
+- Feature: OPEN TO BELOW (not a room number but a labeled space feature)
+
+**Doors (distinct openings described): 12**  
+(door numbers not legible; counted by distinct described door locations across quadrants)
+
+**Windows: 0 identifiable** (not legible/tagged in provided image)
+
+**Annotations/callouts (distinct references listed): ~39**
+- Includes grid dimensions, title/scale, FEC tags, and the readable callout references enumerated above. (Many additional callouts exist but are too small to read precisely.)
+
+---
+
+## REASONING AND SOURCES
+**How synthesis was performed (critical method):**
+- I treated each quadrant caption as a **high-confidence localized extraction**, then used the **full sheet image** to:
+  1) place each quadrant’s content into the overall plan,  
+  2) deduplicate repeated items (e.g., FEC appears in multiple areas), and  
+  3) convert “regional” locations into **grid-referenced spans** wherever grid bubbles/lines are visible (notably for the Baptistry zone between **E–D.5** and **7–8**, and the top-left field between **I–H–G**).
+
+### Information from Q1 (top-left)
+- Confirmed **vertical grids I, H, G** and their **dimension strings** (11'-8", 27'-0").
+- Captured **vertical dimensions** (17'-11", 23'-11 1/2").
+- Captured **callouts**: 1/A42-03, 2/A42-03, 3/A71-01, 1/A71-01.
+- Partial room/door evidence: **VEIL STORAGE 176** fragment and partial door swing.
+
+### Information from Q2 (top-right)
+- Primary grid-anchored program: **BAPTISTRY 169 between grids 7–8 and E–D.5**.
+- Sisters’ suite rooms **170–175** and their relationships.
+- Callouts: A71-01, A60-20, A76-05, A76-06, A05-32, plus A60-11/A60-12/A61-01 clusters.
+- Fixtures/clearances and major revision clouds/deltas (F, K, B).
+- FEC near Laundry edge.
+
+### Information from Q3 (bottom-left)
+- Entry cluster rooms: **100, 101, 102, 152**, plus partial **103/104/105**.
+- Plan title, view reference **1/A20-05**, and scale.
+- Callouts: A71-02, A72-02, A60-15, A60-30, A30-10, A75-30, A05-32.
+- Revision cloud with delta **K** around First Aid/vestibule area.
+
+### Information from Q4 (bottom-right)
+- Clothing/corridor/support cluster rooms: **178, 179, 180, 161B, 162**, plus partial **177** and **114**.
+- Multiple A60-series callouts, plus **9/A75-05 SIM**, and **FEC** in Corridor 180.
+- Revision clouds and delta markers **K** and **J**.
+
+### Full image verification (what was checked against the full drawing)
+- Verified that Q2’s grid system (**F/E/D.5** and **7/8**) is indeed the Baptistry zone and that the “OPEN TO BELOW” octagon sits within that bay.
+- Verified that Q3’s title/scale correspond to the sheet’s main plan view.
+- Verified that the right-side legend strip exists (supporting symbol interpretations), but room/door/window tags remain too small to reliably read door numbers.
+
+### Conflicts resolved
+- **Room “176”**: Q1 suggests “VEIL STORAGE 176” and shows “176” near a door swing. Q4 contains 177/178/179/180 cluster and does not contradict 176. I treated 176 as a **distinct storage room** adjacent to the clothing/baptistry circulation zone.
+- **Grid positioning for Q3/Q4 rooms**: Q3 and Q4 crops lack clear grid bubbles; therefore I did **not** fabricate grid coordinates. I provided **approximate** alignment only where the full image and nearby known grids make it reasonable, and flagged these as inferred.
+
+### Confidence assessment
+- **High confidence:**  
+  - Grid IDs and dimensions in Q1 and Q2; Baptistry (169) location between **E–D.5** and **7–8**; room names/numbers listed explicitly in quadrant captions.
+- **Medium confidence:**  
+  - Relative placement of Laundry/Clothing/Corridor cluster to nearby grids (inferred from full-image alignment without local grid bubbles).
+- **Low confidence / not determinable:**  
+  - **Door numbers**, **window inventory**, and exact grid intersections for Q3/Q4 doors/rooms due to illegible tags and missing grid bubbles in those crops.
+
+If you want true “Room X spans Grid A–B / 1–2” style coordinates for **all** rooms and doors, I’ll need either: (1) a higher-resolution export where grid bubbles are legible across the entire plan area, or (2) the adjacent sheet with the complete grid extents visible.

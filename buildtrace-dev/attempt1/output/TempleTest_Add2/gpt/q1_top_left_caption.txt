@@ -1,0 +1,55 @@
+Top-left quadrant of **TempleTest_Add2, Page 1** showing primarily **structural/grid and overall plan setup** with a small portion of a room at the far right edge.
+
+## Grid / layout control (dominant content)
+- **Vertical grid bubbles at top** (left-to-right across the upper edge of this region):
+  - **Grid “I”** (left side of region)
+  - **Grid “H”** (near top-center)
+  - **Grid “G”** (upper right area)
+- **Horizontal spacing dimensioning along the top** between vertical grids:
+  - **11'-8"** shown between **Grid I and Grid H** (dimension text centered between the two gridlines).
+  - **27'-0"** shown between **Grid H and Grid G**.
+- **Dashed gridline extensions** run downward from the grid bubbles (light dashed/centerline style), indicating grid lines continuing through the plan.
+- **Large dashed rectangular/orthogonal layout lines** traverse the region (likely major reference lines / extents), crossing the gridlines and forming an open, mostly blank field in this quadrant.
+
+## Vertical overall dimensions at left
+- Along the **left side** is a **vertical dimension string** with two stacked dimensions (dimension line with tick marks at ends):
+  - Upper segment labeled **17'-11"**.
+  - Lower segment labeled **23'-11 1/2"**.
+  - These appear to reference distances between two dashed horizontal reference lines (one near mid-height and one lower).
+
+## View / detail / section callouts visible
+- **Section/detail reference marker** near the right-middle of the region:
+  - Circular tag with triangular pointers (section-style marker) labeled **“2 / A42-03”** (view number **2**, sheet **A42-03**). The arrows indicate the direction of view.
+- **Another section/detail reference marker** closer to the right-lower area:
+  - Labeled **“1 / A42-03”**.
+- **Callout bubble near bottom-center/left**:
+  - Circular callout labeled **“3 / A71-01”** (view/detail 3 on sheet A71-01).
+- **Callout bubble near bottom-center/right**:
+  - Circular callout labeled **“1 / A71-01”**.
+
+## Partial room/plan content at far right edge (cropped)
+Only the **left portion** of a room and adjacent wall assembly is visible on the **far right**:
+- **Room label** (partially readable due to crop):
+  - **“VEIL STORAGE”** with a room number **“176”** beneath it (stacked text).
+- **Door** into/within the Veil Storage area:
+  - A **swing door** is visible with a curved swing arc; the door is labeled **“176”** near the swing (likely door ID or related tag as shown in the crop).
+  - Door appears to swing inward relative to the visible room boundary (hinge side at the wall; arc shown into the room side that is visible).
+- **Wall construction** at the room’s left boundary:
+  - Thickened wall lines indicate a **partition/wall edge** with a vertical run.
+- **Fixtures / elements** (partially visible):
+  - A **toilet/water closet symbol** is visible just left of the cropped room interior boundary (only partially in frame), suggesting an adjacent restroom or plumbing area immediately to the left of/adjacent to the Veil Storage zone.
+- **Red revision/cloud markup**:
+  - A **red revision cloud** traces along the upper portion of the visible room/wall corner at the top-right edge of the crop, indicating a revised area boundary.
+- **Hatched millwork/solid elements**:
+  - Rectangular blocks with diagonal hatch (consistent with the legend’s **MILLWORK** hatch) appear along the upper interior edge of the cropped room; only portions are visible.
+
+## What is NOT present / not visible in this region
+- No title block is visible in this quadrant.
+- No full room tags other than the partial **VEIL STORAGE 176** are fully readable.
+- No window tags or explicit window callouts are visible in this crop.
+- No matchline text is visible here.
+- No keynote text is directly shown in this quadrant (only view/detail references).
+
+## Spatial relationships / orientation (retrieval cues)
+- The region is dominated by **open plan space** defined by **Grid I–H–G** with top spacing **11'-8"** (I–H) and **27'-0"** (H–G), and left-side vertical extents **17'-11"** and **23'-11 1/2"** between dashed horizontal reference lines.
+- Architectural content is concentrated at the **far right edge**, where **VEIL STORAGE 176** and its **swing door** are partially shown, adjacent to a plumbing fixture zone and encompassed by a **revision cloud** at the top-right.

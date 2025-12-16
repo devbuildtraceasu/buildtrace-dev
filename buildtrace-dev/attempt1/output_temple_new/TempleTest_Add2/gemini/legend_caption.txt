@@ -1,0 +1,98 @@
+Based on the provided architectural drawing, here is the comprehensive **LEGEND/SYMBOL KEY** extraction.
+
+### **FLOOR PLAN GRAPHIC LEGEND**
+*Note: See sheet A01-20 for all general notes, abbreviations, and symbols not listed here.*
+
+#### **Tags & Annotations**
+*   **ROOM TAG**
+    *   **Symbol:** Text with a capsule/oval shape below it.
+    *   **Top Text:** ROOM NAME
+    *   **Bottom Text (in oval):** ROOM NUMBER (e.g., 000)
+*   **WALL TAG**
+    *   **Symbol:** Diamond shape with a leader line.
+    *   **Text Inside:** WALL TYPE (e.g., P1x)
+    *   **Text Outside:** VARIANT (IF APPLICABLE)
+*   **DOOR TAG**
+    *   **Symbol:** Hexagon (or Circle) attached to door opening.
+    *   **Text Inside:** DOOR NUMBER (e.g., 000)
+*   **SECTION TAG**
+    *   **Symbol:** Circle with a filled triangle arrow pointing toward the view.
+    *   **Top Half:** VIEW NUMBER (e.g., 1)
+    *   **Bottom Half:** SHEET NUMBER (e.g., A00-00)
+    *   **Text Outside:** "SIM" indicates SIMILAR (IF APPLICABLE)
+*   **EXTERIOR ELEVATION TAG**
+    *   **Symbol:** Circle with a filled external triangle pointing toward the elevation.
+    *   **Top Half:** VIEW NUMBER (e.g., 1)
+    *   **Bottom Half:** SHEET NUMBER (e.g., A00-00)
+    *   **Text Outside:** "SIM" indicates SIMILAR (IF APPLICABLE)
+*   **INTERIOR ELEVATION TAG**
+    *   **Symbol:** Circle with arrows pointing in view directions (up to 4).
+    *   **Center Text:** SHEET NUMBER (e.g., A00-00)
+    *   **Arrow Text:** VIEW NUMBER (TYP.) (e.g., 1, 2, 3, 4)
+*   **EXTERIOR WALL SECTION TAG**
+    *   **Symbol:** Circle with a solid black tail/pointer.
+    *   **Top Half:** VIEW NUMBER (e.g., 1)
+    *   **Bottom Half:** SHEET NUMBER (e.g., A00-00)
+    *   **Text Outside:** "SIM" indicates SIMILAR (IF APPLICABLE)
+*   **CALLOUT TAGS**
+    *   **Symbol:** Rounded rectangle (bubble) connected to a specific area.
+    *   **Top Half:** VIEW NUMBER (e.g., 1)
+    *   **Bottom Half:** SHEET NUMBER (e.g., A00-00)
+    *   **Text Outside:** "SIM" indicates SIMILAR (IF APPLICABLE)
+*   **MATCHLINE TAGS**
+    *   **Symbol:** Long-dash / short-dash line.
+    *   **Label:** MATCHLINE, SEE: [View]/[Sheet]
+    *   **Top Text:** VIEW NUMBER (ABOVE MATCHLINE) / SHEET NUMBER (ABOVE MATCHLINE)
+    *   **Bottom Text:** SHEET NUMBER (BELOW MATCHLINE) / VIEW NUMBER (BELOW MATCHLINE)
+
+#### **Clearances (Dashed Lines)**
+*   **WHEELCHAIR CLEARANCE**
+    *   **Symbol:** Dashed Circle
+    *   **Dimension:** Ø 5'-0" (Diameter)
+*   **SINK & URINAL CLEARANCE**
+    *   **Symbol:** Dashed Rectangle
+    *   **Dimensions:** 2'-6" Width x 4'-0" Depth
+*   **TOILET CLEARANCE**
+    *   **Symbol:** Dashed Rectangle
+    *   **Dimensions:** 5'-0" Width x 4'-8" Depth
+*   **DOOR CLEARANCE**
+    *   **Symbol:** Dashed lines indicating maneuvering clearance around a door swing.
+    *   **Dimensions shown:**
+        *   1'-6" (Latch side clearance)
+        *   5'-0" (Depth perpendicular to door)
+        *   4'-0" (Width parallel to door)
+        *   1'-0" (Hinge side approach)
+
+#### **Fire Ratings & Patterns**
+*   **1HR FRR (Fire Resistance Rating)**
+    *   **Symbol:** Line with single solid black blocks spaced at intervals.
+*   **2HR FRR (Fire Resistance Rating)**
+    *   **Symbol:** Line with double solid black blocks spaced at intervals.
+*   **MILLWORK (Hatch Pattern)**
+    *   **Symbol:** Diagonal hatching (close spaced lines).
+
+---
+
+### **SHEET NOTE SCHEDULE**
+*Note: Items in this schedule are clouded in red on the drawing, indicating a revision or area of focus.*
+
+| Symbol / # | Description |
+| :--- | :--- |
+| **[1]** | **TOUCHLESS ACTUATOR CONTROL FOR DOOR AUTO OPERATOR.** BASIS OF DESIGN: LCN 8310-810S. REFER TO INTERIOR ELEVATIONS. |
+| **[2]** | **KNOXBOX - FINAL LOCATION TBD.** TO BE TIED INTO SECURITY SYSTEM. |
+| **[3]** | **LINEAR FLOOR DRAIN.** SEE PLUMBING DRAWINGS FOR MORE INFO. |
+| **[4]** | **PHENOLIC SHOWER DOOR** |
+| **[5]** | **PHENOLIC ADA BENCH** |
+
+---
+
+### **GENERAL NOTES - DEFINITIONS**
+*Relevant definitions extracted from the General Notes section:*
+
+*   **"CLEAR" or "CLR":** Dimensions marked with this shall be maintained and allow for thickness of all wall finishes.
+*   **WALL TYPES:** See AG04 series sheets.
+*   **DIMENSIONS:** All dimensions are from the face of stud, unless otherwise noted.
+
+### **OTHER SYMBOLS ON PAGE**
+*   **NORTH ARROW:** Circle with a crosshair and a bold arrow pointing to "TRUE NORTH".
+*   **KEY PLAN:** Schematic outline of the building indicating "AREA A" (the shaded region represented on this sheet).

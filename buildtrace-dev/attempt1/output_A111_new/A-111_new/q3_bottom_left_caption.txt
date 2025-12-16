@@ -1,0 +1,97 @@
+**Architectural Drawing Caption: A-111_new, Page 1 (Bottom-Left Quadrant)**
+
+**Region Overview**
+This region depicts the bottom-left corner of the "North Backyard Building" plan view, specifically focusing on the western structural wall (Grid 2), the attached "Staff Restroom" (Room 105), and the exterior site conditions to the west. The drawing includes a comprehensive grid system, structural steel annotations (PEMB), door schedules, and site paving details.
+
+**Grid System & Dimensions**
+*   **Horizontal Grids (X-Axis):** Grids 0 through 12 run left-to-right along the bottom.
+    *   **Grid 0:** Face of Finish Staff Building.
+    *   **Grid 1:** Face of CMU North Backyard.
+    *   **Grid 2:** Face of Girt North Backyard.
+    *   **Grid 2.1:** Face of Flange Endwall Columns.
+    *   **Grid 3 - 12:** Standard structural bays.
+    *   **Dimensions:**
+        *   Grid 0 to 1: 24'-0"
+        *   Grid 1 to 2: 25'-3"
+        *   Grid 2 to 3: 25'-0"
+        *   Grid 3 to 4: 25'-0"
+        *   Grid 4 to 5: 25'-0"
+        *   Grid 5 to 6: 25'-0"
+        *   Grid 6 to 7: 25'-0"
+        *   Grid 7 to 8: 25'-0"
+        *   Grid 8 to 9: 25'-0"
+        *   Grid 9 to 10: 25'-0"
+        *   Grid 10 to 11: 25'-0"
+        *   Grid 11 to 12: 24'-0"
+    *   **Overall Horizontal Dimension:** 309'-3 3/8" (North Backyard Building).
+    *   **Offset:** 4'-5 1/8" from Grid 0 to Property Corner.
+
+*   **Vertical Grids (Y-Axis):** Grids M.1 through GG run top-to-bottom along the left margin.
+    *   **Grid O:** Face of Flange North Backyard.
+    *   **Grid V:** Ridge North Backyard.
+    *   **Grid Z:** Face of Flange North Backyard.
+    *   **Grid AA:** Face of Girt North Backyard.
+    *   **Grid BB:** Face of Flange North Backyard.
+    *   **Grid CC:** Face of Girt North Backyard.
+    *   **Grid DD:** Face of Fire Panel North Backyard.
+    *   **Grid FF:** Face of Girt Backyard.
+    *   **Grid GG:** Face of Fire Panel Backyard.
+    *   **Vertical Dimensions (Segmented):**
+        *   Grid M.1 to O: 11'-4"
+        *   Grid O to O.3: 44'-0"
+        *   Grid O.3 to O.4: 23'-0"
+        *   Grid O.4 to O.5: 25'-0"
+        *   Grid O.5 to O.6: 24'-10 1/2"
+        *   Grid O.6 to V: 25'-1 1/2"
+        *   Grid V to V.1: 20'-0"
+        *   Grid V.1 to V.2: 34'-0"
+        *   Grid V.2 to AA: 26'-0"
+        *   Grid AA to DD: 14'-3 1/2"
+    *   **Overall Vertical Dimension:** 309'-9 5/8" (North Backyard Building).
+
+**Rooms & Spaces**
+*   **Room 105 - STAFF RESTROOM:**
+    *   **Location:** External block attached to the main building west wall, spanning roughly Grid O.4 to V vertically and Grid 1 to 2 horizontally.
+    *   **Access:** Door D5 (Swing door) located on the north wall of the restroom block. Annotation: "40' / 24' R.O." (Rough Opening).
+    *   **Interior:** Contains a toilet and sink.
+    *   **Elevation:** "FINISH FLOOR 4'-0"".
+    *   **Keynote 2:** "MAN DOOR - REFER TO DOOR SCHEDULE" points to the door connecting the restroom to the main building interior (near Grid 2/O.5).
+    *   **Section Cut:** 1/A-406 cuts horizontally through the restroom.
+    *   **Wall Section:** WS-4/A-304 indicates the wall construction.
+    *   **Keynote 5:** "RECYCLING ROOM PER LAMC 12.21A19" (Located in the main building space adjacent to the restroom, Grid 2-3 / O.4).
+    *   **Keynote 6:** "GENSET & FIREPUMP ROOM" (Located in the main building space adjacent to the restroom, Grid 2-3 / O.6).
+
+**Doors & Openings (Main Building Wall - Grid 2)**
+*   **Door D2:** Large overhead/roll-up door located at Grid 2 / V.2.
+    *   **Annotation:** "30' / 24'" (Width/Height).
+    *   **Wall Section:** WS-2/A-303.
+*   **Door D1:** Overhead/roll-up door located at Grid 2 / DD.
+    *   **Annotation:** "12' / 14'" (Width/Height).
+    *   **Wall Section:** WS-1/A-303.
+
+**Structural Elements & Symbols (PEMB)**
+*   **P2 (Square Symbol):** End Wall Column. Located at Grid 2 intersections (e.g., Grid 2/O).
+*   **P7 (Square Symbol):** Carrier Beam / Jack Beam. Located at Grid 2/O.3.
+*   **P6 (Square Symbol):** Cross Bracing. Visible in bays between Grid 2-3 and 3-4 along the Grid DD line, and near Grid O.
+*   **P4 (Square Symbol):** 2-Hour Fire-Rated Metal Composite Wall Panel. Indicated along the southern wall (Grid DD/EE).
+*   **Wall Sections:**
+    *   **WS-18/A-309:** Located at Grid 4 / EE.
+    *   **WS-3/A-303:** Located at Grid 2 / V.
+
+**Exterior & Site Annotations**
+*   **Keynote 4 (Diamond):** "NEW CONCRETE PAVING, 12" THICK". Points to the exterior area west of Grid 2.
+*   **Keynote E5 (Diamond 'E'):** "EXISTING CONCRETE PAVING, 12" THICK". Points to the area north of the building (top right).
+*   **Keynote E2 (Diamond 'E'):** "IN-GROUND CONVEYOR". Points to the top right corner.
+*   **Spot Elevations:** 883.9 and 883.7 located near the Staff Restroom exterior. Note: "ELEVATIONS SEE CIVIL".
+*   **North Arrow:** Circle with "N" and "A-201" located at Grid 0.4 / Left Margin.
+*   **Section Cuts:**
+    *   **2/A-301:** Section looking North (Left margin).
+    *   **3/A-301:** Detail cut at Grid Z / Left Margin.
+    *   **A/A-302:** Building Section looking West (Bottom margin, Grid 4).
+    *   **B/A-302:** Building Section looking West (Bottom margin, Grid 7).
+    *   **1/A-401:** Detail cut (Top margin).
+
+**Visible Text & Notes**
+*   "TO PROP. CRNR" (To Property Corner) dimension line at bottom.
+*   "BUILDING GRID", "BUILDINGS", "OVERALL", "OPENINGS", "BUILDING GRID", "BACKYARD", "OVERALL" labels identifying dimension strings.
+*   "FACE OF FINISH STAFF BUILDING", "FACE OF CMU NORTH BACKYARD", "FACE OF GIRT NORTH BACKYARD", "FACE OF FLANGE ENDWALL COLUMNS" labels identifying grid lines 0, 1, 2, 2.1.
