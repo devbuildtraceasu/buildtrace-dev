@@ -1,0 +1,86 @@
+Human Summary:
+Summary Updated:
+Key Notes:
+Added Keynotes 
+6.Genset & Fire Pump room (Shifted from Item 9), 
+7. Electrical Switchgear, 
+8.1-Ton Overhead Crane (Dimensions V.I.F), 
+9.2-Ton Overhead Crane (Dimensions V.I.F) 
+10.4160 V Transformer, See Electrical Drawings.
+Removed Keynotes 
+6.Emergency Generator Enclosure, 
+7. Electrical Switch Boards, 
+8. Location of BMP Downspouts, See Civil Drawings 
+9.Fire Pump Room (Shifted to Item 6)
+General Notes
+Removed General Notes
+2) ALL DOWNSPOUTS TO DRAIN TO PROPOSED BMPs, SEE CIVIL DRAWINGS
+
+3) THE CONSTRUCTION SHALL NOT RESTRICT A FIVE-FOOT CLEAR AND UNOBSTRUCTED ACCESS TO ANY WATER OR POWER DISTRIBUTION FACILITIES (POWER POLES, PULL-BOXES,TRANSFORMERS, VAULTS, PUMPS, VALVES, METERS, APPURTENANCES, ETC.) OR TO THE LOCATION OF THE HOOK-UP. THE CONSTRUCTION SHALL NOT BE WITHIN TEN FEET OF ANY POWER LINES-WHETHER OR NOT THE LINES ARE LOCATED ON THE PROPERTY. FAILURE TO COMPLY MAY CAUSE CONSTRUCTION DELAYS AND/OR ADDITIONAL EXPENSES.
+
+4) AN APPROVED SEISMIC GAS SHUTOFF VALVE WILL BE INSTALLED ON THE FUEL GAS LINE ON THE DOWNSTREAM SIDE OF THE UTILITY METER AND BE RIGIDLY CONNECTED TO THE EXTERIOR OF THE BUILDING OR STRUCTURE CONTAINING THE FUEL GAS PIPING. (PER ORDINANCE 170,158) (INCLUDES COMMERCIAL ADDITIONS AND TI WORK OVER $10,000.) SEPARATE PLUMBING PERMIT IS REQUIRED.
+
+5) PROVIDE ULTRA-LOW FLUSH WATER CLOSETS FOR ALL NEW CONSTRUCTION. EXISTING SHOWER HEADS AND TOILETS MUST BE ADAPTED FOR LOW WATER CONSUMPTION.
+
+6) A COPY OF THE EVALUATION REPORT AND/OR CONDITIONS OF LISTING SHALL BE MADE AVAILABLE AT THE JOB SITE.
+
+Means of Egress Notes:
+Added Means of Egress Notes List
+15) THE CONSTRUCTION SHALL NOT RESTRICT A FIVE-FOOT CLEAR AND UNOBSTRUCTED ACCESS TO ANY WATER OR POWER DISTRIBUTION FACILITIES(POWER POLES, PULL-BOXES, TRANSFORMERS, VAULTS, PUMPS, VALVES, METERS, APPURTENANCES, ETC.) OR TO THE LOCATION OF THE HOOKUP. THE CONSTRUCTION SHALL NOT BE WITHIN TEN FEET OF ANY POWER LINESWHETHER OR NOT THE LINES ARE LOCATED ON THE PROPERTY. FAILURE TO COMPLY MAY CAUSE CONSTRUCTION DELAYS AND/OR ADDITIONAL EXPENSES.
+16) AN APPROVED SEISMIC FGAS SHUTOFF VALVE WILL BE INSTALLED ON THE FUEL GAS LINE ON THE DOWNSTREAM SIDE OF THE UTILITY METER AND BE RIGIDLY CONNECTED TO THE EXTERIOR OF THE BUILDING OR STRUCTURE CONTAINING THE FUEL GAS PIPING. (PER ORDINANCE 170,158) (INCLUDES COMMERCIAL ADDITIONS AND TI WORK OVER $10,000.) SEPARATE PLUMBING PERMIT IS
+REQUIRED.
+17) PROVIDE ULTRA-LOW FLUSH WATER CLOSETS FOR ALL NEW CONSTRUCTION. EXISTING SHOWER HEADS AND TOILETS MUST BE ADAPTED FOR LOW WATER CONSUMPTION.
+
+Building First Floor Plan Sketch Updated List:
+Grid Dimensions from Grid 1 to 0 increased 23’-1” to 24’-0” at Overall & Building Grid.
+Grid Dimension from Grid 13 to 0  increased 272’-1” to 273’-0” at MRF Building.
+Grid Dimension from Grid 0 to Property Corner Reduced 5’-43/4” to 4’-53/4”.
+Grid Line Shifted the Grid A-Face of CMU, Grid B-Face of Girt – MRF Building and Grid C-Face of Flange – MRF Building.
+Grid line Dimension from Grid C,1 to Grid C Reduced 26’-0” to 25’-0”. 
+Grid line Dimension increased 558’-5½” to 580’-95/8” from Grid A to GG at Overall.
+Grid line Dimension reduced 310’-4½” to 309’-95/8” from Grid H to GG at North backyard.
+Grid line Dimension reduced 308’-6½” to 307’-115/8” from Grid E to GG at South backyard.
+Grid line Dimensions reduced 31’-67/8” to 8’-81/8” from Grid A0 to Property Corner.
+Removed (E) Conc. Office and Maint. Building.
+Storage chambers Added at Front Yard.
+Changed in Detail WS-8/A-305.
+Schedule of Opening D9 Shifted and size changed
+Removed Pervious / impervious paving annotations
+Dimensions Removed at Grid 13, 14 and 14.1
+Altered Detail WS-5/A-304.
+101. MRF Building Area Extended, wall lines of all P1, P6, P7, 1, 2 & E4 Shifted.
+Schedule of Opening D22 Removed.
+CMU wall and Metal Panel Added at 103.Bale Storage.
+Removed Chamber 1 at 101.MRF 
+Added 2 nos of Item 8 – 1 Ton Overhead Crane (Dimensions V.I.F) at Recycling Equipment, MRF Building.
+Grid line Dimension Reduced 24’-1½” to 24’-0” from Grid 36 to 37 at Overall & Building Grid.
+Grid line Dimension Reduced 134’-2½” to 134’-1” from Grid 31 to 37 at MRF Building.
+Grid line Dimensions Reduced 31’-83/8” to 8’-95/8” from Grid A37 to Property Corner.
+Ramp Added to CAT Pads at 102. Backyard (South Side).
+Added 1 nos of Item 9 – 2 Ton Overhead Crane (Dimensions V.I.F) at Recycling Equipment, Backyard (South Side).
+106 – Staff Break room shifted outside of the South Backyard and Detail Added 1/A-405.
+Backyard Building Storage Chamber orientation & Area Changed.
+Item 6 Emergency Generator Enclosures and Item 7 Electrical Switch Boards are removed at Front Yard.
+North Backyard building Rest rooms changed to Staff restroom, Notification 105 and Detail Added 1/A-406.
+North Backyard Building Chamber 2 Removed.
+Text Indicated 103-Fire Pump Room, 105-Rest room and 104-Genset & Electrical.
+Item – 6 Mechanical Ventilation Equipment Removed.
+Staircase Added in Between Grid E6 & E7 and Detail Added 1/A-107.
+Section Detail Added – 3/A-407 and Elevation Detail Added – 3/SK-017 and Notification mentioned.
+Wall Section Detail Added – WS-22.
+Schedule of Opening D-20 Shifted in between the Grid No DD11 & DD12
+Changed in Detail 12/A-502 to 10/A-502 and Changed Notification 12/A-502 to 10/A-502.
+Item – 8 Wood Grinder and Conveyor Removed.
+Item – 9 Electrical room Removed.
+Shifted Detail 001/A-501, 9/A-502 & 002/A-501 in between Grid No E3 and E4.
+Schedule of opening D5 tag changed into D5.1 and width changed 20’ to 24’.
+Schedule of Opening D22 along with Wall removed and Added Staircase & Detail added 1/A-407.
+P3 Metal wall panel added on Grid – E.
+Detail 10/A-503 Changed.
+Column base plate Missing on Grid U15.
+Removed Item 1 New Steel Push Wall 16’ Tall.
+Removed Item 3 Chamber 2 : 65’ x 24.43’ (5347 C.F)
+Schedule of opening D2 width changed 20’ to 24’.
+Removed Detail 1/A-406.
+Schedule of opening D3 tag changed into D5 and width changed 20’ to 24’.
+Finished Floor Height + 4’-0” Notified at 103.Fire Pump room and 105 Rest Room

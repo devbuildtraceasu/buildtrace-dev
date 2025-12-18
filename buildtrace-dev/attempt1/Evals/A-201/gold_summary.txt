@@ -1,0 +1,56 @@
+Human Summary:
+Legend updated:
+Removed 
+Solid wall panel 
+Metal Wall Panel 
+Louver/vent 
+CMU Wall.
+Added 
+BUTLERIB II METAL WALL PANELMETAL SALES METALLIC SILVER (K7)
+BUTLERIB II METAL WALL PANEL METAL SALES MISTIQUE PLUS (W31)
+2-HOUR FIRE-RATED PANEL MATCH METAL SALES METALLIC SILVER (K7)
+2-HOUR FIRE-RATED PANEL MATCH METAL SALES MISTIQUE PLUS (W31)
+GALV. SHEET METAL TRIM "ATHENS RED" PANTONE 185C
+POLYCARBONATE OR BUTLERIB II WALL LITE PANEL, SEE ENLARGED ELEVATIONS
+LOUVER/VENT
+CMU WALL
+
+Building Elevation Sketch Updated List:
+North Elevation / Pendelton Street Elevation
+Building Stretched - Grid A to E Dimensions increased 248’-1” to 271’-0” and Grid A to D Dimensions increased 148’-4½” to 171’-3½” & (Edge of Fire Panel - 43’-6½“ + 104’-10”) to 171’-3½”. 
+T.O. CMU Wall Height Reduced 11’-0” to 10’-0” at only the Length of 19’-10” (Dimensions Added).
+Eave Height Reduced 40’-0” to 36’-113/8” (Breakup Dimensions Added). 
+Added Detail 6A/A-502 and Notification tag at Grid A.
+Added Detail 11/A-505 & 3/A-503 and Added Notification tag.
+Added Detail 10/A-502 and Notification tag.
+Removed Downspouts Drain to BMPS and Removed Notification Arrow & Text.
+Added Typ.Gaurdrail.42” Above Adjacent Roof Surface, Shown & Mentioned in Roof Plan A-131.
+Added 2 HR Fire Rated Panel and Added Notification Arrow & Text.
+Changed in Detail 10/A-502 to 8/A-502 and Changed Notification 10/A-502 to 8/A-502. 
+Removed Detail 10/A-502.
+Fire Rated Panel & Metal Panel added .
+Galv.Sheet Metal Trim “Athens Red” Pantone 185C Fixed above the Parapet (Existing Building) at the Level of 28’-2” From 27’-0” (Height of 1’-2”).
+Staircase fixed & Connected with Roof Ramp.
+D13 Opening shifted and demarked as D7 Dimensions Changed.
+Additional Openings Added D8.2, D8.1 & D8.
+CMU Wall length & Height size changed Refer Detail
+Removed Wall Section Detail WS-3/A-303.
+Details added Ref.3B/A-502, 9/A-502, 3B/A-502, 2/A-502, N/A-203, 2/A-511, 3/A-502, 11/A-505, 3/A-407, 2/502, 3B/A-502, 9/A-502, 9/A-502, 3B/A-502, 9/A-502 & 2/A-502.
+Opening Detail Changed 10/A-502 to 7/A-502 at D2 
+Detail Changed 1/A-207 to 1/A-208.
+Details added 8/A-505, 8/A-505 & 1/A-503.
+Detail Changed 3/A-207 to 3/A-208 .
+Details Added 1/A-503 & 11/A-503.
+Added Pump room & Rest Room.
+East Elevation / De Garmo Ave Elevation
+CMU Wall Height noted up & down.
+Louver Detail to be checked and Detail Changed 5/A-207 to 5/A-208.
+Wall Cladding changed from Acrylic wall Panel to Polycarbonate wall Panel.
+Knock out Panel Removed.
+Opening D18 to D11, D15 to D9 and D7 to D5.1 changed and Added D22.
+South Elevation / Randall Street Elevation
+Detail Changed 1/A-208 to 1/A-209 and 3/A-208 to 3/A-209.
+Opening D23 Shifted.
+West Elevation
+Gutter Detail Changed 2/A-208 to 2/A-209 and 2/A-207 to 2/A-208.
+Dimensions to be checked with ref code.

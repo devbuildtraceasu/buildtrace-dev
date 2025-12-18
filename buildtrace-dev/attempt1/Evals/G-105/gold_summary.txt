@@ -1,0 +1,80 @@
+Human Updated:
+Building Area Summary:
+Building Area Summary Notified  7  .
+MRF Building updated Building Area Summary from 61,789 S.F to 67,390 S.F
+Backyard Processing Building Updated Building Area Summary from 181,321 S.F to 183,945 S.F
+Updated Building Area Summary was Removed (N) Bale Storage Façade : 686 S.F
+Updated Building Area Summary (N) Staff Break Room Reduced From 2,624 S.F to 1,735 S.F
+Removed   5   Notification at Total Proposed Building Area.
+MRF/Backyard/Bale Storage Building Code Summary:
+Updated USE Group Mentioned & Changed as F-1 to S-1
+Updated Actual Building Area increased from 249,437 S.F to 257,718 S.F
+Staff Break Room and Restrooms Building Code Summary:
+Updated Actual Building Area Reduced from 3,049 S.F to 2,160 S.F
+Building Occupancy Calculation:
+Building Occupancy Calculation Notified  7  .
+MRF Building: Area increased 61,789 S.F to 67,390 S.F and Occupants also increased 124 to 134.
+Backyard Processing Building: Area increased 181,321 S.F to 183,945 S.F and Occupants also increased 363 to 366.
+(E) Bale Storage: Storage Area increased 6,327 S.F to 6,383 S.F. and Occupants also increased 19 to 21.
+Staff Facilities: Break Room Area Reduced 1,241 S.F to 1,060 S.F and Occupants also Reduced 83 to 71.
+Staff Facilities: Restrooms Area Reduced (Randall - 843 S.F + Pendleton - 825 S.F) to 425 S.F.
+Total Occupancy Load: Occupants increased 589 to 592.
+
+
+
+Parking Analysis:
+Use: 
+Recycling (Bale Storage) Area increased 6,327 S.F to 6,383 S.F and Revision Cloud removed in Spaces Req’D 13.
+Proposed warehouse (over 10,000 S.F) increased 233,110 S.F to 241,735 S.F and Spaces Req’D increased 47 to 49.
+Removed Fire pump room.
+Break Rooms/ Rest room Areas Reduced 2,360 S.F to 2,160 S.F and Spaces Req’D increased 4 to 5.
+Total Floor Area changed as Total Zoning Floor Area and Area Reduced 288,435 S.F to 283,278 S.F and 
+Notification changed   5   to    7  .
+Plumbing Fixture Count Calculation:
+Notification of Plumbing Fixture Count mentioned    7  .
+MRF + Backyard(Combined): Operations and Storage Area increased (MRF – 70,746 S.F + Backyard – 183,945 S.F) to 260,277 S.F and Occupants Combined (MRF – 14 + Backyard – 37) = 51.
+MRF + Backyard (Combined) Table updated: 
+USE	OCCUPANCY	MINIMUM PLUMBING FIXTURES PER 2016 CPC TABLE A
+		MEN	WOMEN
+S-1	51 Occupants
+26 Male
+26 Female	(0)	Urinals
+(1)	W.C
+(1)	Lavatories	
+(1)	W.C
+(1)	Lavatories
+		(1)	Drinking Fountain
+(1)	Sink
+
+Staff Break Rooms Changed Staff Facilities:  Staff Break Rooms Area increased 1,667 S.F to 1,735 S.F and Occupants increased 56 to 58.
+Staff Facilities Table updated:
+USE	OCCUPANCY	MINIMUM PLUMBING FIXTURES PER 2016 CPC TABLE A
+		MEN	WOMEN
+S-1	58 Occupants
+29 Male
+29 Female	(1)	Urinals
+(1)	W.C
+(1)	Lavatories	
+(2)	W.C
+(1)	Lavatories
+		(1)	Drinking Fountain
+(1)	Sink
+
+Total Fixtures Provided	Total Fixtures Required
+        (4) Urinals
+        (7) W.C
+        (7) Lavatories	       (1) Urinals
+       (5) W.C
+       (4) Lavatories
+(4)	Water Stations
+(2)	Sink	(2)	Drinking Fountain
+(2)	Sink
+Building Plan Sketch Updated:
+MRF Building Area increased and Shown in Revised Cloud.
+Staff Break Room and Restrooms Shifted to Building outside and Area reduced (Shown in Revised Cloud).
+(N) Bale Storage Façade removed.
+Added (N) Reinforcement Façade Area 742 S.F. (Hold for Future Permit).
+(N) Fire Pump/Rest Room Shifted and notified as Occupancy S-1.
+Backyard Building Area increased and Shown in Revised Cloud.
+Water inlet Pipe Direction indicated for (N) Fire Pump/Rest Room, MRF Building and Staff Break Room and Restrooms.
+Pendleton Street Width reduced.

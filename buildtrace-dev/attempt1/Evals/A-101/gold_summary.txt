@@ -1,0 +1,39 @@
+Human Summary:
+Summary Updated:
+Key Notes:
+Added Keynotes 
+11. Electrical Switchboards.
+14. Genset & Fire pump room.
+15. Overhead Crane.
+Removed Keynotes 
+4. Pervious Surface 
+6. Impervious Surface 
+11. Artist’s Studio (Future)
+14. Ventilation Equipment and Screening
+15. Location of BMP Downspouts, See Civil Drawings
+ 16. Fire Pump Room, Restrooms & Generator Yard.
+Building Area Summary:
+Area of MRF Building increased 61,789 S.F to 67,390 S.F
+Area of Backyard Processing Building increased 181,321 S.F to 183,945 S.F
+Area of Staff Facilities reduced 2,624 S.F to 1,735 S.F
+Area of Total Proposed Building Area increased 251,800 S.F to 259,136 S.F 
+Notes:
+Removed 4) TRASH ENCLOSURES MUST BE COVERED AND DRAIN RUNOFF AWAY FROM AREA. ALL TRASH BINS SHALL BE COVERED.
+Building Site Plan Sketch Updated List:
+Dimensions reduced 31’-67/8” to 8’-81/8” from Grid A0 to Property Corner.
+Dimensions reduced 31’-83/8” to 8’-95/8” from Grid A37 to Property Corner.
+Removed (E) Conc. Office and Maint. Building at Front Yard.
+Removed Pervious / impervious paving annotations
+Area Extended of MRF Building increased 61,789 S.F to 67,390 S.F
+Area Extended of Backyard Processing Building increased 181,321 S.F to 183,945 S.F
+Item 14 Ventilation Equipment and Screening are removed at 2 Places in Front Yard.
+Item 15 Location of BMP Downspouts are removed in Front yard.
+Grid Line Shifted the Grid A-Face of CMU – MRF Building.
+Dimension increased 558’-5½” to 581’-4½” from Grid A to GG at Overall.
+Dimension increased 253’-91/8” to 276’-81/8” from Grid A to K at MRF Building.
+Ramp Added (E) Ramp to CAT Pads at South Backyard Building.
+Added 2 nos of Item 15 –Overhead Crane at Recycling Equipment, MRF Building & South Backyard Building.
+Item 3 – Staff Rest rooms and Break room shifted outside of the South Backyard.
+Item 11 – Electrical Switch Board Added at north backyard.
+Item 14 – Genset & Firepump Room shifted at north backyard.
+Accessible path of travel Extended to Genset & Firepump Room.
